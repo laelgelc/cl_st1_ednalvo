@@ -1,0 +1,72 @@
+[2026-05-17 10:22:54] INFO   Starting transcription run
+[2026-05-17 10:22:54] INFO   Model: gpt-5.5
+[2026-05-17 10:22:54] INFO   Input dir: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset
+[2026-05-17 10:22:54] INFO   Output dir: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted
+[2026-05-17 10:22:54] INFO   Log file: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/transcribe_image_handwriting.log
+[2026-05-17 10:22:54] INFO   Manifest file: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/manifest.json
+[2026-05-17 10:22:54] INFO   Test mode: False (limit=5)
+[2026-05-17 10:22:54] INFO   Reprocess existing: False
+[2026-05-17 10:22:54] INFO   Workers: 4
+[2026-05-17 10:22:54] INFO   Supported extensions: .jpg, .jpeg, .png
+[2026-05-17 10:22:54] INFO   Prompt version: v1
+[2026-05-17 10:22:54] INFO   Prompt: This image contains handwritten text in Brazilian Portuguese. Transcribe only the handwritten text, ignoring any printed or pre‑printed text, into plain text. Preserve the original sentence and paragraph structure, grouping sentences into paragraphs as in the original and separating paragraphs with a single blank line. Do not add any explanations or extra text.
+[2026-05-17 10:22:54] INFO   Temperature override: default (model-specific)
+[2026-05-17 10:22:54] INFO   Discovered 50 image(s).
+[2026-05-17 10:22:54] INFO   Beginning processing of 50 image(s).
+[2026-05-17 10:23:15] INFO   SUCCESS 2150001.jpg -> 2150001.jpg.txt (20.53s, retries=0)
+[2026-05-17 10:23:34] INFO   SUCCESS 2150035.jpg -> 2150035.jpg.txt (19.13s, retries=0)
+[2026-05-17 10:23:50] INFO   SUCCESS 2150000.jpg -> 2150000.jpg.txt (55.88s, retries=0)
+[2026-05-17 10:24:04] INFO   SUCCESS 2150036.jpg -> 2150036.jpg.txt (30.34s, retries=0)
+[2026-05-17 10:24:35] INFO   SUCCESS 2150028.jpg -> 2150028.jpg.txt (100.22s, retries=1)
+[2026-05-17 10:24:39] INFO   SUCCESS 2150053.jpg -> 2150053.jpg.txt (49.02s, retries=0)
+[2026-05-17 10:24:59] INFO   SUCCESS 2150077.jpg -> 2150077.jpg.txt (20.01s, retries=0)
+[2026-05-17 10:25:39] INFO   SUCCESS 2150084.jpg -> 2150084.jpg.txt (40.05s, retries=0)
+[2026-05-17 10:26:15] INFO   SUCCESS 2150089.jpg -> 2150089.jpg.txt (35.80s, retries=0)
+[2026-05-17 10:26:24] INFO   SUCCESS 2150071.jpg -> 2150071.jpg.txt (108.94s, retries=1)
+[2026-05-17 10:26:49] INFO   SUCCESS 2150004.jpg -> 2150004.jpg.txt (234.52s, retries=3)
+[2026-05-17 10:26:59] INFO   SUCCESS 2150090.jpg -> 2150090.jpg.txt (43.64s, retries=0)
+[2026-05-17 10:27:17] INFO   SUCCESS 2150119.jpg -> 2150119.jpg.txt (18.62s, retries=0)
+[2026-05-17 10:27:33] INFO   SUCCESS 2150107.jpg -> 2150107.jpg.txt (44.00s, retries=0)
+[2026-05-17 10:27:56] INFO   SUCCESS 2150099.jpg -> 2150099.jpg.txt (91.94s, retries=1)
+[2026-05-17 10:28:07] INFO   SUCCESS 2150127.jpg -> 2150127.jpg.txt (49.62s, retries=0)
+[2026-05-17 10:28:18] INFO   SUCCESS 2150069.jpg -> 2150069.jpg.txt (253.82s, retries=3)
+[2026-05-17 10:28:25] INFO   SUCCESS 2150132.jpg -> 2150132.jpg.txt (51.68s, retries=0)
+[2026-05-17 10:28:27] INFO   SUCCESS 2150138.jpg -> 2150138.jpg.txt (19.54s, retries=0)
+[2026-05-17 10:28:40] INFO   SUCCESS 2150134.jpg -> 2150134.jpg.txt (44.60s, retries=0)
+[2026-05-17 10:29:05] INFO   SUCCESS 2150155.jpg -> 2150155.jpg.txt (40.05s, retries=0)
+[2026-05-17 10:29:08] INFO   SUCCESS 2150144.jpg -> 2150144.jpg.txt (49.66s, retries=0)
+[2026-05-17 10:29:33] INFO   SUCCESS 2150169.jpg -> 2150169.jpg.txt (28.15s, retries=0)
+[2026-05-17 10:29:34] INFO   SUCCESS 2150162.jpg -> 2150162.jpg.txt (53.76s, retries=0)
+[2026-05-17 10:29:53] INFO   SUCCESS 2150187.jpg -> 2150187.jpg.txt (19.96s, retries=0)
+[2026-05-17 10:29:58] INFO   SUCCESS 2150158.jpg -> 2150158.jpg.txt (91.56s, retries=1)
+[2026-05-17 10:30:02] INFO   SUCCESS 2150191.jpg -> 2150191.jpg.txt (28.42s, retries=0)
+[2026-05-17 10:30:18] INFO   SUCCESS 2150212.jpg -> 2150212.jpg.txt (25.18s, retries=0)
+[2026-05-17 10:30:33] INFO   SUCCESS 2150231.jpg -> 2150231.jpg.txt (30.61s, retries=0)
+[2026-05-17 10:30:47] INFO   SUCCESS 2150234.jpg -> 2150234.jpg.txt (29.44s, retries=0)
+[2026-05-17 10:31:26] INFO   SUCCESS 2150244.jpg -> 2150244.jpg.txt (52.99s, retries=0)
+[2026-05-17 10:31:30] INFO   SUCCESS 2150248.jpg -> 2150248.jpg.txt (43.07s, retries=0)
+[2026-05-17 10:31:32] INFO   SUCCESS 2150227.jpg -> 2150227.jpg.txt (94.23s, retries=1)
+[2026-05-17 10:31:43] INFO   SUCCESS 2150176.jpg -> 2150176.jpg.txt (154.65s, retries=2)
+[2026-05-17 10:31:43] INFO   SUCCESS 2150295.jpg -> 2150295.jpg.txt (10.54s, retries=0)
+[2026-05-17 10:31:44] INFO   SUCCESS 2150259.jpg -> 2150259.jpg.txt (18.03s, retries=0)
+[2026-05-17 10:32:03] INFO   SUCCESS 2150296.jpg -> 2150296.jpg.txt (20.57s, retries=0)
+[2026-05-17 10:32:13] INFO   SUCCESS 2150310.jpg -> 2150310.jpg.txt (29.35s, retries=0)
+[2026-05-17 10:32:19] INFO   SUCCESS 2150305.jpg -> 2150305.jpg.txt (35.99s, retries=0)
+[2026-05-17 10:32:40] INFO   SUCCESS 2150330.jpg -> 2150330.jpg.txt (20.96s, retries=0)
+[2026-05-17 10:33:26] INFO   SUCCESS 2150324.jpg -> 2150324.jpg.txt (82.48s, retries=1)
+[2026-05-17 10:34:20] INFO   SUCCESS 2150344.jpg -> 2150344.jpg.txt (54.34s, retries=0)
+[2026-05-17 10:34:50] INFO   SUCCESS 2150327.jpg -> 2150327.jpg.txt (156.43s, retries=2)
+[2026-05-17 10:35:05] INFO   SUCCESS 2150349.jpg -> 2150349.jpg.txt (45.20s, retries=0)
+[2026-05-17 10:35:26] INFO   SUCCESS 2150357.jpg -> 2150357.jpg.txt (36.33s, retries=0)
+[2026-05-17 10:35:39] INFO   SUCCESS 2150361.jpg -> 2150361.jpg.txt (33.93s, retries=0)
+[2026-05-17 10:35:45] ERROR  FAILED 2150270.jpg (retries=3): Network error after 3 retries: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60.0)
+[2026-05-17 10:35:48] INFO   SUCCESS 2150363.jpg -> 2150363.jpg.txt (21.67s, retries=0)
+[2026-05-17 10:36:24] INFO   SUCCESS 2150366.jpg -> 2150366.jpg.txt (45.32s, retries=0)
+[2026-05-17 10:36:54] ERROR  FAILED 2150331.jpg (retries=3): Network error after 3 retries: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60.0)
+[2026-05-17 10:36:54] INFO   Run complete.
+[2026-05-17 10:36:54] INFO   Total discovered: 50
+[2026-05-17 10:36:54] INFO   Skipped (existing outputs): 0
+[2026-05-17 10:36:54] INFO   Attempted: 50
+[2026-05-17 10:36:54] INFO   Succeeded: 48
+[2026-05-17 10:36:54] INFO   Failed: 2
+[2026-05-17 10:36:54] INFO   Manifest written to /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/manifest.json

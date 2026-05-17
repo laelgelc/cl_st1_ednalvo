@@ -1,0 +1,522 @@
+{
+  "run_metadata": {
+    "model": "gpt-5.5",
+    "prompt_version": "v1",
+    "start_time": "2026-05-17T10:22:54.903442+00:00",
+    "end_time": "2026-05-17T10:36:54.715332+00:00",
+    "test_mode": false,
+    "test_limit": 5,
+    "reprocess": false,
+    "workers": 4,
+    "supported_extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png"
+    ],
+    "input_dir": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset",
+    "output_dir": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted",
+    "temperature": null
+  },
+  "files": [
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150001.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150001.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 20.53404211997986,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:23:15.452645+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150035.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150035.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 19.131025075912476,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:23:34.583628+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150000.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150000.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 55.87791132926941,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:23:50.795120+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150036.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150036.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 30.337159633636475,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:24:04.922159+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150028.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150028.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 1,
+      "duration_seconds": 100.2210464477539,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:24:35.140152+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150053.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150053.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 49.016278982162476,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:24:39.812196+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150077.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150077.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 20.01222038269043,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:24:59.825200+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150084.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150084.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 40.047414779663086,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:25:39.874084+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150089.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150089.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 35.80495548248291,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:26:15.678884+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150071.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150071.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 1,
+      "duration_seconds": 108.94392657279968,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:26:24.083964+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150004.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150004.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 3,
+      "duration_seconds": 234.51667761802673,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:26:49.434385+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150090.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150090.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 43.64349913597107,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:26:59.324354+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150119.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150119.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 18.621942281723022,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:27:17.946542+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150107.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150107.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 44.00127840042114,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:27:33.438157+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150099.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150099.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 1,
+      "duration_seconds": 91.94257521629333,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:27:56.027178+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150127.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150127.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 49.61579346656799,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:28:07.564199+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150069.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150069.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 3,
+      "duration_seconds": 253.8200831413269,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:28:18.744201+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150132.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150132.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 51.67785906791687,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:28:25.115807+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150138.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150138.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 19.541921854019165,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:28:27.108038+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150134.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150134.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 44.60016226768494,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:28:40.629260+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150155.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150155.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 40.05038523674011,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:29:05.167554+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150144.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150144.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 49.65990090370178,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:29:08.404199+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150169.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150169.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 28.148248195648193,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:29:33.318089+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150162.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150162.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 53.76190662384033,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:29:34.391598+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150187.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150187.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 19.964354276657104,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:29:53.282624+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150158.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150158.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 1,
+      "duration_seconds": 91.56218385696411,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:29:58.671135+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150191.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150191.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 28.420573711395264,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:30:02.813600+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150212.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150212.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 25.178672552108765,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:30:18.462731+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150231.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150231.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 30.6123206615448,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:30:33.427365+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150234.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150234.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 29.4417827129364,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:30:47.906051+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150244.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150244.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 52.99042868614197,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:31:26.419203+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150248.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150248.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 43.07118201255798,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:31:30.979195+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150227.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150227.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 1,
+      "duration_seconds": 94.23256421089172,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:31:32.903191+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150176.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150176.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 2,
+      "duration_seconds": 154.65149855613708,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:31:43.057199+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150295.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150295.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 10.543234586715698,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:31:43.446643+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150259.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150259.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 18.027930736541748,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:31:44.449190+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150296.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150296.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 20.568685293197632,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:32:03.627217+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150310.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150310.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 29.34634304046631,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:32:13.795813+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150305.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150305.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 35.99000000953674,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:32:19.438234+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150330.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150330.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 20.956191778182983,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:32:40.395138+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150324.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150324.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 1,
+      "duration_seconds": 82.47525143623352,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:33:26.102202+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150344.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150344.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 54.33624887466431,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:34:20.439178+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150327.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150327.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 2,
+      "duration_seconds": 156.42617225646973,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:34:50.222612+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150349.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150349.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 45.20449948310852,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:35:05.645088+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150357.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150357.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 36.33096170425415,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:35:26.555255+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150361.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150361.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 33.93060302734375,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:35:39.576213+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150270.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150270.jpg.txt",
+      "status": "failed",
+      "error": "Network error after 3 retries: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60.0)",
+      "retries": 3,
+      "duration_seconds": 254.25979781150818,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:35:45.238563+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150363.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150363.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 21.67222833633423,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:35:48.227889+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150366.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150366.jpg.txt",
+      "status": "success",
+      "error": null,
+      "retries": 0,
+      "duration_seconds": 45.323923110961914,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:36:24.900613+00:00"
+    },
+    {
+      "input_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset/2150331.jpg",
+      "output_path": "/home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/2150331.jpg.txt",
+      "status": "failed",
+      "error": "Network error after 3 retries: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60.0)",
+      "retries": 3,
+      "duration_seconds": 254.31263089179993,
+      "model": "gpt-5.5",
+      "timestamp": "2026-05-17T10:36:54.708265+00:00"
+    }
+  ]
+}
