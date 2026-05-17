@@ -13,6 +13,14 @@
 # - Accepts Anaconda channel Terms of Service (ToS) non-interactively if needed
 #
 # Usage examples:
+# Case 1 - Using the project's repository
+#   cd <ec2_server_setup_ubuntu.sh script location>
+#   bash ec2_server_setup_ubuntu.sh
+#   bash ec2_server_setup_ubuntu.sh --env condaenv.yaml
+#   bash ec2_server_setup_ubuntu.sh --ssh-key
+#   bash ec2_server_setup_ubuntu.sh --env my_other_env.yaml --ssh-key
+#
+# Case 2 - Using `laelgelc` repository
 #   bash setup/ec2_server_setup_ubuntu.sh
 #   bash setup/ec2_server_setup_ubuntu.sh --env condaenv.yaml
 #   bash setup/ec2_server_setup_ubuntu.sh --ssh-key
