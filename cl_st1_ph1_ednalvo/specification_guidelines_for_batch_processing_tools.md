@@ -1,13 +1,14 @@
 # Specification Guidelines for Batch Processing Tools
 
-These guidelines generalize the design and documentation pattern used in `transcribe_image_handwriting.py` so you can reuse it for other batch‑style tools, regardless of domain (NLP, image processing, data cleaning, etc.).
+These guidelines generalise the design and documentation pattern used in `transcribe_image_handwriting.py` so you can reuse it for other batch‑style tools, regardless of domain (NLP, image processing, data cleaning, etc.).
 
 They focus on:
 
 - Clear separation of concerns.
 - Observability (logging, manifests).
 - Resumability and safe re‑runs.
-- Extensibility without breaking existing behavior.
+- Extensibility without breaking existing behaviour.
+- Clear **docstrings and documentation** explaining purpose and usage.
 
 You can treat this as a template when writing new specs.
 
@@ -20,7 +21,7 @@ Every implementation should start with a short, focused **Purpose** section:
 - Describe **what** the tool does in 1–3 sentences.
 - Specify the **main data type** processed (e.g. text files, images, JSON records).
 - Clarify the **primary goal**, e.g.:
-  - “Normalize text for downstream NLP models.”
+  - “Normalise text for downstream NLP models.”
   - “Extract features from images for later classification.”
 - Mention key design goals:
   - Batch processing.
@@ -57,14 +58,14 @@ Define inputs and outputs precisely, independent of the tool’s specific functi
   - Output location (directory or other sink).
   - Naming scheme (e.g. `<input_name>.out.txt`, `<id>.json`).
   - Encoding (e.g. UTF‑8).
-  - General content description (e.g. “normalized text”, “feature vector”, “classification result”).
+  - General content description (e.g. “normalised text”, “feature vector”, “classification result”).
 
 - **Additional outputs**:
   - **Log file**:
     - Default path.
     - Format (line‑based, plain text).
   - **JSON manifest(s)**:
-    - Per‑run manifest(s) summarizing item‑level results.
+    - Per‑run manifest(s) summarising item‑level results.
   - Optional:
     - Summary CSV/JSON.
     - Metrics report for monitoring.
@@ -145,7 +146,7 @@ Use a consistent CLI pattern across tools.
 
 ## 5. Core Processing Architecture
 
-Standardize the internal architecture for all batch tools.
+Standardise the internal architecture for all batch tools.
 
 ### 5.1. High‑level flow
 
@@ -298,6 +299,10 @@ Use a consistent logging pattern to make tools easy to monitor and debug.
   - End‑of‑run summary.
   - Interrupts, configuration errors, and early exits.
 
+Parallel mode logging:
+
+- Prefer that workers return structured results to the main process, and the main process logs them, to avoid interleaved log lines from multiple processes.
+
 ---
 
 ## 8. Error Handling & Resiliency
@@ -319,7 +324,41 @@ Use a consistent logging pattern to make tools easy to monitor and debug.
 
 ---
 
-## 9. Extensibility Guidelines
+## 9. Docstrings and In‑Code Documentation
+
+Every batch tool implementation **must** include clear docstrings to make the code self‑describing, even without the external specification.
+
+### 9.1. Module‑level docstring (required)
+
+At the top of each main script or module, include a **module‑level docstring** that explains:
+
+- The **purpose** of the tool.
+- The **type of inputs** it expects and the **outputs** it produces.
+- The **typical usage pattern**, with at least one example command line.
+- Any critical assumptions or limitations (e.g. non‑recursive discovery, external services required).
+
+This docstring should be understandable without reading the external spec and should mirror the high‑level content of the **Purpose** and **Input / Output** sections.
+
+### 9.2. Function and class docstrings
+
+- Core public functions (especially:
+  - The **core processing function** (worker),
+  - Any configuration / loading helpers,
+  - Manifest helpers,
+  - Main orchestration functions)
+  should have docstrings summarising:
+  - Their role in the architecture.
+  - Input parameters (types and meaning).
+  - Return values and error behavior.
+
+- Docstrings can be concise but should make it clear:
+  - Whether the function does I/O.
+  - Whether it logs or not.
+  - Whether it can raise exceptions or always returns a structured result.
+
+---
+
+## 10. Extensibility Guidelines
 
 Design new tools so they can evolve without breaking existing users.
 
@@ -335,7 +374,7 @@ Design new tools so they can evolve without breaking existing users.
 
 ---
 
-## 10. Documentation and Examples
+## 11. Documentation and Examples
 
 For each new implementation:
 
@@ -349,6 +388,8 @@ For each new implementation:
   - The specification document for that tool.
   - Any per‑run manifests or sample outputs.
 
+Ensure the **module‑level docstring** and external README/spec stay broadly in sync so users can understand the tool from either the code or the documentation.
+
 ---
 
-By following these guidelines, you can build a family of batch tools that share a consistent architecture and user experience while differing only in their domain‑specific logic and configuration.
+By following these guidelines, you can build a family of batch tools that share a consistent architecture, documentation style (including clear docstrings), and user experience, while differing only in their domain‑specific logic and configuration.
