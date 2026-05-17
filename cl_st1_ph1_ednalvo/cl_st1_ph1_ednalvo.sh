@@ -27,7 +27,7 @@ python transcribe_image_handwriting.py \
 # Process all supported images without test mode, using 4 workers, on an EC2 instance:
 
 nohup bash run_python_ec2.sh \
-    python transcribe_image_handwriting.py \
+    transcribe_image_handwriting.py \
         --model gpt-5.5 \
         --input-dir corpus/01_poc_dataset \
         --output-dir corpus/02_extracted \
