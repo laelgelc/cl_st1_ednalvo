@@ -23,4 +23,3 @@ python transcribe_image_handwriting.py \
     --no-test-mode \
     --workers 4 \
     --reprocess
-    

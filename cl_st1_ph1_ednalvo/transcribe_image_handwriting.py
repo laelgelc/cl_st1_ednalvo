@@ -45,6 +45,22 @@ Force reprocessing of all images, overriding existing `.txt` files:
         --output-dir corpus/01_poc_dataset_out \
         --no-test-mode \
         --reprocess
+
+Rely on the model's default temperature (recommended for models like gpt-5.5):
+
+    python transcribe_image_handwriting.py \
+        --model gpt-5.5 \
+        --input-dir corpus/01_poc_dataset \
+        --output-dir corpus/01_poc_dataset_out
+
+Override temperature explicitly (only if your model supports it):
+
+    python transcribe_image_handwriting.py \
+        --model gpt-4.1-mini \
+        --input-dir corpus/01_poc_dataset \
+        --output-dir corpus/01_poc_dataset_out \
+        --no-test-mode \
+        --temperature 0.0
 """
 
 from __future__ import annotations
@@ -164,6 +180,7 @@ def transcribe_image(
         api_key: str,
         timeout: float,
         max_retries: int,
+        temperature: Optional[float],
 ) -> TranscriptionResult:
     """
     Call the OpenAI Chat Completions API with an image and return the transcription.
@@ -184,9 +201,8 @@ def transcribe_image(
         "Content-Type": "application/json",
     }
 
-    payload = {
+    payload: Dict[str, object] = {
         "model": model,
-        "temperature": 0.0,
         "messages": [
             {
                 "role": "user",
@@ -197,6 +213,10 @@ def transcribe_image(
             }
         ],
     }
+    # Only include temperature when explicitly provided, because some models
+    # (e.g. gpt-5.5) do not support overriding it and require the default.
+    if temperature is not None:
+        payload["temperature"] = float(temperature)
 
     while True:
         try:
@@ -247,9 +267,8 @@ def transcribe_image(
 
         # Non-200 responses
         is_transient = response.status_code in {429} or 500 <= response.status_code < 600
-        body_text: str
         try:
-            body_text = response.text
+            body_text: str = response.text
         except Exception:  # noqa: BLE001
             body_text = "<unavailable>"
 
@@ -306,7 +325,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--model",
         required=True,
-        help="OpenAI model name to use (e.g. gpt-4.1-mini).",
+        help="OpenAI model name to use (e.g. gpt-4.1-mini, gpt-4.1, gpt-5.5).",
     )
     parser.add_argument(
         "--input-dir",
@@ -380,8 +399,20 @@ def build_arg_parser() -> argparse.ArgumentParser:
         "--extensions",
         type=str,
         default=None,
-        help="Comma‑separated list of image extensions to process "
-             "(e.g. '.jpg,.jpeg,.png'). Default: .jpg,.jpeg,.png",
+        help=(
+            "Comma‑separated list of image extensions to process "
+            "(e.g. '.jpg,.jpeg,.png'). Default: .jpg,.jpeg,.png"
+        ),
+    )
+    parser.add_argument(
+        "--temperature",
+        type=float,
+        default=None,
+        help=(
+            "Optional temperature override for the model. If omitted, the "
+            "model's default temperature is used. Note that some models "
+            "(e.g. gpt-5.5) do not allow overriding temperature."
+        ),
     )
 
     return parser
@@ -458,6 +489,10 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if args.workers <= 0:
         print("ERROR: --workers must be > 0.", file=sys.stderr)
         return 1
+    # Allow any non-negative temperature; some models may still reject certain values.
+    if args.temperature is not None and args.temperature < 0:
+        print("ERROR: --temperature must be >= 0.", file=sys.stderr)
+        return 1
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -486,6 +521,10 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     logging.info("Supported extensions: %s", ", ".join(extensions))
     logging.info("Prompt version: %s", PROMPT_VERSION)
     logging.info("Prompt: %s", PROMPT_TEXT)
+    logging.info(
+        "Temperature override: %s",
+        "default (model-specific)" if args.temperature is None else args.temperature,
+    )
 
     images = discover_images(input_dir, extensions)
     total_discovered = len(images)
@@ -580,6 +619,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                     api_key=api_key,
                     timeout=args.timeout,
                     max_retries=args.max_retries,
+                    temperature=args.temperature,
                 )
                 if result.status == "success" and result.text is not None:
                     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -626,6 +666,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                         api_key,
                         args.timeout,
                         args.max_retries,
+                        args.temperature,
                     ): (img_path, out_path, mime_type)
                     for img_path, out_path, mime_type in work_items
                 }
@@ -713,6 +754,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         "supported_extensions": list(extensions),
         "input_dir": str(input_dir),
         "output_dir": str(output_dir),
+        "temperature": args.temperature,
     }
 
     try:
