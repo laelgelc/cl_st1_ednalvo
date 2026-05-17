@@ -70,3 +70,75 @@
 [2026-05-17 10:36:54] INFO   Succeeded: 48
 [2026-05-17 10:36:54] INFO   Failed: 2
 [2026-05-17 10:36:54] INFO   Manifest written to /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/manifest.json
+[2026-05-17 16:00:04] INFO   Starting transcription run
+[2026-05-17 16:00:04] INFO   Model: gpt-5.5
+[2026-05-17 16:00:04] INFO   Input dir: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/01_poc_dataset
+[2026-05-17 16:00:04] INFO   Output dir: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted
+[2026-05-17 16:00:04] INFO   Log file: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/transcribe_image_handwriting.log
+[2026-05-17 16:00:04] INFO   Manifest file: /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/manifest.json
+[2026-05-17 16:00:04] INFO   Test mode: False (limit=5)
+[2026-05-17 16:00:04] INFO   Reprocess existing: False
+[2026-05-17 16:00:04] INFO   Workers: 4
+[2026-05-17 16:00:04] INFO   Supported extensions: .jpg, .jpeg, .png
+[2026-05-17 16:00:04] INFO   Prompt version: v1
+[2026-05-17 16:00:04] INFO   Prompt: This image contains handwritten text in Brazilian Portuguese. Transcribe only the handwritten text, ignoring any printed or pre‑printed text, into plain text. Preserve the original sentence and paragraph structure, grouping sentences into paragraphs as in the original and separating paragraphs with a single blank line. Do not add any explanations or extra text.
+[2026-05-17 16:00:04] INFO   Temperature override: default (model-specific)
+[2026-05-17 16:00:04] INFO   Discovered 50 image(s).
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150000.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150001.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150004.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150028.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150035.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150036.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150053.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150069.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150071.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150077.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150084.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150089.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150090.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150099.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150107.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150119.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150127.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150132.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150134.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150138.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150144.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150155.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150158.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150162.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150169.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150176.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150187.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150191.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150212.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150227.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150231.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150234.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150244.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150248.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150259.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150295.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150296.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150305.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150310.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150324.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150327.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150330.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150344.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150349.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150357.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150361.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150363.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   SKIPPED_EXISTING 2150366.jpg (output file already exists)
+[2026-05-17 16:00:04] INFO   Beginning processing of 2 image(s).
+[2026-05-17 16:01:36] INFO   SUCCESS 2150270.jpg -> 2150270.jpg.txt (92.47s, retries=1)
+[2026-05-17 16:04:18] ERROR  FAILED 2150331.jpg (retries=3): Network error after 3 retries: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60.0)
+[2026-05-17 16:04:18] INFO   Run complete.
+[2026-05-17 16:04:18] INFO   Total discovered: 50
+[2026-05-17 16:04:18] INFO   Skipped (existing outputs): 48
+[2026-05-17 16:04:18] INFO   Attempted: 2
+[2026-05-17 16:04:18] INFO   Succeeded: 1
+[2026-05-17 16:04:18] INFO   Failed: 1
+[2026-05-17 16:04:18] INFO   Manifest written to /home/ubuntu/cl_st1_ednalvo/cl_st1_ph1_ednalvo/corpus/02_extracted/manifest.json
