@@ -12,6 +12,11 @@
 # - No pip requirements file support
 # - Accepts Anaconda channel Terms of Service (ToS) non-interactively if needed
 #
+# Make sure unignore lines like the following are included in the project's `.gitignore`
+## cl_st1_ednalvo
+#!cl_st1_ph1_ednalvo/env
+#!cl_st1_ph1_ednalvo/**/*.log
+#
 # Usage examples:
 # Case 1 - Using the project's repository
 #   cd <ec2_server_setup_ubuntu.sh script location>
