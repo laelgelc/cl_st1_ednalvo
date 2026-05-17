@@ -13,6 +13,7 @@ The program is designed for:
 - **Traceable logging** of progress and errors.
 - **A JSON manifest** summarizing per‑file results.
 - **Safe defaults** via a test mode that limits the number of processed images.
+- Optional **temperature override**, while by default relying on the model’s own temperature setting.
 
 ---
 
@@ -25,7 +26,7 @@ The program is designed for:
     - Default supported extensions: `.jpg`, `.jpeg`, `.png`.
   - Initial version: **non‑recursive** search (subdirectories may be added later).
 - **Model name**:
-  - Any OpenAI vision‑capable model (e.g. `gpt-4.1-mini`, `gpt-4.1`, `o3-mini`).
+  - Any OpenAI vision‑capable model (e.g. `gpt-4.1-mini`, `gpt-4.1`, `o3-mini`, `gpt-5.5`).
   - Provided via CLI argument.
 - **Configuration**:
   - Environment variable `OPENAI_API_KEY`, loaded from `env/.env` (relative path).
@@ -61,7 +62,7 @@ Use `argparse` (or similar) to implement the following CLI.
 #### 3.1. Required arguments
 
 - `--model` (string, required):  
-  OpenAI model name to use for transcription (e.g. `gpt-4.1-mini`).
+  OpenAI model name to use for transcription (e.g. `gpt-4.1-mini`, `gpt-4.1`, `o3-mini`, `gpt-5.5`).
 
 - `--input-dir` (string, required):  
   Directory containing image files to process.
@@ -83,7 +84,7 @@ Use `argparse` (or similar) to implement the following CLI.
 
 - `--reprocess` (boolean flag):
   - Default: `False`.
-  - When `False` (default): if a target `.txt` already exists for an image, that image is **skipped** and not sent to the API.
+  - When `False` (default): if a target `.txt` file already exists for an image, that image is **skipped** and not sent to the API.
   - When `True`: force reprocessing and **overwrite** existing `.txt` files.
 
 - `--log-file PATH` (string, optional):
@@ -112,6 +113,12 @@ Use `argparse` (or similar) to implement the following CLI.
   - Comma‑separated list of file extensions (with or without leading dots) to consider as images.
   - All comparisons are done case‑insensitively.
 
+- `--temperature FLOAT` (optional):
+  - Default: `None` (no override).
+  - When provided, the value is sent as `"temperature"` in the API request.
+  - When omitted, the script **does not** send a temperature parameter and the model’s default is used.
+  - The program **does not detect** whether a given model supports temperature override; if a model rejects the provided value (e.g. with an `unsupported_value` error), the request fails and the image is marked as `failed`.
+
 Argument validation:
 
 - Fail fast with clear errors if:
@@ -119,6 +126,7 @@ Argument validation:
   - No files with supported extensions are found in `--input-dir`.
   - `--test-limit`, `--max-retries`, `--timeout`, or `--workers` are invalid (≤0).
   - `--extensions` contains no valid items.
+  - `--temperature` is provided but is negative (must be ≥ 0; additional model‑specific constraints are not validated by the script).
 
 ---
 
@@ -139,7 +147,8 @@ Use a fixed prompt string, stored as a named constant in the script (for auditab
 
 > This image contains handwritten text in Brazilian Portuguese. Transcribe only the handwritten text, ignoring any printed or pre‑printed text, into plain text. Preserve the original sentence and paragraph structure, grouping sentences into paragraphs as in the original and separating paragraphs with a single blank line. Do not add any explanations or extra text.
 
-- `temperature` must be set to `0.0` for deterministic behavior.
+- When `--temperature` is omitted, the model’s own default temperature is used.
+- When `--temperature` is provided, that value is sent as part of the request, but the script does **not** verify whether the model supports overriding temperature; errors from the API are treated as normal failures.
 - The prompt should be logged once at the start of each run (INFO level) to aid auditability.
 
 ---
@@ -173,7 +182,7 @@ Overall flow:
    - Normalize and validate supported extensions.
    - Prepare logging.
    - Create `--output-dir` if it does not exist.
-   - Log configuration summary (model, directories, test mode & limit, reprocess, workers, extensions, prompt version).
+   - Log configuration summary (model, directories, test mode & limit, reprocess, workers, extensions, prompt version, and whether temperature override is set).
 
 2. **Image discovery**:
    - Enumerate all files in `--input-dir` whose lowercase extension is in the supported list.
@@ -254,7 +263,8 @@ The program maintains a JSON manifest summarizing each discovered image and its 
       "test_limit": 5,
       "reprocess": false,
       "workers": 4,
-      "supported_extensions": [".jpg", ".jpeg", ".png"]
+      "supported_extensions": [".jpg", ".jpeg", ".png"],
+      "temperature": null
     },
     "files": [
       {
@@ -266,26 +276,6 @@ The program maintains a JSON manifest summarizing each discovered image and its 
         "duration_seconds": 3.8,
         "model": "gpt-4.1-mini",
         "timestamp": "2026-05-16T10:23:50Z"
-      },
-      {
-        "input_path": "path/to/input/image_002.jpg",
-        "output_path": "path/to/output/image_002.jpg.txt",
-        "status": "skipped_existing",
-        "error": null,
-        "retries": 0,
-        "duration_seconds": 0.0,
-        "model": null,
-        "timestamp": "2026-05-16T10:23:51Z"
-      },
-      {
-        "input_path": "path/to/input/image_003.jpg",
-        "output_path": "path/to/output/image_003.jpg.txt",
-        "status": "failed",
-        "error": "Timeout after 3 retries",
-        "retries": 3,
-        "duration_seconds": 62.1,
-        "model": "gpt-4.1-mini",
-        "timestamp": "2026-05-16T10:24:52Z"
       }
     ]
   }
@@ -314,6 +304,7 @@ transcribe_image(
     api_key: str,
     timeout: float,
     max_retries: int,
+    temperature: Optional[float],
 ) -> TranscriptionResult
 ```
 
@@ -334,16 +325,17 @@ Behavior:
    - One user message containing:
      - The fixed prompt text.
      - The image.
-   - `temperature: 0.0`.
-   - Timeout from arguments.
+   - If `temperature` is **not** `None`, include `"temperature": <value>` in the payload.
+   - If `temperature` is `None`, omit the parameter and rely on the model’s default.
 4. Retry logic:
    - On **transient errors** (network, timeout, rate limit), retry up to `max_retries` using simple exponential backoff.
-   - On **obvious permanent errors** (invalid API key, invalid model, 4xx request validation errors):
+   - On **obvious permanent errors** (invalid API key, invalid model, 4xx request validation errors including unsupported temperature values):
      - Return immediately with `status="failed"` and an appropriate `error` message.
 5. On success:
    - Extract the text response.
    - Return `TranscriptionResult` with `status="success"` and the text.
 6. The function itself **must not** write files or log directly (except possibly very low‑level debug logs); it should return results for the caller to handle I/O and logging.
+7. The program does **not** attempt to automatically detect whether a model supports temperature override; unsupported values result in failed requests logged as errors.
 
 ---
 
@@ -361,7 +353,7 @@ Behavior:
 
 Minimum log events:
 
-- Startup configuration and prompt version.
+- Startup configuration and prompt version, including the effective temperature setting (either explicit value or “model default”).
 - Discovery summary (`N` images found).
 - Per image:
   - `SKIPPED_EXISTING`, `SUCCESS`, or `FAILED` with details.
@@ -397,5 +389,3 @@ The design supports future changes:
 - Different prompt versions: keep a `PROMPT_VERSION` constant and store it in the manifest.
 - Alternative backends or models: change only the API interaction function.
 - More advanced parallelism (e.g. async requests) can be introduced without changing the CLI.
-
----
