@@ -12,8 +12,10 @@ The main tool for this phase is `transcribe_image_handwriting.py`, which:
 - Skips already processed images by default, allowing safe re‑runs of the script.
 - Supports a **test mode** (enabled by default) that limits processing to a small number of images (default: 5) for quick experiments.
 - Can run with multiple worker processes to speed up batch transcription while keeping logs and outputs consistent.
-- Logs progress and errors to a log file in the output directory, plus a concise summary in the console.
-- Produces a JSON manifest describing the status of each image (success, skipped, failed), including timing and error information.
+- Logs progress and errors to a log file in the output directory (append‑only across runs), plus a concise summary in the console.
+- Produces **JSON manifests** for each run:
+    - A timestamped **per‑run manifest** that records run metadata and per‑file status (success, skipped, failed), including timing and error information.
+    - A **“latest” manifest** (default: `manifest.json`) that always reflects the most recent run.
 - Optionally accepts a `--temperature` argument to override the model’s default temperature; if omitted, the script relies on the model’s own default, and it does not attempt to detect whether a particular model supports temperature override.
 
 Later phases will build on these cleaned text files for annotation, exploration, and quantitative analysis of the learners’ productions.

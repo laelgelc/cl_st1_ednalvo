@@ -375,7 +375,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
         "--manifest-file",
         type=str,
         default=None,
-        help="Path to JSON manifest (default: <output-dir>/manifest.json).",
+        help=(
+            "Path to JSON manifest for the latest run "
+            "(default: <output-dir>/manifest.json). "
+            "Each run also writes a timestamped manifest alongside this file."
+        ),
     )
     parser.add_argument(
         "--max-retries",
@@ -501,7 +505,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         if args.log_file
         else output_dir / "transcribe_image_handwriting.log"
     )
-    manifest_file = (
+    latest_manifest_file = (
         Path(args.manifest_file).expanduser().resolve()
         if args.manifest_file
         else output_dir / "manifest.json"
@@ -514,7 +518,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     logging.info("Input dir: %s", input_dir)
     logging.info("Output dir: %s", output_dir)
     logging.info("Log file: %s", log_file)
-    logging.info("Manifest file: %s", manifest_file)
+    logging.info("Latest manifest file (pointer to last run): %s", latest_manifest_file)
     logging.info("Test mode: %s (limit=%d)", args.test_mode, args.test_limit)
     logging.info("Reprocess existing: %s", args.reprocess)
     logging.info("Workers: %d", args.workers)
@@ -602,6 +606,15 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     failed = 0
 
     start_time = datetime.now(timezone.utc)
+    # Use a compact, filesystem-friendly run identifier (also stored in the manifest).
+    run_id = start_time.strftime("%Y%m%dT%H%M%SZ")
+
+    # Timestamped manifest for this specific run; latest_manifest_file points to the last run.
+    run_manifest_file = latest_manifest_file.with_name(
+        f"{latest_manifest_file.stem}_{run_id}{latest_manifest_file.suffix}"
+    )
+    logging.info("Run ID: %s", run_id)
+    logging.info("Per-run manifest file: %s", run_manifest_file)
 
     logging.info("Beginning processing of %d image(s).", attempted)
 
@@ -743,6 +756,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     logging.info("Failed: %d", failed)
 
     run_metadata = {
+        "run_id": run_id,
         "model": args.model,
         "prompt_version": PROMPT_VERSION,
         "start_time": start_time.isoformat(),
@@ -758,10 +772,20 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     }
 
     try:
-        write_manifest(manifest_file, run_metadata, file_results)
-        logging.info("Manifest written to %s", manifest_file)
+        # Write the manifest for this specific run (timestamped)
+        write_manifest(run_manifest_file, run_metadata, file_results)
+        logging.info("Per-run manifest written to %s", run_manifest_file)
+
+        # Also update the "latest" manifest path to point to the last run
+        write_manifest(latest_manifest_file, run_metadata, file_results)
+        logging.info("Latest manifest written to %s", latest_manifest_file)
     except Exception as exc:  # noqa: BLE001
-        logging.error("Failed to write manifest %s: %s", manifest_file, exc)
+        logging.error(
+            "Failed to write manifest(s) (%s, %s): %s",
+            run_manifest_file,
+            latest_manifest_file,
+            exc,
+        )
 
     return 0 if failed == 0 else 1
 

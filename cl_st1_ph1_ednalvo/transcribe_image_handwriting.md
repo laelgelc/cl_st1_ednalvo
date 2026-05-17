@@ -11,7 +11,7 @@ The program is designed for:
 - **Resumability** (skips already processed images by default).
 - **Parallel processing** with a configurable number of worker processes.
 - **Traceable logging** of progress and errors.
-- **A JSON manifest** summarizing per‑file results.
+- **JSON manifests** summarizing per‑file results (one manifest per run, plus a “latest” manifest).
 - **Safe defaults** via a test mode that limits the number of processed images.
 - Optional **temperature override**, while by default relying on the model’s own temperature setting.
 
@@ -45,7 +45,7 @@ For each processed image:
 Additional outputs:
 
 - A **log file** (default: `transcribe_image_handwriting.log`) in the output directory, unless overridden.
-- A **JSON manifest** file in the output directory (see §8).
+- One **JSON manifest per run** (timestamped), plus a **“latest” manifest** that always reflects the most recent run (see §8).
 - A **summary** printed to stdout at the end of the run:
   - Total images discovered.
   - Number attempted.
@@ -68,7 +68,7 @@ Use `argparse` (or similar) to implement the following CLI.
   Directory containing image files to process.
 
 - `--output-dir` (string, required):  
-  Directory where `.txt` output files, the log file, and manifest will be written.
+  Directory where `.txt` output files, the log file, and manifests will be written.
 
 #### 3.2. Optional arguments
 
@@ -90,10 +90,12 @@ Use `argparse` (or similar) to implement the following CLI.
 - `--log-file PATH` (string, optional):
   - Default: `<output-dir>/transcribe_image_handwriting.log`.
   - Custom path for the log file.
+  - Logs are **appended** across runs to preserve history.
 
 - `--manifest-file PATH` (string, optional):
   - Default: `<output-dir>/manifest.json`.
-  - Custom path for the JSON manifest.
+  - Custom path for the **“latest”** JSON manifest.
+  - Each run also writes a **timestamped** manifest next to this file, using the same base name plus a `run_id` suffix (e.g. `manifest_20260517T175435Z.json`).
 
 - `--max-retries N` (integer, optional):
   - Default: `3`.
@@ -231,7 +233,7 @@ Overall flow:
      - `succeeded`.
      - `failed`.
    - Print and log the summary.
-   - Write or update the JSON manifest (§8).
+   - Write JSON manifests for the run (§8).
    - Exit with:
      - Code `0` if `failed == 0`.
      - Non‑zero (e.g. `1`) otherwise or if any configuration error occurred.
@@ -247,14 +249,25 @@ Overall flow:
 
 ### 8. JSON Manifest
 
-The program maintains a JSON manifest summarizing each discovered image and its final status.
+The program maintains JSON manifests summarizing each discovered image and its final status.
 
-- Default path: `<output-dir>/manifest.json`, overridable via `--manifest-file`.
-- Structure (example):
+- **“Latest” manifest**:
+  - Default path: `<output-dir>/manifest.json`, overridable via `--manifest-file`.
+  - Always describes the **most recent run**.
+
+- **Per‑run timestamped manifests**:
+  - For each run, a separate manifest file is written alongside the latest manifest.
+  - Naming pattern (conceptual):
+    - If the latest manifest path is `PATH/manifest.json` and the run’s `run_id` is `20260517T175435Z`, the per‑run manifest is:
+      - `PATH/manifest_20260517T175435Z.json`
+  - This provides a history of runs without complicating the structure of a single JSON file.
+
+- Manifest structure (example):
 
   ```json
   {
     "run_metadata": {
+      "run_id": "20260517T175435Z",
       "model": "gpt-4.1-mini",
       "prompt_version": "v1",
       "start_time": "2026-05-16T10:23:45Z",
@@ -264,6 +277,8 @@ The program maintains a JSON manifest summarizing each discovered image and its 
       "reprocess": false,
       "workers": 4,
       "supported_extensions": [".jpg", ".jpeg", ".png"],
+      "input_dir": "path/to/input",
+      "output_dir": "path/to/output",
       "temperature": null
     },
     "files": [
@@ -282,10 +297,13 @@ The program maintains a JSON manifest summarizing each discovered image and its 
   ```
 
 - Manifest behavior:
-  - Written at the end of the run.
-  - If the file already exists, it may be overwritten for simplicity (the manifest describes a single run).
+  - At the end of each run:
+    - A **per‑run manifest** is written with a `run_id`‑suffixed filename.
+    - The **latest manifest** (at `--manifest-file`, default `manifest.json`) is also overwritten to reflect this run.
+  - A manifest always describes **exactly one run**.
   - The schema above can be simplified but should at least contain:
-    - Per‑file `input_path`, `output_path`, `status`, `error`/`null`.
+    - In `run_metadata`: `run_id`, model, prompt version, times, flags, directories, and temperature.
+    - Per‑file: `input_path`, `output_path`, `status`, `error`/`null`, `retries`, `duration_seconds`, `model`, `timestamp`.
 
 ---
 
@@ -343,8 +361,9 @@ Behavior:
 
 - Use Python’s `logging` module.
 - Log destination:
-  - File: `--log-file` path.
+  - File: `--log-file` path (default `<output-dir>/transcribe_image_handwriting.log`).
   - Optional console handler for INFO+ messages.
+- Logs are **appended across runs** to keep a continuous history.
 - Recommended log format:
 
   ```text
@@ -358,7 +377,7 @@ Minimum log events:
 - Per image:
   - `SKIPPED_EXISTING`, `SUCCESS`, or `FAILED` with details.
 - Retry attempts (as WARNING).
-- Manifest writing (path).
+- Manifest writing (paths of both the per‑run and latest manifests).
 - End‑of‑run summary.
 - Interrupts and early exits.
 
@@ -389,3 +408,4 @@ The design supports future changes:
 - Different prompt versions: keep a `PROMPT_VERSION` constant and store it in the manifest.
 - Alternative backends or models: change only the API interaction function.
 - More advanced parallelism (e.g. async requests) can be introduced without changing the CLI.
+- Additional run‑level analytics can be built by aggregating the per‑run manifests over time.
