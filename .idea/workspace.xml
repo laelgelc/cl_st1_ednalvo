@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77f5fa0-7ae3-4c81-8402-39c9ac1a70c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph1_ednalvo/cl_st1_ph1_ednalvo.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph1_ednalvo/cl_st1_ph1_ednalvo.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph1_ednalvo/corpus/02_extracted/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph1_ednalvo/transcribe_image_handwriting.md" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph1_ednalvo/transcribe_image_handwriting.md" afterDir="false" />
-    </list>
+    <list default="true" id="c77f5fa0-7ae3-4c81-8402-39c9ac1a70c6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +148,7 @@
       <workItem from="1778962606513" duration="791000" />
       <workItem from="1778967304504" duration="1800000" />
       <workItem from="1778972300999" duration="3698000" />
-      <workItem from="1779005230405" duration="4212000" />
+      <workItem from="1779005230405" duration="4330000" />
     </task>
     <servers />
   </component>
