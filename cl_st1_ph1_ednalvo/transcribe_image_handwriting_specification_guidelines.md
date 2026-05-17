@@ -1,6 +1,6 @@
-# Specification Guidelines for Batch Processing Tools
+# Specification Guidelines for Batch Processing Programmes
 
-These guidelines generalise the design and documentation pattern used in `transcribe_image_handwriting.py` so you can reuse it for other batch‑style tools, regardless of domain (NLP, image processing, data cleaning, etc.).
+These guidelines generalise the design and documentation pattern used in `transcribe_image_handwriting.py` so you can reuse it for other batch processing programmes, regardless of domain (NLP, image processing, data cleaning, etc.).
 
 They focus on:
 
@@ -14,22 +14,20 @@ You can treat this as a template when writing new specs.
 
 ---
 
-## 1. Purpose and Scope
+## 1. High Level Functionality Specification
 
-Every implementation should start with a short, focused **Purpose** section:
+### Programme Summary
 
-- Describe **what** the tool does in 1–3 sentences.
-- Specify the **main data type** processed (e.g. text files, images, JSON records).
-- Clarify the **primary goal**, e.g.:
-  - “Normalise text for downstream NLP models.”
-  - “Extract features from images for later classification.”
-- Mention key design goals:
-  - Batch processing.
-  - Resumability (safe re‑runs).
-  - Parallel execution.
-  - Traceable logging and manifests.
+- `transcribe_image_handwriting.py` processes handwritten exam images from an input directory and writes one UTF‑8 text transcription per image to an output directory.
 
-This section should be high‑level and domain‑independent.
+### Key Behaviours
+
+- It calls a specified OpenAI GPT vision model, using an API key loaded from env/.env.
+- Model name, input directory and output directory are provided via CLI arguments.
+- A test mode (enabled by default) limits processing to 5 images for quick checks.
+- On re‑runs, images with existing outputs are skipped by default for safe resumability.
+- Progress and errors are recorded in an append‑only log file.
+- A JSON manifest records run metadata and per‑file status (success, skipped, failed, timing, errors).
 
 ---
 
