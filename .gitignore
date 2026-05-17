@@ -208,4 +208,4 @@ __marimo__/
 
 # cl_st1_ednalvo
 !env
-!cl_st1_ph1_ednalvo/*.log
+!*.log
