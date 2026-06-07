@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="121" />
+    <option name="cachedIndexableFilesCount" value="122" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;eyamrog&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:laelgelc/cl_st1_ednalvo.git&quot;,
-    &quot;accountId&quot;: &quot;b6d100ee-3b6c-416a-9163-f36cfbbf95be&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:laelgelc/cl_st1_ednalvo.git",
+    "accountId": "88f5b31b-865e-4b6d-916c-b682187b59ff"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -120,7 +120,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eyamrog/PycharmProjects/cl_st1_julio",
+    "last_opened_file_path": "/home/eyamrog/PycharmProjects/cl_st1_ednalvo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,6 +152,7 @@
       <workItem from="1779010980062" duration="2360000" />
       <workItem from="1779031644634" duration="10194000" />
       <workItem from="1780748496984" duration="131000" />
+      <workItem from="1780839139123" duration="28000" />
     </task>
     <servers />
   </component>
