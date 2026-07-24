@@ -118,88 +118,109 @@ A avaliação deve considerar os seguintes critérios:
 
 ## Exemplos de redações avaliadas
 
-### Exemplo 1
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+### Redação 36560
+>- Proposta escolhida pelo candidato:
 
-### Exemplo 2
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 3
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 4
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+### Redação 44497
+>- Proposta escolhida pelo candidato:
 
-### Exemplo 5
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 6
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 7
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+### Redação 34811
+>- Proposta escolhida pelo candidato:
 
-### Exemplo 8
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 9
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 10
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+### Redação 37681
+>- Proposta escolhida pelo candidato:
 
-### Exemplo 11
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 12
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 13
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+### Redação 35240
+>- Proposta escolhida pelo candidato:
 
-### Exemplo 14
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 15
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
 
-### Exemplo 16
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+### Redação 34844
+>- Proposta escolhida pelo candidato:
 
-### Exemplo 17
->- Proposta escolhida pelo candidato: 
->- Pontuação Geral: 
->- Banda: 
+
+
+### Redação 33493
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 33991
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 34292
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 34841
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 35121
+>- Proposta escolhida pelo candidato:
+
+
+### Redação 34714
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 33787
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 33856
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 33870
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 33908
+>- Proposta escolhida pelo candidato:
+
+
+
+### Redação 33930
+>- Proposta escolhida pelo candidato:
+
+
+
+## Avaliação dos exemplos de redações avaliadas
+
+| Redação | Pontuação | Banda |
+|--------:|----------:|:------|
+|   36560 |        28 | alta  |
+|   44497 |        28 | alta  |
+|   34811 |        26 | alta  |
+|   37681 |        26 | alta  |
+|   35240 |        25 | alta  |
+|   34844 |      24.5 | alta  |
+|   33493 |        18 | média |
+|   33991 |      21.5 | média |
+|   34292 |        19 | média |
+|   34841 |        23 | média |
+|   35121 |        21 | média |
+|   34714 |         8 | baixa |
+|   33787 |         9 | baixa |
+|   33856 |      10.5 | baixa |
+|   33870 |        13 | baixa |
+|   33908 |        14 | baixa |
+|   33930 |        17 | baixa |
 

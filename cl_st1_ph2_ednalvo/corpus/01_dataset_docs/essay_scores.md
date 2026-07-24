@@ -1,0 +1,20 @@
+|   Essay |   Score | Band   | Suitable   |
+|--------:|--------:|:-------|:-----------|
+|   36560 |    28   | high   | True       |
+|   44497 |    28   | high   | True       |
+|   34811 |    26   | high   | True       |
+|   37681 |    26   | high   | True       |
+|   35240 |    25   | high   | True       |
+|   34844 |    24.5 | high   | True       |
+|   33493 |    18   | medium | True       |
+|   33083 |    20   | medium | False      |
+|   33991 |    21.5 | medium | True       |
+|   34292 |    19   | medium | True       |
+|   34841 |    23   | medium | True       |
+|   35121 |    21   | medium | True       |
+|   34714 |     8   | low    | True       |
+|   33787 |     9   | low    | True       |
+|   33856 |    10.5 | low    | True       |
+|   33870 |    13   | low    | True       |
+|   33908 |    14   | low    | True       |
+|   33930 |    17   | low    | True       |
