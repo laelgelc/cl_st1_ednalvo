@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c77f5fa0-7ae3-4c81-8402-39c9ac1a70c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/tests/2150000_resumo_ai_assistant.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/tests/2150000_resumo_copilot.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_assessment_prompts/essay_assessment_v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_assessment_prompts/essay_assessment_v1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/essay_generation_v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/essay_generation_v1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/essay_summarisation_v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/essay_summarisation_v1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/tests/2150000_generated_copilot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/tests/2150000_resumo_ai_assistant.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph2_ednalvo/essay_generation_prompts/tests/2150000_resumo_copilot.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="177" />
+    <option name="cachedIndexableFilesCount" value="181" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -181,7 +178,7 @@
       <workItem from="1785235816976" duration="1236000" />
       <workItem from="1785270082308" duration="6011000" />
       <workItem from="1785285020847" duration="2606000" />
-      <workItem from="1785328282548" duration="9142000" />
+      <workItem from="1785328282548" duration="9505000" />
     </task>
     <servers />
   </component>

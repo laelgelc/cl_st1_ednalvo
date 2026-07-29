@@ -1,0 +1,22 @@
+# Redação Gerada 2150000
+
+## Resumo Usado
+A redação afirma que a filosofia empírica, desde Aristóteles, sustenta a ideia de que o ser humano pode controlar a natureza, mas que ele foi irresponsável e hoje enfrenta diversos problemas ambientais. Cita o desastre ocorrido em Barcarena, no Pará, com o naufrágio de uma embarcação que transportava bois, causando derramamento de óleo, morte de animais, fedor, aumento de matéria orgânica no mar e possível ocorrência de Marés Vermelhas. Menciona também os alagamentos em Belém, atribuídos à pouca manutenção do Governo e à falta de conhecimento e preguiça de alguns cidadãos, além da ausência de quintais com grama, descarte inadequado de lixo e falta de árvores, o que contribui para altas temperaturas e queimadas. Por fim, defende que o Governo deve aplicar multas severas e promover projetos escolares sobre conservação ambiental, enquanto a Mídia deve divulgar e fiscalizar medidas governamentais e incentivar pesquisas, para que seja possível “tecer um novo amanhã” em harmonia com a natureza.
+
+## Proposta Escolhida
+Proposta 1 — Texto dissertativo.
+
+## Redação
+### **Entre a arrogância humana e o clamor dos quatro elementos**
+
+Desde Aristóteles, a tradição empírica sustenta que o ser humano, dotado de razão, seria capaz de compreender e controlar a natureza. No entanto, a história recente demonstra que essa pretensa superioridade tem sido exercida de forma irresponsável, resultando em tragédias ambientais que evidenciam o desequilíbrio entre Terra, Fogo, Ar e Água — elementos fundamentais para a vida e para a manutenção da sociedade.
+
+O naufrágio ocorrido em Barcarena, no Pará, é um exemplo emblemático dessa negligência. Conforme registrado no documento, *“Bois mortos em naufrágio em Barcarena acumulam-se na orla de praias tomadas pelo óleo diesel que vazou de embarcação”* . A combinação de matéria orgânica em decomposição e combustível derramado não apenas gerou mau cheiro e contaminação, mas também elevou o risco de fenômenos como Marés Vermelhas, afetando diretamente o equilíbrio da Água e a qualidade do Ar. A Terra, por sua vez, recebe os impactos indiretos desse processo, já que a poluição marinha compromete ecossistemas costeiros e a subsistência de comunidades locais.
+
+Outro episódio que revela a fragilidade da relação humana com os elementos naturais é o rompimento das barragens de rejeitos em Mariana, Minas Gerais. O texto destaca que *“uma enxurrada de lama [...] inundou várias casas no distrito de Bento Rodrigues”* , demonstrando como a má gestão de resíduos industriais pode transformar a Terra em veículo de destruição. A lama tóxica percorreu rios, contaminou a Água, prejudicou o Ar e deixou marcas permanentes na paisagem e na vida das pessoas. A tragédia expôs a incapacidade de empresas e autoridades de garantir segurança mínima na exploração de recursos naturais.
+
+Além dos grandes desastres, problemas cotidianos também revelam a irresponsabilidade humana. Os alagamentos frequentes em Belém, agravados pela falta de manutenção pública e pela negligência de parte da população, mostram como a ausência de áreas permeáveis, o descarte inadequado de lixo e a escassez de árvores intensificam o desequilíbrio entre Terra e Água. A falta de vegetação contribui para o aumento das temperaturas e para a ocorrência de queimadas, afetando diretamente o Fogo e o Ar — elementos que, quando descontrolados, tornam-se agentes de destruição.
+
+Diante desse cenário, é urgente repensar a relação entre sociedade e natureza. O Governo deve adotar políticas rigorosas, aplicando multas severas a práticas poluidoras e investindo em educação ambiental desde a escola. A Mídia, por sua vez, precisa assumir papel ativo na fiscalização das ações governamentais e na divulgação de pesquisas que promovam soluções sustentáveis. Somente com a união entre informação, responsabilidade e ação será possível, como afirma o resumo, “tecer um novo amanhã” em harmonia com os quatro elementos.
+
+Assim, reconhecer a interdependência entre Terra, Fogo, Ar e Água é reconhecer nossa própria vulnerabilidade. A natureza não é um recurso inesgotável a ser dominado, mas um sistema vivo que exige respeito. Se o ser humano deseja garantir seu futuro, deve abandonar a arrogância e assumir, com urgência, a responsabilidade de preservar aquilo que sustenta a vida.
