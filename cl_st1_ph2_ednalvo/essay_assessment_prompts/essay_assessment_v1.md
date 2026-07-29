@@ -13,7 +13,7 @@ Você receberá:
 
 Sua tarefa é:
 
-1. Fornecer sua resposta em documento no formato Markdown entitulado "Avaliação da Redação <ID da Redação>". Obter o 'ID da Redação' a partir do nome do arquivo da redação.
+1. Fornecer sua resposta num documento no formato Markdown entitulado "Avaliação da Redação <ID da Redação>". Obter o 'ID da Redação' a partir do nome do arquivo da redação.
 2. Na seção "Redação Avaliada", transcreva a redação avaliada.
 3. Na seção "Proposta Escolhida", identificar a proposta escolhida pelo candidato, julgando principalmente pelo tipo de texto produzido. Adicionalmente, indicar se o candidato é consistente em sua escolha ou se mistura elementos de ambas as propostas. Informar quando, aparentemente, a redação não corresponder à prova em questão.
 4. Na seção "Avaliação da Redação", avaliar a redação desse candidato indicando as pontuações de cada critério de avaliação, a pontuação total, e a banda, no seguinte formato:

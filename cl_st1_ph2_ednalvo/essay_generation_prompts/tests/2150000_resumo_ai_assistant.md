@@ -1,0 +1,3 @@
+# Resumo da Redação 2150000
+
+A redação afirma que, embora o homem tenha desenvolvido a ideia de controlar a natureza, agiu de forma irresponsável e hoje sofre com problemas ambientais. Cita o naufrágio de uma embarcação em Barcarena, que causou derramamento de óleo, morte de animais, mau cheiro e riscos à vida marinha. Também menciona os alagamentos em Belém, associados à falta de manutenção do governo, ao lixo nas ruas e à ausência de áreas verdes. Como solução, defende multas severas contra crimes ambientais, projetos escolares sobre preservação, fiscalização e divulgação pela mídia, além do incentivo a pesquisas para resolver problemas ambientais.
