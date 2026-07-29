@@ -8,7 +8,7 @@ Primeiro, considere as seguintes seções para aprender o seu trabalho:
 
 Você receberá:
 
-- A [Prova de Redação](#prova-de-redação) proposta aos candidatos, contida nesse documento.
+- A prova de redação proposta aos candidatos.
 - Uma redação composta por um desses candidatos.
 
 Sua tarefa é:
