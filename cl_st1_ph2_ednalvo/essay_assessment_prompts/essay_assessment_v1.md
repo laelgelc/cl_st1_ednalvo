@@ -13,22 +13,23 @@ Você receberá:
 
 Sua tarefa é:
 
-1. Identificar a proposta escolhida pelo candidato, julgando principalmente pelo tipo de texto produzido. Adicionalmente, indicar se o candidato é consistente em sua escolha ou se mistura elementos de ambas as propostas. Informar quando, aparentemente, a redação não corresponder à prova em questão.
+1. Fornecer sua resposta em documento no formato Markdown entitulado "Avaliação da Redação <ID da Redação>". Obter o 'ID da Redação' a partir do nome do arquivo da redação.
+2. Na seção "Proposta Escolhida", identificar a proposta escolhida pelo candidato, julgando principalmente pelo tipo de texto produzido. Adicionalmente, indicar se o candidato é consistente em sua escolha ou se mistura elementos de ambas as propostas. Informar quando, aparentemente, a redação não corresponder à prova em questão.
 
-2. Avaliar a redação desse candidato indicando as pontuações de cada critério de avaliação, a pontuação total, e a banda, no seguinte formato:
+2. Na seção "Avaliação da Redação", avaliar a redação desse candidato indicando as pontuações de cada critério de avaliação, a pontuação total, e a banda, no seguinte formato:
 
-| Critério de Avaliação                       | Pontuação |
-|---------------------------------------------|----------:|
-| 1. Adequação ao Tema                        |           |
-| 2. Adequação à Coletânea (Projeto do Texto) |           |
-| 3. Adequação ao tipo de texto               |           |
-| 4. Adequação à norma padrão                 |           |
-| 5. Coesão                                   |           |
-| 6. Coerência                                |           |
-| Pontuação total                             |           |
-| Banda                                       |           | 
+| **Critério de Avaliação**                   | **Pontuação** |
+|---------------------------------------------|--------------:|
+| 1. Adequação ao Tema                        |               |
+| 2. Adequação à Coletânea (Projeto do Texto) |               |
+| 3. Adequação ao tipo de texto               |               |
+| 4. Adequação à norma padrão                 |               |
+| 5. Coesão                                   |               |
+| 6. Coerência                                |               |
+| **Pontuação Total**                         |               |
+| **Banda**                                   |               | 
 
-3. Explicar o raciocínio utilizado ao avaliar a redação, considerando cada critério e fornecendo uma conclusão geral.
+3. Na seção "Racional da Avaliação", explicar o raciocínio utilizado ao avaliar a redação, considerando cada critério e fornecendo uma conclusão geral.
 
 ## Prova de Redação
 
@@ -114,90 +115,92 @@ A avaliação deve considerar os seguintes critérios:
 
 ### 1. Adequação ao Tema
 
-| Descrição                                                                         | Pontos |
-|-----------------------------------------------------------------------------------|-------:|
-| Abordagem integral e crítica do tema, com profundidade, e argumentação pertinente |    5,0 |
-| Abordagem integral e argumentação pertinente, mas sem aprofundamento              |    4,0 |
-| Abordagem parcial e argumentação pertinente, mas sem aprofundamento               |    3,0 |
-| Abordagem parcial, argumentação pouco pertinente e sem aprofundamento             |    2,0 |
-| Abordagem tangencial, referência mínima e elementos do tema                       |    1,0 |
-| Fuga ao tema                                                                      |    0,0 |
+| **Descrição**                                                                     | **Pontos** |
+|-----------------------------------------------------------------------------------|-----------:|
+| Abordagem integral e crítica do tema, com profundidade, e argumentação pertinente |        5,0 |
+| Abordagem integral e argumentação pertinente, mas sem aprofundamento              |        4,0 |
+| Abordagem parcial e argumentação pertinente, mas sem aprofundamento               |        3,0 |
+| Abordagem parcial, argumentação pouco pertinente e sem aprofundamento             |        2,0 |
+| Abordagem tangencial, referência mínima e elementos do tema                       |        1,0 |
+| Fuga ao tema                                                                      |        0,0 |
 
 ### 2. Adequação à Coletânea (Projeto do Texto)
 
-| Descrição                                                            | Pontos |
-|----------------------------------------------------------------------|-------:|
-| Leitura verticalizada completa (completa e conteúdo aprofundado)     |    5,0 |
-| Leitura incompleta, mas verticalizada (faz referência a sua leitura) |    4,0 |
-| Leitura completa, mas desenvolvimento superficial (paráfrase)        |    3,0 |
-| Leitura incompleta e superficial                                     |    2,0 |
-| Leitura mínima                                                       |    1,0 |
-| Não houve leitura                                                    |    0,0 |
+| **Descrição**                                                        | **Pontos** |
+|----------------------------------------------------------------------|-----------:|
+| Leitura verticalizada completa (completa e conteúdo aprofundado)     |        5,0 |
+| Leitura incompleta, mas verticalizada (faz referência a sua leitura) |        4,0 |
+| Leitura completa, mas desenvolvimento superficial (paráfrase)        |        3,0 |
+| Leitura incompleta e superficial                                     |        2,0 |
+| Leitura mínima                                                       |        1,0 |
+| Não houve leitura                                                    |        0,0 |
 
-Notas:
+Notas ao avaliador:
 
 - "Coletânea" refere-se à escolha do candidato pela "Proposta 1" ou pela "Proposta 2".
 - Ao escolher uma das propostas, o candidato deve demonstrar o quanto completa e aprofundada foi sua leitura.
 
 ### 3. Adequação ao tipo de texto
 
-| Descrição                                                                                                                         | Pontos |
-|-----------------------------------------------------------------------------------------------------------------------------------|-------:|
-| Utilização de todos os elementos da estrutura do tipo de texto solicitado, de forma articulada e consistente                      |    5,0 |
-| Utilização de todos os elementos da estrutura do tipo de texto solicitado, de forma articulada, mas superficial                   |    4,0 |
-| Utilização incompleta de todos os elementos da estrutura do tipo de texto solicitado, mas de forma superficial e pouco articulada |    3,0 |
-| Utilização incompleta de todos os elementos da estrutura do tipo de texto solicitado, mas de forma superficial e pouco articulada |    2,0 |
-| Utilização incompleta, desarticulada e superficial dos elementos da estrutura do tipo de texto solicitado                         |    1,0 |
-| O texto não corresponde ao tipo solicitado                                                                                        |    0,0 |
+| **Descrição**                                                                                                                     | **Pontos** |
+|-----------------------------------------------------------------------------------------------------------------------------------|-----------:|
+| Utilização de todos os elementos da estrutura do tipo de texto solicitado, de forma articulada e consistente                      |        5,0 |
+| Utilização de todos os elementos da estrutura do tipo de texto solicitado, de forma articulada, mas superficial                   |        4,0 |
+| Utilização incompleta de todos os elementos da estrutura do tipo de texto solicitado, mas de forma superficial e pouco articulada |        3,0 |
+| Utilização incompleta de todos os elementos da estrutura do tipo de texto solicitado, mas de forma superficial e pouco articulada |        2,0 |
+| Utilização incompleta, desarticulada e superficial dos elementos da estrutura do tipo de texto solicitado                         |        1,0 |
+| O texto não corresponde ao tipo solicitado                                                                                        |        0,0 |
 
-Notas:
+Notas ao avaliador:
 
 - Cada uma das propostas, "Proposta 1" ou "Proposta 2", corresponde a um tipo de texto.
 - Ao escolher uma das propostas, o candidato deve utilizar todos os elementos da estrutura do tipo de texto solicitado, de forma articulada e consistente.
 
 ### 4. Adequação à norma padrão
 
-| Descrição            | Pontos |
-|----------------------|-------:|
-| Zero a dois desvios  |    5,0 |
-| Três a cinco desvios |    4,0 |
-| Seis a sete desvios  |    3,0 |
-| Oito a nove desvios  |    2,0 |
-| Dez a onze desvios   |    1,0 |
-| Mais de onze desvios |    0,0 |
+| **Descrição**        | **Pontos** |
+|----------------------|-----------:|
+| Zero a dois desvios  |        5,0 |
+| Três a cinco desvios |        4,0 |
+| Seis a sete desvios  |        3,0 |
+| Oito a nove desvios  |        2,0 |
+| Dez a onze desvios   |        1,0 |
+| Mais de onze desvios |        0,0 |
 
 ### 5. Coesão
 
-| Descrição             | Pontos |
-|-----------------------|-------:|
-| Zero desvios          |    5,0 |
-| Um a dois desvios     |    4,0 |
-| Três a quatro desvios |    3,0 |
-| Cinco a seis desvios  |    2,0 |
-| Sete a oito desvios   |    1,0 |
-| Mais de oito desvios  |    0,0 |
+| **Descrição**         | **Pontos** |
+|-----------------------|-----------:|
+| Zero desvios          |        5,0 |
+| Um a dois desvios     |        4,0 |
+| Três a quatro desvios |        3,0 |
+| Cinco a seis desvios  |        2,0 |
+| Sete a oito desvios   |        1,0 |
+| Mais de oito desvios  |        0,0 |
 
 ### 6. Coerência
 
-| Descrição                                                                                                                                   | Pontos |
-|---------------------------------------------------------------------------------------------------------------------------------------------|-------:|
-| Texto coerente: facilmente compreensível, sem precisar de recuperação textual                                                               |    5,0 |
-| Texto parcialmente coerente: compreensível, apresentando um (01) problema de recuperação textual                                            |    4,0 |
-| Texto parcialmente coerente: compreensível, apresentando dois (02) problemas de recuperação textual                                         |    3,0 |
-| Texto parcialmente coerente: dificuldade para ler e compreender, apresentando entre três (03) a cinco (05) problemas de recuperação textual |    2,0 |
-| Texto incoerente: dificuldade para ler e compreender, apresentando entre seis (06) a sete (07) problemas de recuperação textual             |    1,0 |
-| Texto incoerente: leitura comprometida                                                                                                      |    0,0 |
+| **Descrição**                                                                                                                               | **Pontos** |
+|---------------------------------------------------------------------------------------------------------------------------------------------|-----------:|
+| Texto coerente: facilmente compreensível, sem precisar de recuperação textual                                                               |        5,0 |
+| Texto parcialmente coerente: compreensível, apresentando um (01) problema de recuperação textual                                            |        4,0 |
+| Texto parcialmente coerente: compreensível, apresentando dois (02) problemas de recuperação textual                                         |        3,0 |
+| Texto parcialmente coerente: dificuldade para ler e compreender, apresentando entre três (03) a cinco (05) problemas de recuperação textual |        2,0 |
+| Texto incoerente: dificuldade para ler e compreender, apresentando entre seis (06) a sete (07) problemas de recuperação textual             |        1,0 |
+| Texto incoerente: leitura comprometida                                                                                                      |        0,0 |
 
-| Pontuação Geral | Banda |
-|-----------------|-------|
-| 24,0 a 30,0     | alta  |
-| 18,0 a 23,5     | média |
-| 0,0 a 17,5      | baixa |
+### Definição de Bandas
+
+| **Pontuação Total** | **Banda** |
+|---------------------|-----------|
+| 24,0 a 30,0         | alta      |
+| 18,0 a 23,5         | média     |
+| 0,0 a 17,5          | baixa     |
 
 
 ## Exemplos de Redações Avaliadas
 
-Nota: As anotações entre chaves indicam pontos do texto onde foram introduzidas correções ortográficas. No exemplo abaixo, a palavra "más" foi corrigida para "mas" e a forma original (FO) foi mantida entre chaves.
+Nota ao avaliador: As anotações entre chaves indicam pontos do texto onde foram introduzidas correções ortográficas. No exemplo abaixo, a palavra "más" foi corrigida para "mas" e a forma original (FO) foi mantida entre chaves. Considere essas anotações em favor da sua compreensão da redação.
 
 > Os quatro elementos conseguiram transformar um mas {FO: más} sabiam que se todos não seguissem a linha de responsabilidade ambiental, a vida e o equilíbrio seriam acabados.
 
@@ -527,23 +530,23 @@ Não adianta apenas apontar os culpados, deve-se punir economicamente e prender 
 
 ### Avaliação dos exemplos de redações avaliadas
 
-| Redação | 1. Adequação ao Tema | 2. Adequação à Coletânea (Projeto do Texto) | 3. Adequação ao tipo de texto | 4. Adequação à norma padrão | 5. Coesão | 6. Coerência | Pontuação total | Banda |
-|--------:|:---------------------|:--------------------------------------------|:------------------------------|:----------------------------|:----------|:-------------|:----------------|-------|
-|   36560 | 4,50                 | 4,50                                        | 4,50                          | 5,00                        | 5,00      | 4,50         | 28,00           | alta  |
-|   44497 | 4,00                 | 4,00                                        | 5,00                          | 5,00                        | 5,00      | 5,00         | 28,00           | alta  |
-|   34811 | 4,00                 | 4,00                                        | 4,00                          | 5,00                        | 5,00      | 4,00         | 26,00           | alta  |
-|   37681 | 4,50                 | 4,00                                        | 4,00                          | 4,50                        | 5,00      | 4,00         | 26,00           | alta  |
-|   35240 | 4,00                 | 3,50                                        | 4,50                          | 4,00                        | 4,00      | 5,00         | 25,00           | alta  |
-|   34844 | 3,00                 | 3,00                                        | 4,00                          | 5,00                        | 5,00      | 4,50         | 24,50           | alta  |
-|   33493 | 3,50                 | 2,50                                        | 3,00                          | 1,50                        | 3,50      | 4,00         | 18,00           | média |
-|   33083 | 2,50                 | 2,50                                        | 3,50                          | 4,50                        | 3,50      | 3,50         | 20,00           | média |
-|   33991 | 3,50                 | 3,00                                        | 3,50                          | 3,00                        | 4,50      | 4,00         | 21,50           | média |
-|   34292 | 4,00                 | 4,00                                        | 4,00                          | 3,00                        | 0,00      | 4,00         | 19,00           | média |
-|   34841 | 3,50                 | 3,50                                        | 4,00                          | 4,50                        | 3,50      | 4,00         | 23,00           | média |
-|   35121 | 4,00                 | 3,50                                        | 2,50                          | 4,00                        | 3,00      | 4,00         | 21,00           | média |
-|   34714 | 2,00                 | 1,00                                        | 2,00                          | 0,00                        | 1,00      | 2,00         | 8,00            | baixa |
-|   33787 | 1,00                 | 1,00                                        | 2,00                          | 1,00                        | 3,00      | 1,00         | 9,00            | baixa |
-|   33856 | 2,50                 | 2,50                                        | 2,00                          | 0,00                        | 1,50      | 2,00         | 10,50           | baixa |
-|   33870 | 2,00                 | 2,50                                        | 2,00                          | 0,00                        | 3,00      | 3,50         | 13,00           | baixa |
-|   33908 | 2,00                 | 2,00                                        | 3,00                          | 1,00                        | 4,00      | 2,00         | 14,00           | baixa |
-|   33930 | 3,00                 | 2,50                                        | 3,00                          | 2,00                        | 3,50      | 3,00         | 17,00           | baixa |
+| **Redação** | **1. Adequação ao Tema** | **2. Adequação à Coletânea (Projeto do Texto)** | **3. Adequação ao tipo de texto** | **4. Adequação à norma padrão** | **5. Coesão** | **6. Coerência** | **Pontuação Total** | **Banda** |
+|------------:|:-------------------------|:------------------------------------------------|:----------------------------------|:--------------------------------|:--------------|:-----------------|:--------------------|-----------|
+|       36560 | 4,50                     | 4,50                                            | 4,50                              | 5,00                            | 5,00          | 4,50             | 28,00               | alta      |
+|       44497 | 4,00                     | 4,00                                            | 5,00                              | 5,00                            | 5,00          | 5,00             | 28,00               | alta      |
+|       34811 | 4,00                     | 4,00                                            | 4,00                              | 5,00                            | 5,00          | 4,00             | 26,00               | alta      |
+|       37681 | 4,50                     | 4,00                                            | 4,00                              | 4,50                            | 5,00          | 4,00             | 26,00               | alta      |
+|       35240 | 4,00                     | 3,50                                            | 4,50                              | 4,00                            | 4,00          | 5,00             | 25,00               | alta      |
+|       34844 | 3,00                     | 3,00                                            | 4,00                              | 5,00                            | 5,00          | 4,50             | 24,50               | alta      |
+|       33493 | 3,50                     | 2,50                                            | 3,00                              | 1,50                            | 3,50          | 4,00             | 18,00               | média     |
+|       33083 | 2,50                     | 2,50                                            | 3,50                              | 4,50                            | 3,50          | 3,50             | 20,00               | média     |
+|       33991 | 3,50                     | 3,00                                            | 3,50                              | 3,00                            | 4,50          | 4,00             | 21,50               | média     |
+|       34292 | 4,00                     | 4,00                                            | 4,00                              | 3,00                            | 0,00          | 4,00             | 19,00               | média     |
+|       34841 | 3,50                     | 3,50                                            | 4,00                              | 4,50                            | 3,50          | 4,00             | 23,00               | média     |
+|       35121 | 4,00                     | 3,50                                            | 2,50                              | 4,00                            | 3,00          | 4,00             | 21,00               | média     |
+|       34714 | 2,00                     | 1,00                                            | 2,00                              | 0,00                            | 1,00          | 2,00             | 8,00                | baixa     |
+|       33787 | 1,00                     | 1,00                                            | 2,00                              | 1,00                            | 3,00          | 1,00             | 9,00                | baixa     |
+|       33856 | 2,50                     | 2,50                                            | 2,00                              | 0,00                            | 1,50          | 2,00             | 10,50               | baixa     |
+|       33870 | 2,00                     | 2,50                                            | 2,00                              | 0,00                            | 3,00          | 3,50             | 13,00               | baixa     |
+|       33908 | 2,00                     | 2,00                                            | 3,00                              | 1,00                            | 4,00          | 2,00             | 14,00               | baixa     |
+|       33930 | 3,00                     | 2,50                                            | 3,00                              | 2,00                            | 3,50          | 3,00             | 17,00               | baixa     |
