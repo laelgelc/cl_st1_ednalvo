@@ -26,7 +26,6 @@ python gere_llm_resumo_ou_composicao.py componha \
   --output-dir corpus/01_composicoes/menores_notas_gpt \
   --model gpt-5.6-sol \
   --prompt prompts_de_geracao_de_composicoes/geracao_de_composicao_v1.md
-  --test-mode
 ```
 
 ### Full run mode
