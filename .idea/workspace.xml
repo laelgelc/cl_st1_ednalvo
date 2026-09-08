@@ -4,14 +4,518 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77f5fa0-7ae3-4c81-8402-39c9ac1a70c6" name="Changes" comment="" />
+    <list default="true" id="c77f5fa0-7ae3-4c81-8402-39c9ac1a70c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/cl_st1_ph3_ednalvo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_AIRiAL_refeita.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32610 (0463-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32674 (0460-006)(2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32714 (0429-001) REV.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32733 (0429-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32749 (0411-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32755 (0410-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32757 (0469-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32782 (0439-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32792 (0453-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32860 (0412-010)(1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/32875 (0413-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33083_(0496-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33167_0410-030.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33228 (0509-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33310 (0508-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33360 (0410-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33383 (0438-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33436 (0429-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33465 (0453-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33497 (0453-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33645 (0410-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33669 (0477-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33787 (0439-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33789 (0421-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33849 (0416-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33856 (0470-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33862 (0498-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33871 (0434-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33879 (0521-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33890 (0473-037).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33895 (0458-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33914 (0406-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33927 (0415-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33948 (0490-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33964 (0428-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33975 (0482-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33978 (0516-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33991 (0455-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/33999 (0510-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34009 (0518-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34025 (0468-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34032 (0500-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34046 (0490-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34050 (0482-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34084 (0471-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34086 (0469-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34096 (0414-037)_normalizada_FO.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34116 (0506-037).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34148 (0476-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34175 (0514-037).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34185 (0462-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34210 (0466-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34236 (0492-034).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34251 (0511-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34273 (0472-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34277 (0508-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34281 (0495-034).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34306 (0417-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34308 (0406-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34353 (0416-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34356 (0528-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34362 (0452-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34381 (0516-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34419 (0521-040)_corrigido.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34461 (0478-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34511 (0415-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34537 (0502-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34613 (0472-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34616 (0453-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34618 (0409-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34637 (0504-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34638 (0449-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34641 (0511-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34642 (0432-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34648 (0510-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34652 (0511-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34675 (0455-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34698 (0514-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34714 (0433-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34717 (0507-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34726 (0409-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34743 (0417-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34754 (0484-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34802 (0513-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34807 (0507-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34811 (0517-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34813 (0453-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34823 (0429-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34832 (0518-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34841 (0495-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34844 (0498-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34875 (0473-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34895 (0508-053).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34901 (0443-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34967 (0499-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34971 (0492-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/34994 (0490-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35019 (0466-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35028 (0421-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35053 (0467-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35056 (0406-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35071 (0483-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35072 (0496-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35077 (0491-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35100 (0454-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35121 (0528-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35125 (0491-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35126 (0455-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35131 (0436-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35134 (0457-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35136 (0505-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35163 (0471-035).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35173 (0462-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35198 (0450-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35214 (0462-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35217 (0435-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35220 (0507-037).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35228 (0460-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35240 (0502-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35247 (0498-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35278 (0481-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35291 (0499-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35378 (0512-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35400 (0491-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35451 (0522-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35457 (0524-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35464 (0484-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35465 (0526-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35482 (0417-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35485 (0453-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35496 (0476-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35497 (0483-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35542 (0484-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35549 (0507-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35577 (0524-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35633 (0406-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35647 (0455-040).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35661 (0479-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35733 (0487-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35734 (0513-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35750 (0421-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35763 (0512-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35789 (0513-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35819 (0498-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35820 (0424-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35852 (0525-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35865 (0517-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35867 (0419-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35892 (0513-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35906 (0511-049).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35911 (0422-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35928 (0400-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35934 (0481-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35937 (0420-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35979 (0437-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35986 (0507-040).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/35994 (0513-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36000 (0508-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36006 (0423-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36030 (0497-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36064 (0513-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36068 (0492-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36074 (0510-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36079 (0451-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36085 (0507-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36090 (0509-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36095 (0422-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36137 (0497-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36140 (0492-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36163 (0455-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36172 (0508-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36181 (0506-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36188 (0483-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36214 (0516-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36225 (0490-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36237 (0519-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36238 (0479-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36245 (0475-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36248 (0518-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36260 (0518-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36261 (0456-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36278 (0511-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36280 (0457-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36295 (0514-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36307 (0489-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36330 (0472-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36341 (0506-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36349 (0479-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36385 (0487-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36403 (0434-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36415 (0505-042).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36430 (0482-032).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36436 (0482-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36441 (0505-043).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36442 (0516-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36471 (0517-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36494 (0510-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36503 (0517-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36515 (0476-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36522 (0429-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36524 (0522-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36532 (0460-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36547 (0468-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36551 (0497-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36560 (0502-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36566 (0402-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36577 (0495-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36578 (0525-032).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36590 (0422-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36616 (0485-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36626 (0487-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36650 (0487-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36691 (0498-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36704 (0453-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36707 (0489-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36721 (0432-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36727 (0417-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36742 (0524-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36743 (0475-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36769 (0417-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36777 (0454-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36782 (0455-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36794 (0471-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36797 (0498-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36822 (0404-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36827(1) (0513-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36845 (0509-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36856 (0475-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36862 (0483-035).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36867 (0507-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36872 (0494-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36923 (0416-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36926 (0510-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36937 (0510-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36945 (0512-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36966 (0517-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36973 (0478-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36976 (0413-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/36988 (0488-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37010 (0524-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37015 (0454-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37034 (0525-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37043 (0448-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37063 (0459-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37078 (0447-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37094 (0422-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37099 (0448-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37102 (0454-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37126 (0417-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37158 (0413-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37193 (0421-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37212 (0403-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37224 (0524-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37260 (0409-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37284 (0526-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37293 (0416-035).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37321 (0513-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37345 (0524-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37362 (0510-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37376 (0406-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37377 (0499-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37386 (0482-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37416 (0453-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37442 (0527-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37480 (0417-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37489 (0448-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37525 (0409-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37602 (0518-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37605 (0490-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37612 (0500-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37655 (0414-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37662 (0483-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37664 (0505-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37677 (0402-034).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37681 (0477-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37687 (0473-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37694 (0405-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37734 (0436-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37753 (0526-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37754 (0460-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37783 (0417-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37801 (0507-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37817 (0507-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37858 (0425-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37922 (0487-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37924 (0454-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37949 (0432-032).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37961 (0510-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37994 (0423-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/37999 (0401-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38002 (0519-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38020 (0464-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38036 (0467-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38047 (0496-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38061 (0416-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38080 (0512-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38105 (0469-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38158 (0413-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38172 (0446-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38193 (0404-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38196 (0414-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38204 (0465-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38226 (0481-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38236 (0455-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38284 (0514-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38310 (0413-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38333 (0516-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38340 (0460-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38367 (0485-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38392 (0521-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38395 (0526-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38406 (0457-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38437 (0495-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38439 (0509-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38445 (0509-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38451 (0496-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38469 (0427-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38475 (0512-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38493 (0503-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38495 (0520-035).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38499 (0507-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38506 (0468-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38536 (0468-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38555 (0465-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38562 (0416-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38584 (0402-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38612 (0506-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38632 (0400-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38637 (0464-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38641 (0517-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38670 (0507-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38672 (0492-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38674 (0515-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38677 (0401-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38742 (0529-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38764 (0405-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38784 (0457-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38786 (0420-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38794 (0452-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38845 (0414-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38848 (0414-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38891 (0425-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38917 (0410-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38928 (0432-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38957 (0529-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38958 (0402-035).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/38970 (0508-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39063 (0415-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39065 (0406-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39108 (0521-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39124 (0429-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39131 (0479-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39164 (0513-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39227 (0456-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39244 (0467-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39298 (0469-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39302 (0460-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39305 (0522-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39349 (0470-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39379 (0429-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39436 (0479-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39446 (0449-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39465 (0435-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39493 (0490-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39502 (0508-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39509 (0496-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39516 (0511-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39561 (0477-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39585 (0477-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39608 (0477-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39614 (0477-017).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39615 (0461-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39635 (0496-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39648 (0503-028).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39650 (0476-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39663 (0424-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39684 (0502-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39695 (0500-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39701 (0411-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39715 (0435-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39716 (0461-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39722 (0466-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39727 (0489-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39786 (0444-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39810 (0510-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39833 (0418-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39896 (0470-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39912 (0529-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39914 (0526-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39956 (0426-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39985 (0409-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/39989 (0478-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40004 (0414-040).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40013 (0472-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40021 (0485-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40024 (0438-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40060 (0449-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40126 (0401-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40127 (0433-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40130 (0469-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40134 (0476-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40140 (0491-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40173 (0478-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40256 (0470-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40270 (0447-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40286 (0495-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40289 (0435-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40297 (0402-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40362 (0428-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40368 (0507-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40426 (0469-032).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40429 (0413-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40449 (0455-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40461 (0489-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40496 (0507-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40523 (0496-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40548 (0519-038).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40580 (0457-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40615 (0464-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40617 (0507-036).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40621 (0519-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40663 (0523-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40676 (0485-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40688 (0502-014).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40690 (0466-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40697 (0456-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40710 (0489-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40713 (0495-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40765 (0441-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40772 (0449-013).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40803 (0503-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40865 (0452-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40869 (0458-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40887 (0411-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40898 (0524-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40906 (0450-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40926 (0468-023).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40929 (0483-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40943 (0480-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40975 (0521-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/40978 (0452-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/41011 (0463-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/41022 (0510-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/41023 (0455-016).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/41088 (0432-012).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/41093 (0471-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/41096 (0413-006).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45015 (0501-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45044 (0502-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45059 (0422-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45075 (0486-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45078 (0504-003).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45081 (0485-025).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45124 (0509-001).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45141 (0517-040).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45169 (0489-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45186 (0519-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45241 (0498-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45268 (0423-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45279 (0521-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45355 (0477-030).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45357 (0460-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45389 (0400-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45519 (0497-032).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45531 (0448-021).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45576 (0456-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45638 (0524-004).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45667 (0506-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45746 (0439-024).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/45996 (0422-015).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46003 (0416-011).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46034 (0480-005).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46108 (0504-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46249 (0505-031).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46255 (0518-029).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46260 (0473-022).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46273 (0527-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46276 (0502-034).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46288 (0477-026).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46290 (0414-035).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46321 (0443-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46479 (0514-039).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46597 (0517-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46626 (0410-010).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46656 (0414-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46687 (0431-018).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46699 (0432-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46705 (0526-008).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46711 (0477-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46724 (0508-033).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46743 (0495-027).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46771 (0519-007).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46946 (0415-019).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/46998 (0507-048).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/47002 (0520-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/47010 (0411-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/47046 (0453-009).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/47068 (0450-002).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/47099 (0473-020).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/corpus/00_sources/500_redacoes_airial_maiores_e_menores_notas/47123 (0479-016).txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="182" />
+    <option name="cachedIndexableFilesCount" value="1182" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -43,23 +547,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7259574977793832" />
-      <entry key="MS500" value="4.785605844003669" />
-      <entry key="S2" value="7.48265605240802" />
-      <entry key="S5" value="8.339905801270683" />
-      <entry key="S10" value="8.660282281564612" />
-      <entry key="S30" value="8.88453018366059" />
-      <entry key="S60" value="8.94198100313074" />
-      <entry key="M2" value="8.97091907814817" />
-      <entry key="M5" value="8.990461233803106" />
-      <entry key="M10" value="9.488689234725971" />
-      <entry key="M15" value="12.652403495503288" />
-      <entry key="M30" value="43.69095801310614" />
-      <entry key="H1" value="147.53263666469107" />
-      <entry key="H2" value="395.67737573937427" />
-      <entry key="H4" value="946.93226401599" />
-      <entry key="D1" value="3690.7039883879784" />
-      <entry key="W1" value="5058.916600299868" />
+      <entry key="MS100" value="1.637817490283763" />
+      <entry key="MS500" value="4.893792488524543" />
+      <entry key="S2" value="7.567737039821735" />
+      <entry key="S5" value="8.382182569141428" />
+      <entry key="S10" value="8.68467725743125" />
+      <entry key="S30" value="9.521938351958632" />
+      <entry key="S60" value="15.721822373889898" />
+      <entry key="M2" value="36.19656775171927" />
+      <entry key="M5" value="85.22839378204829" />
+      <entry key="M10" value="160.2533314107975" />
+      <entry key="M15" value="249.74017273465824" />
+      <entry key="M30" value="512.4350845550148" />
+      <entry key="H1" value="872.3076912280169" />
+      <entry key="H2" value="1312.3733707901592" />
+      <entry key="H4" value="1972.325459271269" />
+      <entry key="D1" value="4963.613322724929" />
+      <entry key="W1" value="6518.035431659423" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -68,36 +572,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="5.258963570178849E-195" />
-      <entry key="M2" value="7.25187118623785E-98" />
-      <entry key="M5" value="1.3937344420216596E-39" />
-      <entry key="M10" value="3.7332752939231125E-20" />
-      <entry key="M15" value="1.1170175866547978E-13" />
-      <entry key="M30" value="3.3421918752864163E-7" />
-      <entry key="H1" value="5.791442029481313E-4" />
-      <entry key="H2" value="0.025058037806572495" />
-      <entry key="H4" value="0.1869046982642811" />
-      <entry key="D1" value="1.2959591810925264" />
-      <entry key="W1" value="1.8777986918084935" />
+      <entry key="S60" value="4.1353390951635844E-228" />
+      <entry key="M2" value="2.033553317511813E-114" />
+      <entry key="M5" value="3.3365852489172095E-46" />
+      <entry key="M10" value="1.8266322150113213E-23" />
+      <entry key="M15" value="6.935866763080287E-16" />
+      <entry key="M30" value="2.6336117103149842E-8" />
+      <entry key="H1" value="1.6257242963955266E-4" />
+      <entry key="H2" value="0.013276302875723971" />
+      <entry key="H4" value="0.13604583926858996" />
+      <entry key="D1" value="1.229142296751236" />
+      <entry key="W1" value="1.8636522011267462" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6618416201315576" />
-      <entry key="MS500" value="4.735996851289759" />
-      <entry key="S2" value="7.462071771919145" />
-      <entry key="S5" value="8.330677345911404" />
-      <entry key="S10" value="8.655484673424436" />
-      <entry key="S30" value="8.882888450410459" />
-      <entry key="S60" value="8.941154704996665" />
-      <entry key="M2" value="8.970504562410538" />
-      <entry key="M5" value="8.990295074482665" />
-      <entry key="M10" value="9.488603034163603" />
-      <entry key="M15" value="12.652332249740025" />
-      <entry key="M30" value="43.69085302375972" />
-      <entry key="H1" value="147.5330141953175" />
-      <entry key="H2" value="395.70205837149814" />
-      <entry key="H4" value="947.1186219991606" />
-      <entry key="D1" value="3691.999565339233" />
-      <entry key="W1" value="5060.794323871155" />
+      <entry key="MS100" value="1.5888894547364707" />
+      <entry key="MS500" value="4.819275257424891" />
+      <entry key="S2" value="7.529231545389487" />
+      <entry key="S5" value="8.364136983355444" />
+      <entry key="S10" value="8.675154445399237" />
+      <entry key="S30" value="9.518470942872677" />
+      <entry key="S60" value="15.71957913222567" />
+      <entry key="M2" value="36.19478271676679" />
+      <entry key="M5" value="85.22703379708281" />
+      <entry key="M10" value="160.25191404604803" />
+      <entry key="M15" value="249.73862205993368" />
+      <entry key="M30" value="512.4335085536223" />
+      <entry key="H1" value="872.3065615323488" />
+      <entry key="H2" value="1312.3856468261865" />
+      <entry key="H4" value="1972.4606465959812" />
+      <entry key="D1" value="4964.842015855736" />
+      <entry key="W1" value="6519.898996662752" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -109,31 +613,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eyamrog/PycharmProjects/cl_st1_ednalvo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eyamrog/PycharmProjects/cl_st1_ednalvo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>
@@ -146,8 +651,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.8665.309" />
-        <option value="bundled-python-sdk-c6d794e1806d-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.8665.309" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.10315.174" />
+        <option value="bundled-python-sdk-eff1e8def5f5-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10315.174" />
       </set>
     </attachedChunks>
   </component>
@@ -175,6 +680,7 @@
       <workItem from="1785270082308" duration="6011000" />
       <workItem from="1785285020847" duration="2606000" />
       <workItem from="1785328282548" duration="12366000" />
+      <workItem from="1788882670506" duration="8332000" />
     </task>
     <servers />
   </component>

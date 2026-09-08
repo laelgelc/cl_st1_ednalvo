@@ -1,0 +1,501 @@
+grupo	inscricao	arquivo_original	caminho_em_composicoes_brutas	anotacoes	adequacao_ao_tema	adequacao_a_coletanea	adequacao_ao_tipo_de_texto	adequacao_a_norma_padrao	coesao	coerencia	pontuacao_total
+250_maiores_notas	36237	36237 (0519-029).txt	corpus/01_composicoes_brutas/maiores_notas/36237.txt	{FO: inc findas}	4.5	5	5	5	5	5	29.5
+250_maiores_notas	46656	46656 (0414-009).txt	corpus/01_composicoes_brutas/maiores_notas/46656.txt		5	5	4	4.5	5	5	28.5
+250_maiores_notas	36560	36560 (0502-031).txt	corpus/01_composicoes_brutas/maiores_notas/36560.txt	{FO: poluição}; {FO: más}	4.5	4.5	4.5	5	5	4.5	28
+250_maiores_notas	36923	36923 (0416-024).txt	corpus/01_composicoes_brutas/maiores_notas/36923.txt		5	4	4.5	5	5	4.5	28
+250_maiores_notas	45355	45355 (0477-030).txt	corpus/01_composicoes_brutas/maiores_notas/45355.txt	(terra, fogo, ar e água); (terra, fogo, ar e água)	4.5	4.5	4.5	5	5	4.5	28
+250_maiores_notas	35994	35994 (0513-004).txt	corpus/01_composicoes_brutas/maiores_notas/35994.txt	{FO: matéria prima}; {FO: sustentavel}; {FO: geografa}	4.5	4.5	4.5	4.5	5	4.5	27.5
+250_maiores_notas	40127	40127 (0433-014).txt	corpus/01_composicoes_brutas/maiores_notas/40127.txt	{FO: demasiada}; {FO: à}; {FO: hidroelétricas}; (terra); (fogo, água, terra e ar)	5	3	5	5	4.5	5	27.5
+250_maiores_notas	40621	40621 (0519-033).txt	corpus/01_composicoes_brutas/maiores_notas/40621.txt		4.5	5	5	4	3	5	26.5
+250_maiores_notas	34726	34726 (0409-003).txt	corpus/01_composicoes_brutas/maiores_notas/34726.txt	{FO: vêm}; {FO: matérias-primas}; {FO: econômicas}; {FO: provêm}; {FO: indústrias}; {FO: poluido}; (natureza e humanidade)	5	3	3.5	5	5	4.5	26
+250_maiores_notas	34811	34811 (0517-014).txt	corpus/01_composicoes_brutas/maiores_notas/34811.txt		4	4	4	5	5	4	26
+250_maiores_notas	36280	36280 (0457-003).txt	corpus/01_composicoes_brutas/maiores_notas/36280.txt	{FO: afetará?}	5	4	5	4	5	3	26
+250_maiores_notas	37681	37681 (0477-016).txt	corpus/01_composicoes_brutas/maiores_notas/37681.txt		4.5	4	4	4.5	5	4	26
+250_maiores_notas	39896	39896 (0470-006).txt	corpus/01_composicoes_brutas/maiores_notas/39896.txt	(petróleo e carvão mineral)	4	3.5	4.5	5	5	4	26
+250_maiores_notas	38047	38047 (0496-031).txt	corpus/01_composicoes_brutas/maiores_notas/38047.txt		3.5	3.5	5	5	4.5	4	25.5
+250_maiores_notas	39608	39608 (0477-031).txt	corpus/01_composicoes_brutas/maiores_notas/39608.txt	[extração]	4	4	4.5	4	5	4	25.5
+250_maiores_notas	40140	40140 (0491-029).txt	corpus/01_composicoes_brutas/maiores_notas/40140.txt	{FO: enquanto}	4.5	4.5	4.5	4	4	4	25.5
+250_maiores_notas	35240	35240 (0502-029).txt	corpus/01_composicoes_brutas/maiores_notas/35240.txt	(rodovias e loteamento); (agropecuária); (hidrelétricas, projetos mineralúrgicos e, mais recentemente, o desastre em Vila do Conde); (carvoarias)	4	3.5	4.5	4	4	5	25
+250_maiores_notas	36415	36415 (0505-042).txt	corpus/01_composicoes_brutas/maiores_notas/36415.txt	{FO: visível}; {FO: fotosíntese}	4	4	4	5	4	4	25
+250_maiores_notas	33890	33890 (0473-037).txt	corpus/01_composicoes_brutas/maiores_notas/33890.txt		3.5	3	4	4	5	5	24.5
+250_maiores_notas	34096	34096 (0414-037)_normalizada_FO.txt	corpus/01_composicoes_brutas/maiores_notas/34096.txt	{FO: catastrofes}; {FO: vem}; {FO: orgãos}	4.5	4	4	3.5	3.5	5	24.5
+250_maiores_notas	34148	34148 (0476-030).txt	corpus/01_composicoes_brutas/maiores_notas/34148.txt		4	3.5	3.5	4.5	4	5	24.5
+250_maiores_notas	34813	34813 (0453-015).txt	corpus/01_composicoes_brutas/maiores_notas/34813.txt		4	4	4	5	3	4.5	24.5
+250_maiores_notas	34844	34844 (0498-016).txt	corpus/01_composicoes_brutas/maiores_notas/34844.txt	{FO: seres-vivos}; {FO: vem}	3	3	4	5	5	4.5	24.5
+250_maiores_notas	36030	36030 (0497-031).txt	corpus/01_composicoes_brutas/maiores_notas/36030.txt	{FO: mau}; {FO: maus tratos}; {FO: têm}	4	4	4	5	3.5	4	24.5
+250_maiores_notas	37293	37293 (0416-035).txt	corpus/01_composicoes_brutas/maiores_notas/37293.txt		3.5	3.5	4.5	4.5	4	4.5	24.5
+250_maiores_notas	38333	38333 (0516-008).txt	corpus/01_composicoes_brutas/maiores_notas/38333.txt		4.5	4.5	4	5	4	2.5	24.5
+250_maiores_notas	39561	39561 (0477-011).txt	corpus/01_composicoes_brutas/maiores_notas/39561.txt		4	4	4	4	4.5	4	24.5
+250_maiores_notas	36349	36349 (0479-030).txt	corpus/01_composicoes_brutas/maiores_notas/36349.txt		4	3.5	3.5	5	4	4	24
+250_maiores_notas	36441	36441 (0505-043).txt	corpus/01_composicoes_brutas/maiores_notas/36441.txt		4	4	3	5	4	4	24
+250_maiores_notas	37321	37321 (0513-039).txt	corpus/01_composicoes_brutas/maiores_notas/37321.txt		3.5	3.5	4.5	4	4	4.5	24
+250_maiores_notas	38105	38105 (0469-030).txt	corpus/01_composicoes_brutas/maiores_notas/38105.txt		4	3.5	4	4.5	4	4	24
+250_maiores_notas	40134	40134 (0476-007).txt	corpus/01_composicoes_brutas/maiores_notas/40134.txt	{FO: dizem}; (como por exemplo: poluição dos rios e perca {FO: perda} da biodiversidade); (prejuízos para reparação dos danos); (prejuízos que afetem diretamente a população local)	4	4	3.5	4	4	4.5	24
+250_maiores_notas	40676	40676 (0485-015).txt	corpus/01_composicoes_brutas/maiores_notas/40676.txt		4	4.5	4.5	4	3	4	24
+250_maiores_notas	46260	46260 (0473-022).txt	corpus/01_composicoes_brutas/maiores_notas/46260.txt		4	2	5	4	4	5	24
+250_maiores_notas	46711	46711 (0477-007).txt	corpus/01_composicoes_brutas/maiores_notas/46711.txt		4	4	4	3.5	4.5	4	24
+250_maiores_notas	35400	35400 (0491-021).txt	corpus/01_composicoes_brutas/maiores_notas/35400.txt	{FO: inundou}; (o que causa a morte de animais aquáticos e a eutrofização {FO: eutropização} dos rios e lagos); (no qual provoca aumento do efeito estufa, alteração dos climas regionais e doenças de pele e cardiorrespiratória nos homens); {FO: antrópicas}	4	4	4.5	3.5	3	4.5	23.5
+250_maiores_notas	35733	35733 (0487-028).txt	corpus/01_composicoes_brutas/maiores_notas/35733.txt		4	4	4	5	3	3.5	23.5
+250_maiores_notas	35819	35819 (0498-008).txt	corpus/01_composicoes_brutas/maiores_notas/35819.txt		3	3.5	3.5	4.5	5	4	23.5
+250_maiores_notas	36403	36403 (0434-002).txt	corpus/01_composicoes_brutas/maiores_notas/36403.txt	(CFC's); (esgoto); {FO: mau-cheiro}	5	4.5	4	3	3	4	23.5
+250_maiores_notas	37193	37193 (0421-010).txt	corpus/01_composicoes_brutas/maiores_notas/37193.txt	{FO: sólido}; {FO: além}; {FO: físico-químico}; {FO: há}	4	3	4.5	4	4	4	23.5
+250_maiores_notas	37525	37525 (0409-014).txt	corpus/01_composicoes_brutas/maiores_notas/37525.txt	{FO: soltados}	4	2.5	4	5	4	4	23.5
+250_maiores_notas	37605	37605 (0490-024).txt	corpus/01_composicoes_brutas/maiores_notas/37605.txt	{FO: Tucuruí}; (no Pará); {FO: Desflorestamento}	2.5	1.5	4.5	5	5	5	23.5
+250_maiores_notas	37924	37924 (0454-003).txt	corpus/01_composicoes_brutas/maiores_notas/37924.txt		4	2.5	4.5	4	4	4.5	23.5
+250_maiores_notas	38475	38475 (0512-004).txt	corpus/01_composicoes_brutas/maiores_notas/38475.txt	(des)	3.5	4	4	4	4.5	3.5	23.5
+250_maiores_notas	40021	40021 (0485-016).txt	corpus/01_composicoes_brutas/maiores_notas/40021.txt		3.5	3	4.5	5	4	3.5	23.5
+250_maiores_notas	40548	40548 (0519-038).txt	corpus/01_composicoes_brutas/maiores_notas/40548.txt		4	4	3.5	4	4	4	23.5
+250_maiores_notas	40772	40772 (0449-013).txt	corpus/01_composicoes_brutas/maiores_notas/40772.txt	{FO: agua}; {FO: agua}	5	4	4.5	2.5	3	4.5	23.5
+250_maiores_notas	34306	34306 (0417-028).txt	corpus/01_composicoes_brutas/maiores_notas/34306.txt	{FO: importâncias}; {FO: científicos}; {FO: inúmeros}; {FO: benefícios}; {FO: irresponsavel}; {FO: serios}; {FO: prejuizos}; {FO: consequências}; {FO: proximas}; {FO: agricolas}; {FO: agua}; {FO: hidrica}; (onde a maior parte lançada pelas indústrias); {FO: inumeros}; {FO: gás}; {FO: agua}	4	3	4	4	4	4	23
+250_maiores_notas	34841	34841 (0495-021).txt	corpus/01_composicoes_brutas/maiores_notas/34841.txt	(CET)	3.5	3.5	4	4.5	3.5	4	23
+250_maiores_notas	35134	35134 (0457-009).txt	corpus/01_composicoes_brutas/maiores_notas/35134.txt	(Minas Gerais, Brasil)	3	3.5	4	4.5	4.5	3.5	23
+250_maiores_notas	36074	36074 (0510-016).txt	corpus/01_composicoes_brutas/maiores_notas/36074.txt		3.5	3.5	4	3.5	4.5	4	23
+250_maiores_notas	36163	36163 (0455-031).txt	corpus/01_composicoes_brutas/maiores_notas/36163.txt	{FO: tem}; {FO: industrial}; [ilegível: a seu prazer?]; [ilegível: será desse drama?]	4	4	4	4	3	4	23
+250_maiores_notas	36551	36551 (0497-013).txt	corpus/01_composicoes_brutas/maiores_notas/36551.txt		4	4	4	3.5	4	3.5	23
+250_maiores_notas	36566	36566 (0402-010).txt	corpus/01_composicoes_brutas/maiores_notas/36566.txt		3.5	1.5	4.5	3.5	5	5	23
+250_maiores_notas	36650	36650 (0487-017).txt	corpus/01_composicoes_brutas/maiores_notas/36650.txt	{FO: terra}; {FO: tem}; {FO: século}; {FO: terra}; {FO: a}; (PA); {FO: habitat}; (ONG’s); {FO: necessário}	4	4	3.5	4.5	3	4	23
+250_maiores_notas	39585	39585 (0477-024).txt	corpus/01_composicoes_brutas/maiores_notas/39585.txt	[ilegível]; [ilegível]; [ilegível]	3.5	3.5	3.5	5	4	3.5	23
+250_maiores_notas	40286	40286 (0495-031).txt	corpus/01_composicoes_brutas/maiores_notas/40286.txt	{FO: sudeste}	4	5	4	5	3	2	23
+250_maiores_notas	40713	40713 (0495-025).txt	corpus/01_composicoes_brutas/maiores_notas/40713.txt	(MG); (PA)	3.5	4	4	4.5	3	4	23
+250_maiores_notas	34277	34277 (0508-003).txt	corpus/01_composicoes_brutas/maiores_notas/34277.txt		3.5	3.5	3.5	4.5	4	3.5	22.5
+250_maiores_notas	34717	34717 (0507-039).txt	corpus/01_composicoes_brutas/maiores_notas/34717.txt		3.5	4	3.5	4	4	3.5	22.5
+250_maiores_notas	34754	34754 (0484-006).txt	corpus/01_composicoes_brutas/maiores_notas/34754.txt	{FO: Hóje}	3.5	3.5	4	4.5	3.5	3.5	22.5
+250_maiores_notas	34901	34901 (0443-012).txt	corpus/01_composicoes_brutas/maiores_notas/34901.txt		2	3	4	4.5	4.5	4.5	22.5
+250_maiores_notas	35789	35789 (0513-019).txt	corpus/01_composicoes_brutas/maiores_notas/35789.txt		4	4	4.5	2	4	4	22.5
+250_maiores_notas	36090	36090 (0509-013).txt	corpus/01_composicoes_brutas/maiores_notas/36090.txt	{FO: diezel}	3	3	4	4.5	4	4	22.5
+250_maiores_notas	38958	38958 (0402-035).txt	corpus/01_composicoes_brutas/maiores_notas/38958.txt		4	2.5	3.5	4.5	4.5	3.5	22.5
+250_maiores_notas	39465	39465 (0435-028).txt	corpus/01_composicoes_brutas/maiores_notas/39465.txt		3.5	3.5	4	3.5	4.5	3.5	22.5
+250_maiores_notas	39509	39509 (0496-026).txt	corpus/01_composicoes_brutas/maiores_notas/39509.txt	(UFMT); (ONG’s)	3	2.5	4.5	4.5	4	4	22.5
+250_maiores_notas	39989	39989 (0478-015).txt	corpus/01_composicoes_brutas/maiores_notas/39989.txt	(terra, fogo, ar e água); (PIB)	3	3	4	4.5	4	4	22.5
+250_maiores_notas	40024	40024 (0438-027).txt	corpus/01_composicoes_brutas/maiores_notas/40024.txt	(único rio de água doce da região)	4	4.5	4.5	1	4	4.5	22.5
+250_maiores_notas	40429	40429 (0413-023).txt	corpus/01_composicoes_brutas/maiores_notas/40429.txt		3	2	4.5	5	4	4	22.5
+250_maiores_notas	45141	45141 (0517-040).txt	corpus/01_composicoes_brutas/maiores_notas/45141.txt		3	3.5	4	4.5	4	3.5	22.5
+250_maiores_notas	46003	46003 (0416-011).txt	corpus/01_composicoes_brutas/maiores_notas/46003.txt	(CO₂); (que libera gás metano, prejudicial para a camada de ozônio em grande quantidade e visto que o Brasil é um dos maiores exportadores de carne bovina mundial, isso é motivo de preocupação); (que têm poder financeiro maior)	3	2	4	5	4.5	4	22.5
+250_maiores_notas	46597	46597 (0517-002).txt	corpus/01_composicoes_brutas/maiores_notas/46597.txt		3	4	4	4	4.5	3	22.5
+250_maiores_notas	33927	33927 (0415-001).txt	corpus/01_composicoes_brutas/maiores_notas/33927.txt		3.5	3.5	4	4	3.5	3.5	22
+250_maiores_notas	34084	34084 (0471-019).txt	corpus/01_composicoes_brutas/maiores_notas/34084.txt		3.5	3	3	5	4	3.5	22
+250_maiores_notas	34641	34641 (0511-008).txt	corpus/01_composicoes_brutas/maiores_notas/34641.txt		4	4	4	4	2.5	3.5	22
+250_maiores_notas	34698	34698 (0514-001).txt	corpus/01_composicoes_brutas/maiores_notas/34698.txt	(PAC); {FO: necessárias}	3.5	3.5	3.5	4.5	4	3	22
+250_maiores_notas	35100	35100 (0454-001).txt	corpus/01_composicoes_brutas/maiores_notas/35100.txt		4	4	2	4	4.5	3.5	22
+250_maiores_notas	35247	35247 (0498-017).txt	corpus/01_composicoes_brutas/maiores_notas/35247.txt	{FO: sócio-ambientais}; (fogo, ar, terra e água)	3	3	3.5	5	4	3.5	22
+250_maiores_notas	35497	35497 (0483-018).txt	corpus/01_composicoes_brutas/maiores_notas/35497.txt	(MG)	4	4	4	4	3	3	22
+250_maiores_notas	36471	36471 (0517-039).txt	corpus/01_composicoes_brutas/maiores_notas/36471.txt	{FO: matéria prima}; {FO: matéria prima}; {FO: poluimos}; {FO: Paises}; (MG); (PA); {FO: matéria prima}; {FO: tem}	4	4	4	4	2	4	22
+250_maiores_notas	36926	36926 (0510-007).txt	corpus/01_composicoes_brutas/maiores_notas/36926.txt		3	3.5	3.5	3.5	4.5	4	22
+250_maiores_notas	37612	37612 (0500-011).txt	corpus/01_composicoes_brutas/maiores_notas/37612.txt	(sempre tive uma queda por bactérias); (Pausa para a publicidade: “Seguros + Deus: Sua salvação custa apenas uma oração”)	3.5	3.5	3	4	5	3	22
+250_maiores_notas	37961	37961 (0510-026).txt	corpus/01_composicoes_brutas/maiores_notas/37961.txt	[ilegível]; (…); {FO: belim}; (…); (des)	3.5	3	3.5	4	4	4	22
+250_maiores_notas	38742	38742 (0529-010).txt	corpus/01_composicoes_brutas/maiores_notas/38742.txt		3.5	4	3.5	4.5	2.5	4	22
+250_maiores_notas	39305	39305 (0522-015).txt	corpus/01_composicoes_brutas/maiores_notas/39305.txt		4	4	4	4	2	4	22
+250_maiores_notas	40060	40060 (0449-010).txt	corpus/01_composicoes_brutas/maiores_notas/40060.txt	{FO: obcessão}	4	3.5	4	3.5	3.5	3.5	22
+250_maiores_notas	40173	40173 (0478-027).txt	corpus/01_composicoes_brutas/maiores_notas/40173.txt	{FO: denovo}	4	4	3.5	2	4.5	4	22
+250_maiores_notas	40580	40580 (0457-019).txt	corpus/01_composicoes_brutas/maiores_notas/40580.txt		3.5	3.5	4	4.5	3	3.5	22
+250_maiores_notas	33895	33895 (0458-001).txt	corpus/01_composicoes_brutas/maiores_notas/33895.txt	{FO: auto suficiente}; {FO: hidreletricas}; {FO: subsistencia}; {FO: toxico}; {FO: catastrofe}	3.5	3	4	4	3	4	21.5
+250_maiores_notas	33991	33991 (0455-017).txt	corpus/01_composicoes_brutas/maiores_notas/33991.txt	{FO: mantêm}; {FO: por}; {FO: domesticalização}	3.5	3	3.5	3	4.5	4	21.5
+250_maiores_notas	34648	34648 (0510-009).txt	corpus/01_composicoes_brutas/maiores_notas/34648.txt		4	3.5	3.5	3.5	4	3	21.5
+250_maiores_notas	35763	35763 (0512-010).txt	corpus/01_composicoes_brutas/maiores_notas/35763.txt	(MG)	4	2.5	4	5	4	2	21.5
+250_maiores_notas	35892	35892 (0513-018).txt	corpus/01_composicoes_brutas/maiores_notas/35892.txt		4	4	3.5	4	2	4	21.5
+250_maiores_notas	35934	35934 (0481-021).txt	corpus/01_composicoes_brutas/maiores_notas/35934.txt		3	3	4	4.5	3	4	21.5
+250_maiores_notas	36330	36330 (0472-010).txt	corpus/01_composicoes_brutas/maiores_notas/36330.txt		3.5	3.5	3	4.5	3.5	3.5	21.5
+250_maiores_notas	36436	36436 (0482-003).txt	corpus/01_composicoes_brutas/maiores_notas/36436.txt	{FO: microorganismos}; {FO: equilibrio}; {FO: egoistas}	4.5	3.5	3.5	3	3	4	21.5
+250_maiores_notas	36515	36515 (0476-001).txt	corpus/01_composicoes_brutas/maiores_notas/36515.txt		3	2.5	3.5	5	4	3.5	21.5
+250_maiores_notas	36822	36822 (0404-015).txt	corpus/01_composicoes_brutas/maiores_notas/36822.txt	(bois)	3.5	4	4	2	4	4	21.5
+250_maiores_notas	37102	37102 (0454-014).txt	corpus/01_composicoes_brutas/maiores_notas/37102.txt	{FO: à}; {FO: benefícios}; {FO: é}; {FO: interação}; {FO: à}; {FO: está}; {FO: ocorrência}; {FO: arrogância}; {FO: lógica}; {FO: predatória}; {FO: água}; {FO: produção}; {FO: é}; {FO: petróleo}; {FO: à}; {FO: ação}; {FO: está}; {FO: é}; {FO: só}; {FO: vêm}; {FO: árvores}; {FO: é}; {FO: contaminação}; {FO: água}; {FO: potável}; {FO: arrogância}; {FO: está}; {FO: consciência}; {FO: arrogância}; {FO: predatório}; {FO: às}; {FO: consequências}; {FO: destruição}; {FO: família}; {FO: possível}; {FO: consciência}	4	2	3.5	4	4	4	21.5
+250_maiores_notas	37376	37376 (0406-019).txt	corpus/01_composicoes_brutas/maiores_notas/37376.txt		3	2.5	2.5	5	4.5	4	21.5
+250_maiores_notas	37687	37687 (0473-029).txt	corpus/01_composicoes_brutas/maiores_notas/37687.txt		3	4	4	3.5	3	4	21.5
+250_maiores_notas	38392	38392 (0521-005).txt	corpus/01_composicoes_brutas/maiores_notas/38392.txt	(a casa, os filhos e a essência); (...)	4	3.5	4	3	3.5	3.5	21.5
+250_maiores_notas	38437	38437 (0495-008).txt	corpus/01_composicoes_brutas/maiores_notas/38437.txt		2	3	4	4.5	4.5	3.5	21.5
+250_maiores_notas	39650	39650 (0476-031).txt	corpus/01_composicoes_brutas/maiores_notas/39650.txt		3	3	3.5	4.5	4.5	3	21.5
+250_maiores_notas	39715	39715 (0435-013).txt	corpus/01_composicoes_brutas/maiores_notas/39715.txt	(água, terra, fogo e ar); [G1]; [G1]	3.5	4	3	3	4.5	3.5	21.5
+250_maiores_notas	40297	40297 (0402-031).txt	corpus/01_composicoes_brutas/maiores_notas/40297.txt	{FO: internacionais}	4.5	2	2.5	3.5	4.5	4.5	21.5
+250_maiores_notas	40615	40615 (0464-010).txt	corpus/01_composicoes_brutas/maiores_notas/40615.txt		3.5	3	4	4	4	3	21.5
+250_maiores_notas	40943	40943 (0480-033).txt	corpus/01_composicoes_brutas/maiores_notas/40943.txt	{FO: têm}; {FO: tiver}	4	4	3.5	2.5	3	4.5	21.5
+250_maiores_notas	33879	33879 (0521-029).txt	corpus/01_composicoes_brutas/maiores_notas/33879.txt		3.5	4	3.5	2.5	3.5	4	21
+250_maiores_notas	34281	34281 (0495-034).txt	corpus/01_composicoes_brutas/maiores_notas/34281.txt	{FO: codigo}; {FO: naufragio}; {FO: oleo diesel}; (PMDB); (PSDB)	3	3	4	4	4	3	21
+250_maiores_notas	34652	34652 (0511-011).txt	corpus/01_composicoes_brutas/maiores_notas/34652.txt		3.5	4	3.5	3.5	3	3.5	21
+250_maiores_notas	34994	34994 (0490-028).txt	corpus/01_composicoes_brutas/maiores_notas/34994.txt	(primeiros filósofos); (exploração consciente); (a Terra é um organismo vivo que reage às agressões humanas)	3	2	3	4	4.5	4.5	21
+250_maiores_notas	35053	35053 (0467-013).txt	corpus/01_composicoes_brutas/maiores_notas/35053.txt		3.5	3.5	3.5	4	4	2.5	21
+250_maiores_notas	35121	35121 (0528-022).txt	corpus/01_composicoes_brutas/maiores_notas/35121.txt		4	3.5	2.5	4	3	4	21
+250_maiores_notas	35865	35865 (0517-008).txt	corpus/01_composicoes_brutas/maiores_notas/35865.txt		4	4	4	3	2	4	21
+250_maiores_notas	36068	36068 (0492-005).txt	corpus/01_composicoes_brutas/maiores_notas/36068.txt		3	3	4	4	3	4	21
+250_maiores_notas	36503	36503 (0517-022).txt	corpus/01_composicoes_brutas/maiores_notas/36503.txt	{FO: industrias}; {FO: combustível}; {FO: fóssil}	3.5	4	4	3.5	2	4	21
+250_maiores_notas	36532	36532 (0460-008).txt	corpus/01_composicoes_brutas/maiores_notas/36532.txt	{FO: equilibrio}	3	3	3	4	4	4	21
+250_maiores_notas	36937	36937 (0510-018).txt	corpus/01_composicoes_brutas/maiores_notas/36937.txt		3.5	3	4	2.5	4	4	21
+250_maiores_notas	37015	37015 (0454-012).txt	corpus/01_composicoes_brutas/maiores_notas/37015.txt		4	4	3	4	3	3	21
+250_maiores_notas	37126	37126 (0417-021).txt	corpus/01_composicoes_brutas/maiores_notas/37126.txt	{FO: egoismo}; {FO: está}; {FO: consequências}; {FO: prática}; {FO: está}; {FO: Além}; {FO: destruição}; {FO: Água}; {FO: está}; {FO: estão}; {FO: oxigênio}; {FO: está}; {FO: água}; {FO: é}; {FO: fértil}; {FO: irá}; {FO: perceberá}	3.5	3	2.5	4	4	4	21
+250_maiores_notas	37362	37362 (0510-017).txt	corpus/01_composicoes_brutas/maiores_notas/37362.txt	{FO: vitima}; {FO: infancia}; {FO: infancia}; {FO: infancia}; {FO: Alem}; (s); (s)	3.5	4	3	2.5	4.5	3.5	21
+250_maiores_notas	37480	37480 (0417-030).txt	corpus/01_composicoes_brutas/maiores_notas/37480.txt		4	3.5	4	3	3	3.5	21
+250_maiores_notas	37662	37662 (0483-003).txt	corpus/01_composicoes_brutas/maiores_notas/37662.txt		3	3	4	4	3	4	21
+250_maiores_notas	38406	38406 (0457-026).txt	corpus/01_composicoes_brutas/maiores_notas/38406.txt		3	2.5	3.5	4.5	4.5	3	21
+250_maiores_notas	38641	38641 (0517-005).txt	corpus/01_composicoes_brutas/maiores_notas/38641.txt		2.5	3.5	4	4.5	2.5	4	21
+250_maiores_notas	38845	38845 (0414-014).txt	corpus/01_composicoes_brutas/maiores_notas/38845.txt	(Terra, água, fogo e ar); (eólica e solar)	4	1.5	4.5	2.5	4	4.5	21
+250_maiores_notas	38848	38848 (0414-015).txt	corpus/01_composicoes_brutas/maiores_notas/38848.txt		4	5	4	3	2	3	21
+250_maiores_notas	40013	40013 (0472-001).txt	corpus/01_composicoes_brutas/maiores_notas/40013.txt		3.5	4	3.5	3.5	3	3.5	21
+250_maiores_notas	40975	40975 (0521-015).txt	corpus/01_composicoes_brutas/maiores_notas/40975.txt		3	3.5	3.5	3	4	4	21
+250_maiores_notas	45059	45059 (0422-029).txt	corpus/01_composicoes_brutas/maiores_notas/45059.txt		3	1.5	4	4.5	4.5	3.5	21
+250_maiores_notas	45169	45169 (0489-022).txt	corpus/01_composicoes_brutas/maiores_notas/45169.txt		3	2	3.5	5	4	3.5	21
+250_maiores_notas	45279	45279 (0521-018).txt	corpus/01_composicoes_brutas/maiores_notas/45279.txt		3.5	3.5	3.5	2.5	4	4	21
+250_maiores_notas	46321	46321 (0443-019).txt	corpus/01_composicoes_brutas/maiores_notas/46321.txt		2.5	3	3	5	3.5	4	21
+250_maiores_notas	33669	33669 (0477-015).txt	corpus/01_composicoes_brutas/maiores_notas/33669.txt		3	3	3.5	4	4	3	20.5
+250_maiores_notas	33999	33999 (0510-015).txt	corpus/01_composicoes_brutas/maiores_notas/33999.txt		3	3	3.5	3	4.5	3.5	20.5
+250_maiores_notas	34353	34353 (0416-026).txt	corpus/01_composicoes_brutas/maiores_notas/34353.txt	{FO: prejuízos}; {FO: respiratorios}; {FO: imunologico}; {FO: decomposição}; {FO: á}; {FO: à}; {FO: hidrogenio}; {FO: poluida}	2.5	2.5	4	4.5	4.5	2.5	20.5
+250_maiores_notas	35077	35077 (0491-011).txt	corpus/01_composicoes_brutas/maiores_notas/35077.txt		3	4	3.5	3.5	3	3.5	20.5
+250_maiores_notas	35464	35464 (0484-001).txt	corpus/01_composicoes_brutas/maiores_notas/35464.txt	(terra)	4	3	3.5	4	2	4	20.5
+250_maiores_notas	35750	35750 (0421-016).txt	corpus/01_composicoes_brutas/maiores_notas/35750.txt	(PA); (MG)	3	3	4	4	3	3.5	20.5
+250_maiores_notas	35928	35928 (0400-028).txt	corpus/01_composicoes_brutas/maiores_notas/35928.txt		4	4	3.5	3	2.5	3.5	20.5
+250_maiores_notas	36006	36006 (0423-010).txt	corpus/01_composicoes_brutas/maiores_notas/36006.txt	{FO: inicio}; {FO: concluiram}; {FO: agua}; {FO: poluida}; {FO: primordios}	3.5	1.5	4	4.5	4	3	20.5
+250_maiores_notas	36064	36064 (0513-001).txt	corpus/01_composicoes_brutas/maiores_notas/36064.txt		3.5	4	3.5	3.5	2	4	20.5
+250_maiores_notas	36691	36691 (0498-019).txt	corpus/01_composicoes_brutas/maiores_notas/36691.txt	{FO: beneficio}; {FO: proprio}; {FO: necessario}	3	3	3	4	4	3.5	20.5
+250_maiores_notas	36707	36707 (0489-015).txt	corpus/01_composicoes_brutas/maiores_notas/36707.txt		3	3	3.5	3.5	4	3.5	20.5
+250_maiores_notas	36743	36743 (0475-017).txt	corpus/01_composicoes_brutas/maiores_notas/36743.txt		3	3	3.5	4	4	3	20.5
+250_maiores_notas	36782	36782 (0455-014).txt	corpus/01_composicoes_brutas/maiores_notas/36782.txt		3	3	3	4	3.5	4	20.5
+250_maiores_notas	36845	36845 (0509-012).txt	corpus/01_composicoes_brutas/maiores_notas/36845.txt		2.5	2.5	4	4.5	4.5	2.5	20.5
+250_maiores_notas	36945	36945 (0512-011).txt	corpus/01_composicoes_brutas/maiores_notas/36945.txt		3.5	2	3.5	5	4	2.5	20.5
+250_maiores_notas	37655	37655 (0414-020).txt	corpus/01_composicoes_brutas/maiores_notas/37655.txt	{FO: mariana}; {FO: barcarena}; {FO: pará}	4.5	4.5	4	0.5	3	4	20.5
+250_maiores_notas	38020	38020 (0464-016).txt	corpus/01_composicoes_brutas/maiores_notas/38020.txt	(fogo, água, terra e ar)	3	3	3.5	4	3.5	3.5	20.5
+250_maiores_notas	38080	38080 (0512-013).txt	corpus/01_composicoes_brutas/maiores_notas/38080.txt		3.5	2.5	3.5	4	4	3	20.5
+250_maiores_notas	38236	38236 (0455-012).txt	corpus/01_composicoes_brutas/maiores_notas/38236.txt		3.5	2	3.5	4	4	3.5	20.5
+250_maiores_notas	38784	38784 (0457-022).txt	corpus/01_composicoes_brutas/maiores_notas/38784.txt		3	3	2.5	4.5	4.5	3	20.5
+250_maiores_notas	39131	39131 (0479-013).txt	corpus/01_composicoes_brutas/maiores_notas/39131.txt		3	3	3.5	4	4	3	20.5
+250_maiores_notas	39635	39635 (0496-010).txt	corpus/01_composicoes_brutas/maiores_notas/39635.txt		2.5	2.5	4.5	5	3	3	20.5
+250_maiores_notas	39684	39684 (0502-015).txt	corpus/01_composicoes_brutas/maiores_notas/39684.txt		3.5	4.5	3.5	3	3.5	2.5	20.5
+250_maiores_notas	39810	39810 (0510-004).txt	corpus/01_composicoes_brutas/maiores_notas/39810.txt		3.5	3	3.5	2.5	4	4	20.5
+250_maiores_notas	40004	40004 (0414-040).txt	corpus/01_composicoes_brutas/maiores_notas/40004.txt	(Gás Carbônico)	3	2	4	4.5	2	5	20.5
+250_maiores_notas	40130	40130 (0469-006).txt	corpus/01_composicoes_brutas/maiores_notas/40130.txt	(fogo); (água); (terra); (ar); (provocada pelo rompimento das barragens)	3.5	3.5	3.5	3.5	3.5	3	20.5
+250_maiores_notas	40449	40449 (0455-007).txt	corpus/01_composicoes_brutas/maiores_notas/40449.txt		3.5	3.5	3.5	4	2.5	3.5	20.5
+250_maiores_notas	40697	40697 (0456-013).txt	corpus/01_composicoes_brutas/maiores_notas/40697.txt	{FO: mal uso}; (ou ignorar)	3.5	3.5	3.5	3	3.5	3.5	20.5
+250_maiores_notas	41088	41088 (0432-012).txt	corpus/01_composicoes_brutas/maiores_notas/41088.txt		3.5	4	3.5	3	3	3.5	20.5
+250_maiores_notas	45576	45576 (0456-011).txt	corpus/01_composicoes_brutas/maiores_notas/45576.txt	(água, ar, terra e fogo)	3.5	3.5	3.5	2.5	4	3.5	20.5
+250_maiores_notas	46771	46771 (0519-007).txt	corpus/01_composicoes_brutas/maiores_notas/46771.txt		3	2	3.5	4.5	4.5	3	20.5
+250_maiores_notas	32875	32875 (0413-027).txt	corpus/01_composicoes_brutas/maiores_notas/32875.txt		4	3.5	4.5	3	2	3	20
+250_maiores_notas	33083	33083_(0496-015).txt	corpus/01_composicoes_brutas/maiores_notas/33083.txt		2.5	2.5	3.5	4.5	3.5	3.5	20
+250_maiores_notas	33228	33228 (0509-018).txt	corpus/01_composicoes_brutas/maiores_notas/33228.txt	{FO: acumulo}; {FO: especies}	2.5	3	3.5	4	4	3	20
+250_maiores_notas	33849	33849 (0416-012).txt	corpus/01_composicoes_brutas/maiores_notas/33849.txt	{FO: estar}; (O rompimento das duas barragens de rejeitos minerais na cidade de Mariana, Minas Gerais); {FO: reuna}	3.5	2.5	4	3	3	4	20
+250_maiores_notas	34032	34032 (0500-003).txt	corpus/01_composicoes_brutas/maiores_notas/34032.txt		3	3	3	4.5	3.5	3	20
+250_maiores_notas	34116	34116 (0506-037).txt	corpus/01_composicoes_brutas/maiores_notas/34116.txt		2.5	2.5	3.5	4	4	3.5	20
+250_maiores_notas	34419	34419 (0521-040)_corrigido.txt	corpus/01_composicoes_brutas/maiores_notas/34419.txt		3	3	3.5	3	3.5	4	20
+250_maiores_notas	34511	34511 (0415-015).txt	corpus/01_composicoes_brutas/maiores_notas/34511.txt		3.5	3.5	4	3.5	2	3.5	20
+250_maiores_notas	34675	34675 (0455-030).txt	corpus/01_composicoes_brutas/maiores_notas/34675.txt		3	3.5	3.5	3.5	3.5	3	20
+250_maiores_notas	34802	34802 (0513-012).txt	corpus/01_composicoes_brutas/maiores_notas/34802.txt		3	2.5	3	4	4	3.5	20
+250_maiores_notas	35125	35125 (0491-003).txt	corpus/01_composicoes_brutas/maiores_notas/35125.txt	{FO: matéria prima}	3	2	3.5	4	3.5	4	20
+250_maiores_notas	35451	35451 (0522-021).txt	corpus/01_composicoes_brutas/maiores_notas/35451.txt	(terra, fogo, ar e água)	3	3	3	4	4	3	20
+250_maiores_notas	35496	35496 (0476-002).txt	corpus/01_composicoes_brutas/maiores_notas/35496.txt	{FO: además}	3	3	4	3	3	4	20
+250_maiores_notas	35647	35647 (0455-040).txt	corpus/01_composicoes_brutas/maiores_notas/35647.txt	{FO: permanencia}; {FO: manhã}; {FO: máquinas}; {FO: através}; {FO: BeloMonte}; {FO: espécies}	3	3	3	4	4	3	20
+250_maiores_notas	35867	35867 (0419-017).txt	corpus/01_composicoes_brutas/maiores_notas/35867.txt		3	3	2.5	4	4	3.5	20
+250_maiores_notas	36214	36214 (0516-003).txt	corpus/01_composicoes_brutas/maiores_notas/36214.txt		4	2.5	2.5	4	2.5	4.5	20
+250_maiores_notas	36260	36260 (0518-004).txt	corpus/01_composicoes_brutas/maiores_notas/36260.txt	{FO: saudaveis}; {FO: arvore}; {FO: arvores}; {FO: a}; {FO: diminuia}; {FO: arvore}	3	3	4	3	3.5	3.5	20
+250_maiores_notas	36261	36261 (0456-006).txt	corpus/01_composicoes_brutas/maiores_notas/36261.txt	[ilegível: contorno?]; (interferência no ciclo hídrico do país)	3	3	3	4	4	3	20
+250_maiores_notas	36494	36494 (0510-011).txt	corpus/01_composicoes_brutas/maiores_notas/36494.txt	(Fogo, Terra, Ar e Água); (PA)	3	3	4	3	3.5	3.5	20
+250_maiores_notas	36626	36626 (0487-018).txt	corpus/01_composicoes_brutas/maiores_notas/36626.txt	"{FO: ""seu""}; {FO: a}; {FO: a}; (a partir de leis); (pelas mídias sociais)"	3.5	3	3	4	3	3.5	20
+250_maiores_notas	36777	36777 (0454-018).txt	corpus/01_composicoes_brutas/maiores_notas/36777.txt	(não sustentável)	3.5	1.5	4	5	3	3	20
+250_maiores_notas	36862	36862 (0483-035).txt	corpus/01_composicoes_brutas/maiores_notas/36862.txt		3	3	4	4	3	3	20
+250_maiores_notas	36988	36988 (0488-014).txt	corpus/01_composicoes_brutas/maiores_notas/36988.txt		3	3	3.5	3.5	4	3	20
+250_maiores_notas	37284	37284 (0526-028).txt	corpus/01_composicoes_brutas/maiores_notas/37284.txt		3	4	3	4	4	2	20
+250_maiores_notas	37386	37386 (0482-015).txt	corpus/01_composicoes_brutas/maiores_notas/37386.txt	(gado); (efeito estufa)	4	3.5	3	4	2	3.5	20
+250_maiores_notas	37753	37753 (0526-022).txt	corpus/01_composicoes_brutas/maiores_notas/37753.txt		3	3	3	4	3	4	20
+250_maiores_notas	37801	37801 (0507-021).txt	corpus/01_composicoes_brutas/maiores_notas/37801.txt		3	3	3.5	3.5	4	3	20
+250_maiores_notas	37817	37817 (0507-009).txt	corpus/01_composicoes_brutas/maiores_notas/37817.txt		4	4	4	0	4	4	20
+250_maiores_notas	37922	37922 (0487-025).txt	corpus/01_composicoes_brutas/maiores_notas/37922.txt		4	3	3.5	3	2.5	4	20
+250_maiores_notas	38367	38367 (0485-004).txt	corpus/01_composicoes_brutas/maiores_notas/38367.txt	{FO: revolução industrial}; {FO: vêm}; {FO: habitat}; {FO: conscientizados que}	3	3	4	3	4	3	20
+250_maiores_notas	38562	38562 (0416-027).txt	corpus/01_composicoes_brutas/maiores_notas/38562.txt		3	1.5	3.5	5	3	4	20
+250_maiores_notas	38612	38612 (0506-029).txt	corpus/01_composicoes_brutas/maiores_notas/38612.txt		2.5	2.5	3.5	3.5	4	4	20
+250_maiores_notas	38672	38672 (0492-021).txt	corpus/01_composicoes_brutas/maiores_notas/38672.txt	(Fogo, Ar, Água e Terra)	3.5	3.5	3.5	2.5	3.5	3.5	20
+250_maiores_notas	39108	39108 (0521-028).txt	corpus/01_composicoes_brutas/maiores_notas/39108.txt		3.5	3.5	3.5	1.5	4	4	20
+250_maiores_notas	39227	39227 (0456-005).txt	corpus/01_composicoes_brutas/maiores_notas/39227.txt	(ou não)	3.5	3.5	3.5	3	3.5	3	20
+250_maiores_notas	39663	39663 (0424-019).txt	corpus/01_composicoes_brutas/maiores_notas/39663.txt	(água, fogo, terra e ar)	3	3	2.5	5	4	2.5	20
+250_maiores_notas	40289	40289 (0435-005).txt	corpus/01_composicoes_brutas/maiores_notas/40289.txt	{FO: não governamentais}	3.5	3.5	3	3.5	3	3.5	20
+250_maiores_notas	40710	40710 (0489-016).txt	corpus/01_composicoes_brutas/maiores_notas/40710.txt	{FO: como}	3	3	3.5	4	3.5	3	20
+250_maiores_notas	41022	41022 (0510-002).txt	corpus/01_composicoes_brutas/maiores_notas/41022.txt	{FO: têm}; {FO: precisam}	3.5	3	4	1.5	4.5	3.5	20
+250_maiores_notas	45015	45015 (0501-009).txt	corpus/01_composicoes_brutas/maiores_notas/45015.txt		4	3	3	2.5	4.5	3	20
+250_maiores_notas	45081	45081 (0485-025).txt	corpus/01_composicoes_brutas/maiores_notas/45081.txt		4	4	4	1.5	3	3.5	20
+250_maiores_notas	45186	45186 (0519-021).txt	corpus/01_composicoes_brutas/maiores_notas/45186.txt		2.5	2	3.5	5	4	3	20
+250_maiores_notas	32757	32757 (0469-024).txt	corpus/01_composicoes_brutas/maiores_notas/32757.txt		3	3	3	4.5	3	3	19.5
+250_maiores_notas	33914	33914 (0406-029).txt	corpus/01_composicoes_brutas/maiores_notas/33914.txt	{FO: inconscenquente}	3	2	3	3	4.5	4	19.5
+250_maiores_notas	34175	34175 (0514-037).txt	corpus/01_composicoes_brutas/maiores_notas/34175.txt	(lixões); (contaminação da água); (poluição do rio e do solo)	2.5	2.5	2.5	4	4.5	3.5	19.5
+250_maiores_notas	34381	34381 (0516-005).txt	corpus/01_composicoes_brutas/maiores_notas/34381.txt	(Globo)	3.5	4	3.5	3	2.5	3	19.5
+250_maiores_notas	34461	34461 (0478-014).txt	corpus/01_composicoes_brutas/maiores_notas/34461.txt		3	3	4	3.5	3	3	19.5
+250_maiores_notas	34832	34832 (0518-014).txt	corpus/01_composicoes_brutas/maiores_notas/34832.txt		3	3	3.5	3	4	3	19.5
+250_maiores_notas	34875	34875 (0473-031).txt	corpus/01_composicoes_brutas/maiores_notas/34875.txt		2.5	1	4	4	4.5	3.5	19.5
+250_maiores_notas	34967	34967 (0499-029).txt	corpus/01_composicoes_brutas/maiores_notas/34967.txt	{FO: estivél}; {FO: produtório}	3	3.5	3.5	2.5	4	3	19.5
+250_maiores_notas	35126	35126 (0455-019).txt	corpus/01_composicoes_brutas/maiores_notas/35126.txt		3	1.5	3.5	4.5	4	3	19.5
+250_maiores_notas	35378	35378 (0512-039).txt	corpus/01_composicoes_brutas/maiores_notas/35378.txt	{FO: maleficas}; {FO: Entretanto}	4	2.5	4	3	4	2	19.5
+250_maiores_notas	35482	35482 (0417-022).txt	corpus/01_composicoes_brutas/maiores_notas/35482.txt		3	3	3	4	3	3.5	19.5
+250_maiores_notas	35542	35542 (0484-010).txt	corpus/01_composicoes_brutas/maiores_notas/35542.txt		3	3	3.5	4	2.5	3.5	19.5
+250_maiores_notas	35734	35734 (0513-006).txt	corpus/01_composicoes_brutas/maiores_notas/35734.txt		4.5	4.5	4.5	3	0	3	19.5
+250_maiores_notas	36245	36245 (0475-025).txt	corpus/01_composicoes_brutas/maiores_notas/36245.txt	{FO: climaticas}; {FO: tecnica}; {FO: maleficios}; {FO: climaticas}; {FO: propõem?}; {FO: diplomático?}; {FO: economicos}; {FO: sobrepõem?}	3	3	3.5	3.5	3.5	3	19.5
+250_maiores_notas	36385	36385 (0487-006).txt	corpus/01_composicoes_brutas/maiores_notas/36385.txt		3	3	3	4	3.5	3	19.5
+250_maiores_notas	36442	36442 (0516-028).txt	corpus/01_composicoes_brutas/maiores_notas/36442.txt		3.5	3	2.5	4	2.5	4	19.5
+250_maiores_notas	36577	36577 (0495-028).txt	corpus/01_composicoes_brutas/maiores_notas/36577.txt	{FO: pre-fixada}; {FO: harmonica}; {FO: importancia}; {FO: especies}	2.5	2.5	3.5	4.5	3.5	3	19.5
+250_maiores_notas	36769	36769 (0417-014).txt	corpus/01_composicoes_brutas/maiores_notas/36769.txt		3	2.5	3	4	4	3	19.5
+250_maiores_notas	36794	36794 (0471-024).txt	corpus/01_composicoes_brutas/maiores_notas/36794.txt	{FO: a}	3	3.5	2.5	4.5	3	3	19.5
+250_maiores_notas	36966	36966 (0517-011).txt	corpus/01_composicoes_brutas/maiores_notas/36966.txt		3	2.5	3.5	4	3	3.5	19.5
+250_maiores_notas	36976	36976 (0413-039).txt	corpus/01_composicoes_brutas/maiores_notas/36976.txt	{FO: harmônia}; {FO: inundiu}	4	4.5	4	0	3	4	19.5
+250_maiores_notas	37416	37416 (0453-012).txt	corpus/01_composicoes_brutas/maiores_notas/37416.txt		4	4	4	0.5	3	4	19.5
+250_maiores_notas	37754	37754 (0460-003).txt	corpus/01_composicoes_brutas/maiores_notas/37754.txt		3	3	2.5	3	4	4	19.5
+250_maiores_notas	37783	37783 (0417-027).txt	corpus/01_composicoes_brutas/maiores_notas/37783.txt		4	4	3	2	3	3.5	19.5
+250_maiores_notas	38061	38061 (0416-033).txt	corpus/01_composicoes_brutas/maiores_notas/38061.txt		3.5	3	3	3.5	3	3.5	19.5
+250_maiores_notas	38493	38493 (0503-008).txt	corpus/01_composicoes_brutas/maiores_notas/38493.txt		3	3	3	4	3	3.5	19.5
+250_maiores_notas	38584	38584 (0402-028).txt	corpus/01_composicoes_brutas/maiores_notas/38584.txt		2.5	2	3	4	4	4	19.5
+250_maiores_notas	39244	39244 (0467-027).txt	corpus/01_composicoes_brutas/maiores_notas/39244.txt		2.5	2.5	3.5	4	4	3	19.5
+250_maiores_notas	39298	39298 (0469-021).txt	corpus/01_composicoes_brutas/maiores_notas/39298.txt		3	3	4	4.5	2	3	19.5
+250_maiores_notas	39614	39614 (0477-017).txt	corpus/01_composicoes_brutas/maiores_notas/39614.txt		3	3	3.5	3	4	3	19.5
+250_maiores_notas	39716	39716 (0461-014).txt	corpus/01_composicoes_brutas/maiores_notas/39716.txt	(terra, ar, fogo e água)	3	3.5	3.5	3.5	3	3	19.5
+250_maiores_notas	40663	40663 (0523-007).txt	corpus/01_composicoes_brutas/maiores_notas/40663.txt		4	2.5	4	3	3	3	19.5
+250_maiores_notas	41023	41023 (0455-016).txt	corpus/01_composicoes_brutas/maiores_notas/41023.txt	{FO: a condição}; {FO: a}; {FO: a condição}; {FO: a sobrevivência}; {FO: a sociedade}; {FO: lhe}; {FO: traz}	3	3.5	4	2.5	2.5	4	19.5
+250_maiores_notas	46479	46479 (0514-039).txt	corpus/01_composicoes_brutas/maiores_notas/46479.txt		3	3	3	3.5	4	3	19.5
+250_maiores_notas	46998	46998 (0507-048).txt	corpus/01_composicoes_brutas/maiores_notas/46998.txt		3.5	4	3	3	2	4	19.5
+250_maiores_notas	47002	47002 (0520-020).txt	corpus/01_composicoes_brutas/maiores_notas/47002.txt		2.5	2.5	3.5	4	4	3	19.5
+250_maiores_notas	47099	47099 (0473-020).txt	corpus/01_composicoes_brutas/maiores_notas/47099.txt		3	3.5	2.5	4	3	3.5	19.5
+250_maiores_notas	33383	33383 (0438-006).txt	corpus/01_composicoes_brutas/maiores_notas/33383.txt	{FO: tem}	3	3	3.5	2.5	4	3	19
+250_maiores_notas	33975	33975 (0482-028).txt	corpus/01_composicoes_brutas/maiores_notas/33975.txt	{FO: pra}; (Naufrágio)	3	2.5	3	5	3	2.5	19
+250_maiores_notas	33978	33978 (0516-031).txt	corpus/01_composicoes_brutas/maiores_notas/33978.txt	{FO: industrias}; {FO: Ozônio}; (O3)	3.5	3.5	4	1	4	3	19
+250_maiores_notas	34050	34050 (0482-008).txt	corpus/01_composicoes_brutas/maiores_notas/34050.txt		3.5	3.5	3	3.5	2	3.5	19
+250_maiores_notas	34086	34086 (0469-004).txt	corpus/01_composicoes_brutas/maiores_notas/34086.txt	(Pará); (Minas Gerais); (novembro de 2015); (dona da Samarco)	3	3	3.5	4	2.5	3	19
+250_menores_notas	34356	34356 (0528-002).txt	corpus/01_composicoes_brutas/menores_notas/34356.txt	{FO: ja}; {FO: predios}; {FO: à partir}; {FO: agua}; {FO: area}; {FO: arvores}	0	0	0	0	0	0	0
+250_menores_notas	35071	35071 (0483-004).txt	corpus/01_composicoes_brutas/menores_notas/35071.txt		0	0	0	0	0	0	0
+250_menores_notas	35217	35217 (0435-018).txt	corpus/01_composicoes_brutas/menores_notas/35217.txt	{FO: ultimo}; {FO: utimo}; {FO: Entupimentos}; {FO: destruição}; {FO: devastação}; {FO: país}; {FO: da}; {FO: escrupulos}	0	0	0	0	0	0	0
+250_menores_notas	37999	37999 (0401-002).txt	corpus/01_composicoes_brutas/menores_notas/37999.txt	{FO: a}; {FO: a}; {FO: a}	0	0	0	0	0	0	0
+250_menores_notas	38172	38172 (0446-005).txt	corpus/01_composicoes_brutas/menores_notas/38172.txt	{FO: aonde}; {FO: engolio}	0	0	0	0	0	0	0
+250_menores_notas	38677	38677 (0401-015).txt	corpus/01_composicoes_brutas/menores_notas/38677.txt		0	0	0	0	0	0	0
+250_menores_notas	39124	39124 (0429-013).txt	corpus/01_composicoes_brutas/menores_notas/39124.txt		0	0	0	0	0	0	0
+250_menores_notas	40426	40426 (0469-032).txt	corpus/01_composicoes_brutas/menores_notas/40426.txt	(sua casa)	0	0	0	0	0	0	0
+250_menores_notas	46743	46743 (0495-027).txt	corpus/01_composicoes_brutas/menores_notas/46743.txt	{FO: a fim}	0	0	0	0	0	0	0
+250_menores_notas	40929	40929 (0483-021).txt	corpus/01_composicoes_brutas/menores_notas/40929.txt		0.5	0.5	0.5	0.5	0.5	0.5	3
+250_menores_notas	37224	37224 (0524-002).txt	corpus/01_composicoes_brutas/menores_notas/37224.txt	{FO: tragédias}; {FO: atravéz}	1	1	1	0	0	1	4
+250_menores_notas	45075	45075 (0486-018).txt	corpus/01_composicoes_brutas/menores_notas/45075.txt	[ilegível]; [ilegível]; [ilegível]; [ilegível]	1	1	1	0	0	1	4
+250_menores_notas	34362	34362 (0452-005).txt	corpus/01_composicoes_brutas/menores_notas/34362.txt	{FO: vem}; {FO: maléficios}; {FO: consequencias}; {FO: consequências}; {FO: prejuízo}; {FO: moradios}	1	0.5	1.5	0	0	1.5	4.5
+250_menores_notas	47046	47046 (0453-009).txt	corpus/01_composicoes_brutas/menores_notas/47046.txt	{FO: observase}; {FO: concluise}; {FO: nos}	1	1.5	1.5	0	0	1.5	5.5
+250_menores_notas	38310	38310 (0413-005).txt	corpus/01_composicoes_brutas/menores_notas/38310.txt		1	0.5	1.5	0	2	1	6
+250_menores_notas	39164	39164 (0513-009).txt	corpus/01_composicoes_brutas/menores_notas/39164.txt		1	0.5	1	1.5	1	1	6
+250_menores_notas	32674	32674 (0460-006)(2).txt	corpus/01_composicoes_brutas/menores_notas/32674.txt		1	1	2	0.5	1	1	6.5
+250_menores_notas	38555	38555 (0465-014).txt	corpus/01_composicoes_brutas/menores_notas/38555.txt		2	1.5	2	0	0	1	6.5
+250_menores_notas	46273	46273 (0527-008).txt	corpus/01_composicoes_brutas/menores_notas/46273.txt	{FO: trás}; {FO: acumulo}; {FO: trás}; {FO: polui}; {FO: trás}	1	1	1	1	1.5	1	6.5
+250_menores_notas	32792	32792 (0453-008).txt	corpus/01_composicoes_brutas/menores_notas/32792.txt	(Preservação redobrada com a conscientização do homem com a natureza); (pecuaria, industrias etc.)	1	1.5	2	0	1	1.5	7
+250_menores_notas	35549	35549 (0507-027).txt	corpus/01_composicoes_brutas/menores_notas/35549.txt	{FO: desperdicios}; {FO: natureza}; {FO: obtem}; {FO: irresposabilidade}; {FO: bio-degradavel}; {FO: ongs}	1	1	2.5	0	1	1.5	7
+250_menores_notas	35577	35577 (0524-015).txt	corpus/01_composicoes_brutas/menores_notas/35577.txt	{FO: a}; {FO: poluidos}; {FO: naufragios}; {FO: as}; {FO: poluidos}; {FO: especies}; {FO: a}; {FO: ultimos}; {FO: conscientização}; {FO: águas}	1	1	1	0	3	1	7
+250_menores_notas	36742	36742 (0524-010).txt	corpus/01_composicoes_brutas/menores_notas/36742.txt	{FO: têm}; {FO: a natureza}; {FO: têm}; {FO: a}	1	1	2	0	2	1	7
+250_menores_notas	38196	38196 (0414-018).txt	corpus/01_composicoes_brutas/menores_notas/38196.txt		1	1	1	2	1	1	7
+250_menores_notas	38794	38794 (0452-016).txt	corpus/01_composicoes_brutas/menores_notas/38794.txt		1	1.5	1.5	0	1	2	7
+250_menores_notas	38928	38928 (0432-011).txt	corpus/01_composicoes_brutas/menores_notas/38928.txt		1.5	0.5	2	1	0	2	7
+250_menores_notas	38957	38957 (0529-009).txt	corpus/01_composicoes_brutas/menores_notas/38957.txt		1.5	2	1.5	0	0	2	7
+250_menores_notas	40496	40496 (0507-007).txt	corpus/01_composicoes_brutas/menores_notas/40496.txt		1	1	1.5	1	1.5	1	7
+250_menores_notas	32755	32755 (0410-007).txt	corpus/01_composicoes_brutas/menores_notas/32755.txt		1.5	1	2.5	0.5	0.5	1.5	7.5
+250_menores_notas	36000	36000 (0508-013).txt	corpus/01_composicoes_brutas/menores_notas/36000.txt	{FO: e}; {FO: dia-a-dia}; {FO: e}; {FO: necessaria}; {FO: desnecessarios}; {FO: reservatorios}; {FO: viaveis}; {FO: praticas}; {FO: proprio}; {FO: e}; {FO: sobrevivencia}; {FO: publicas}; {FO: publicas}	1.5	1.5	2	0	0.5	2	7.5
+250_menores_notas	37010	37010 (0524-022).txt	corpus/01_composicoes_brutas/menores_notas/37010.txt		1	1	2.5	0	2	1	7.5
+250_menores_notas	37345	37345 (0524-003).txt	corpus/01_composicoes_brutas/menores_notas/37345.txt	{FO: irresponsaveis}; {FO: familias}; {FO: naufragio}; {FO: embarcações}; {FO: varias}; {FO: especies}; {FO: sobrevivencia}; {FO: familias}; {FO: tragedia}; {FO: varias}; {FO: construido}; {FO: varias}	2	2	1.5	0	0	2	7.5
+250_menores_notas	32782	32782 (0439-029).txt	corpus/01_composicoes_brutas/menores_notas/32782.txt		1	1	2	0	3	1	8
+250_menores_notas	34025	34025 (0468-006).txt	corpus/01_composicoes_brutas/menores_notas/34025.txt		1	1	2	0.5	2.5	1	8
+250_menores_notas	34714	34714 (0433-004).txt	corpus/01_composicoes_brutas/menores_notas/34714.txt	{FO: indiscutivel}; {FO: a}	2	1	2	0	1	2	8
+250_menores_notas	35291	35291 (0499-009).txt	corpus/01_composicoes_brutas/menores_notas/35291.txt	{FO: consequênçias}; {FO: indigenas}; {FO: à}; {FO: catástrofes?}	1	1	1	0	4	1	8
+250_menores_notas	36181	36181 (0506-039).txt	corpus/01_composicoes_brutas/menores_notas/36181.txt	{FO: valorizare}	2	2	1	0	1	2	8
+250_menores_notas	36238	36238 (0479-023).txt	corpus/01_composicoes_brutas/menores_notas/36238.txt	{FO: licho}	1	1	1.5	0	3	1.5	8
+250_menores_notas	36524	36524 (0522-023).txt	corpus/01_composicoes_brutas/menores_notas/36524.txt	{FO: chega-se}; {FO: mais}; {FO: ja}; {FO: ja}; {FO: ja}; {FO: historia}; {FO: chegara}; {FO: deveriamos}; {FO: podera}; {FO: a}	1	1	1	0.5	3.5	1	8
+250_menores_notas	37078	37078 (0447-003).txt	corpus/01_composicoes_brutas/menores_notas/37078.txt	{FO: seculo}; {FO: vitima}; {FO: acida}; {FO: furacões}; {FO: tem}; {FO: ultimas}; {FO: decadas}; {FO: a}; {FO: irresponsavel}; {FO: varias}; {FO: especies}; {FO: extinção}; {FO: decorrência}; {FO: até}; {FO: orgãos}; {FO: relevância}; {FO: hâmbito}; (organização das nações unidas); {FO: sustentável}; {FO: agua}; {FO: existência}; {FO: varios}; {FO: além}; {FO: importância}	1	1	2	0	3	1	8
+250_menores_notas	38917	38917 (0410-011).txt	corpus/01_composicoes_brutas/menores_notas/38917.txt		2	2	1.5	1	1	0.5	8
+250_menores_notas	39446	39446 (0449-030).txt	corpus/01_composicoes_brutas/menores_notas/39446.txt		1.5	1	1.5	0.5	2	1.5	8
+250_menores_notas	39914	39914 (0526-027).txt	corpus/01_composicoes_brutas/menores_notas/39914.txt		1	1.5	2	0.5	0.5	2.5	8
+250_menores_notas	40368	40368 (0507-015).txt	corpus/01_composicoes_brutas/menores_notas/40368.txt		1	1	3	0	2	1	8
+250_menores_notas	40887	40887 (0411-026).txt	corpus/01_composicoes_brutas/menores_notas/40887.txt		1	1	2	2.5	0	1.5	8
+250_menores_notas	41093	41093 (0471-030).txt	corpus/01_composicoes_brutas/menores_notas/41093.txt		1	1	1	1.5	2	1.5	8
+250_menores_notas	45268	45268 (0423-026).txt	corpus/01_composicoes_brutas/menores_notas/45268.txt		2	1.5	1.5	0	1.5	1.5	8
+250_menores_notas	45638	45638 (0524-004).txt	corpus/01_composicoes_brutas/menores_notas/45638.txt	(os rios fertilizavam o solo); (água, terra, ar e fogo)	1	1	2	0	3	1	8
+250_menores_notas	45746	45746 (0439-024).txt	corpus/01_composicoes_brutas/menores_notas/45746.txt		1	1	2	0	3	1	8
+250_menores_notas	33167	33167_0410-030.txt	corpus/01_composicoes_brutas/menores_notas/33167.txt		1.5	2	2	0.5	0.5	2	8.5
+250_menores_notas	33436	33436 (0429-021).txt	corpus/01_composicoes_brutas/menores_notas/33436.txt	{FO: vem}; {FO: irresponsavel}; {FO: des de}; {FO: urbanisação}; {FO: fértiu}; {FO: na}; {FO: freaticos}; {FO: erronia}; {FO: armonia}; {FO: beneficio}; {FO: tiver-mos}	1	1	2	0.5	2.5	1.5	8.5
+250_menores_notas	33497	33497 (0453-003).txt	corpus/01_composicoes_brutas/menores_notas/33497.txt	{FO: à}; {FO: pecuaria}	2	1	2.5	0	0.5	2.5	8.5
+250_menores_notas	33645	33645 (0410-012).txt	corpus/01_composicoes_brutas/menores_notas/33645.txt	{FO: pra}; {FO: nos}; {FO: conciência}	1.5	1	2	1.5	0.5	2	8.5
+250_menores_notas	34236	34236 (0492-034).txt	corpus/01_composicoes_brutas/menores_notas/34236.txt	{FO: tantas}	1	1	3	0	1.5	2	8.5
+250_menores_notas	34895	34895 (0508-053).txt	corpus/01_composicoes_brutas/menores_notas/34895.txt	{FO: a}	2	2	2	0.5	0	2	8.5
+250_menores_notas	35131	35131 (0436-009).txt	corpus/01_composicoes_brutas/menores_notas/35131.txt		1	1	1	1	3	1.5	8.5
+250_menores_notas	35220	35220 (0507-037).txt	corpus/01_composicoes_brutas/menores_notas/35220.txt	{FO: naufágio}	1	1	1.5	2	2	1	8.5
+250_menores_notas	35906	35906 (0511-049).txt	corpus/01_composicoes_brutas/menores_notas/35906.txt		1	1	1	2.5	2	1	8.5
+250_menores_notas	36172	36172 (0508-016).txt	corpus/01_composicoes_brutas/menores_notas/36172.txt	{FO: intensivo}; {FO: Medida}; {FO: providencias}; {FO: consequencia}; (Instituto Brasileiro de Geografia e Estatística); {FO: a}; {FO: conciente}	1	1	2	1.5	1	2	8.5
+250_menores_notas	36188	36188 (0483-015).txt	corpus/01_composicoes_brutas/menores_notas/36188.txt	{FO: PRESERVA}; {FO: SUSTENTAVEL}; {FO: SERIE}; {FO: PREJUIZOS}; {FO: POLUIÇÃO}; {FO: DESTRUIÇÃO}; {FO: VARIAS}; {FO: ENRIQUECIMENTO}; {FO: SUSTENTAVEIS}; {FO: PRESERVAÇÃO}; {FO: PRINCIPIO}	1	1	2	1	2	1.5	8.5
+250_menores_notas	36248	36248 (0518-028).txt	corpus/01_composicoes_brutas/menores_notas/36248.txt	{FO: à}; {FO: usa-lo}; {FO: a}; {FO: eficiencia}	1	1	2	0	2.5	2	8.5
+250_menores_notas	36616	36616 (0485-014).txt	corpus/01_composicoes_brutas/menores_notas/36616.txt	{FO: já}; {FO: as}; {FO: através}; {FO: sobrevivência}	2	2	2.5	0	0	2	8.5
+250_menores_notas	37212	37212 (0403-018).txt	corpus/01_composicoes_brutas/menores_notas/37212.txt	{FO: estavamos}; {FO: á}; {FO: sabiamos}; {FO: sobrevivencia}; {FO: porque}; {FO: socorre}	2	2	2.5	0	0	2	8.5
+250_menores_notas	38036	38036 (0467-017).txt	corpus/01_composicoes_brutas/menores_notas/38036.txt		2	1.5	2.5	0	0	2.5	8.5
+250_menores_notas	39516	39516 (0511-027).txt	corpus/01_composicoes_brutas/menores_notas/39516.txt		1.5	1.5	1.5	0.5	2	1.5	8.5
+250_menores_notas	41096	41096 (0413-006).txt	corpus/01_composicoes_brutas/menores_notas/41096.txt		1.5	1	2.5	0	2	1.5	8.5
+250_menores_notas	46699	46699 (0432-007).txt	corpus/01_composicoes_brutas/menores_notas/46699.txt	(fogo, água, ar e terra)	2	1	2.5	0	0	3	8.5
+250_menores_notas	32714	32714 (0429-001) REV.txt	corpus/01_composicoes_brutas/menores_notas/32714.txt	(0429/001)	1	1	2.5	1	2	1.5	9
+250_menores_notas	33787	33787 (0439-033).txt	corpus/01_composicoes_brutas/menores_notas/33787.txt	{FO: agua}; {FO: vio}; {FO: vio}; {FO: expussou}; {FO: arranhaceus}; {FO: catastrofes}	1	1	2	1	3	1	9
+250_menores_notas	34807	34807 (0507-002).txt	corpus/01_composicoes_brutas/menores_notas/34807.txt		1	1	2	2	2	1	9
+250_menores_notas	35173	35173 (0462-012).txt	corpus/01_composicoes_brutas/menores_notas/35173.txt	{FO: desequilibrio}; {FO: destruição}; {FO: exploraçoes}; {FO: extração}; {FO: extração}; {FO: mineros}; {FO: mudanças}; {FO: climatica}; {FO: destruições}; {FO: importancia}; {FO: familias}; {FO: ambiental}	2	1.5	1.5	0	2	2	9
+250_menores_notas	35228	35228 (0460-016).txt	corpus/01_composicoes_brutas/menores_notas/35228.txt	{FO: imprescindiveis}; {FO: Água}	2	2	2.5	0.5	0.5	1.5	9
+250_menores_notas	35457	35457 (0524-030).txt	corpus/01_composicoes_brutas/menores_notas/35457.txt	{FO: sobrevivencia}; {FO: homen}; (como a alimentação); (obter lucros); {FO: catastrofes}	1.5	1.5	1.5	0	3	1.5	9
+250_menores_notas	35911	35911 (0422-028).txt	corpus/01_composicoes_brutas/menores_notas/35911.txt		1	1	1	2	3	1	9
+250_menores_notas	36095	36095 (0422-017).txt	corpus/01_composicoes_brutas/menores_notas/36095.txt		1	1	2	1	3	1	9
+250_menores_notas	36522	36522 (0429-025).txt	corpus/01_composicoes_brutas/menores_notas/36522.txt	{FO: agua}; {FO: água}; {FO: própria}; {FO: precisa}	1	1	2.5	1	2	1.5	9
+250_menores_notas	37034	37034 (0525-024).txt	corpus/01_composicoes_brutas/menores_notas/37034.txt	{FO: fossíl}	2	2	1	1	2	1	9
+250_menores_notas	37377	37377 (0499-014).txt	corpus/01_composicoes_brutas/menores_notas/37377.txt	[ilegível]	1	1	1	2	3	1	9
+250_menores_notas	38158	38158 (0413-025).txt	corpus/01_composicoes_brutas/menores_notas/38158.txt	{FO: concientização}	1.5	2	3.5	0	0.5	1.5	9
+250_menores_notas	38499	38499 (0507-005).txt	corpus/01_composicoes_brutas/menores_notas/38499.txt	(terra, fogo, água e ar)	1.5	1.5	2.5	0	2	1.5	9
+250_menores_notas	38764	38764 (0405-024).txt	corpus/01_composicoes_brutas/menores_notas/38764.txt		1.5	2	2	0.5	1	2	9
+250_menores_notas	38970	38970 (0508-011).txt	corpus/01_composicoes_brutas/menores_notas/38970.txt	(terra); (no caso da Samarco)	2	1.5	2.5	0	1	2	9
+250_menores_notas	40270	40270 (0447-005).txt	corpus/01_composicoes_brutas/menores_notas/40270.txt	{FO: inderferindo}; {FO: tenso}	1	1	2	1	3	1	9
+250_menores_notas	40865	40865 (0452-001).txt	corpus/01_composicoes_brutas/menores_notas/40865.txt	{FO: tem}; {FO: mais}; {FO: mais}	2	3	2.5	0	0	1.5	9
+250_menores_notas	45044	45044 (0502-027).txt	corpus/01_composicoes_brutas/menores_notas/45044.txt		2.5	1	3	0	0.5	2	9
+250_menores_notas	45389	45389 (0400-018).txt	corpus/01_composicoes_brutas/menores_notas/45389.txt		1	1.5	1.5	0.5	2.5	2	9
+250_menores_notas	46034	46034 (0480-005).txt	corpus/01_composicoes_brutas/menores_notas/46034.txt		1.5	1	2	0	1.5	3	9
+250_menores_notas	33465	33465 (0453-020).txt	corpus/01_composicoes_brutas/menores_notas/33465.txt	{FO: návio}; {FO: naufrágou}; {FO: ribeirinho}; {FO: tem}; {FO: econômia}; {FO: návios}; {FO: cetenas}; {FO: návio}; {PO: dar}	1	1.5	2	3.5	0	1.5	9.5
+250_menores_notas	33789	33789 (0421-026).txt	corpus/01_composicoes_brutas/menores_notas/33789.txt	{FO: mas}; {FO: calssadas}; {FO: le trará}; {FO: compoem}	2.5	1	2.5	1	1	1.5	9.5
+250_menores_notas	34642	34642 (0432-010).txt	corpus/01_composicoes_brutas/menores_notas/34642.txt		1.5	0.5	2	3	0	2.5	9.5
+250_menores_notas	34743	34743 (0417-001).txt	corpus/01_composicoes_brutas/menores_notas/34743.txt		1	1	1.5	2.5	2.5	1	9.5
+250_menores_notas	35056	35056 (0406-017).txt	corpus/01_composicoes_brutas/menores_notas/35056.txt	{FO: destruiram}; {FO: a ação}	1	1	1.5	3	1.5	1.5	9.5
+250_menores_notas	36137	36137 (0497-002).txt	corpus/01_composicoes_brutas/menores_notas/36137.txt	{FO: tem}; {FO: estam}; {FO: poluídos}; {FO: gerado}	2	1.5	2	0	1.5	2.5	9.5
+250_menores_notas	36727	36727 (0417-002).txt	corpus/01_composicoes_brutas/menores_notas/36727.txt	{FO: a}	2	2	2	1	0.5	2	9.5
+250_menores_notas	37043	37043 (0448-011).txt	corpus/01_composicoes_brutas/menores_notas/37043.txt	{FO: Ha}; {FO: atras}; {FO: necessarios}; {FO: sobrevivencia}; {FO: Agua}; {FO: sobrevivencia}; {FO: Porem}; {FO: começaram}; {FO: necessario}; {FO: tambem}; {FO: Revolução}; {FO: Porque}; {FO: então}; {FO: emissarios}; {FO: emissarios}; {FO: manifestação}; {FO: Agua}; {FO: emissarios}; {FO: desculpas}; {FO: então}; {FO: furia}; {FO: destruição}	2	1.5	2.5	0.5	1.5	1.5	9.5
+250_menores_notas	37664	37664 (0505-023).txt	corpus/01_composicoes_brutas/menores_notas/37664.txt	(jornais, televisão)	1.5	2	2.5	0.5	1	2	9.5
+250_menores_notas	38445	38445 (0509-027).txt	corpus/01_composicoes_brutas/menores_notas/38445.txt		1	1	2	1	3	1.5	9.5
+250_menores_notas	38451	38451 (0496-033).txt	corpus/01_composicoes_brutas/menores_notas/38451.txt	[ilegível]; [ilegível]	1	1	2.5	0	3	2	9.5
+250_menores_notas	38506	38506 (0468-003).txt	corpus/01_composicoes_brutas/menores_notas/38506.txt		1	1	2.5	2	2	1	9.5
+250_menores_notas	38632	38632 (0400-005).txt	corpus/01_composicoes_brutas/menores_notas/38632.txt		1	1.5	1.5	1.5	2.5	1.5	9.5
+250_menores_notas	38786	38786 (0420-026).txt	corpus/01_composicoes_brutas/menores_notas/38786.txt	(oxigênio)	1.5	1.5	2	2	1	1.5	9.5
+250_menores_notas	39065	39065 (0406-008).txt	corpus/01_composicoes_brutas/menores_notas/39065.txt	[ilegível]; [ilegível]; [ilegível]; [ilegível]; [ilegível]; [ilegível]	2.5	2	2	0	1	2	9.5
+250_menores_notas	39379	39379 (0429-023).txt	corpus/01_composicoes_brutas/menores_notas/39379.txt	(Ar)	2	1.5	2.5	1	0.5	2	9.5
+250_menores_notas	39727	39727 (0489-012).txt	corpus/01_composicoes_brutas/menores_notas/39727.txt		1	1	1.5	1	4	1	9.5
+250_menores_notas	39833	39833 (0418-029).txt	corpus/01_composicoes_brutas/menores_notas/39833.txt	{FO: inegligência}; {FO: inegligência}; {FO: mais}; (RGS)	2	1.5	2	1	1.5	1.5	9.5
+250_menores_notas	39956	39956 (0426-003).txt	corpus/01_composicoes_brutas/menores_notas/39956.txt		1	1	2	0	3	2.5	9.5
+250_menores_notas	40688	40688 (0502-014).txt	corpus/01_composicoes_brutas/menores_notas/40688.txt	(elemento água); (elemento fogo)	2.5	1	2.5	1	0.5	2	9.5
+250_menores_notas	41011	41011 (0463-010).txt	corpus/01_composicoes_brutas/menores_notas/41011.txt	{FO: tem}; {FO: a natureza}; {FO: auto-sustentável}	1	1	2	1	3	1.5	9.5
+250_menores_notas	45124	45124 (0509-001).txt	corpus/01_composicoes_brutas/menores_notas/45124.txt		1	1.5	1.5	2	2	1.5	9.5
+250_menores_notas	46288	46288 (0477-026).txt	corpus/01_composicoes_brutas/menores_notas/46288.txt		1	1	1.5	2.5	2.5	1	9.5
+250_menores_notas	46946	46946 (0415-019).txt	corpus/01_composicoes_brutas/menores_notas/46946.txt		1	1	2.5	2	1	2	9.5
+250_menores_notas	33871	33871 (0434-026).txt	corpus/01_composicoes_brutas/menores_notas/33871.txt	{FO: acumulo}; {FO: materia prima}; {FO: tambem}	2	2	2.5	0.5	0.5	2.5	10
+250_menores_notas	34009	34009 (0518-031).txt	corpus/01_composicoes_brutas/menores_notas/34009.txt	(ar, água, terra e fogo)	1	1	3.5	0	3.5	1	10
+250_menores_notas	34046	34046 (0490-012).txt	corpus/01_composicoes_brutas/menores_notas/34046.txt	{FO: D'agua}; {FO: Maldavia}; (que subiu 0,9°C em relação ao século passado); {FO: maquinas}; {FO: especie}	1	1	2	1.5	2.5	2	10
+250_menores_notas	34185	34185 (0462-028).txt	corpus/01_composicoes_brutas/menores_notas/34185.txt	{FO: destruí-la}; {FO: proteja-á}	2	1	3	0	1	3	10
+250_menores_notas	34273	34273 (0472-021).txt	corpus/01_composicoes_brutas/menores_notas/34273.txt	{FO: nos}; {FO: relogio}; {FO: fenomenos}; {FO: de mais}; {FO: agua}; {FO: ja}; {FO: fabricas}; {FO: esta}; {FO: nós}; {FO: deveriamos}; {FO: sustentaveis}; {FO: importancia}	1.5	1.5	2	0	2.5	2.5	10
+250_menores_notas	34616	34616 (0453-030).txt	corpus/01_composicoes_brutas/menores_notas/34616.txt	{FO: univelmente}	2	3	2.5	0	0.5	2	10
+250_menores_notas	34618	34618 (0409-020).txt	corpus/01_composicoes_brutas/menores_notas/34618.txt	{FO: Consequencias}	2	1.5	2.5	2	0	2	10
+250_menores_notas	34638	34638 (0449-007).txt	corpus/01_composicoes_brutas/menores_notas/34638.txt	{FO: preserva}	2.5	1	2	0	1.5	3	10
+250_menores_notas	35028	35028 (0421-006).txt	corpus/01_composicoes_brutas/menores_notas/35028.txt	(fogo, Água {FO: Agua}, terra, ar); {FO: bem estar}; {FO: existencia}; {FO: indigenas}; {FO: atraves}; {FO: porem}; {FO: atraves}; {FO: arvores}	2	1.5	2.5	0	2	2	10
+250_menores_notas	35278	35278 (0481-008).txt	corpus/01_composicoes_brutas/menores_notas/35278.txt		1.5	1.5	2	0.5	2	2.5	10
+250_menores_notas	35852	35852 (0525-027).txt	corpus/01_composicoes_brutas/menores_notas/35852.txt	{FO: desarrume}	1.5	1.5	1.5	2.5	1	2	10
+250_menores_notas	36578	36578 (0525-032).txt	corpus/01_composicoes_brutas/menores_notas/36578.txt	{FO: tem}; {FO: a}; {FO: adubo?}; {FO: a}; {FO: a}; {FO: diminuir-se}; (Organização não Governamental)	2	2	2	2	0	2	10
+250_menores_notas	36721	36721 (0432-017).txt	corpus/01_composicoes_brutas/menores_notas/36721.txt		1.5	0.5	2.5	2	1	2.5	10
+250_menores_notas	36797	36797 (0498-010).txt	corpus/01_composicoes_brutas/menores_notas/36797.txt	{FO: oque}; {FO: exploralá}; {FO: oque}	1.5	1.5	2	0	3.5	1.5	10
+250_menores_notas	36867	36867 (0507-033).txt	corpus/01_composicoes_brutas/menores_notas/36867.txt		2	2.5	2.5	0	0.5	2.5	10
+250_menores_notas	36872	36872 (0494-001).txt	corpus/01_composicoes_brutas/menores_notas/36872.txt	{FO: harmônia}; {FO: litorânias}; {FO: sobrevive}; {FO: destrói}; {FO: bombadiado}; {FO: impedi}; {FO: invenenam}; {FO: impossibilidando}; {FO: primordios}	1.5	1.5	2.5	0.5	2	2	10
+250_menores_notas	36973	36973 (0478-030).txt	corpus/01_composicoes_brutas/menores_notas/36973.txt		1.5	1.5	3	1	1.5	1.5	10
+250_menores_notas	37063	37063 (0459-004).txt	corpus/01_composicoes_brutas/menores_notas/37063.txt	{FO: deis do}; {FO: Porem}; {FO: imprudência}; {FO: esta}; {FO: a}; {FO: importância}; {FO: água}; {FO: matéria prima}; {FO: Porém}; {FO: está}; {FO: consequencias}; {FO: nós}; {FO: país}; {FO: nós}; {FO: porém}; {FO: químicos}; {FO: água}; {FO: iproprios}; {FO: Pará}; {FO: mês}; {FO: além}; {FO: respiração}; {FO: também}; {FO: água}; {FO: Por tanto}; {FO: Porém}; {FO: industrias}; {FO: às}; {FO: práticas}	2	2	2	0	1.5	2.5	10
+250_menores_notas	37158	37158 (0413-011).txt	corpus/01_composicoes_brutas/menores_notas/37158.txt	{FO: água}; {FO: geração}; {FO: apartir}; {FO: transformação}; {FO: a}; {FO: historicos}; {FO: revolução}; {FO: produção}; {FO: comércio}; {FO: matéria-prima}; {FO: exploração}; {FO: carvão}; {FO: maquinas}; {FO: emissão}; {FO: poluição}; {FO: água}; {FO: mal}; {FO: da}; {FO: mal}; {FO: fiscalização}; {FO: água}; {FO: roçados}; {FO: prevenção}; {FO: fiscalização}; {FO: orgãos}; {FO: exploração}; {FO: saídas}; {FO: destruição}; {FO: participação}; {FO: atuação}	2	1.5	2.5	0	1.5	2.5	10
+250_menores_notas	37442	37442 (0527-028).txt	corpus/01_composicoes_brutas/menores_notas/37442.txt	{FO: quatros}; (água, fogo, terra e ar); {FO: ao favor}	1	1	2.5	3	1	1.5	10
+250_menores_notas	37489	37489 (0448-006).txt	corpus/01_composicoes_brutas/menores_notas/37489.txt		2	2	1.5	0.5	2	2	10
+250_menores_notas	38204	38204 (0465-019).txt	corpus/01_composicoes_brutas/menores_notas/38204.txt	{FO: descompromissador}; {FO: tira}; {FO: houvi-se}; {FO: tornar}	2	1.5	2.5	0	1.5	2.5	10
+250_menores_notas	38284	38284 (0514-029).txt	corpus/01_composicoes_brutas/menores_notas/38284.txt		1.5	1.5	2.5	0	2	2.5	10
+250_menores_notas	38439	38439 (0509-002).txt	corpus/01_composicoes_brutas/menores_notas/38439.txt		1.5	1.5	2	2	1	2	10
+250_menores_notas	39436	39436 (0479-017).txt	corpus/01_composicoes_brutas/menores_notas/39436.txt		1	1	2	2	3	1	10
+250_menores_notas	39493	39493 (0490-025).txt	corpus/01_composicoes_brutas/menores_notas/39493.txt		1	1	1.5	2	2.5	2	10
+250_menores_notas	39722	39722 (0466-004).txt	corpus/01_composicoes_brutas/menores_notas/39722.txt		1	1	2	2	3	1	10
+250_menores_notas	39786	39786 (0444-006).txt	corpus/01_composicoes_brutas/menores_notas/39786.txt		2	1	2.5	1.5	1	2	10
+250_menores_notas	39912	39912 (0529-013).txt	corpus/01_composicoes_brutas/menores_notas/39912.txt		1	1	1.5	2	2.5	2	10
+250_menores_notas	39985	39985 (0409-015).txt	corpus/01_composicoes_brutas/menores_notas/39985.txt		2	3	2.5	0	0.5	2	10
+250_menores_notas	40256	40256 (0470-024).txt	corpus/01_composicoes_brutas/menores_notas/40256.txt		1	1.5	1.5	4	0	2	10
+250_menores_notas	40362	40362 (0428-006).txt	corpus/01_composicoes_brutas/menores_notas/40362.txt		1	1	1	3.5	2	1.5	10
+250_menores_notas	40523	40523 (0496-023).txt	corpus/01_composicoes_brutas/menores_notas/40523.txt	{FO: frequente}	1	1	2.5	0	3.5	2	10
+250_menores_notas	40690	40690 (0466-010).txt	corpus/01_composicoes_brutas/menores_notas/40690.txt		1	1	2	3	2	1	10
+250_menores_notas	40765	40765 (0441-011).txt	corpus/01_composicoes_brutas/menores_notas/40765.txt	(água terra fogo e ar); {FO: tem}	1	1	3	1.5	1	2.5	10
+250_menores_notas	40803	40803 (0503-030).txt	corpus/01_composicoes_brutas/menores_notas/40803.txt	{FO: matérias primas}; {FO: mal}; [ilegível]	1	1	1.5	1	3.5	2	10
+250_menores_notas	46249	46249 (0505-031).txt	corpus/01_composicoes_brutas/menores_notas/46249.txt	(terra, fogo, água e ar)	1.5	2	2.5	0.5	1	2.5	10
+250_menores_notas	46255	46255 (0518-029).txt	corpus/01_composicoes_brutas/menores_notas/46255.txt		1	1	2	1.5	3	1.5	10
+250_menores_notas	46626	46626 (0410-010).txt	corpus/01_composicoes_brutas/menores_notas/46626.txt		2	2	3	0.5	0.5	2	10
+250_menores_notas	46724	46724 (0508-033).txt	corpus/01_composicoes_brutas/menores_notas/46724.txt		1.5	1.5	2	2	0.5	2.5	10
+250_menores_notas	47010	47010 (0411-009).txt	corpus/01_composicoes_brutas/menores_notas/47010.txt		1.5	1.5	3.5	0.5	1	2	10
+250_menores_notas	47068	47068 (0450-002).txt	corpus/01_composicoes_brutas/menores_notas/47068.txt		1	1	1.5	2	2	2.5	10
+250_menores_notas	32860	32860 (0412-010)(1).txt	corpus/01_composicoes_brutas/menores_notas/32860.txt	{FO: mostra}; {FO: mais}	1	1	2	3	1.5	2	10.5
+250_menores_notas	33310	33310 (0508-024).txt	corpus/01_composicoes_brutas/menores_notas/33310.txt		1	1	2	3.5	1	2	10.5
+250_menores_notas	33360	33360 (0410-028).txt	corpus/01_composicoes_brutas/menores_notas/33360.txt	{FO: da}; (tomando como base)	2	2	2.5	1	1	2	10.5
+250_menores_notas	33856	33856 (0470-011).txt	corpus/01_composicoes_brutas/menores_notas/33856.txt	{FO: crúeu}; {FO: iram}; {FO: deveram}; {FO: têm}	2.5	2.5	2	0	1.5	2	10.5
+250_menores_notas	34308	34308 (0406-009).txt	corpus/01_composicoes_brutas/menores_notas/34308.txt	{FO: tem}; {FO: Espirito}; {FO: agua}; {FO: inevitavel}; {FO: propria}; {FO: permanência}; {FO: necessario}; {FO: a}; {FO: equilibrio}	2	2	2	1.5	0.5	2.5	10.5
+250_menores_notas	35198	35198 (0450-006).txt	corpus/01_composicoes_brutas/menores_notas/35198.txt	{FO: vem}; {FO: usa-la}	1	1	2.5	1.5	2.5	2	10.5
+250_menores_notas	35485	35485 (0453-002).txt	corpus/01_composicoes_brutas/menores_notas/35485.txt		2.5	3.5	3	0	0	1.5	10.5
+250_menores_notas	35633	35633 (0406-005).txt	corpus/01_composicoes_brutas/menores_notas/35633.txt	{FO: a}; {FO: cumprimento}; {FO: destruiram}	2	2	2	0.5	2	2	10.5
+250_menores_notas	35820	35820 (0424-013).txt	corpus/01_composicoes_brutas/menores_notas/35820.txt	{FO: sócio ambientais}	1	1	1.5	4.5	1.5	1	10.5
+250_menores_notas	35937	35937 (0420-013).txt	corpus/01_composicoes_brutas/menores_notas/35937.txt		2	2	2	1	1	2.5	10.5
+250_menores_notas	36079	36079 (0451-011).txt	corpus/01_composicoes_brutas/menores_notas/36079.txt	{FO: patrimonios}; (2015)	1.5	1.5	3.5	0	2	2	10.5
+250_menores_notas	36085	36085 (0507-010).txt	corpus/01_composicoes_brutas/menores_notas/36085.txt	{FO: surge}; {FO: vem}; {FO: industrias}; {FO: as}; {FO: necessaria}	1.5	1.5	3	0	3	1.5	10.5
+250_menores_notas	36307	36307 (0489-006).txt	corpus/01_composicoes_brutas/menores_notas/36307.txt	{FO: vicios}; {FO: egoista}	1	1	2	2.5	3	1	10.5
+250_menores_notas	36430	36430 (0482-032).txt	corpus/01_composicoes_brutas/menores_notas/36430.txt	{FO: arvores}; {FO: arvores}; {FO: consequência}	1	1	1.5	3	2	2	10.5
+250_menores_notas	36547	36547 (0468-017).txt	corpus/01_composicoes_brutas/menores_notas/36547.txt	{FO: cientifico}; {FO: tecnologico}; {FO: âmbíto}; {FO: catastrofes}; (ar, fogo, água, terra); {FO: consiliação}; {FO: Âmbitos}; {FO: destruição}; {FO: egoísta}; {FO: à}; {FO: catastrofes}; {FO: decadência}; {FO: ha}; {FO: consiliação}; {FO: atraves}	2	2	2.5	1	1	2	10.5
+250_menores_notas	36590	36590 (0422-001).txt	corpus/01_composicoes_brutas/menores_notas/36590.txt	(estão); {FO: através}; {FO: administra-la}; {FO: destruindo-a}; {FO: necessario}; (USP)	1	1.5	3	2	1	2	10.5
+250_menores_notas	36704	36704 (0453-028).txt	corpus/01_composicoes_brutas/menores_notas/36704.txt	{FO: a}	2	2.5	2.5	1.5	0	2	10.5
+250_menores_notas	36827	36827(1) (0513-010).txt	corpus/01_composicoes_brutas/menores_notas/36827.txt	{FO: ultimas}; {FO: decadas}; {FO: politicas}; {FO: econômicas}; {FO: socio politico}; {FO: áqua}; {FO: petróleo}; {FO: eólica}; {FO: notável}; {FO: Amazônica}; {FO: áreas}; {FO: destruídos}; {FO: socio politico}; {FO: susten-tável}; {FO: industrias}	2	2.5	2.5	1	0	2.5	10.5
+250_menores_notas	37099	37099 (0448-020).txt	corpus/01_composicoes_brutas/menores_notas/37099.txt	{FO: valido}; {FO: implantação}; {FO: até}; {FO: naufrágio}; {FO: vários}; {FO: três}; {FO: poluição}; {FO: água}; {FO: várias}; {FO: óleo}; {FO: embarcação}; {FO: decomposição}; {FO: exposição}; {FO: doenças}; {FO: empresários}; {FO: à}	2	2	2	1.5	1.5	1.5	10.5
+250_menores_notas	37602	37602 (0518-022).txt	corpus/01_composicoes_brutas/menores_notas/37602.txt	(TV, rádio, jornais)	1	1	3.5	0	3.5	1.5	10.5
+250_menores_notas	37858	37858 (0425-013).txt	corpus/01_composicoes_brutas/menores_notas/37858.txt	{FO: vem}; [ilegível]	2	2	2	0	2	2.5	10.5
+250_menores_notas	38340	38340 (0460-022).txt	corpus/01_composicoes_brutas/menores_notas/38340.txt	{FO: A}; {FO: atraz}	1.5	1.5	3	0.5	2	2	10.5
+250_menores_notas	38395	38395 (0526-001).txt	corpus/01_composicoes_brutas/menores_notas/38395.txt	{FO: irreverênça}	1.5	2	3	0.5	1.5	2	10.5
+250_menores_notas	38536	38536 (0468-020).txt	corpus/01_composicoes_brutas/menores_notas/38536.txt	{FO: contra ponto}	2	2	2.5	1	1	2	10.5
+250_menores_notas	38637	38637 (0464-002).txt	corpus/01_composicoes_brutas/menores_notas/38637.txt		2	2	2.5	0.5	1.5	2	10.5
+250_menores_notas	38670	38670 (0507-028).txt	corpus/01_composicoes_brutas/menores_notas/38670.txt		1	1.5	2.5	0	4	1.5	10.5
+250_menores_notas	38674	38674 (0515-025).txt	corpus/01_composicoes_brutas/menores_notas/38674.txt		1	1	1.5	4	2	1	10.5
+250_menores_notas	39063	39063 (0415-012).txt	corpus/01_composicoes_brutas/menores_notas/39063.txt		1.5	1.5	1.5	2	2	2	10.5
+250_menores_notas	39302	39302 (0460-018).txt	corpus/01_composicoes_brutas/menores_notas/39302.txt		1	1	2.5	2.5	2	1.5	10.5
+250_menores_notas	39502	39502 (0508-017).txt	corpus/01_composicoes_brutas/menores_notas/39502.txt		1.5	1.5	2.5	3	0	2	10.5
+250_menores_notas	39648	39648 (0503-028).txt	corpus/01_composicoes_brutas/menores_notas/39648.txt		1	1	1.5	2	3	2	10.5
+250_menores_notas	39695	39695 (0500-030).txt	corpus/01_composicoes_brutas/menores_notas/39695.txt		2	2	2	1	1.5	2	10.5
+250_menores_notas	40617	40617 (0507-036).txt	corpus/01_composicoes_brutas/menores_notas/40617.txt		1	1	2	2	3	1.5	10.5
+250_menores_notas	40869	40869 (0458-006).txt	corpus/01_composicoes_brutas/menores_notas/40869.txt		2	2	2	1	1	2.5	10.5
+250_menores_notas	40906	40906 (0450-010).txt	corpus/01_composicoes_brutas/menores_notas/40906.txt		1	1	2.5	2	2.5	1.5	10.5
+250_menores_notas	40926	40926 (0468-023).txt	corpus/01_composicoes_brutas/menores_notas/40926.txt		2	2	2.5	1	1	2	10.5
+250_menores_notas	40978	40978 (0452-011).txt	corpus/01_composicoes_brutas/menores_notas/40978.txt		1	1	2.5	3.5	0	2.5	10.5
+250_menores_notas	45357	45357 (0460-007).txt	corpus/01_composicoes_brutas/menores_notas/45357.txt		1	1	1	3.5	2.5	1.5	10.5
+250_menores_notas	46705	46705 (0526-008).txt	corpus/01_composicoes_brutas/menores_notas/46705.txt		1.5	1.5	3	0.5	1.5	2.5	10.5
+250_menores_notas	32733	32733 (0429-020).txt	corpus/01_composicoes_brutas/menores_notas/32733.txt		1.5	2	2.5	1	2	2	11
+250_menores_notas	33948	33948 (0490-029).txt	corpus/01_composicoes_brutas/menores_notas/33948.txt	{FO: destruílo}; {FO: providencias}; {FO: orgãos}; {FO: publicos}; {FO: tras}; {FO: toxicos}; {FO: Providencias}; {FO: dos}; {FO: publicos}	2	2	2	0.5	2.5	2	11
+250_menores_notas	33964	33964 (0428-030).txt	corpus/01_composicoes_brutas/menores_notas/33964.txt	{FO: numero}; {FO: acumulo}; {FO: acumulo}; {FO: Mais}; {FO: proprios}; {FO: numero}; {FO: afim}; {FO: tragedias}; {FO: ficara}; {FO: esta}; {FO: varias}	2	2	2.5	0	2	2.5	11
+250_menores_notas	34210	34210 (0466-005).txt	corpus/01_composicoes_brutas/menores_notas/34210.txt	{FO: em que vivemos}; {FO: vêm}; {FO: imprópria}; {FO: é usado}; {FO: o ar}; {FO: acaba}; {FO: quimicas}; {FO: mistura}; {FO: acido}; {FO: produtos químicos}; {FO: imprópria}; {FO: infértil}; {FO: tivesse}; {FO: vêm}	2	1	2	0	3	3	11
+250_menores_notas	34537	34537 (0502-030).txt	corpus/01_composicoes_brutas/menores_notas/34537.txt		2	2	2.5	1.5	0.5	2.5	11
+250_menores_notas	34637	34637 (0504-026).txt	corpus/01_composicoes_brutas/menores_notas/34637.txt	{FO: transcorre}	1	1	2.5	2.5	2.5	1.5	11
+250_menores_notas	34823	34823 (0429-030).txt	corpus/01_composicoes_brutas/menores_notas/34823.txt		2	2	2.5	0.5	2	2	11
+250_menores_notas	35019	35019 (0466-026).txt	corpus/01_composicoes_brutas/menores_notas/35019.txt	{FO: selas?}	1	1.5	2	1	3	2.5	11
+250_menores_notas	35214	35214 (0462-002).txt	corpus/01_composicoes_brutas/menores_notas/35214.txt	{FO: tem}; {FO: tem}; {FO: ocorrência}; {FO: vem}; {FO: distribuição}; {FO: desperdício}; {FO: tambem}; {FO: vem}	2.5	1.5	2.5	0	1.5	3	11
+250_menores_notas	35465	35465 (0526-020).txt	corpus/01_composicoes_brutas/menores_notas/35465.txt	{FO: A}; {FO: a}; {FO: Soubemos}	2	1.5	2	0.5	2	3	11
+250_menores_notas	35661	35661 (0479-026).txt	corpus/01_composicoes_brutas/menores_notas/35661.txt	{FO: se mente}; {FO: ár}; {FO: hávia}; {FO: respeita-se}; {FO: poluice}; {FO: ár}; {FO: mau}; {FO: nóis}	1.5	2.5	2	0	3	2	11
+250_menores_notas	35979	35979 (0437-014).txt	corpus/01_composicoes_brutas/menores_notas/35979.txt		2	1.5	2	1	2	2.5	11
+250_menores_notas	35986	35986 (0507-040).txt	corpus/01_composicoes_brutas/menores_notas/35986.txt		2.5	2.5	2.5	0	1	2.5	11
+250_menores_notas	36140	36140 (0492-028).txt	corpus/01_composicoes_brutas/menores_notas/36140.txt	{FO: ocorrera}	1.5	1.5	2.5	0	3	2.5	11
+250_menores_notas	36225	36225 (0490-027).txt	corpus/01_composicoes_brutas/menores_notas/36225.txt	{FO: tecnologicos}; {FO: ja}; {FO: importancia}; {FO: agua}; {FO: importancia}; {FO: poluidos}; {FO: agua}; {FO: vem}; {FO: equilibrio}; {FO: esta}; {FO: varias}; {FO: consequencias}; {FO: nivel}; {FO: climaticas}; {FO: orgãos}; {FO: responsaveis}	1.5	1	2	1	2.5	3	11
+250_menores_notas	36278	36278 (0511-015).txt	corpus/01_composicoes_brutas/menores_notas/36278.txt	{FO: deteriorizados}; {FO: primordios}	2	1.5	2	2	1.5	2	11
+250_menores_notas	36295	36295 (0514-028).txt	corpus/01_composicoes_brutas/menores_notas/36295.txt	{FO: exagerada?}	1.5	1.5	2.5	2	1.5	2	11
+250_menores_notas	36341	36341 (0506-008).txt	corpus/01_composicoes_brutas/menores_notas/36341.txt	{FO: proprio}; {FO: incidencia}; {FO: egoismo}	1	1	3	2	3	1	11
+250_menores_notas	36856	36856 (0475-009).txt	corpus/01_composicoes_brutas/menores_notas/36856.txt	{FO: históricos}	2	1	1	1	3	3	11
+250_menores_notas	37094	37094 (0422-003).txt	corpus/01_composicoes_brutas/menores_notas/37094.txt		1.5	1.5	2.5	0	3	2.5	11
+250_menores_notas	37260	37260 (0409-001).txt	corpus/01_composicoes_brutas/menores_notas/37260.txt		2	1.5	3	0	2	2.5	11
+250_menores_notas	37677	37677 (0402-034).txt	corpus/01_composicoes_brutas/menores_notas/37677.txt	(mais de 2 mil); (dia 07 de dezembro de 2015)	1	1	2	2	3.5	1.5	11
+250_menores_notas	37694	37694 (0405-007).txt	corpus/01_composicoes_brutas/menores_notas/37694.txt		2	1.5	2	1	2.5	2	11
+250_menores_notas	37734	37734 (0436-029).txt	corpus/01_composicoes_brutas/menores_notas/37734.txt		1	1	1.5	3.5	3	1	11
+250_menores_notas	37949	37949 (0432-032).txt	corpus/01_composicoes_brutas/menores_notas/37949.txt	{FO: a}; {FO: a}	2	2.5	2.5	0	1.5	2.5	11
+250_menores_notas	37994	37994 (0423-024).txt	corpus/01_composicoes_brutas/menores_notas/37994.txt	{FO: destroem}; {FO: poluem}; {FO: a}; {FO: a}; {FO: as}	1	1	1.5	1	3.5	3	11
+250_menores_notas	38002	38002 (0519-017).txt	corpus/01_composicoes_brutas/menores_notas/38002.txt	(raivosa); (gentil); (e ainda são); (rios, lagos, igarapés)	2	1.5	2	0.5	3	2	11
+250_menores_notas	38193	38193 (0404-005).txt	corpus/01_composicoes_brutas/menores_notas/38193.txt	(IBGE); {FO: pode}	2.5	2.5	3	0	1	2	11
+250_menores_notas	38226	38226 (0481-013).txt	corpus/01_composicoes_brutas/menores_notas/38226.txt	{FO: benefician}	1.5	1.5	2	2	2	2	11
+250_menores_notas	38469	38469 (0427-017).txt	corpus/01_composicoes_brutas/menores_notas/38469.txt		1	1	1.5	3	3	1.5	11
+250_menores_notas	38495	38495 (0520-035).txt	corpus/01_composicoes_brutas/menores_notas/38495.txt		1	1	1.5	3	2.5	2	11
+250_menores_notas	38891	38891 (0425-015).txt	corpus/01_composicoes_brutas/menores_notas/38891.txt		2	2	2	0.5	2	2.5	11
+250_menores_notas	39349	39349 (0470-012).txt	corpus/01_composicoes_brutas/menores_notas/39349.txt		1.5	1	2	2	3	1.5	11
+250_menores_notas	39615	39615 (0461-013).txt	corpus/01_composicoes_brutas/menores_notas/39615.txt		2	2	2	2	1	2	11
+250_menores_notas	39701	39701 (0411-018).txt	corpus/01_composicoes_brutas/menores_notas/39701.txt		1	1	2.5	2	3	1.5	11
+250_menores_notas	40126	40126 (0401-010).txt	corpus/01_composicoes_brutas/menores_notas/40126.txt		2	3	3	0	1	2	11
+250_menores_notas	40461	40461 (0489-001).txt	corpus/01_composicoes_brutas/menores_notas/40461.txt	(MG)	2	2.5	3	0	1	2.5	11
+250_menores_notas	40898	40898 (0524-020).txt	corpus/01_composicoes_brutas/menores_notas/40898.txt	{FO: catastrofes}; {FO: vem}; {FO: agua}; {FO: Porem}; {FO: serio}; {FO: catastrofe}; {FO: é}; {FO: serias}; {FO: agua}; {FO: catastrofes}; {FO: à}; {FO: catastrofes}	2	2	2.5	0	2	2.5	11
+250_menores_notas	45078	45078 (0504-003).txt	corpus/01_composicoes_brutas/menores_notas/45078.txt	(INPE)	1	1	2	3.5	2	1.5	11
+250_menores_notas	45241	45241 (0498-030).txt	corpus/01_composicoes_brutas/menores_notas/45241.txt	(o impulsivo); (o racional); (a sensível); (a sensata)	1.5	1.5	1.5	2	3	1.5	11
+250_menores_notas	45519	45519 (0497-032).txt	corpus/01_composicoes_brutas/menores_notas/45519.txt		2.5	2	2.5	0	1.5	2.5	11
+250_menores_notas	45531	45531 (0448-021).txt	corpus/01_composicoes_brutas/menores_notas/45531.txt		2	1.5	2.5	1	2	2	11
+250_menores_notas	45667	45667 (0506-019).txt	corpus/01_composicoes_brutas/menores_notas/45667.txt		1.5	1.5	3	1	2	2	11
+250_menores_notas	45996	45996 (0422-015).txt	corpus/01_composicoes_brutas/menores_notas/45996.txt		1	1	1	4	3	1	11
+250_menores_notas	46108	46108 (0504-008).txt	corpus/01_composicoes_brutas/menores_notas/46108.txt		1	1	2.5	3.5	1.5	1.5	11
+250_menores_notas	46276	46276 (0502-034).txt	corpus/01_composicoes_brutas/menores_notas/46276.txt	{FO: perde}	3	1.5	2.5	0	0	4	11
+250_menores_notas	46290	46290 (0414-035).txt	corpus/01_composicoes_brutas/menores_notas/46290.txt	{FO: Por tanto}	2	2	1	2	2	2	11
+250_menores_notas	46687	46687 (0431-018).txt	corpus/01_composicoes_brutas/menores_notas/46687.txt		1	1	3	1	4	1	11
+250_menores_notas	47123	47123 (0479-016).txt	corpus/01_composicoes_brutas/menores_notas/47123.txt		1	1	2	3	3	1	11
+250_menores_notas	32610	32610 (0463-002).txt	corpus/01_composicoes_brutas/menores_notas/32610.txt	(0463/002); {FO: tem}; {FO: Prejuizo}; {FO: especies}; {FO: conscientizar a ser}	1	1	2	2.5	3.5	1.5	11.5
+250_menores_notas	32749	32749 (0411-016).txt	corpus/01_composicoes_brutas/menores_notas/32749.txt		1	1	2.5	1.5	3.5	2	11.5
+250_menores_notas	33862	33862 (0498-020).txt	corpus/01_composicoes_brutas/menores_notas/33862.txt	{FO: cosmetico}	1	1	1.5	4	3	1	11.5
+250_menores_notas	34251	34251 (0511-012).txt	corpus/01_composicoes_brutas/menores_notas/34251.txt	{FO: sobrevivencia}; {FO: esta}; {FO: responsaveis}; {FO: serie}; {FO: consciencia}; {FO: consequência}; {FO: sub solo}; {FO: tem}	2	2	2.5	1	2	2	11.5
+250_menores_notas	34613	34613 (0472-031).txt	corpus/01_composicoes_brutas/menores_notas/34613.txt	{FO: horriveis}; {FO: hidreletricas}; {FO: equilibrio}; {FO: minerio}; {FO: conscientiza-los}	1.5	1.5	2	1	3	2.5	11.5
+250_menores_notas	34971	34971 (0492-012).txt	corpus/01_composicoes_brutas/menores_notas/34971.txt	{FO: frequênte}; {FO: catastrofis}	1.5	1.5	2.5	1.5	2.5	2	11.5
+250_menores_notas	35072	35072 (0496-007).txt	corpus/01_composicoes_brutas/menores_notas/35072.txt		1	1	2	3	3	1.5	11.5
+250_menores_notas	35136	35136 (0505-029).txt	corpus/01_composicoes_brutas/menores_notas/35136.txt		2	2.5	2.5	0.5	1.5	2.5	11.5
+250_menores_notas	35163	35163 (0471-035).txt	corpus/01_composicoes_brutas/menores_notas/35163.txt		1	1	1.5	4	2.5	1.5	11.5
