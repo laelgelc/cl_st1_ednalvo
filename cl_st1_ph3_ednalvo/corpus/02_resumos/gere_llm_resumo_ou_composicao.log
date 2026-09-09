@@ -1,0 +1,757 @@
+[2026-09-08 17:31:47] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260908T203147Z_1a88438a
+[2026-09-08 17:31:47] INFO  Command: resuma
+[2026-09-08 17:31:47] INFO  Input dir: corpus/01_composicoes/menores_notas
+[2026-09-08 17:31:47] INFO  Output dir: corpus/02_resumos
+[2026-09-08 17:31:47] INFO  Model: gpt-5.6-sol
+[2026-09-08 17:31:47] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 17:31:48] INFO  Processing file: 32610.txt
+[2026-09-08 17:31:55] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:31:55] INFO  SUCCESS 32610.txt -> 32610_resumo.md
+[2026-09-08 17:31:55] INFO  Processing file: 32674.txt
+[2026-09-08 17:32:06] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:06] INFO  SUCCESS 32674.txt -> 32674_resumo.md
+[2026-09-08 17:32:06] INFO  Processing file: 32714.txt
+[2026-09-08 17:32:12] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:12] INFO  SUCCESS 32714.txt -> 32714_resumo.md
+[2026-09-08 17:32:12] INFO  Processing file: 32733.txt
+[2026-09-08 17:32:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:17] INFO  SUCCESS 32733.txt -> 32733_resumo.md
+[2026-09-08 17:32:17] INFO  Processing file: 32749.txt
+[2026-09-08 17:32:23] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:23] INFO  SUCCESS 32749.txt -> 32749_resumo.md
+[2026-09-08 17:32:23] INFO  Processing file: 32755.txt
+[2026-09-08 17:32:29] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:29] INFO  SUCCESS 32755.txt -> 32755_resumo.md
+[2026-09-08 17:32:29] INFO  Processing file: 32782.txt
+[2026-09-08 17:32:40] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:40] INFO  SUCCESS 32782.txt -> 32782_resumo.md
+[2026-09-08 17:32:40] INFO  Processing file: 32792.txt
+[2026-09-08 17:32:44] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:44] INFO  SUCCESS 32792.txt -> 32792_resumo.md
+[2026-09-08 17:32:44] INFO  Processing file: 32860.txt
+[2026-09-08 17:32:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:32:59] INFO  SUCCESS 32860.txt -> 32860_resumo.md
+[2026-09-08 17:32:59] INFO  Processing file: 33167.txt
+[2026-09-08 17:33:04] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:04] INFO  SUCCESS 33167.txt -> 33167_resumo.md
+[2026-09-08 17:33:04] INFO  Processing file: 33310.txt
+[2026-09-08 17:33:12] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:12] INFO  SUCCESS 33310.txt -> 33310_resumo.md
+[2026-09-08 17:33:12] INFO  Processing file: 33360.txt
+[2026-09-08 17:33:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:17] INFO  SUCCESS 33360.txt -> 33360_resumo.md
+[2026-09-08 17:33:17] INFO  Processing file: 33436.txt
+[2026-09-08 17:33:28] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:28] INFO  SUCCESS 33436.txt -> 33436_resumo.md
+[2026-09-08 17:33:28] INFO  Processing file: 33465.txt
+[2026-09-08 17:33:36] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:36] INFO  SUCCESS 33465.txt -> 33465_resumo.md
+[2026-09-08 17:33:36] INFO  Processing file: 33497.txt
+[2026-09-08 17:33:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:42] INFO  SUCCESS 33497.txt -> 33497_resumo.md
+[2026-09-08 17:33:42] INFO  Processing file: 33645.txt
+[2026-09-08 17:33:50] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:50] INFO  SUCCESS 33645.txt -> 33645_resumo.md
+[2026-09-08 17:33:50] INFO  Processing file: 33787.txt
+[2026-09-08 17:33:59] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:33:59] INFO  SUCCESS 33787.txt -> 33787_resumo.md
+[2026-09-08 17:33:59] INFO  Processing file: 33789.txt
+[2026-09-08 17:34:06] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:06] INFO  SUCCESS 33789.txt -> 33789_resumo.md
+[2026-09-08 17:34:06] INFO  Processing file: 33856.txt
+[2026-09-08 17:34:12] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:12] INFO  SUCCESS 33856.txt -> 33856_resumo.md
+[2026-09-08 17:34:12] INFO  Processing file: 33862.txt
+[2026-09-08 17:34:20] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:20] INFO  SUCCESS 33862.txt -> 33862_resumo.md
+[2026-09-08 17:34:20] INFO  Processing file: 33871.txt
+[2026-09-08 17:34:25] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:25] INFO  SUCCESS 33871.txt -> 33871_resumo.md
+[2026-09-08 17:34:25] INFO  Processing file: 33948.txt
+[2026-09-08 17:34:35] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:35] INFO  SUCCESS 33948.txt -> 33948_resumo.md
+[2026-09-08 17:34:35] INFO  Processing file: 33964.txt
+[2026-09-08 17:34:47] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:47] INFO  SUCCESS 33964.txt -> 33964_resumo.md
+[2026-09-08 17:34:47] INFO  Processing file: 34009.txt
+[2026-09-08 17:34:55] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:34:55] INFO  SUCCESS 34009.txt -> 34009_resumo.md
+[2026-09-08 17:34:55] INFO  Processing file: 34025.txt
+[2026-09-08 17:35:00] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:00] INFO  SUCCESS 34025.txt -> 34025_resumo.md
+[2026-09-08 17:35:00] INFO  Processing file: 34046.txt
+[2026-09-08 17:35:05] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:05] INFO  SUCCESS 34046.txt -> 34046_resumo.md
+[2026-09-08 17:35:05] INFO  Processing file: 34185.txt
+[2026-09-08 17:35:11] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:11] INFO  SUCCESS 34185.txt -> 34185_resumo.md
+[2026-09-08 17:35:11] INFO  Processing file: 34210.txt
+[2026-09-08 17:35:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:17] INFO  SUCCESS 34210.txt -> 34210_resumo.md
+[2026-09-08 17:35:17] INFO  Processing file: 34236.txt
+[2026-09-08 17:35:21] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:21] INFO  SUCCESS 34236.txt -> 34236_resumo.md
+[2026-09-08 17:35:21] INFO  Processing file: 34251.txt
+[2026-09-08 17:35:26] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:26] INFO  SUCCESS 34251.txt -> 34251_resumo.md
+[2026-09-08 17:35:26] INFO  Processing file: 34273.txt
+[2026-09-08 17:35:32] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:32] INFO  SUCCESS 34273.txt -> 34273_resumo.md
+[2026-09-08 17:35:32] INFO  Processing file: 34308.txt
+[2026-09-08 17:35:38] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:38] INFO  SUCCESS 34308.txt -> 34308_resumo.md
+[2026-09-08 17:35:38] INFO  Processing file: 34356.txt
+[2026-09-08 17:35:43] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:43] INFO  SUCCESS 34356.txt -> 34356_resumo.md
+[2026-09-08 17:35:43] INFO  Processing file: 34362.txt
+[2026-09-08 17:35:56] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:35:56] INFO  SUCCESS 34362.txt -> 34362_resumo.md
+[2026-09-08 17:35:56] INFO  Processing file: 34537.txt
+[2026-09-08 17:36:05] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:05] INFO  SUCCESS 34537.txt -> 34537_resumo.md
+[2026-09-08 17:36:05] INFO  Processing file: 34613.txt
+[2026-09-08 17:36:14] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:14] INFO  SUCCESS 34613.txt -> 34613_resumo.md
+[2026-09-08 17:36:14] INFO  Processing file: 34616.txt
+[2026-09-08 17:36:18] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:18] INFO  SUCCESS 34616.txt -> 34616_resumo.md
+[2026-09-08 17:36:18] INFO  Processing file: 34618.txt
+[2026-09-08 17:36:25] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:25] INFO  SUCCESS 34618.txt -> 34618_resumo.md
+[2026-09-08 17:36:25] INFO  Processing file: 34637.txt
+[2026-09-08 17:36:41] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:41] INFO  SUCCESS 34637.txt -> 34637_resumo.md
+[2026-09-08 17:36:41] INFO  Processing file: 34638.txt
+[2026-09-08 17:36:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:51] INFO  SUCCESS 34638.txt -> 34638_resumo.md
+[2026-09-08 17:36:51] INFO  Processing file: 34642.txt
+[2026-09-08 17:36:55] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:36:55] INFO  SUCCESS 34642.txt -> 34642_resumo.md
+[2026-09-08 17:36:55] INFO  Processing file: 34714.txt
+[2026-09-08 17:37:14] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:37:14] INFO  SUCCESS 34714.txt -> 34714_resumo.md
+[2026-09-08 17:37:14] INFO  Processing file: 34743.txt
+[2026-09-08 17:37:19] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:37:19] INFO  SUCCESS 34743.txt -> 34743_resumo.md
+[2026-09-08 17:37:19] INFO  Processing file: 34807.txt
+[2026-09-08 17:37:24] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:37:24] INFO  SUCCESS 34807.txt -> 34807_resumo.md
+[2026-09-08 17:37:24] INFO  Processing file: 34823.txt
+[2026-09-08 17:37:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:37:34] INFO  SUCCESS 34823.txt -> 34823_resumo.md
+[2026-09-08 17:37:34] INFO  Processing file: 34895.txt
+[2026-09-08 17:37:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:37:42] INFO  SUCCESS 34895.txt -> 34895_resumo.md
+[2026-09-08 17:37:42] INFO  Processing file: 34971.txt
+[2026-09-08 17:37:53] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:37:53] INFO  SUCCESS 34971.txt -> 34971_resumo.md
+[2026-09-08 17:37:53] INFO  Processing file: 35019.txt
+[2026-09-08 17:38:03] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:03] INFO  SUCCESS 35019.txt -> 35019_resumo.md
+[2026-09-08 17:38:03] INFO  Processing file: 35028.txt
+[2026-09-08 17:38:07] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:07] INFO  SUCCESS 35028.txt -> 35028_resumo.md
+[2026-09-08 17:38:07] INFO  Processing file: 35056.txt
+[2026-09-08 17:38:16] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:16] INFO  SUCCESS 35056.txt -> 35056_resumo.md
+[2026-09-08 17:38:16] INFO  Processing file: 35071.txt
+[2026-09-08 17:38:21] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:21] INFO  SUCCESS 35071.txt -> 35071_resumo.md
+[2026-09-08 17:38:21] INFO  Processing file: 35072.txt
+[2026-09-08 17:38:28] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:28] INFO  SUCCESS 35072.txt -> 35072_resumo.md
+[2026-09-08 17:38:28] INFO  Processing file: 35131.txt
+[2026-09-08 17:38:33] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:33] INFO  SUCCESS 35131.txt -> 35131_resumo.md
+[2026-09-08 17:38:33] INFO  Processing file: 35136.txt
+[2026-09-08 17:38:44] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:44] INFO  SUCCESS 35136.txt -> 35136_resumo.md
+[2026-09-08 17:38:44] INFO  Processing file: 35163.txt
+[2026-09-08 17:38:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:51] INFO  SUCCESS 35163.txt -> 35163_resumo.md
+[2026-09-08 17:38:51] INFO  Processing file: 35173.txt
+[2026-09-08 17:38:54] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:54] INFO  SUCCESS 35173.txt -> 35173_resumo.md
+[2026-09-08 17:38:54] INFO  Processing file: 35198.txt
+[2026-09-08 17:38:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:38:58] INFO  SUCCESS 35198.txt -> 35198_resumo.md
+[2026-09-08 17:38:58] INFO  Processing file: 35214.txt
+[2026-09-08 17:39:02] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:02] INFO  SUCCESS 35214.txt -> 35214_resumo.md
+[2026-09-08 17:39:02] INFO  Processing file: 35217.txt
+[2026-09-08 17:39:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:17] INFO  SUCCESS 35217.txt -> 35217_resumo.md
+[2026-09-08 17:39:17] INFO  Processing file: 35220.txt
+[2026-09-08 17:39:24] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:24] INFO  SUCCESS 35220.txt -> 35220_resumo.md
+[2026-09-08 17:39:24] INFO  Processing file: 35228.txt
+[2026-09-08 17:39:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:34] INFO  SUCCESS 35228.txt -> 35228_resumo.md
+[2026-09-08 17:39:34] INFO  Processing file: 35278.txt
+[2026-09-08 17:39:39] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:39] INFO  SUCCESS 35278.txt -> 35278_resumo.md
+[2026-09-08 17:39:39] INFO  Processing file: 35291.txt
+[2026-09-08 17:39:43] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:43] INFO  SUCCESS 35291.txt -> 35291_resumo.md
+[2026-09-08 17:39:43] INFO  Processing file: 35457.txt
+[2026-09-08 17:39:50] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:39:50] INFO  SUCCESS 35457.txt -> 35457_resumo.md
+[2026-09-08 17:39:50] INFO  Processing file: 35465.txt
+[2026-09-08 17:40:02] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:02] INFO  SUCCESS 35465.txt -> 35465_resumo.md
+[2026-09-08 17:40:02] INFO  Processing file: 35485.txt
+[2026-09-08 17:40:11] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:11] INFO  SUCCESS 35485.txt -> 35485_resumo.md
+[2026-09-08 17:40:11] INFO  Processing file: 35549.txt
+[2026-09-08 17:40:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:17] INFO  SUCCESS 35549.txt -> 35549_resumo.md
+[2026-09-08 17:40:17] INFO  Processing file: 35577.txt
+[2026-09-08 17:40:21] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:21] INFO  SUCCESS 35577.txt -> 35577_resumo.md
+[2026-09-08 17:40:21] INFO  Processing file: 35633.txt
+[2026-09-08 17:40:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:31] INFO  SUCCESS 35633.txt -> 35633_resumo.md
+[2026-09-08 17:40:31] INFO  Processing file: 35661.txt
+[2026-09-08 17:40:37] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:37] INFO  SUCCESS 35661.txt -> 35661_resumo.md
+[2026-09-08 17:40:37] INFO  Processing file: 35820.txt
+[2026-09-08 17:40:41] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:41] INFO  SUCCESS 35820.txt -> 35820_resumo.md
+[2026-09-08 17:40:41] INFO  Processing file: 35852.txt
+[2026-09-08 17:40:47] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:47] INFO  SUCCESS 35852.txt -> 35852_resumo.md
+[2026-09-08 17:40:47] INFO  Processing file: 35906.txt
+[2026-09-08 17:40:53] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:40:53] INFO  SUCCESS 35906.txt -> 35906_resumo.md
+[2026-09-08 17:40:53] INFO  Processing file: 35911.txt
+[2026-09-08 17:41:02] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:02] INFO  SUCCESS 35911.txt -> 35911_resumo.md
+[2026-09-08 17:41:02] INFO  Processing file: 35937.txt
+[2026-09-08 17:41:06] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:06] INFO  SUCCESS 35937.txt -> 35937_resumo.md
+[2026-09-08 17:41:06] INFO  Processing file: 35979.txt
+[2026-09-08 17:41:09] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:09] INFO  SUCCESS 35979.txt -> 35979_resumo.md
+[2026-09-08 17:41:09] INFO  Processing file: 35986.txt
+[2026-09-08 17:41:15] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:15] INFO  SUCCESS 35986.txt -> 35986_resumo.md
+[2026-09-08 17:41:15] INFO  Processing file: 36000.txt
+[2026-09-08 17:41:20] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:20] INFO  SUCCESS 36000.txt -> 36000_resumo.md
+[2026-09-08 17:41:20] INFO  Processing file: 36079.txt
+[2026-09-08 17:41:28] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:28] INFO  SUCCESS 36079.txt -> 36079_resumo.md
+[2026-09-08 17:41:28] INFO  Processing file: 36085.txt
+[2026-09-08 17:41:35] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:35] INFO  SUCCESS 36085.txt -> 36085_resumo.md
+[2026-09-08 17:41:35] INFO  Processing file: 36095.txt
+[2026-09-08 17:41:39] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:39] INFO  SUCCESS 36095.txt -> 36095_resumo.md
+[2026-09-08 17:41:39] INFO  Processing file: 36137.txt
+[2026-09-08 17:41:44] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:44] INFO  SUCCESS 36137.txt -> 36137_resumo.md
+[2026-09-08 17:41:44] INFO  Processing file: 36140.txt
+[2026-09-08 17:41:48] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:48] INFO  SUCCESS 36140.txt -> 36140_resumo.md
+[2026-09-08 17:41:48] INFO  Processing file: 36172.txt
+[2026-09-08 17:41:52] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:52] INFO  SUCCESS 36172.txt -> 36172_resumo.md
+[2026-09-08 17:41:52] INFO  Processing file: 36181.txt
+[2026-09-08 17:41:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:41:58] INFO  SUCCESS 36181.txt -> 36181_resumo.md
+[2026-09-08 17:41:58] INFO  Processing file: 36188.txt
+[2026-09-08 17:42:03] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:03] INFO  SUCCESS 36188.txt -> 36188_resumo.md
+[2026-09-08 17:42:03] INFO  Processing file: 36225.txt
+[2026-09-08 17:42:09] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:09] INFO  SUCCESS 36225.txt -> 36225_resumo.md
+[2026-09-08 17:42:09] INFO  Processing file: 36238.txt
+[2026-09-08 17:42:20] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:20] INFO  SUCCESS 36238.txt -> 36238_resumo.md
+[2026-09-08 17:42:20] INFO  Processing file: 36248.txt
+[2026-09-08 17:42:24] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:24] INFO  SUCCESS 36248.txt -> 36248_resumo.md
+[2026-09-08 17:42:24] INFO  Processing file: 36278.txt
+[2026-09-08 17:42:30] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:30] INFO  SUCCESS 36278.txt -> 36278_resumo.md
+[2026-09-08 17:42:30] INFO  Processing file: 36295.txt
+[2026-09-08 17:42:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:34] INFO  SUCCESS 36295.txt -> 36295_resumo.md
+[2026-09-08 17:42:34] INFO  Processing file: 36307.txt
+[2026-09-08 17:42:46] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:46] INFO  SUCCESS 36307.txt -> 36307_resumo.md
+[2026-09-08 17:42:46] INFO  Processing file: 36341.txt
+[2026-09-08 17:42:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:42:51] INFO  SUCCESS 36341.txt -> 36341_resumo.md
+[2026-09-08 17:42:51] INFO  Processing file: 36430.txt
+[2026-09-08 17:43:05] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:05] INFO  SUCCESS 36430.txt -> 36430_resumo.md
+[2026-09-08 17:43:05] INFO  Processing file: 36522.txt
+[2026-09-08 17:43:10] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:10] INFO  SUCCESS 36522.txt -> 36522_resumo.md
+[2026-09-08 17:43:10] INFO  Processing file: 36524.txt
+[2026-09-08 17:43:16] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:16] INFO  SUCCESS 36524.txt -> 36524_resumo.md
+[2026-09-08 17:43:16] INFO  Processing file: 36547.txt
+[2026-09-08 17:43:21] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:21] INFO  SUCCESS 36547.txt -> 36547_resumo.md
+[2026-09-08 17:43:21] INFO  Processing file: 36578.txt
+[2026-09-08 17:43:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:31] INFO  SUCCESS 36578.txt -> 36578_resumo.md
+[2026-09-08 17:43:31] INFO  Processing file: 36590.txt
+[2026-09-08 17:43:37] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:37] INFO  SUCCESS 36590.txt -> 36590_resumo.md
+[2026-09-08 17:43:37] INFO  Processing file: 36616.txt
+[2026-09-08 17:43:43] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:43] INFO  SUCCESS 36616.txt -> 36616_resumo.md
+[2026-09-08 17:43:43] INFO  Processing file: 36704.txt
+[2026-09-08 17:43:49] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:49] INFO  SUCCESS 36704.txt -> 36704_resumo.md
+[2026-09-08 17:43:49] INFO  Processing file: 36721.txt
+[2026-09-08 17:43:57] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:43:57] INFO  SUCCESS 36721.txt -> 36721_resumo.md
+[2026-09-08 17:43:57] INFO  Processing file: 36727.txt
+[2026-09-08 17:44:09] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:09] INFO  SUCCESS 36727.txt -> 36727_resumo.md
+[2026-09-08 17:44:09] INFO  Processing file: 36742.txt
+[2026-09-08 17:44:15] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:15] INFO  SUCCESS 36742.txt -> 36742_resumo.md
+[2026-09-08 17:44:15] INFO  Processing file: 36797.txt
+[2026-09-08 17:44:26] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:26] INFO  SUCCESS 36797.txt -> 36797_resumo.md
+[2026-09-08 17:44:26] INFO  Processing file: 36827.txt
+[2026-09-08 17:44:38] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:38] INFO  SUCCESS 36827.txt -> 36827_resumo.md
+[2026-09-08 17:44:38] INFO  Processing file: 36856.txt
+[2026-09-08 17:44:46] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:46] INFO  SUCCESS 36856.txt -> 36856_resumo.md
+[2026-09-08 17:44:46] INFO  Processing file: 36867.txt
+[2026-09-08 17:44:49] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:49] INFO  SUCCESS 36867.txt -> 36867_resumo.md
+[2026-09-08 17:44:49] INFO  Processing file: 36872.txt
+[2026-09-08 17:44:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:44:58] INFO  SUCCESS 36872.txt -> 36872_resumo.md
+[2026-09-08 17:44:58] INFO  Processing file: 36973.txt
+[2026-09-08 17:45:09] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:09] INFO  SUCCESS 36973.txt -> 36973_resumo.md
+[2026-09-08 17:45:09] INFO  Processing file: 37010.txt
+[2026-09-08 17:45:14] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:14] INFO  SUCCESS 37010.txt -> 37010_resumo.md
+[2026-09-08 17:45:14] INFO  Processing file: 37034.txt
+[2026-09-08 17:45:21] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:21] INFO  SUCCESS 37034.txt -> 37034_resumo.md
+[2026-09-08 17:45:21] INFO  Processing file: 37043.txt
+[2026-09-08 17:45:27] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:27] INFO  SUCCESS 37043.txt -> 37043_resumo.md
+[2026-09-08 17:45:27] INFO  Processing file: 37063.txt
+[2026-09-08 17:45:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:34] INFO  SUCCESS 37063.txt -> 37063_resumo.md
+[2026-09-08 17:45:34] INFO  Processing file: 37078.txt
+[2026-09-08 17:45:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:42] INFO  SUCCESS 37078.txt -> 37078_resumo.md
+[2026-09-08 17:45:42] INFO  Processing file: 37094.txt
+[2026-09-08 17:45:46] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:46] INFO  SUCCESS 37094.txt -> 37094_resumo.md
+[2026-09-08 17:45:46] INFO  Processing file: 37099.txt
+[2026-09-08 17:45:52] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:52] INFO  SUCCESS 37099.txt -> 37099_resumo.md
+[2026-09-08 17:45:52] INFO  Processing file: 37158.txt
+[2026-09-08 17:45:57] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:45:57] INFO  SUCCESS 37158.txt -> 37158_resumo.md
+[2026-09-08 17:45:57] INFO  Processing file: 37212.txt
+[2026-09-08 17:46:01] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:01] INFO  SUCCESS 37212.txt -> 37212_resumo.md
+[2026-09-08 17:46:01] INFO  Processing file: 37224.txt
+[2026-09-08 17:46:05] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:05] INFO  SUCCESS 37224.txt -> 37224_resumo.md
+[2026-09-08 17:46:05] INFO  Processing file: 37260.txt
+[2026-09-08 17:46:10] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:10] INFO  SUCCESS 37260.txt -> 37260_resumo.md
+[2026-09-08 17:46:10] INFO  Processing file: 37345.txt
+[2026-09-08 17:46:14] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:14] INFO  SUCCESS 37345.txt -> 37345_resumo.md
+[2026-09-08 17:46:14] INFO  Processing file: 37377.txt
+[2026-09-08 17:46:20] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:20] INFO  SUCCESS 37377.txt -> 37377_resumo.md
+[2026-09-08 17:46:20] INFO  Processing file: 37442.txt
+[2026-09-08 17:46:24] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:24] INFO  SUCCESS 37442.txt -> 37442_resumo.md
+[2026-09-08 17:46:24] INFO  Processing file: 37489.txt
+[2026-09-08 17:46:28] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:28] INFO  SUCCESS 37489.txt -> 37489_resumo.md
+[2026-09-08 17:46:28] INFO  Processing file: 37602.txt
+[2026-09-08 17:46:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:34] INFO  SUCCESS 37602.txt -> 37602_resumo.md
+[2026-09-08 17:46:34] INFO  Processing file: 37664.txt
+[2026-09-08 17:46:39] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:39] INFO  SUCCESS 37664.txt -> 37664_resumo.md
+[2026-09-08 17:46:39] INFO  Processing file: 37677.txt
+[2026-09-08 17:46:45] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:45] INFO  SUCCESS 37677.txt -> 37677_resumo.md
+[2026-09-08 17:46:45] INFO  Processing file: 37694.txt
+[2026-09-08 17:46:53] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:53] INFO  SUCCESS 37694.txt -> 37694_resumo.md
+[2026-09-08 17:46:53] INFO  Processing file: 37734.txt
+[2026-09-08 17:46:56] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:46:56] INFO  SUCCESS 37734.txt -> 37734_resumo.md
+[2026-09-08 17:46:56] INFO  Processing file: 37858.txt
+[2026-09-08 17:47:04] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:04] INFO  SUCCESS 37858.txt -> 37858_resumo.md
+[2026-09-08 17:47:04] INFO  Processing file: 37949.txt
+[2026-09-08 17:47:07] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:07] INFO  SUCCESS 37949.txt -> 37949_resumo.md
+[2026-09-08 17:47:07] INFO  Processing file: 37994.txt
+[2026-09-08 17:47:13] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:13] INFO  SUCCESS 37994.txt -> 37994_resumo.md
+[2026-09-08 17:47:13] INFO  Processing file: 37999.txt
+[2026-09-08 17:47:19] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:19] INFO  SUCCESS 37999.txt -> 37999_resumo.md
+[2026-09-08 17:47:19] INFO  Processing file: 38002.txt
+[2026-09-08 17:47:25] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:25] INFO  SUCCESS 38002.txt -> 38002_resumo.md
+[2026-09-08 17:47:25] INFO  Processing file: 38036.txt
+[2026-09-08 17:47:30] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:30] INFO  SUCCESS 38036.txt -> 38036_resumo.md
+[2026-09-08 17:47:30] INFO  Processing file: 38158.txt
+[2026-09-08 17:47:35] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:35] INFO  SUCCESS 38158.txt -> 38158_resumo.md
+[2026-09-08 17:47:35] INFO  Processing file: 38172.txt
+[2026-09-08 17:47:43] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:43] INFO  SUCCESS 38172.txt -> 38172_resumo.md
+[2026-09-08 17:47:43] INFO  Processing file: 38193.txt
+[2026-09-08 17:47:49] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:49] INFO  SUCCESS 38193.txt -> 38193_resumo.md
+[2026-09-08 17:47:49] INFO  Processing file: 38196.txt
+[2026-09-08 17:47:57] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:47:57] INFO  SUCCESS 38196.txt -> 38196_resumo.md
+[2026-09-08 17:47:57] INFO  Processing file: 38204.txt
+[2026-09-08 17:48:03] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:03] INFO  SUCCESS 38204.txt -> 38204_resumo.md
+[2026-09-08 17:48:03] INFO  Processing file: 38226.txt
+[2026-09-08 17:48:11] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:11] INFO  SUCCESS 38226.txt -> 38226_resumo.md
+[2026-09-08 17:48:11] INFO  Processing file: 38284.txt
+[2026-09-08 17:48:23] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:23] INFO  SUCCESS 38284.txt -> 38284_resumo.md
+[2026-09-08 17:48:23] INFO  Processing file: 38310.txt
+[2026-09-08 17:48:28] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:28] INFO  SUCCESS 38310.txt -> 38310_resumo.md
+[2026-09-08 17:48:28] INFO  Processing file: 38340.txt
+[2026-09-08 17:48:33] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:33] INFO  SUCCESS 38340.txt -> 38340_resumo.md
+[2026-09-08 17:48:33] INFO  Processing file: 38395.txt
+[2026-09-08 17:48:38] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:38] INFO  SUCCESS 38395.txt -> 38395_resumo.md
+[2026-09-08 17:48:38] INFO  Processing file: 38439.txt
+[2026-09-08 17:48:43] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:43] INFO  SUCCESS 38439.txt -> 38439_resumo.md
+[2026-09-08 17:48:43] INFO  Processing file: 38445.txt
+[2026-09-08 17:48:47] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:47] INFO  SUCCESS 38445.txt -> 38445_resumo.md
+[2026-09-08 17:48:47] INFO  Processing file: 38451.txt
+[2026-09-08 17:48:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:51] INFO  SUCCESS 38451.txt -> 38451_resumo.md
+[2026-09-08 17:48:51] INFO  Processing file: 38469.txt
+[2026-09-08 17:48:57] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:48:57] INFO  SUCCESS 38469.txt -> 38469_resumo.md
+[2026-09-08 17:48:57] INFO  Processing file: 38495.txt
+[2026-09-08 17:49:01] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:01] INFO  SUCCESS 38495.txt -> 38495_resumo.md
+[2026-09-08 17:49:01] INFO  Processing file: 38499.txt
+[2026-09-08 17:49:08] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:08] INFO  SUCCESS 38499.txt -> 38499_resumo.md
+[2026-09-08 17:49:08] INFO  Processing file: 38506.txt
+[2026-09-08 17:49:24] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:24] INFO  SUCCESS 38506.txt -> 38506_resumo.md
+[2026-09-08 17:49:24] INFO  Processing file: 38536.txt
+[2026-09-08 17:49:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:32] INFO  SUCCESS 38536.txt -> 38536_resumo.md
+[2026-09-08 17:49:32] INFO  Processing file: 38555.txt
+[2026-09-08 17:49:37] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:37] INFO  SUCCESS 38555.txt -> 38555_resumo.md
+[2026-09-08 17:49:37] INFO  Processing file: 38632.txt
+[2026-09-08 17:49:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:42] INFO  SUCCESS 38632.txt -> 38632_resumo.md
+[2026-09-08 17:49:42] INFO  Processing file: 38637.txt
+[2026-09-08 17:49:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:52] INFO  SUCCESS 38637.txt -> 38637_resumo.md
+[2026-09-08 17:49:52] INFO  Processing file: 38670.txt
+[2026-09-08 17:49:56] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:49:56] INFO  SUCCESS 38670.txt -> 38670_resumo.md
+[2026-09-08 17:49:56] INFO  Processing file: 38674.txt
+[2026-09-08 17:50:01] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:01] INFO  SUCCESS 38674.txt -> 38674_resumo.md
+[2026-09-08 17:50:01] INFO  Processing file: 38677.txt
+[2026-09-08 17:50:07] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:07] INFO  SUCCESS 38677.txt -> 38677_resumo.md
+[2026-09-08 17:50:07] INFO  Processing file: 38764.txt
+[2026-09-08 17:50:12] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:12] INFO  SUCCESS 38764.txt -> 38764_resumo.md
+[2026-09-08 17:50:12] INFO  Processing file: 38786.txt
+[2026-09-08 17:50:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:17] INFO  SUCCESS 38786.txt -> 38786_resumo.md
+[2026-09-08 17:50:17] INFO  Processing file: 38794.txt
+[2026-09-08 17:50:23] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:23] INFO  SUCCESS 38794.txt -> 38794_resumo.md
+[2026-09-08 17:50:23] INFO  Processing file: 38891.txt
+[2026-09-08 17:50:27] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:27] INFO  SUCCESS 38891.txt -> 38891_resumo.md
+[2026-09-08 17:50:27] INFO  Processing file: 38917.txt
+[2026-09-08 17:50:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:34] INFO  SUCCESS 38917.txt -> 38917_resumo.md
+[2026-09-08 17:50:34] INFO  Processing file: 38928.txt
+[2026-09-08 17:50:38] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:38] INFO  SUCCESS 38928.txt -> 38928_resumo.md
+[2026-09-08 17:50:38] INFO  Processing file: 38957.txt
+[2026-09-08 17:50:44] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:44] INFO  SUCCESS 38957.txt -> 38957_resumo.md
+[2026-09-08 17:50:44] INFO  Processing file: 38970.txt
+[2026-09-08 17:50:54] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:54] INFO  SUCCESS 38970.txt -> 38970_resumo.md
+[2026-09-08 17:50:54] INFO  Processing file: 39063.txt
+[2026-09-08 17:50:57] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:50:57] INFO  SUCCESS 39063.txt -> 39063_resumo.md
+[2026-09-08 17:50:57] INFO  Processing file: 39065.txt
+[2026-09-08 17:51:04] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:04] INFO  SUCCESS 39065.txt -> 39065_resumo.md
+[2026-09-08 17:51:04] INFO  Processing file: 39124.txt
+[2026-09-08 17:51:09] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:09] INFO  SUCCESS 39124.txt -> 39124_resumo.md
+[2026-09-08 17:51:09] INFO  Processing file: 39164.txt
+[2026-09-08 17:51:13] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:13] INFO  SUCCESS 39164.txt -> 39164_resumo.md
+[2026-09-08 17:51:13] INFO  Processing file: 39302.txt
+[2026-09-08 17:51:18] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:18] INFO  SUCCESS 39302.txt -> 39302_resumo.md
+[2026-09-08 17:51:18] INFO  Processing file: 39349.txt
+[2026-09-08 17:51:22] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:22] INFO  SUCCESS 39349.txt -> 39349_resumo.md
+[2026-09-08 17:51:22] INFO  Processing file: 39379.txt
+[2026-09-08 17:51:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:31] INFO  SUCCESS 39379.txt -> 39379_resumo.md
+[2026-09-08 17:51:31] INFO  Processing file: 39436.txt
+[2026-09-08 17:51:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:42] INFO  SUCCESS 39436.txt -> 39436_resumo.md
+[2026-09-08 17:51:42] INFO  Processing file: 39446.txt
+[2026-09-08 17:51:49] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:49] INFO  SUCCESS 39446.txt -> 39446_resumo.md
+[2026-09-08 17:51:49] INFO  Processing file: 39493.txt
+[2026-09-08 17:51:52] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:51:52] INFO  SUCCESS 39493.txt -> 39493_resumo.md
+[2026-09-08 17:51:52] INFO  Processing file: 39502.txt
+[2026-09-08 17:52:00] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:00] INFO  SUCCESS 39502.txt -> 39502_resumo.md
+[2026-09-08 17:52:00] INFO  Processing file: 39516.txt
+[2026-09-08 17:52:04] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:04] INFO  SUCCESS 39516.txt -> 39516_resumo.md
+[2026-09-08 17:52:04] INFO  Processing file: 39615.txt
+[2026-09-08 17:52:10] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:10] INFO  SUCCESS 39615.txt -> 39615_resumo.md
+[2026-09-08 17:52:10] INFO  Processing file: 39648.txt
+[2026-09-08 17:52:14] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:14] INFO  SUCCESS 39648.txt -> 39648_resumo.md
+[2026-09-08 17:52:14] INFO  Processing file: 39695.txt
+[2026-09-08 17:52:19] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:19] INFO  SUCCESS 39695.txt -> 39695_resumo.md
+[2026-09-08 17:52:19] INFO  Processing file: 39701.txt
+[2026-09-08 17:52:24] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:24] INFO  SUCCESS 39701.txt -> 39701_resumo.md
+[2026-09-08 17:52:24] INFO  Processing file: 39722.txt
+[2026-09-08 17:52:36] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:36] INFO  SUCCESS 39722.txt -> 39722_resumo.md
+[2026-09-08 17:52:36] INFO  Processing file: 39727.txt
+[2026-09-08 17:52:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:42] INFO  SUCCESS 39727.txt -> 39727_resumo.md
+[2026-09-08 17:52:42] INFO  Processing file: 39786.txt
+[2026-09-08 17:52:47] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:47] INFO  SUCCESS 39786.txt -> 39786_resumo.md
+[2026-09-08 17:52:47] INFO  Processing file: 39833.txt
+[2026-09-08 17:52:57] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:52:57] INFO  SUCCESS 39833.txt -> 39833_resumo.md
+[2026-09-08 17:52:57] INFO  Processing file: 39912.txt
+[2026-09-08 17:53:00] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:00] INFO  SUCCESS 39912.txt -> 39912_resumo.md
+[2026-09-08 17:53:00] INFO  Processing file: 39914.txt
+[2026-09-08 17:53:17] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:17] INFO  SUCCESS 39914.txt -> 39914_resumo.md
+[2026-09-08 17:53:17] INFO  Processing file: 39956.txt
+[2026-09-08 17:53:21] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:21] INFO  SUCCESS 39956.txt -> 39956_resumo.md
+[2026-09-08 17:53:21] INFO  Processing file: 39985.txt
+[2026-09-08 17:53:25] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:25] INFO  SUCCESS 39985.txt -> 39985_resumo.md
+[2026-09-08 17:53:25] INFO  Processing file: 40126.txt
+[2026-09-08 17:53:29] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:29] INFO  SUCCESS 40126.txt -> 40126_resumo.md
+[2026-09-08 17:53:29] INFO  Processing file: 40256.txt
+[2026-09-08 17:53:36] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:36] INFO  SUCCESS 40256.txt -> 40256_resumo.md
+[2026-09-08 17:53:36] INFO  Processing file: 40270.txt
+[2026-09-08 17:53:40] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:40] INFO  SUCCESS 40270.txt -> 40270_resumo.md
+[2026-09-08 17:53:40] INFO  Processing file: 40362.txt
+[2026-09-08 17:53:45] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:45] INFO  SUCCESS 40362.txt -> 40362_resumo.md
+[2026-09-08 17:53:45] INFO  Processing file: 40368.txt
+[2026-09-08 17:53:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:51] INFO  SUCCESS 40368.txt -> 40368_resumo.md
+[2026-09-08 17:53:51] INFO  Processing file: 40426.txt
+[2026-09-08 17:53:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:53:58] INFO  SUCCESS 40426.txt -> 40426_resumo.md
+[2026-09-08 17:53:58] INFO  Processing file: 40461.txt
+[2026-09-08 17:54:03] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:03] INFO  SUCCESS 40461.txt -> 40461_resumo.md
+[2026-09-08 17:54:03] INFO  Processing file: 40496.txt
+[2026-09-08 17:54:08] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:08] INFO  SUCCESS 40496.txt -> 40496_resumo.md
+[2026-09-08 17:54:08] INFO  Processing file: 40523.txt
+[2026-09-08 17:54:12] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:12] INFO  SUCCESS 40523.txt -> 40523_resumo.md
+[2026-09-08 17:54:12] INFO  Processing file: 40617.txt
+[2026-09-08 17:54:20] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:20] INFO  SUCCESS 40617.txt -> 40617_resumo.md
+[2026-09-08 17:54:20] INFO  Processing file: 40688.txt
+[2026-09-08 17:54:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:31] INFO  SUCCESS 40688.txt -> 40688_resumo.md
+[2026-09-08 17:54:31] INFO  Processing file: 40690.txt
+[2026-09-08 17:54:34] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:34] INFO  SUCCESS 40690.txt -> 40690_resumo.md
+[2026-09-08 17:54:34] INFO  Processing file: 40765.txt
+[2026-09-08 17:54:41] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:41] INFO  SUCCESS 40765.txt -> 40765_resumo.md
+[2026-09-08 17:54:41] INFO  Processing file: 40803.txt
+[2026-09-08 17:54:45] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:45] INFO  SUCCESS 40803.txt -> 40803_resumo.md
+[2026-09-08 17:54:45] INFO  Processing file: 40865.txt
+[2026-09-08 17:54:53] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:54:53] INFO  SUCCESS 40865.txt -> 40865_resumo.md
+[2026-09-08 17:54:53] INFO  Processing file: 40869.txt
+[2026-09-08 17:55:00] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:00] INFO  SUCCESS 40869.txt -> 40869_resumo.md
+[2026-09-08 17:55:00] INFO  Processing file: 40887.txt
+[2026-09-08 17:55:08] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:08] INFO  SUCCESS 40887.txt -> 40887_resumo.md
+[2026-09-08 17:55:08] INFO  Processing file: 40898.txt
+[2026-09-08 17:55:13] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:13] INFO  SUCCESS 40898.txt -> 40898_resumo.md
+[2026-09-08 17:55:13] INFO  Processing file: 40906.txt
+[2026-09-08 17:55:19] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:19] INFO  SUCCESS 40906.txt -> 40906_resumo.md
+[2026-09-08 17:55:19] INFO  Processing file: 40926.txt
+[2026-09-08 17:55:33] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:33] INFO  SUCCESS 40926.txt -> 40926_resumo.md
+[2026-09-08 17:55:33] INFO  Processing file: 40929.txt
+[2026-09-08 17:55:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:42] INFO  SUCCESS 40929.txt -> 40929_resumo.md
+[2026-09-08 17:55:42] INFO  Processing file: 40978.txt
+[2026-09-08 17:55:49] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:49] INFO  SUCCESS 40978.txt -> 40978_resumo.md
+[2026-09-08 17:55:49] INFO  Processing file: 41011.txt
+[2026-09-08 17:55:54] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:54] INFO  SUCCESS 41011.txt -> 41011_resumo.md
+[2026-09-08 17:55:54] INFO  Processing file: 41093.txt
+[2026-09-08 17:55:59] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:55:59] INFO  SUCCESS 41093.txt -> 41093_resumo.md
+[2026-09-08 17:55:59] INFO  Processing file: 41096.txt
+[2026-09-08 17:56:04] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:04] INFO  SUCCESS 41096.txt -> 41096_resumo.md
+[2026-09-08 17:56:04] INFO  Processing file: 45044.txt
+[2026-09-08 17:56:11] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:11] INFO  SUCCESS 45044.txt -> 45044_resumo.md
+[2026-09-08 17:56:11] INFO  Processing file: 45075.txt
+[2026-09-08 17:56:23] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:23] INFO  SUCCESS 45075.txt -> 45075_resumo.md
+[2026-09-08 17:56:23] INFO  Processing file: 45078.txt
+[2026-09-08 17:56:28] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:28] INFO  SUCCESS 45078.txt -> 45078_resumo.md
+[2026-09-08 17:56:28] INFO  Processing file: 45124.txt
+[2026-09-08 17:56:33] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:33] INFO  SUCCESS 45124.txt -> 45124_resumo.md
+[2026-09-08 17:56:33] INFO  Processing file: 45241.txt
+[2026-09-08 17:56:37] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:37] INFO  SUCCESS 45241.txt -> 45241_resumo.md
+[2026-09-08 17:56:37] INFO  Processing file: 45268.txt
+[2026-09-08 17:56:44] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:44] INFO  SUCCESS 45268.txt -> 45268_resumo.md
+[2026-09-08 17:56:44] INFO  Processing file: 45357.txt
+[2026-09-08 17:56:52] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:52] INFO  SUCCESS 45357.txt -> 45357_resumo.md
+[2026-09-08 17:56:52] INFO  Processing file: 45389.txt
+[2026-09-08 17:56:56] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:56:56] INFO  SUCCESS 45389.txt -> 45389_resumo.md
+[2026-09-08 17:56:56] INFO  Processing file: 45519.txt
+[2026-09-08 17:57:01] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:01] INFO  SUCCESS 45519.txt -> 45519_resumo.md
+[2026-09-08 17:57:01] INFO  Processing file: 45531.txt
+[2026-09-08 17:57:08] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:08] INFO  SUCCESS 45531.txt -> 45531_resumo.md
+[2026-09-08 17:57:08] INFO  Processing file: 45638.txt
+[2026-09-08 17:57:23] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:23] INFO  SUCCESS 45638.txt -> 45638_resumo.md
+[2026-09-08 17:57:23] INFO  Processing file: 45667.txt
+[2026-09-08 17:57:29] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:29] INFO  SUCCESS 45667.txt -> 45667_resumo.md
+[2026-09-08 17:57:29] INFO  Processing file: 45746.txt
+[2026-09-08 17:57:39] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:39] INFO  SUCCESS 45746.txt -> 45746_resumo.md
+[2026-09-08 17:57:39] INFO  Processing file: 45996.txt
+[2026-09-08 17:57:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:42] INFO  SUCCESS 45996.txt -> 45996_resumo.md
+[2026-09-08 17:57:42] INFO  Processing file: 46034.txt
+[2026-09-08 17:57:47] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:47] INFO  SUCCESS 46034.txt -> 46034_resumo.md
+[2026-09-08 17:57:47] INFO  Processing file: 46108.txt
+[2026-09-08 17:57:51] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:51] INFO  SUCCESS 46108.txt -> 46108_resumo.md
+[2026-09-08 17:57:51] INFO  Processing file: 46249.txt
+[2026-09-08 17:57:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:57:58] INFO  SUCCESS 46249.txt -> 46249_resumo.md
+[2026-09-08 17:57:58] INFO  Processing file: 46255.txt
+[2026-09-08 17:58:04] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:04] INFO  SUCCESS 46255.txt -> 46255_resumo.md
+[2026-09-08 17:58:04] INFO  Processing file: 46273.txt
+[2026-09-08 17:58:10] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:10] INFO  SUCCESS 46273.txt -> 46273_resumo.md
+[2026-09-08 17:58:10] INFO  Processing file: 46276.txt
+[2026-09-08 17:58:19] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:19] INFO  SUCCESS 46276.txt -> 46276_resumo.md
+[2026-09-08 17:58:19] INFO  Processing file: 46288.txt
+[2026-09-08 17:58:25] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:25] INFO  SUCCESS 46288.txt -> 46288_resumo.md
+[2026-09-08 17:58:25] INFO  Processing file: 46290.txt
+[2026-09-08 17:58:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:31] INFO  SUCCESS 46290.txt -> 46290_resumo.md
+[2026-09-08 17:58:31] INFO  Processing file: 46626.txt
+[2026-09-08 17:58:42] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:42] INFO  SUCCESS 46626.txt -> 46626_resumo.md
+[2026-09-08 17:58:42] INFO  Processing file: 46687.txt
+[2026-09-08 17:58:48] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:48] INFO  SUCCESS 46687.txt -> 46687_resumo.md
+[2026-09-08 17:58:48] INFO  Processing file: 46699.txt
+[2026-09-08 17:58:54] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:58:54] INFO  SUCCESS 46699.txt -> 46699_resumo.md
+[2026-09-08 17:58:54] INFO  Processing file: 46705.txt
+[2026-09-08 17:59:08] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:08] INFO  SUCCESS 46705.txt -> 46705_resumo.md
+[2026-09-08 17:59:08] INFO  Processing file: 46724.txt
+[2026-09-08 17:59:12] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:12] INFO  SUCCESS 46724.txt -> 46724_resumo.md
+[2026-09-08 17:59:12] INFO  Processing file: 46743.txt
+[2026-09-08 17:59:18] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:18] INFO  SUCCESS 46743.txt -> 46743_resumo.md
+[2026-09-08 17:59:18] INFO  Processing file: 46946.txt
+[2026-09-08 17:59:25] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:25] INFO  SUCCESS 46946.txt -> 46946_resumo.md
+[2026-09-08 17:59:25] INFO  Processing file: 47010.txt
+[2026-09-08 17:59:31] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:31] INFO  SUCCESS 47010.txt -> 47010_resumo.md
+[2026-09-08 17:59:31] INFO  Processing file: 47046.txt
+[2026-09-08 17:59:36] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:36] INFO  SUCCESS 47046.txt -> 47046_resumo.md
+[2026-09-08 17:59:36] INFO  Processing file: 47068.txt
+[2026-09-08 17:59:41] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:41] INFO  SUCCESS 47068.txt -> 47068_resumo.md
+[2026-09-08 17:59:41] INFO  Processing file: 47123.txt
+[2026-09-08 17:59:46] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-08 17:59:46] INFO  SUCCESS 47123.txt -> 47123_resumo.md
+[2026-09-08 17:59:46] INFO  Finished run_id=20260908T203147Z_1a88438a succeeded=250 failed=0 skipped_existing=0

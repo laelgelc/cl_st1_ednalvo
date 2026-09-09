@@ -1,0 +1,1768 @@
+[2026-09-08 18:08:42] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260908T210842Z_45082002
+[2026-09-08 18:08:42] INFO  Command: componha
+[2026-09-08 18:08:42] INFO  Input dir: corpus/02_resumos
+[2026-09-08 18:08:42] INFO  Output dir: corpus/01_composicoes/menores_notas_gemini
+[2026-09-08 18:08:42] INFO  Model: gemini-3.6-flash
+[2026-09-08 18:08:42] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 18:08:43] INFO  Processing file: 32610_resumo.md
+[2026-09-08 18:08:43] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:09:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:09:13] INFO  SUCCESS 32610_resumo.md -> 32610_composicao_gemini-3.6-flash.md
+[2026-09-08 18:09:13] INFO  Processing file: 32674_resumo.md
+[2026-09-08 18:09:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:09:55] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:09:55] INFO  SUCCESS 32674_resumo.md -> 32674_composicao_gemini-3.6-flash.md
+[2026-09-08 18:09:55] INFO  Processing file: 32714_resumo.md
+[2026-09-08 18:09:55] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:09:59] ERROR Interrupted by user.
+[2026-09-08 18:15:44] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260908T211544Z_54afcefd
+[2026-09-08 18:15:44] INFO  Command: componha
+[2026-09-08 18:15:44] INFO  Input dir: corpus/02_resumos
+[2026-09-08 18:15:44] INFO  Output dir: corpus/01_composicoes/menores_notas_gemini
+[2026-09-08 18:15:44] INFO  Model: gemini-3.6-flash
+[2026-09-08 18:15:44] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 18:15:45] INFO  Processing file: 32610_resumo.md
+[2026-09-08 18:15:45] INFO  SKIPPED_EXISTING 32610_resumo.md -> 32610_composicao_gemini-3.6-flash.md
+[2026-09-08 18:15:45] INFO  Processing file: 32674_resumo.md
+[2026-09-08 18:15:45] INFO  SKIPPED_EXISTING 32674_resumo.md -> 32674_composicao_gemini-3.6-flash.md
+[2026-09-08 18:15:45] INFO  Processing file: 32714_resumo.md
+[2026-09-08 18:15:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:15:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:15:58] INFO  SUCCESS 32714_resumo.md -> 32714_composicao_gemini-3.6-flash.md
+[2026-09-08 18:15:58] INFO  Processing file: 32733_resumo.md
+[2026-09-08 18:15:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:16:28] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:16:28] INFO  SUCCESS 32733_resumo.md -> 32733_composicao_gemini-3.6-flash.md
+[2026-09-08 18:16:28] INFO  Processing file: 32749_resumo.md
+[2026-09-08 18:16:28] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:16:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:16:45] INFO  SUCCESS 32749_resumo.md -> 32749_composicao_gemini-3.6-flash.md
+[2026-09-08 18:16:45] INFO  Processing file: 32755_resumo.md
+[2026-09-08 18:16:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:16:59] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:16:59] INFO  SUCCESS 32755_resumo.md -> 32755_composicao_gemini-3.6-flash.md
+[2026-09-08 18:16:59] INFO  Processing file: 32782_resumo.md
+[2026-09-08 18:16:59] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:17:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+[2026-09-08 18:17:49] WARNING Gemini request failed on attempt 1/3: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[2026-09-08 18:17:54] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:18:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:18:09] INFO  SUCCESS 32782_resumo.md -> 32782_composicao_gemini-3.6-flash.md
+[2026-09-08 18:18:09] INFO  Processing file: 32792_resumo.md
+[2026-09-08 18:18:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:18:22] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:18:22] INFO  SUCCESS 32792_resumo.md -> 32792_composicao_gemini-3.6-flash.md
+[2026-09-08 18:18:22] INFO  Processing file: 32860_resumo.md
+[2026-09-08 18:18:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:18:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:18:40] INFO  SUCCESS 32860_resumo.md -> 32860_composicao_gemini-3.6-flash.md
+[2026-09-08 18:18:40] INFO  Processing file: 33167_resumo.md
+[2026-09-08 18:18:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:18:59] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:18:59] INFO  SUCCESS 33167_resumo.md -> 33167_composicao_gemini-3.6-flash.md
+[2026-09-08 18:18:59] INFO  Processing file: 33310_resumo.md
+[2026-09-08 18:18:59] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:19:10] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:19:10] INFO  SUCCESS 33310_resumo.md -> 33310_composicao_gemini-3.6-flash.md
+[2026-09-08 18:19:10] INFO  Processing file: 33360_resumo.md
+[2026-09-08 18:19:10] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:19:32] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:19:32] INFO  SUCCESS 33360_resumo.md -> 33360_composicao_gemini-3.6-flash.md
+[2026-09-08 18:19:32] INFO  Processing file: 33436_resumo.md
+[2026-09-08 18:19:32] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:19:56] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+[2026-09-08 18:19:56] WARNING Gemini request failed on attempt 1/3: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[2026-09-08 18:20:01] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:20:12] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+[2026-09-08 18:20:12] WARNING Gemini request failed on attempt 2/3: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[2026-09-08 18:20:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:20:32] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:20:32] INFO  SUCCESS 33436_resumo.md -> 33436_composicao_gemini-3.6-flash.md
+[2026-09-08 18:20:32] INFO  Processing file: 33465_resumo.md
+[2026-09-08 18:20:32] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:20:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:20:45] INFO  SUCCESS 33465_resumo.md -> 33465_composicao_gemini-3.6-flash.md
+[2026-09-08 18:20:45] INFO  Processing file: 33497_resumo.md
+[2026-09-08 18:20:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:21:20] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:21:20] INFO  SUCCESS 33497_resumo.md -> 33497_composicao_gemini-3.6-flash.md
+[2026-09-08 18:21:20] INFO  Processing file: 33645_resumo.md
+[2026-09-08 18:21:20] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:21:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:21:21] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 39.015121404s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
+[2026-09-08 18:21:26] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:21:26] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:21:26] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 33.604709252s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}
+[2026-09-08 18:21:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:21:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:21:36] ERROR FAILED 33645_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 23.142287696s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}
+[2026-09-08 18:21:36] INFO  Processing file: 33787_resumo.md
+[2026-09-08 18:21:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:21:37] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:21:37] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 22.41541869s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}
+[2026-09-08 18:21:42] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:21:54] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:21:54] INFO  SUCCESS 33787_resumo.md -> 33787_composicao_gemini-3.6-flash.md
+[2026-09-08 18:21:54] INFO  Processing file: 33789_resumo.md
+[2026-09-08 18:21:54] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:06] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:22:06] INFO  SUCCESS 33789_resumo.md -> 33789_composicao_gemini-3.6-flash.md
+[2026-09-08 18:22:06] INFO  Processing file: 33856_resumo.md
+[2026-09-08 18:22:06] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:20] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:22:20] INFO  SUCCESS 33856_resumo.md -> 33856_composicao_gemini-3.6-flash.md
+[2026-09-08 18:22:20] INFO  Processing file: 33862_resumo.md
+[2026-09-08 18:22:20] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:20] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:20] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 39.702473187s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
+[2026-09-08 18:22:25] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:25] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:25] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 34.286639093s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}
+[2026-09-08 18:22:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:36] ERROR FAILED 33862_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 23.858105745s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}
+[2026-09-08 18:22:36] INFO  Processing file: 33871_resumo.md
+[2026-09-08 18:22:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:36] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 23.197807656s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}
+[2026-09-08 18:22:41] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:42] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:42] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 17.817306168s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}
+[2026-09-08 18:22:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:52] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:52] ERROR FAILED 33871_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 7.457495507s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}
+[2026-09-08 18:22:52] INFO  Processing file: 33948_resumo.md
+[2026-09-08 18:22:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:53] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:53] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 6.808116908s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+[2026-09-08 18:22:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:22:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:22:58] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 1.435903964s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}
+[2026-09-08 18:23:08] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:09] ERROR FAILED 33948_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 50.994885303s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
+[2026-09-08 18:23:09] INFO  Processing file: 33964_resumo.md
+[2026-09-08 18:23:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:09] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 50.763381441s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
+[2026-09-08 18:23:14] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:14] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:14] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 45.371840316s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}
+[2026-09-08 18:23:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:23:35] INFO  SUCCESS 33964_resumo.md -> 33964_composicao_gemini-3.6-flash.md
+[2026-09-08 18:23:35] INFO  Processing file: 34009_resumo.md
+[2026-09-08 18:23:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:35] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 24.751878969s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}
+[2026-09-08 18:23:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:40] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 19.42329142s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}
+[2026-09-08 18:23:50] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:51] ERROR FAILED 34009_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9.003392314s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}
+[2026-09-08 18:23:51] INFO  Processing file: 34025_resumo.md
+[2026-09-08 18:23:51] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:51] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 8.328755034s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '8s'}]}}
+[2026-09-08 18:23:56] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:23:57] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:23:57] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 2.992899426s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}
+[2026-09-08 18:24:07] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:07] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:07] ERROR FAILED 34025_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 52.527063692s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52s'}]}}
+[2026-09-08 18:24:07] INFO  Processing file: 34046_resumo.md
+[2026-09-08 18:24:07] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:08] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:08] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 51.853618085s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}
+[2026-09-08 18:24:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:13] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 46.50379662s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+[2026-09-08 18:24:23] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:24] ERROR FAILED 34046_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 36.046094398s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+[2026-09-08 18:24:24] INFO  Processing file: 34185_resumo.md
+[2026-09-08 18:24:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:24] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 35.366667438s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}
+[2026-09-08 18:24:29] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:30] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:30] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 30.024595373s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}
+[2026-09-08 18:24:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:40] ERROR FAILED 34185_resumo.md: Gemini request failed after 3 attempt(s): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 19.512591799s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}
+[2026-09-08 18:24:40] INFO  Processing file: 34210_resumo.md
+[2026-09-08 18:24:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:40] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 19.204444101s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}
+[2026-09-08 18:24:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:24:46] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:24:46] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 13.810286098s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}
+[2026-09-08 18:24:54] ERROR Interrupted by user.
+[2026-09-08 18:26:59] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260908T212659Z_efe8b602
+[2026-09-08 18:26:59] INFO  Command: componha
+[2026-09-08 18:26:59] INFO  Input dir: corpus/02_resumos
+[2026-09-08 18:26:59] INFO  Output dir: corpus/01_composicoes/menores_notas_gemini
+[2026-09-08 18:26:59] INFO  Model: gemini-3.6-flash
+[2026-09-08 18:26:59] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 18:27:00] INFO  Processing file: 32610_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32610_resumo.md -> 32610_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32674_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32674_resumo.md -> 32674_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32714_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32714_resumo.md -> 32714_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32733_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32733_resumo.md -> 32733_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32749_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32749_resumo.md -> 32749_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32755_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32755_resumo.md -> 32755_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32782_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32782_resumo.md -> 32782_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32792_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32792_resumo.md -> 32792_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 32860_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 32860_resumo.md -> 32860_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33167_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 33167_resumo.md -> 33167_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33310_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 33310_resumo.md -> 33310_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33360_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 33360_resumo.md -> 33360_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33436_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 33436_resumo.md -> 33436_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33465_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 33465_resumo.md -> 33465_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33497_resumo.md
+[2026-09-08 18:27:00] INFO  SKIPPED_EXISTING 33497_resumo.md -> 33497_composicao_gemini-3.6-flash.md
+[2026-09-08 18:27:00] INFO  Processing file: 33645_resumo.md
+[2026-09-08 18:27:00] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:27:00] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:27:00] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 59.316213119s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
+[2026-09-08 18:27:05] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:27:06] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:27:06] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 53.976960348s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}
+[2026-09-08 18:27:08] ERROR Interrupted by user.
+[2026-09-08 18:31:43] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260908T213143Z_e96cf51a
+[2026-09-08 18:31:43] INFO  Command: componha
+[2026-09-08 18:31:43] INFO  Input dir: corpus/02_resumos
+[2026-09-08 18:31:43] INFO  Output dir: corpus/01_composicoes/menores_notas_gemini
+[2026-09-08 18:31:43] INFO  Model: gemini-3.6-flash
+[2026-09-08 18:31:43] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 18:31:44] INFO  Processing file: 32610_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32610_resumo.md -> 32610_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32674_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32674_resumo.md -> 32674_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32714_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32714_resumo.md -> 32714_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32733_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32733_resumo.md -> 32733_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32749_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32749_resumo.md -> 32749_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32755_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32755_resumo.md -> 32755_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32782_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32782_resumo.md -> 32782_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32792_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32792_resumo.md -> 32792_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 32860_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 32860_resumo.md -> 32860_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33167_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 33167_resumo.md -> 33167_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33310_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 33310_resumo.md -> 33310_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33360_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 33360_resumo.md -> 33360_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33436_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 33436_resumo.md -> 33436_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33465_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 33465_resumo.md -> 33465_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33497_resumo.md
+[2026-09-08 18:31:44] INFO  SKIPPED_EXISTING 33497_resumo.md -> 33497_composicao_gemini-3.6-flash.md
+[2026-09-08 18:31:44] INFO  Processing file: 33645_resumo.md
+[2026-09-08 18:31:44] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:31:44] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:31:44] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 15.388825156s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}
+[2026-09-08 18:31:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:31:50] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:31:50] WARNING Gemini request failed on attempt 2/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9.973760024s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}
+[2026-09-08 18:31:52] ERROR Interrupted by user.
+[2026-09-08 18:33:06] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260908T213306Z_58936382
+[2026-09-08 18:33:06] INFO  Command: componha
+[2026-09-08 18:33:06] INFO  Input dir: corpus/02_resumos
+[2026-09-08 18:33:06] INFO  Output dir: corpus/01_composicoes/menores_notas_gemini
+[2026-09-08 18:33:06] INFO  Model: gemini-3.6-flash
+[2026-09-08 18:33:06] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 18:33:07] INFO  Processing file: 32610_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32610_resumo.md -> 32610_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32674_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32674_resumo.md -> 32674_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32714_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32714_resumo.md -> 32714_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32733_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32733_resumo.md -> 32733_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32749_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32749_resumo.md -> 32749_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32755_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32755_resumo.md -> 32755_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32782_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32782_resumo.md -> 32782_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32792_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32792_resumo.md -> 32792_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 32860_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 32860_resumo.md -> 32860_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33167_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 33167_resumo.md -> 33167_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33310_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 33310_resumo.md -> 33310_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33360_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 33360_resumo.md -> 33360_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33436_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 33436_resumo.md -> 33436_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33465_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 33465_resumo.md -> 33465_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33497_resumo.md
+[2026-09-08 18:33:07] INFO  SKIPPED_EXISTING 33497_resumo.md -> 33497_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:07] INFO  Processing file: 33645_resumo.md
+[2026-09-08 18:33:07] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:33:17] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:33:17] INFO  SUCCESS 33645_resumo.md -> 33645_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:17] INFO  Processing file: 33787_resumo.md
+[2026-09-08 18:33:17] INFO  SKIPPED_EXISTING 33787_resumo.md -> 33787_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:17] INFO  Processing file: 33789_resumo.md
+[2026-09-08 18:33:17] INFO  SKIPPED_EXISTING 33789_resumo.md -> 33789_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:17] INFO  Processing file: 33856_resumo.md
+[2026-09-08 18:33:17] INFO  SKIPPED_EXISTING 33856_resumo.md -> 33856_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:17] INFO  Processing file: 33862_resumo.md
+[2026-09-08 18:33:17] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:33:17] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+[2026-09-08 18:33:17] WARNING Gemini request failed on attempt 1/3: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 42.296929172s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}
+[2026-09-08 18:33:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:33:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:33:36] INFO  SUCCESS 33862_resumo.md -> 33862_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:36] INFO  Processing file: 33871_resumo.md
+[2026-09-08 18:33:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:33:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:33:49] INFO  SUCCESS 33871_resumo.md -> 33871_composicao_gemini-3.6-flash.md
+[2026-09-08 18:33:49] INFO  Processing file: 33948_resumo.md
+[2026-09-08 18:33:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:34:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:34:03] INFO  SUCCESS 33948_resumo.md -> 33948_composicao_gemini-3.6-flash.md
+[2026-09-08 18:34:03] INFO  Processing file: 33964_resumo.md
+[2026-09-08 18:34:03] INFO  SKIPPED_EXISTING 33964_resumo.md -> 33964_composicao_gemini-3.6-flash.md
+[2026-09-08 18:34:03] INFO  Processing file: 34009_resumo.md
+[2026-09-08 18:34:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:34:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:34:13] INFO  SUCCESS 34009_resumo.md -> 34009_composicao_gemini-3.6-flash.md
+[2026-09-08 18:34:13] INFO  Processing file: 34025_resumo.md
+[2026-09-08 18:34:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:34:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:34:24] INFO  SUCCESS 34025_resumo.md -> 34025_composicao_gemini-3.6-flash.md
+[2026-09-08 18:34:24] INFO  Processing file: 34046_resumo.md
+[2026-09-08 18:34:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:34:38] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:34:38] INFO  SUCCESS 34046_resumo.md -> 34046_composicao_gemini-3.6-flash.md
+[2026-09-08 18:34:38] INFO  Processing file: 34185_resumo.md
+[2026-09-08 18:34:38] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:34:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:34:49] INFO  SUCCESS 34185_resumo.md -> 34185_composicao_gemini-3.6-flash.md
+[2026-09-08 18:34:49] INFO  Processing file: 34210_resumo.md
+[2026-09-08 18:34:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:35:02] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:35:02] INFO  SUCCESS 34210_resumo.md -> 34210_composicao_gemini-3.6-flash.md
+[2026-09-08 18:35:02] INFO  Processing file: 34236_resumo.md
+[2026-09-08 18:35:02] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:35:11] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:35:11] INFO  SUCCESS 34236_resumo.md -> 34236_composicao_gemini-3.6-flash.md
+[2026-09-08 18:35:11] INFO  Processing file: 34251_resumo.md
+[2026-09-08 18:35:11] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:35:20] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:35:20] INFO  SUCCESS 34251_resumo.md -> 34251_composicao_gemini-3.6-flash.md
+[2026-09-08 18:35:20] INFO  Processing file: 34273_resumo.md
+[2026-09-08 18:35:20] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:35:31] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:35:31] INFO  SUCCESS 34273_resumo.md -> 34273_composicao_gemini-3.6-flash.md
+[2026-09-08 18:35:31] INFO  Processing file: 34308_resumo.md
+[2026-09-08 18:35:31] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:35:41] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:35:41] INFO  SUCCESS 34308_resumo.md -> 34308_composicao_gemini-3.6-flash.md
+[2026-09-08 18:35:41] INFO  Processing file: 34356_resumo.md
+[2026-09-08 18:35:41] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:35:53] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:35:53] INFO  SUCCESS 34356_resumo.md -> 34356_composicao_gemini-3.6-flash.md
+[2026-09-08 18:35:53] INFO  Processing file: 34362_resumo.md
+[2026-09-08 18:35:53] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:36:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:36:03] INFO  SUCCESS 34362_resumo.md -> 34362_composicao_gemini-3.6-flash.md
+[2026-09-08 18:36:03] INFO  Processing file: 34537_resumo.md
+[2026-09-08 18:36:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:36:18] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:36:18] INFO  SUCCESS 34537_resumo.md -> 34537_composicao_gemini-3.6-flash.md
+[2026-09-08 18:36:18] INFO  Processing file: 34613_resumo.md
+[2026-09-08 18:36:18] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:36:26] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:36:26] INFO  SUCCESS 34613_resumo.md -> 34613_composicao_gemini-3.6-flash.md
+[2026-09-08 18:36:26] INFO  Processing file: 34616_resumo.md
+[2026-09-08 18:36:26] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:36:39] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:36:39] INFO  SUCCESS 34616_resumo.md -> 34616_composicao_gemini-3.6-flash.md
+[2026-09-08 18:36:39] INFO  Processing file: 34618_resumo.md
+[2026-09-08 18:36:39] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:36:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:36:49] INFO  SUCCESS 34618_resumo.md -> 34618_composicao_gemini-3.6-flash.md
+[2026-09-08 18:36:49] INFO  Processing file: 34637_resumo.md
+[2026-09-08 18:36:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:36:59] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:36:59] INFO  SUCCESS 34637_resumo.md -> 34637_composicao_gemini-3.6-flash.md
+[2026-09-08 18:36:59] INFO  Processing file: 34638_resumo.md
+[2026-09-08 18:36:59] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:37:10] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:37:10] INFO  SUCCESS 34638_resumo.md -> 34638_composicao_gemini-3.6-flash.md
+[2026-09-08 18:37:10] INFO  Processing file: 34642_resumo.md
+[2026-09-08 18:37:10] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:37:23] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:37:23] INFO  SUCCESS 34642_resumo.md -> 34642_composicao_gemini-3.6-flash.md
+[2026-09-08 18:37:23] INFO  Processing file: 34714_resumo.md
+[2026-09-08 18:37:23] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:37:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:37:35] INFO  SUCCESS 34714_resumo.md -> 34714_composicao_gemini-3.6-flash.md
+[2026-09-08 18:37:35] INFO  Processing file: 34743_resumo.md
+[2026-09-08 18:37:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:37:46] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:37:46] INFO  SUCCESS 34743_resumo.md -> 34743_composicao_gemini-3.6-flash.md
+[2026-09-08 18:37:46] INFO  Processing file: 34807_resumo.md
+[2026-09-08 18:37:46] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:37:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:37:58] INFO  SUCCESS 34807_resumo.md -> 34807_composicao_gemini-3.6-flash.md
+[2026-09-08 18:37:58] INFO  Processing file: 34823_resumo.md
+[2026-09-08 18:37:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:38:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:38:09] INFO  SUCCESS 34823_resumo.md -> 34823_composicao_gemini-3.6-flash.md
+[2026-09-08 18:38:09] INFO  Processing file: 34895_resumo.md
+[2026-09-08 18:38:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:38:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:38:21] INFO  SUCCESS 34895_resumo.md -> 34895_composicao_gemini-3.6-flash.md
+[2026-09-08 18:38:21] INFO  Processing file: 34971_resumo.md
+[2026-09-08 18:38:21] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:38:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:38:35] INFO  SUCCESS 34971_resumo.md -> 34971_composicao_gemini-3.6-flash.md
+[2026-09-08 18:38:35] INFO  Processing file: 35019_resumo.md
+[2026-09-08 18:38:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:38:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:38:45] INFO  SUCCESS 35019_resumo.md -> 35019_composicao_gemini-3.6-flash.md
+[2026-09-08 18:38:45] INFO  Processing file: 35028_resumo.md
+[2026-09-08 18:38:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:39:00] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:39:00] INFO  SUCCESS 35028_resumo.md -> 35028_composicao_gemini-3.6-flash.md
+[2026-09-08 18:39:00] INFO  Processing file: 35056_resumo.md
+[2026-09-08 18:39:00] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:39:10] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:39:10] INFO  SUCCESS 35056_resumo.md -> 35056_composicao_gemini-3.6-flash.md
+[2026-09-08 18:39:10] INFO  Processing file: 35071_resumo.md
+[2026-09-08 18:39:10] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:39:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:39:21] INFO  SUCCESS 35071_resumo.md -> 35071_composicao_gemini-3.6-flash.md
+[2026-09-08 18:39:21] INFO  Processing file: 35072_resumo.md
+[2026-09-08 18:39:21] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:39:31] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:39:31] INFO  SUCCESS 35072_resumo.md -> 35072_composicao_gemini-3.6-flash.md
+[2026-09-08 18:39:31] INFO  Processing file: 35131_resumo.md
+[2026-09-08 18:39:31] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:39:43] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:39:43] INFO  SUCCESS 35131_resumo.md -> 35131_composicao_gemini-3.6-flash.md
+[2026-09-08 18:39:43] INFO  Processing file: 35136_resumo.md
+[2026-09-08 18:39:43] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:39:56] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:39:56] INFO  SUCCESS 35136_resumo.md -> 35136_composicao_gemini-3.6-flash.md
+[2026-09-08 18:39:56] INFO  Processing file: 35163_resumo.md
+[2026-09-08 18:39:56] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:40:06] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:40:06] INFO  SUCCESS 35163_resumo.md -> 35163_composicao_gemini-3.6-flash.md
+[2026-09-08 18:40:06] INFO  Processing file: 35173_resumo.md
+[2026-09-08 18:40:06] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:40:19] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:40:19] INFO  SUCCESS 35173_resumo.md -> 35173_composicao_gemini-3.6-flash.md
+[2026-09-08 18:40:19] INFO  Processing file: 35198_resumo.md
+[2026-09-08 18:40:19] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:40:33] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:40:33] INFO  SUCCESS 35198_resumo.md -> 35198_composicao_gemini-3.6-flash.md
+[2026-09-08 18:40:33] INFO  Processing file: 35214_resumo.md
+[2026-09-08 18:40:33] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:40:42] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:40:42] INFO  SUCCESS 35214_resumo.md -> 35214_composicao_gemini-3.6-flash.md
+[2026-09-08 18:40:42] INFO  Processing file: 35217_resumo.md
+[2026-09-08 18:40:42] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:40:52] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:40:52] INFO  SUCCESS 35217_resumo.md -> 35217_composicao_gemini-3.6-flash.md
+[2026-09-08 18:40:52] INFO  Processing file: 35220_resumo.md
+[2026-09-08 18:40:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:41:02] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:41:02] INFO  SUCCESS 35220_resumo.md -> 35220_composicao_gemini-3.6-flash.md
+[2026-09-08 18:41:02] INFO  Processing file: 35228_resumo.md
+[2026-09-08 18:41:02] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:41:14] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:41:14] INFO  SUCCESS 35228_resumo.md -> 35228_composicao_gemini-3.6-flash.md
+[2026-09-08 18:41:14] INFO  Processing file: 35278_resumo.md
+[2026-09-08 18:41:14] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:41:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:41:24] INFO  SUCCESS 35278_resumo.md -> 35278_composicao_gemini-3.6-flash.md
+[2026-09-08 18:41:24] INFO  Processing file: 35291_resumo.md
+[2026-09-08 18:41:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:41:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:41:36] INFO  SUCCESS 35291_resumo.md -> 35291_composicao_gemini-3.6-flash.md
+[2026-09-08 18:41:36] INFO  Processing file: 35457_resumo.md
+[2026-09-08 18:41:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:41:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:41:51] INFO  SUCCESS 35457_resumo.md -> 35457_composicao_gemini-3.6-flash.md
+[2026-09-08 18:41:51] INFO  Processing file: 35465_resumo.md
+[2026-09-08 18:41:51] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:42:04] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:42:04] INFO  SUCCESS 35465_resumo.md -> 35465_composicao_gemini-3.6-flash.md
+[2026-09-08 18:42:04] INFO  Processing file: 35485_resumo.md
+[2026-09-08 18:42:04] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:42:14] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:42:14] INFO  SUCCESS 35485_resumo.md -> 35485_composicao_gemini-3.6-flash.md
+[2026-09-08 18:42:14] INFO  Processing file: 35549_resumo.md
+[2026-09-08 18:42:14] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:42:28] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:42:28] INFO  SUCCESS 35549_resumo.md -> 35549_composicao_gemini-3.6-flash.md
+[2026-09-08 18:42:28] INFO  Processing file: 35577_resumo.md
+[2026-09-08 18:42:28] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:42:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:42:40] INFO  SUCCESS 35577_resumo.md -> 35577_composicao_gemini-3.6-flash.md
+[2026-09-08 18:42:40] INFO  Processing file: 35633_resumo.md
+[2026-09-08 18:42:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:42:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:42:51] INFO  SUCCESS 35633_resumo.md -> 35633_composicao_gemini-3.6-flash.md
+[2026-09-08 18:42:51] INFO  Processing file: 35661_resumo.md
+[2026-09-08 18:42:51] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:43:02] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:43:02] INFO  SUCCESS 35661_resumo.md -> 35661_composicao_gemini-3.6-flash.md
+[2026-09-08 18:43:02] INFO  Processing file: 35820_resumo.md
+[2026-09-08 18:43:02] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:43:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:43:13] INFO  SUCCESS 35820_resumo.md -> 35820_composicao_gemini-3.6-flash.md
+[2026-09-08 18:43:13] INFO  Processing file: 35852_resumo.md
+[2026-09-08 18:43:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:43:25] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:43:25] INFO  SUCCESS 35852_resumo.md -> 35852_composicao_gemini-3.6-flash.md
+[2026-09-08 18:43:25] INFO  Processing file: 35906_resumo.md
+[2026-09-08 18:43:25] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:43:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:43:36] INFO  SUCCESS 35906_resumo.md -> 35906_composicao_gemini-3.6-flash.md
+[2026-09-08 18:43:36] INFO  Processing file: 35911_resumo.md
+[2026-09-08 18:43:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:43:46] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:43:46] INFO  SUCCESS 35911_resumo.md -> 35911_composicao_gemini-3.6-flash.md
+[2026-09-08 18:43:46] INFO  Processing file: 35937_resumo.md
+[2026-09-08 18:43:46] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:43:57] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:43:57] INFO  SUCCESS 35937_resumo.md -> 35937_composicao_gemini-3.6-flash.md
+[2026-09-08 18:43:57] INFO  Processing file: 35979_resumo.md
+[2026-09-08 18:43:57] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:44:11] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:44:11] INFO  SUCCESS 35979_resumo.md -> 35979_composicao_gemini-3.6-flash.md
+[2026-09-08 18:44:11] INFO  Processing file: 35986_resumo.md
+[2026-09-08 18:44:11] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:44:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:44:21] INFO  SUCCESS 35986_resumo.md -> 35986_composicao_gemini-3.6-flash.md
+[2026-09-08 18:44:21] INFO  Processing file: 36000_resumo.md
+[2026-09-08 18:44:21] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:44:31] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:44:31] INFO  SUCCESS 36000_resumo.md -> 36000_composicao_gemini-3.6-flash.md
+[2026-09-08 18:44:31] INFO  Processing file: 36079_resumo.md
+[2026-09-08 18:44:31] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:44:42] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:44:42] INFO  SUCCESS 36079_resumo.md -> 36079_composicao_gemini-3.6-flash.md
+[2026-09-08 18:44:42] INFO  Processing file: 36085_resumo.md
+[2026-09-08 18:44:42] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:44:53] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:44:53] INFO  SUCCESS 36085_resumo.md -> 36085_composicao_gemini-3.6-flash.md
+[2026-09-08 18:44:53] INFO  Processing file: 36095_resumo.md
+[2026-09-08 18:44:53] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:45:07] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:45:07] INFO  SUCCESS 36095_resumo.md -> 36095_composicao_gemini-3.6-flash.md
+[2026-09-08 18:45:07] INFO  Processing file: 36137_resumo.md
+[2026-09-08 18:45:07] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:45:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:45:21] INFO  SUCCESS 36137_resumo.md -> 36137_composicao_gemini-3.6-flash.md
+[2026-09-08 18:45:21] INFO  Processing file: 36140_resumo.md
+[2026-09-08 18:45:21] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:45:31] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:45:31] INFO  SUCCESS 36140_resumo.md -> 36140_composicao_gemini-3.6-flash.md
+[2026-09-08 18:45:31] INFO  Processing file: 36172_resumo.md
+[2026-09-08 18:45:31] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:45:43] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:45:43] INFO  SUCCESS 36172_resumo.md -> 36172_composicao_gemini-3.6-flash.md
+[2026-09-08 18:45:43] INFO  Processing file: 36181_resumo.md
+[2026-09-08 18:45:43] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:45:54] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:45:54] INFO  SUCCESS 36181_resumo.md -> 36181_composicao_gemini-3.6-flash.md
+[2026-09-08 18:45:54] INFO  Processing file: 36188_resumo.md
+[2026-09-08 18:45:54] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:46:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:46:03] INFO  SUCCESS 36188_resumo.md -> 36188_composicao_gemini-3.6-flash.md
+[2026-09-08 18:46:03] INFO  Processing file: 36225_resumo.md
+[2026-09-08 18:46:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:46:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:46:13] INFO  SUCCESS 36225_resumo.md -> 36225_composicao_gemini-3.6-flash.md
+[2026-09-08 18:46:13] INFO  Processing file: 36238_resumo.md
+[2026-09-08 18:46:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:46:23] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:46:23] INFO  SUCCESS 36238_resumo.md -> 36238_composicao_gemini-3.6-flash.md
+[2026-09-08 18:46:23] INFO  Processing file: 36248_resumo.md
+[2026-09-08 18:46:23] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:46:34] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:46:34] INFO  SUCCESS 36248_resumo.md -> 36248_composicao_gemini-3.6-flash.md
+[2026-09-08 18:46:34] INFO  Processing file: 36278_resumo.md
+[2026-09-08 18:46:34] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:46:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:46:45] INFO  SUCCESS 36278_resumo.md -> 36278_composicao_gemini-3.6-flash.md
+[2026-09-08 18:46:45] INFO  Processing file: 36295_resumo.md
+[2026-09-08 18:46:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:46:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:46:58] INFO  SUCCESS 36295_resumo.md -> 36295_composicao_gemini-3.6-flash.md
+[2026-09-08 18:46:58] INFO  Processing file: 36307_resumo.md
+[2026-09-08 18:46:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:47:08] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:47:08] INFO  SUCCESS 36307_resumo.md -> 36307_composicao_gemini-3.6-flash.md
+[2026-09-08 18:47:08] INFO  Processing file: 36341_resumo.md
+[2026-09-08 18:47:08] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:47:17] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:47:17] INFO  SUCCESS 36341_resumo.md -> 36341_composicao_gemini-3.6-flash.md
+[2026-09-08 18:47:17] INFO  Processing file: 36430_resumo.md
+[2026-09-08 18:47:17] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:47:27] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:47:27] INFO  SUCCESS 36430_resumo.md -> 36430_composicao_gemini-3.6-flash.md
+[2026-09-08 18:47:27] INFO  Processing file: 36522_resumo.md
+[2026-09-08 18:47:27] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:47:38] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:47:38] INFO  SUCCESS 36522_resumo.md -> 36522_composicao_gemini-3.6-flash.md
+[2026-09-08 18:47:38] INFO  Processing file: 36524_resumo.md
+[2026-09-08 18:47:38] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:47:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:47:48] INFO  SUCCESS 36524_resumo.md -> 36524_composicao_gemini-3.6-flash.md
+[2026-09-08 18:47:48] INFO  Processing file: 36547_resumo.md
+[2026-09-08 18:47:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:47:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:47:58] INFO  SUCCESS 36547_resumo.md -> 36547_composicao_gemini-3.6-flash.md
+[2026-09-08 18:47:58] INFO  Processing file: 36578_resumo.md
+[2026-09-08 18:47:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:48:11] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:48:11] INFO  SUCCESS 36578_resumo.md -> 36578_composicao_gemini-3.6-flash.md
+[2026-09-08 18:48:11] INFO  Processing file: 36590_resumo.md
+[2026-09-08 18:48:11] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:48:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:48:24] INFO  SUCCESS 36590_resumo.md -> 36590_composicao_gemini-3.6-flash.md
+[2026-09-08 18:48:24] INFO  Processing file: 36616_resumo.md
+[2026-09-08 18:48:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:48:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:48:37] INFO  SUCCESS 36616_resumo.md -> 36616_composicao_gemini-3.6-flash.md
+[2026-09-08 18:48:37] INFO  Processing file: 36704_resumo.md
+[2026-09-08 18:48:37] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:48:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:48:48] INFO  SUCCESS 36704_resumo.md -> 36704_composicao_gemini-3.6-flash.md
+[2026-09-08 18:48:48] INFO  Processing file: 36721_resumo.md
+[2026-09-08 18:48:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:49:02] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:49:02] INFO  SUCCESS 36721_resumo.md -> 36721_composicao_gemini-3.6-flash.md
+[2026-09-08 18:49:02] INFO  Processing file: 36727_resumo.md
+[2026-09-08 18:49:02] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:49:14] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:49:14] INFO  SUCCESS 36727_resumo.md -> 36727_composicao_gemini-3.6-flash.md
+[2026-09-08 18:49:14] INFO  Processing file: 36742_resumo.md
+[2026-09-08 18:49:14] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:49:23] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:49:23] INFO  SUCCESS 36742_resumo.md -> 36742_composicao_gemini-3.6-flash.md
+[2026-09-08 18:49:23] INFO  Processing file: 36797_resumo.md
+[2026-09-08 18:49:23] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:49:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:49:36] INFO  SUCCESS 36797_resumo.md -> 36797_composicao_gemini-3.6-flash.md
+[2026-09-08 18:49:36] INFO  Processing file: 36827_resumo.md
+[2026-09-08 18:49:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:49:46] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:49:46] INFO  SUCCESS 36827_resumo.md -> 36827_composicao_gemini-3.6-flash.md
+[2026-09-08 18:49:46] INFO  Processing file: 36856_resumo.md
+[2026-09-08 18:49:46] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:49:55] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:49:55] INFO  SUCCESS 36856_resumo.md -> 36856_composicao_gemini-3.6-flash.md
+[2026-09-08 18:49:55] INFO  Processing file: 36867_resumo.md
+[2026-09-08 18:49:55] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:50:05] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:50:05] INFO  SUCCESS 36867_resumo.md -> 36867_composicao_gemini-3.6-flash.md
+[2026-09-08 18:50:05] INFO  Processing file: 36872_resumo.md
+[2026-09-08 18:50:05] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:50:17] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:50:17] INFO  SUCCESS 36872_resumo.md -> 36872_composicao_gemini-3.6-flash.md
+[2026-09-08 18:50:17] INFO  Processing file: 36973_resumo.md
+[2026-09-08 18:50:17] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:50:26] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:50:26] INFO  SUCCESS 36973_resumo.md -> 36973_composicao_gemini-3.6-flash.md
+[2026-09-08 18:50:26] INFO  Processing file: 37010_resumo.md
+[2026-09-08 18:50:26] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:50:38] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:50:38] INFO  SUCCESS 37010_resumo.md -> 37010_composicao_gemini-3.6-flash.md
+[2026-09-08 18:50:38] INFO  Processing file: 37034_resumo.md
+[2026-09-08 18:50:38] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:50:50] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:50:50] INFO  SUCCESS 37034_resumo.md -> 37034_composicao_gemini-3.6-flash.md
+[2026-09-08 18:50:50] INFO  Processing file: 37043_resumo.md
+[2026-09-08 18:50:50] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:51:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:51:03] INFO  SUCCESS 37043_resumo.md -> 37043_composicao_gemini-3.6-flash.md
+[2026-09-08 18:51:03] INFO  Processing file: 37063_resumo.md
+[2026-09-08 18:51:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:51:12] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:51:12] INFO  SUCCESS 37063_resumo.md -> 37063_composicao_gemini-3.6-flash.md
+[2026-09-08 18:51:12] INFO  Processing file: 37078_resumo.md
+[2026-09-08 18:51:12] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:51:22] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:51:22] INFO  SUCCESS 37078_resumo.md -> 37078_composicao_gemini-3.6-flash.md
+[2026-09-08 18:51:22] INFO  Processing file: 37094_resumo.md
+[2026-09-08 18:51:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:51:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:51:36] INFO  SUCCESS 37094_resumo.md -> 37094_composicao_gemini-3.6-flash.md
+[2026-09-08 18:51:36] INFO  Processing file: 37099_resumo.md
+[2026-09-08 18:51:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:51:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:51:45] INFO  SUCCESS 37099_resumo.md -> 37099_composicao_gemini-3.6-flash.md
+[2026-09-08 18:51:45] INFO  Processing file: 37158_resumo.md
+[2026-09-08 18:51:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:51:57] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:51:57] INFO  SUCCESS 37158_resumo.md -> 37158_composicao_gemini-3.6-flash.md
+[2026-09-08 18:51:57] INFO  Processing file: 37212_resumo.md
+[2026-09-08 18:51:57] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:52:11] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:52:11] INFO  SUCCESS 37212_resumo.md -> 37212_composicao_gemini-3.6-flash.md
+[2026-09-08 18:52:11] INFO  Processing file: 37224_resumo.md
+[2026-09-08 18:52:11] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:52:22] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:52:22] INFO  SUCCESS 37224_resumo.md -> 37224_composicao_gemini-3.6-flash.md
+[2026-09-08 18:52:22] INFO  Processing file: 37260_resumo.md
+[2026-09-08 18:52:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:52:33] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:52:33] INFO  SUCCESS 37260_resumo.md -> 37260_composicao_gemini-3.6-flash.md
+[2026-09-08 18:52:33] INFO  Processing file: 37345_resumo.md
+[2026-09-08 18:52:33] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:52:41] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:52:41] INFO  SUCCESS 37345_resumo.md -> 37345_composicao_gemini-3.6-flash.md
+[2026-09-08 18:52:41] INFO  Processing file: 37377_resumo.md
+[2026-09-08 18:52:41] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:52:50] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:52:50] INFO  SUCCESS 37377_resumo.md -> 37377_composicao_gemini-3.6-flash.md
+[2026-09-08 18:52:50] INFO  Processing file: 37442_resumo.md
+[2026-09-08 18:52:50] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:53:00] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:53:00] INFO  SUCCESS 37442_resumo.md -> 37442_composicao_gemini-3.6-flash.md
+[2026-09-08 18:53:00] INFO  Processing file: 37489_resumo.md
+[2026-09-08 18:53:00] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:53:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:53:09] INFO  SUCCESS 37489_resumo.md -> 37489_composicao_gemini-3.6-flash.md
+[2026-09-08 18:53:09] INFO  Processing file: 37602_resumo.md
+[2026-09-08 18:53:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:53:22] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:53:22] INFO  SUCCESS 37602_resumo.md -> 37602_composicao_gemini-3.6-flash.md
+[2026-09-08 18:53:22] INFO  Processing file: 37664_resumo.md
+[2026-09-08 18:53:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:53:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:53:35] INFO  SUCCESS 37664_resumo.md -> 37664_composicao_gemini-3.6-flash.md
+[2026-09-08 18:53:35] INFO  Processing file: 37677_resumo.md
+[2026-09-08 18:53:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:53:47] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:53:47] INFO  SUCCESS 37677_resumo.md -> 37677_composicao_gemini-3.6-flash.md
+[2026-09-08 18:53:47] INFO  Processing file: 37694_resumo.md
+[2026-09-08 18:53:47] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:53:57] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:53:57] INFO  SUCCESS 37694_resumo.md -> 37694_composicao_gemini-3.6-flash.md
+[2026-09-08 18:53:57] INFO  Processing file: 37734_resumo.md
+[2026-09-08 18:53:57] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:54:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:54:09] INFO  SUCCESS 37734_resumo.md -> 37734_composicao_gemini-3.6-flash.md
+[2026-09-08 18:54:09] INFO  Processing file: 37858_resumo.md
+[2026-09-08 18:54:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:54:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:54:24] INFO  SUCCESS 37858_resumo.md -> 37858_composicao_gemini-3.6-flash.md
+[2026-09-08 18:54:24] INFO  Processing file: 37949_resumo.md
+[2026-09-08 18:54:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:54:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:54:35] INFO  SUCCESS 37949_resumo.md -> 37949_composicao_gemini-3.6-flash.md
+[2026-09-08 18:54:35] INFO  Processing file: 37994_resumo.md
+[2026-09-08 18:54:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:54:52] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:54:52] INFO  SUCCESS 37994_resumo.md -> 37994_composicao_gemini-3.6-flash.md
+[2026-09-08 18:54:52] INFO  Processing file: 37999_resumo.md
+[2026-09-08 18:54:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:55:02] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:55:02] INFO  SUCCESS 37999_resumo.md -> 37999_composicao_gemini-3.6-flash.md
+[2026-09-08 18:55:02] INFO  Processing file: 38002_resumo.md
+[2026-09-08 18:55:02] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:55:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:55:13] INFO  SUCCESS 38002_resumo.md -> 38002_composicao_gemini-3.6-flash.md
+[2026-09-08 18:55:13] INFO  Processing file: 38036_resumo.md
+[2026-09-08 18:55:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:55:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:55:24] INFO  SUCCESS 38036_resumo.md -> 38036_composicao_gemini-3.6-flash.md
+[2026-09-08 18:55:24] INFO  Processing file: 38158_resumo.md
+[2026-09-08 18:55:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:55:33] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:55:33] INFO  SUCCESS 38158_resumo.md -> 38158_composicao_gemini-3.6-flash.md
+[2026-09-08 18:55:33] INFO  Processing file: 38172_resumo.md
+[2026-09-08 18:55:33] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:55:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:55:48] INFO  SUCCESS 38172_resumo.md -> 38172_composicao_gemini-3.6-flash.md
+[2026-09-08 18:55:48] INFO  Processing file: 38193_resumo.md
+[2026-09-08 18:55:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:55:59] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:55:59] INFO  SUCCESS 38193_resumo.md -> 38193_composicao_gemini-3.6-flash.md
+[2026-09-08 18:55:59] INFO  Processing file: 38196_resumo.md
+[2026-09-08 18:55:59] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:56:10] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:56:10] INFO  SUCCESS 38196_resumo.md -> 38196_composicao_gemini-3.6-flash.md
+[2026-09-08 18:56:10] INFO  Processing file: 38204_resumo.md
+[2026-09-08 18:56:10] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:56:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:56:21] INFO  SUCCESS 38204_resumo.md -> 38204_composicao_gemini-3.6-flash.md
+[2026-09-08 18:56:21] INFO  Processing file: 38226_resumo.md
+[2026-09-08 18:56:21] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:56:34] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:56:34] INFO  SUCCESS 38226_resumo.md -> 38226_composicao_gemini-3.6-flash.md
+[2026-09-08 18:56:34] INFO  Processing file: 38284_resumo.md
+[2026-09-08 18:56:34] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:56:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:56:45] INFO  SUCCESS 38284_resumo.md -> 38284_composicao_gemini-3.6-flash.md
+[2026-09-08 18:56:45] INFO  Processing file: 38310_resumo.md
+[2026-09-08 18:56:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:56:56] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:56:56] INFO  SUCCESS 38310_resumo.md -> 38310_composicao_gemini-3.6-flash.md
+[2026-09-08 18:56:56] INFO  Processing file: 38340_resumo.md
+[2026-09-08 18:56:56] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:57:06] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:57:06] INFO  SUCCESS 38340_resumo.md -> 38340_composicao_gemini-3.6-flash.md
+[2026-09-08 18:57:06] INFO  Processing file: 38395_resumo.md
+[2026-09-08 18:57:06] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:57:16] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:57:16] INFO  SUCCESS 38395_resumo.md -> 38395_composicao_gemini-3.6-flash.md
+[2026-09-08 18:57:16] INFO  Processing file: 38439_resumo.md
+[2026-09-08 18:57:16] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:57:29] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:57:29] INFO  SUCCESS 38439_resumo.md -> 38439_composicao_gemini-3.6-flash.md
+[2026-09-08 18:57:29] INFO  Processing file: 38445_resumo.md
+[2026-09-08 18:57:29] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:57:38] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:57:38] INFO  SUCCESS 38445_resumo.md -> 38445_composicao_gemini-3.6-flash.md
+[2026-09-08 18:57:38] INFO  Processing file: 38451_resumo.md
+[2026-09-08 18:57:38] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:57:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:57:51] INFO  SUCCESS 38451_resumo.md -> 38451_composicao_gemini-3.6-flash.md
+[2026-09-08 18:57:51] INFO  Processing file: 38469_resumo.md
+[2026-09-08 18:57:51] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:58:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:58:03] INFO  SUCCESS 38469_resumo.md -> 38469_composicao_gemini-3.6-flash.md
+[2026-09-08 18:58:03] INFO  Processing file: 38495_resumo.md
+[2026-09-08 18:58:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:58:12] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:58:12] INFO  SUCCESS 38495_resumo.md -> 38495_composicao_gemini-3.6-flash.md
+[2026-09-08 18:58:12] INFO  Processing file: 38499_resumo.md
+[2026-09-08 18:58:12] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:58:26] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:58:26] INFO  SUCCESS 38499_resumo.md -> 38499_composicao_gemini-3.6-flash.md
+[2026-09-08 18:58:26] INFO  Processing file: 38506_resumo.md
+[2026-09-08 18:58:26] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:58:38] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:58:38] INFO  SUCCESS 38506_resumo.md -> 38506_composicao_gemini-3.6-flash.md
+[2026-09-08 18:58:38] INFO  Processing file: 38536_resumo.md
+[2026-09-08 18:58:38] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:58:52] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:58:52] INFO  SUCCESS 38536_resumo.md -> 38536_composicao_gemini-3.6-flash.md
+[2026-09-08 18:58:52] INFO  Processing file: 38555_resumo.md
+[2026-09-08 18:58:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:59:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:59:03] INFO  SUCCESS 38555_resumo.md -> 38555_composicao_gemini-3.6-flash.md
+[2026-09-08 18:59:03] INFO  Processing file: 38632_resumo.md
+[2026-09-08 18:59:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:59:14] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:59:14] INFO  SUCCESS 38632_resumo.md -> 38632_composicao_gemini-3.6-flash.md
+[2026-09-08 18:59:14] INFO  Processing file: 38637_resumo.md
+[2026-09-08 18:59:14] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:59:25] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:59:25] INFO  SUCCESS 38637_resumo.md -> 38637_composicao_gemini-3.6-flash.md
+[2026-09-08 18:59:25] INFO  Processing file: 38670_resumo.md
+[2026-09-08 18:59:25] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:59:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:59:35] INFO  SUCCESS 38670_resumo.md -> 38670_composicao_gemini-3.6-flash.md
+[2026-09-08 18:59:35] INFO  Processing file: 38674_resumo.md
+[2026-09-08 18:59:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:59:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:59:48] INFO  SUCCESS 38674_resumo.md -> 38674_composicao_gemini-3.6-flash.md
+[2026-09-08 18:59:48] INFO  Processing file: 38677_resumo.md
+[2026-09-08 18:59:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 18:59:59] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 18:59:59] INFO  SUCCESS 38677_resumo.md -> 38677_composicao_gemini-3.6-flash.md
+[2026-09-08 18:59:59] INFO  Processing file: 38764_resumo.md
+[2026-09-08 18:59:59] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:00:06] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:00:06] INFO  SUCCESS 38764_resumo.md -> 38764_composicao_gemini-3.6-flash.md
+[2026-09-08 19:00:06] INFO  Processing file: 38786_resumo.md
+[2026-09-08 19:00:06] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:00:17] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:00:17] INFO  SUCCESS 38786_resumo.md -> 38786_composicao_gemini-3.6-flash.md
+[2026-09-08 19:00:17] INFO  Processing file: 38794_resumo.md
+[2026-09-08 19:00:17] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:00:28] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:00:28] INFO  SUCCESS 38794_resumo.md -> 38794_composicao_gemini-3.6-flash.md
+[2026-09-08 19:00:28] INFO  Processing file: 38891_resumo.md
+[2026-09-08 19:00:28] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:00:41] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:00:41] INFO  SUCCESS 38891_resumo.md -> 38891_composicao_gemini-3.6-flash.md
+[2026-09-08 19:00:41] INFO  Processing file: 38917_resumo.md
+[2026-09-08 19:00:41] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:00:54] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:00:54] INFO  SUCCESS 38917_resumo.md -> 38917_composicao_gemini-3.6-flash.md
+[2026-09-08 19:00:54] INFO  Processing file: 38928_resumo.md
+[2026-09-08 19:00:54] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:01:07] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:01:07] INFO  SUCCESS 38928_resumo.md -> 38928_composicao_gemini-3.6-flash.md
+[2026-09-08 19:01:07] INFO  Processing file: 38957_resumo.md
+[2026-09-08 19:01:07] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:01:20] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:01:20] INFO  SUCCESS 38957_resumo.md -> 38957_composicao_gemini-3.6-flash.md
+[2026-09-08 19:01:20] INFO  Processing file: 38970_resumo.md
+[2026-09-08 19:01:20] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:01:30] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:01:30] INFO  SUCCESS 38970_resumo.md -> 38970_composicao_gemini-3.6-flash.md
+[2026-09-08 19:01:30] INFO  Processing file: 39063_resumo.md
+[2026-09-08 19:01:30] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:01:42] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:01:42] INFO  SUCCESS 39063_resumo.md -> 39063_composicao_gemini-3.6-flash.md
+[2026-09-08 19:01:42] INFO  Processing file: 39065_resumo.md
+[2026-09-08 19:01:42] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:01:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:01:51] INFO  SUCCESS 39065_resumo.md -> 39065_composicao_gemini-3.6-flash.md
+[2026-09-08 19:01:51] INFO  Processing file: 39124_resumo.md
+[2026-09-08 19:01:51] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:02:01] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:02:01] INFO  SUCCESS 39124_resumo.md -> 39124_composicao_gemini-3.6-flash.md
+[2026-09-08 19:02:01] INFO  Processing file: 39164_resumo.md
+[2026-09-08 19:02:01] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:02:12] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:02:12] INFO  SUCCESS 39164_resumo.md -> 39164_composicao_gemini-3.6-flash.md
+[2026-09-08 19:02:12] INFO  Processing file: 39302_resumo.md
+[2026-09-08 19:02:12] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:02:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:02:24] INFO  SUCCESS 39302_resumo.md -> 39302_composicao_gemini-3.6-flash.md
+[2026-09-08 19:02:24] INFO  Processing file: 39349_resumo.md
+[2026-09-08 19:02:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:02:37] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:02:37] INFO  SUCCESS 39349_resumo.md -> 39349_composicao_gemini-3.6-flash.md
+[2026-09-08 19:02:37] INFO  Processing file: 39379_resumo.md
+[2026-09-08 19:02:37] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:02:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:02:49] INFO  SUCCESS 39379_resumo.md -> 39379_composicao_gemini-3.6-flash.md
+[2026-09-08 19:02:49] INFO  Processing file: 39436_resumo.md
+[2026-09-08 19:02:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:02:59] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:02:59] INFO  SUCCESS 39436_resumo.md -> 39436_composicao_gemini-3.6-flash.md
+[2026-09-08 19:02:59] INFO  Processing file: 39446_resumo.md
+[2026-09-08 19:02:59] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:03:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:03:13] INFO  SUCCESS 39446_resumo.md -> 39446_composicao_gemini-3.6-flash.md
+[2026-09-08 19:03:13] INFO  Processing file: 39493_resumo.md
+[2026-09-08 19:03:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:03:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:03:24] INFO  SUCCESS 39493_resumo.md -> 39493_composicao_gemini-3.6-flash.md
+[2026-09-08 19:03:24] INFO  Processing file: 39502_resumo.md
+[2026-09-08 19:03:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:03:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:03:36] INFO  SUCCESS 39502_resumo.md -> 39502_composicao_gemini-3.6-flash.md
+[2026-09-08 19:03:36] INFO  Processing file: 39516_resumo.md
+[2026-09-08 19:03:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:03:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:03:48] INFO  SUCCESS 39516_resumo.md -> 39516_composicao_gemini-3.6-flash.md
+[2026-09-08 19:03:48] INFO  Processing file: 39615_resumo.md
+[2026-09-08 19:03:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:03:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:03:58] INFO  SUCCESS 39615_resumo.md -> 39615_composicao_gemini-3.6-flash.md
+[2026-09-08 19:03:58] INFO  Processing file: 39648_resumo.md
+[2026-09-08 19:03:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:04:10] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:04:10] INFO  SUCCESS 39648_resumo.md -> 39648_composicao_gemini-3.6-flash.md
+[2026-09-08 19:04:10] INFO  Processing file: 39695_resumo.md
+[2026-09-08 19:04:10] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:04:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:04:24] INFO  SUCCESS 39695_resumo.md -> 39695_composicao_gemini-3.6-flash.md
+[2026-09-08 19:04:24] INFO  Processing file: 39701_resumo.md
+[2026-09-08 19:04:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:04:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:04:35] INFO  SUCCESS 39701_resumo.md -> 39701_composicao_gemini-3.6-flash.md
+[2026-09-08 19:04:35] INFO  Processing file: 39722_resumo.md
+[2026-09-08 19:04:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:04:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:04:49] INFO  SUCCESS 39722_resumo.md -> 39722_composicao_gemini-3.6-flash.md
+[2026-09-08 19:04:49] INFO  Processing file: 39727_resumo.md
+[2026-09-08 19:04:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:05:02] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:05:02] INFO  SUCCESS 39727_resumo.md -> 39727_composicao_gemini-3.6-flash.md
+[2026-09-08 19:05:02] INFO  Processing file: 39786_resumo.md
+[2026-09-08 19:05:02] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:05:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:05:13] INFO  SUCCESS 39786_resumo.md -> 39786_composicao_gemini-3.6-flash.md
+[2026-09-08 19:05:13] INFO  Processing file: 39833_resumo.md
+[2026-09-08 19:05:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:05:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:05:24] INFO  SUCCESS 39833_resumo.md -> 39833_composicao_gemini-3.6-flash.md
+[2026-09-08 19:05:24] INFO  Processing file: 39912_resumo.md
+[2026-09-08 19:05:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:05:33] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:05:33] INFO  SUCCESS 39912_resumo.md -> 39912_composicao_gemini-3.6-flash.md
+[2026-09-08 19:05:33] INFO  Processing file: 39914_resumo.md
+[2026-09-08 19:05:33] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:05:43] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:05:43] INFO  SUCCESS 39914_resumo.md -> 39914_composicao_gemini-3.6-flash.md
+[2026-09-08 19:05:43] INFO  Processing file: 39956_resumo.md
+[2026-09-08 19:05:43] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:05:56] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:05:56] INFO  SUCCESS 39956_resumo.md -> 39956_composicao_gemini-3.6-flash.md
+[2026-09-08 19:05:56] INFO  Processing file: 39985_resumo.md
+[2026-09-08 19:05:56] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:06:08] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:06:08] INFO  SUCCESS 39985_resumo.md -> 39985_composicao_gemini-3.6-flash.md
+[2026-09-08 19:06:08] INFO  Processing file: 40126_resumo.md
+[2026-09-08 19:06:08] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:06:21] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:06:21] INFO  SUCCESS 40126_resumo.md -> 40126_composicao_gemini-3.6-flash.md
+[2026-09-08 19:06:21] INFO  Processing file: 40256_resumo.md
+[2026-09-08 19:06:21] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:06:32] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:06:32] INFO  SUCCESS 40256_resumo.md -> 40256_composicao_gemini-3.6-flash.md
+[2026-09-08 19:06:32] INFO  Processing file: 40270_resumo.md
+[2026-09-08 19:06:32] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:06:46] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:06:46] INFO  SUCCESS 40270_resumo.md -> 40270_composicao_gemini-3.6-flash.md
+[2026-09-08 19:06:46] INFO  Processing file: 40362_resumo.md
+[2026-09-08 19:06:46] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:06:56] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:06:56] INFO  SUCCESS 40362_resumo.md -> 40362_composicao_gemini-3.6-flash.md
+[2026-09-08 19:06:56] INFO  Processing file: 40368_resumo.md
+[2026-09-08 19:06:56] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:07:05] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:07:05] INFO  SUCCESS 40368_resumo.md -> 40368_composicao_gemini-3.6-flash.md
+[2026-09-08 19:07:05] INFO  Processing file: 40426_resumo.md
+[2026-09-08 19:07:05] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:07:16] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:07:16] INFO  SUCCESS 40426_resumo.md -> 40426_composicao_gemini-3.6-flash.md
+[2026-09-08 19:07:16] INFO  Processing file: 40461_resumo.md
+[2026-09-08 19:07:16] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:07:32] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:07:32] INFO  SUCCESS 40461_resumo.md -> 40461_composicao_gemini-3.6-flash.md
+[2026-09-08 19:07:32] INFO  Processing file: 40496_resumo.md
+[2026-09-08 19:07:32] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:07:43] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:07:43] INFO  SUCCESS 40496_resumo.md -> 40496_composicao_gemini-3.6-flash.md
+[2026-09-08 19:07:43] INFO  Processing file: 40523_resumo.md
+[2026-09-08 19:07:43] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:07:57] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:07:57] INFO  SUCCESS 40523_resumo.md -> 40523_composicao_gemini-3.6-flash.md
+[2026-09-08 19:07:57] INFO  Processing file: 40617_resumo.md
+[2026-09-08 19:07:57] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:08:12] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:08:12] INFO  SUCCESS 40617_resumo.md -> 40617_composicao_gemini-3.6-flash.md
+[2026-09-08 19:08:12] INFO  Processing file: 40688_resumo.md
+[2026-09-08 19:08:12] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:08:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:08:24] INFO  SUCCESS 40688_resumo.md -> 40688_composicao_gemini-3.6-flash.md
+[2026-09-08 19:08:24] INFO  Processing file: 40690_resumo.md
+[2026-09-08 19:08:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:08:36] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:08:36] INFO  SUCCESS 40690_resumo.md -> 40690_composicao_gemini-3.6-flash.md
+[2026-09-08 19:08:36] INFO  Processing file: 40765_resumo.md
+[2026-09-08 19:08:36] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:08:49] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:08:49] INFO  SUCCESS 40765_resumo.md -> 40765_composicao_gemini-3.6-flash.md
+[2026-09-08 19:08:49] INFO  Processing file: 40803_resumo.md
+[2026-09-08 19:08:49] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:09:00] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:09:00] INFO  SUCCESS 40803_resumo.md -> 40803_composicao_gemini-3.6-flash.md
+[2026-09-08 19:09:00] INFO  Processing file: 40865_resumo.md
+[2026-09-08 19:09:00] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:09:10] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:09:10] INFO  SUCCESS 40865_resumo.md -> 40865_composicao_gemini-3.6-flash.md
+[2026-09-08 19:09:10] INFO  Processing file: 40869_resumo.md
+[2026-09-08 19:09:10] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:09:24] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:09:24] INFO  SUCCESS 40869_resumo.md -> 40869_composicao_gemini-3.6-flash.md
+[2026-09-08 19:09:24] INFO  Processing file: 40887_resumo.md
+[2026-09-08 19:09:24] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:09:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:09:40] INFO  SUCCESS 40887_resumo.md -> 40887_composicao_gemini-3.6-flash.md
+[2026-09-08 19:09:40] INFO  Processing file: 40898_resumo.md
+[2026-09-08 19:09:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:09:54] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:09:54] INFO  SUCCESS 40898_resumo.md -> 40898_composicao_gemini-3.6-flash.md
+[2026-09-08 19:09:54] INFO  Processing file: 40906_resumo.md
+[2026-09-08 19:09:54] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:10:05] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:10:05] INFO  SUCCESS 40906_resumo.md -> 40906_composicao_gemini-3.6-flash.md
+[2026-09-08 19:10:05] INFO  Processing file: 40926_resumo.md
+[2026-09-08 19:10:05] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:10:16] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:10:16] INFO  SUCCESS 40926_resumo.md -> 40926_composicao_gemini-3.6-flash.md
+[2026-09-08 19:10:16] INFO  Processing file: 40929_resumo.md
+[2026-09-08 19:10:16] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:10:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:10:35] INFO  SUCCESS 40929_resumo.md -> 40929_composicao_gemini-3.6-flash.md
+[2026-09-08 19:10:35] INFO  Processing file: 40978_resumo.md
+[2026-09-08 19:10:35] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:10:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:10:48] INFO  SUCCESS 40978_resumo.md -> 40978_composicao_gemini-3.6-flash.md
+[2026-09-08 19:10:48] INFO  Processing file: 41011_resumo.md
+[2026-09-08 19:10:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:10:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:10:58] INFO  SUCCESS 41011_resumo.md -> 41011_composicao_gemini-3.6-flash.md
+[2026-09-08 19:10:58] INFO  Processing file: 41093_resumo.md
+[2026-09-08 19:10:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:11:08] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:11:08] INFO  SUCCESS 41093_resumo.md -> 41093_composicao_gemini-3.6-flash.md
+[2026-09-08 19:11:08] INFO  Processing file: 41096_resumo.md
+[2026-09-08 19:11:08] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:11:19] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:11:19] INFO  SUCCESS 41096_resumo.md -> 41096_composicao_gemini-3.6-flash.md
+[2026-09-08 19:11:19] INFO  Processing file: 45044_resumo.md
+[2026-09-08 19:11:19] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:11:30] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:11:30] INFO  SUCCESS 45044_resumo.md -> 45044_composicao_gemini-3.6-flash.md
+[2026-09-08 19:11:30] INFO  Processing file: 45075_resumo.md
+[2026-09-08 19:11:30] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:11:41] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:11:41] INFO  SUCCESS 45075_resumo.md -> 45075_composicao_gemini-3.6-flash.md
+[2026-09-08 19:11:41] INFO  Processing file: 45078_resumo.md
+[2026-09-08 19:11:41] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:11:52] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:11:52] INFO  SUCCESS 45078_resumo.md -> 45078_composicao_gemini-3.6-flash.md
+[2026-09-08 19:11:52] INFO  Processing file: 45124_resumo.md
+[2026-09-08 19:11:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:12:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:12:03] INFO  SUCCESS 45124_resumo.md -> 45124_composicao_gemini-3.6-flash.md
+[2026-09-08 19:12:03] INFO  Processing file: 45241_resumo.md
+[2026-09-08 19:12:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:12:17] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:12:17] INFO  SUCCESS 45241_resumo.md -> 45241_composicao_gemini-3.6-flash.md
+[2026-09-08 19:12:17] INFO  Processing file: 45268_resumo.md
+[2026-09-08 19:12:17] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:12:31] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:12:31] INFO  SUCCESS 45268_resumo.md -> 45268_composicao_gemini-3.6-flash.md
+[2026-09-08 19:12:31] INFO  Processing file: 45357_resumo.md
+[2026-09-08 19:12:31] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:12:43] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:12:43] INFO  SUCCESS 45357_resumo.md -> 45357_composicao_gemini-3.6-flash.md
+[2026-09-08 19:12:43] INFO  Processing file: 45389_resumo.md
+[2026-09-08 19:12:43] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:12:52] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:12:52] INFO  SUCCESS 45389_resumo.md -> 45389_composicao_gemini-3.6-flash.md
+[2026-09-08 19:12:52] INFO  Processing file: 45519_resumo.md
+[2026-09-08 19:12:52] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:13:03] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:13:03] INFO  SUCCESS 45519_resumo.md -> 45519_composicao_gemini-3.6-flash.md
+[2026-09-08 19:13:03] INFO  Processing file: 45531_resumo.md
+[2026-09-08 19:13:03] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:13:15] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:13:15] INFO  SUCCESS 45531_resumo.md -> 45531_composicao_gemini-3.6-flash.md
+[2026-09-08 19:13:15] INFO  Processing file: 45638_resumo.md
+[2026-09-08 19:13:15] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:13:28] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:13:28] INFO  SUCCESS 45638_resumo.md -> 45638_composicao_gemini-3.6-flash.md
+[2026-09-08 19:13:28] INFO  Processing file: 45667_resumo.md
+[2026-09-08 19:13:28] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:13:38] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:13:38] INFO  SUCCESS 45667_resumo.md -> 45667_composicao_gemini-3.6-flash.md
+[2026-09-08 19:13:38] INFO  Processing file: 45746_resumo.md
+[2026-09-08 19:13:38] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:13:47] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:13:47] INFO  SUCCESS 45746_resumo.md -> 45746_composicao_gemini-3.6-flash.md
+[2026-09-08 19:13:47] INFO  Processing file: 45996_resumo.md
+[2026-09-08 19:13:47] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:13:57] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:13:57] INFO  SUCCESS 45996_resumo.md -> 45996_composicao_gemini-3.6-flash.md
+[2026-09-08 19:13:57] INFO  Processing file: 46034_resumo.md
+[2026-09-08 19:13:57] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:14:09] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:14:09] INFO  SUCCESS 46034_resumo.md -> 46034_composicao_gemini-3.6-flash.md
+[2026-09-08 19:14:09] INFO  Processing file: 46108_resumo.md
+[2026-09-08 19:14:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:14:22] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:14:22] INFO  SUCCESS 46108_resumo.md -> 46108_composicao_gemini-3.6-flash.md
+[2026-09-08 19:14:22] INFO  Processing file: 46249_resumo.md
+[2026-09-08 19:14:22] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:14:34] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:14:34] INFO  SUCCESS 46249_resumo.md -> 46249_composicao_gemini-3.6-flash.md
+[2026-09-08 19:14:34] INFO  Processing file: 46255_resumo.md
+[2026-09-08 19:14:34] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:14:45] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:14:45] INFO  SUCCESS 46255_resumo.md -> 46255_composicao_gemini-3.6-flash.md
+[2026-09-08 19:14:45] INFO  Processing file: 46273_resumo.md
+[2026-09-08 19:14:45] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:14:56] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:14:56] INFO  SUCCESS 46273_resumo.md -> 46273_composicao_gemini-3.6-flash.md
+[2026-09-08 19:14:56] INFO  Processing file: 46276_resumo.md
+[2026-09-08 19:14:56] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:15:05] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:15:05] INFO  SUCCESS 46276_resumo.md -> 46276_composicao_gemini-3.6-flash.md
+[2026-09-08 19:15:05] INFO  Processing file: 46288_resumo.md
+[2026-09-08 19:15:05] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:15:18] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:15:18] INFO  SUCCESS 46288_resumo.md -> 46288_composicao_gemini-3.6-flash.md
+[2026-09-08 19:15:18] INFO  Processing file: 46290_resumo.md
+[2026-09-08 19:15:18] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:15:27] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:15:27] INFO  SUCCESS 46290_resumo.md -> 46290_composicao_gemini-3.6-flash.md
+[2026-09-08 19:15:27] INFO  Processing file: 46626_resumo.md
+[2026-09-08 19:15:27] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:15:40] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:15:40] INFO  SUCCESS 46626_resumo.md -> 46626_composicao_gemini-3.6-flash.md
+[2026-09-08 19:15:40] INFO  Processing file: 46687_resumo.md
+[2026-09-08 19:15:40] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:15:51] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:15:51] INFO  SUCCESS 46687_resumo.md -> 46687_composicao_gemini-3.6-flash.md
+[2026-09-08 19:15:51] INFO  Processing file: 46699_resumo.md
+[2026-09-08 19:15:51] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:16:01] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:16:01] INFO  SUCCESS 46699_resumo.md -> 46699_composicao_gemini-3.6-flash.md
+[2026-09-08 19:16:01] INFO  Processing file: 46705_resumo.md
+[2026-09-08 19:16:01] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:16:13] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:16:13] INFO  SUCCESS 46705_resumo.md -> 46705_composicao_gemini-3.6-flash.md
+[2026-09-08 19:16:13] INFO  Processing file: 46724_resumo.md
+[2026-09-08 19:16:13] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:16:23] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:16:23] INFO  SUCCESS 46724_resumo.md -> 46724_composicao_gemini-3.6-flash.md
+[2026-09-08 19:16:23] INFO  Processing file: 46743_resumo.md
+[2026-09-08 19:16:23] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:16:33] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:16:33] INFO  SUCCESS 46743_resumo.md -> 46743_composicao_gemini-3.6-flash.md
+[2026-09-08 19:16:33] INFO  Processing file: 46946_resumo.md
+[2026-09-08 19:16:33] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:16:48] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:16:48] INFO  SUCCESS 46946_resumo.md -> 46946_composicao_gemini-3.6-flash.md
+[2026-09-08 19:16:48] INFO  Processing file: 47010_resumo.md
+[2026-09-08 19:16:48] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:16:58] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:16:58] INFO  SUCCESS 47010_resumo.md -> 47010_composicao_gemini-3.6-flash.md
+[2026-09-08 19:16:58] INFO  Processing file: 47046_resumo.md
+[2026-09-08 19:16:58] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:17:08] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:17:08] INFO  SUCCESS 47046_resumo.md -> 47046_composicao_gemini-3.6-flash.md
+[2026-09-08 19:17:08] INFO  Processing file: 47068_resumo.md
+[2026-09-08 19:17:09] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:17:20] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:17:20] INFO  SUCCESS 47068_resumo.md -> 47068_composicao_gemini-3.6-flash.md
+[2026-09-08 19:17:20] INFO  Processing file: 47123_resumo.md
+[2026-09-08 19:17:20] INFO  AFC is enabled with max remote calls: 10.
+[2026-09-08 19:17:35] INFO  HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+[2026-09-08 19:17:35] INFO  SUCCESS 47123_resumo.md -> 47123_composicao_gemini-3.6-flash.md
+[2026-09-08 19:17:35] INFO  Finished run_id=20260908T213306Z_58936382 succeeded=231 failed=0 skipped_existing=19
+[2026-09-08 21:16:35] INFO  Starting gere_llm_resumo_ou_composicao.py run_id=20260909T001635Z_53d28b30
+[2026-09-08 21:16:35] INFO  Command: componha
+[2026-09-08 21:16:35] INFO  Input dir: corpus/02_resumos
+[2026-09-08 21:16:35] INFO  Output dir: corpus/01_composicoes/menores_notas_gemini
+[2026-09-08 21:16:35] INFO  Model: gemini-3.6-flash
+[2026-09-08 21:16:35] INFO  Discovered 250 supported input files; planned 250.
+[2026-09-08 21:16:36] INFO  Processing file: 32610_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32610_resumo.md -> 32610_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32674_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32674_resumo.md -> 32674_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32714_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32714_resumo.md -> 32714_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32733_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32733_resumo.md -> 32733_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32749_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32749_resumo.md -> 32749_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32755_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32755_resumo.md -> 32755_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32782_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32782_resumo.md -> 32782_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32792_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32792_resumo.md -> 32792_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 32860_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 32860_resumo.md -> 32860_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33167_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33167_resumo.md -> 33167_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33310_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33310_resumo.md -> 33310_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33360_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33360_resumo.md -> 33360_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33436_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33436_resumo.md -> 33436_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33465_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33465_resumo.md -> 33465_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33497_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33497_resumo.md -> 33497_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33645_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33645_resumo.md -> 33645_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33787_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33787_resumo.md -> 33787_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33789_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33789_resumo.md -> 33789_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33856_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33856_resumo.md -> 33856_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33862_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33862_resumo.md -> 33862_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33871_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33871_resumo.md -> 33871_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33948_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33948_resumo.md -> 33948_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 33964_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 33964_resumo.md -> 33964_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34009_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34009_resumo.md -> 34009_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34025_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34025_resumo.md -> 34025_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34046_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34046_resumo.md -> 34046_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34185_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34185_resumo.md -> 34185_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34210_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34210_resumo.md -> 34210_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34236_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34236_resumo.md -> 34236_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34251_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34251_resumo.md -> 34251_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34273_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34273_resumo.md -> 34273_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34308_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34308_resumo.md -> 34308_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34356_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34356_resumo.md -> 34356_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34362_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34362_resumo.md -> 34362_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34537_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34537_resumo.md -> 34537_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34613_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34613_resumo.md -> 34613_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34616_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34616_resumo.md -> 34616_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34618_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34618_resumo.md -> 34618_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34637_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34637_resumo.md -> 34637_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34638_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34638_resumo.md -> 34638_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34642_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34642_resumo.md -> 34642_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34714_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34714_resumo.md -> 34714_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34743_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34743_resumo.md -> 34743_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34807_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34807_resumo.md -> 34807_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34823_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34823_resumo.md -> 34823_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34895_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34895_resumo.md -> 34895_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 34971_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 34971_resumo.md -> 34971_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35019_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35019_resumo.md -> 35019_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35028_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35028_resumo.md -> 35028_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35056_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35056_resumo.md -> 35056_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35071_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35071_resumo.md -> 35071_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35072_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35072_resumo.md -> 35072_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35131_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35131_resumo.md -> 35131_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35136_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35136_resumo.md -> 35136_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35163_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35163_resumo.md -> 35163_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35173_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35173_resumo.md -> 35173_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35198_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35198_resumo.md -> 35198_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35214_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35214_resumo.md -> 35214_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35217_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35217_resumo.md -> 35217_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35220_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35220_resumo.md -> 35220_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35228_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35228_resumo.md -> 35228_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35278_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35278_resumo.md -> 35278_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35291_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35291_resumo.md -> 35291_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35457_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35457_resumo.md -> 35457_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35465_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35465_resumo.md -> 35465_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35485_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35485_resumo.md -> 35485_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35549_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35549_resumo.md -> 35549_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35577_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35577_resumo.md -> 35577_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35633_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35633_resumo.md -> 35633_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35661_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35661_resumo.md -> 35661_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35820_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35820_resumo.md -> 35820_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35852_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35852_resumo.md -> 35852_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35906_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35906_resumo.md -> 35906_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35911_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35911_resumo.md -> 35911_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35937_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35937_resumo.md -> 35937_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35979_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35979_resumo.md -> 35979_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 35986_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 35986_resumo.md -> 35986_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36000_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36000_resumo.md -> 36000_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36079_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36079_resumo.md -> 36079_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36085_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36085_resumo.md -> 36085_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36095_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36095_resumo.md -> 36095_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36137_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36137_resumo.md -> 36137_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36140_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36140_resumo.md -> 36140_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36172_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36172_resumo.md -> 36172_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36181_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36181_resumo.md -> 36181_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36188_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36188_resumo.md -> 36188_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36225_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36225_resumo.md -> 36225_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36238_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36238_resumo.md -> 36238_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36248_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36248_resumo.md -> 36248_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36278_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36278_resumo.md -> 36278_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36295_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36295_resumo.md -> 36295_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36307_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36307_resumo.md -> 36307_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36341_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36341_resumo.md -> 36341_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36430_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36430_resumo.md -> 36430_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36522_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36522_resumo.md -> 36522_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36524_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36524_resumo.md -> 36524_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36547_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36547_resumo.md -> 36547_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36578_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36578_resumo.md -> 36578_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36590_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36590_resumo.md -> 36590_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36616_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36616_resumo.md -> 36616_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36704_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36704_resumo.md -> 36704_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36721_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36721_resumo.md -> 36721_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36727_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36727_resumo.md -> 36727_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36742_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36742_resumo.md -> 36742_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36797_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36797_resumo.md -> 36797_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36827_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36827_resumo.md -> 36827_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36856_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36856_resumo.md -> 36856_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36867_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36867_resumo.md -> 36867_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36872_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36872_resumo.md -> 36872_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 36973_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 36973_resumo.md -> 36973_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37010_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37010_resumo.md -> 37010_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37034_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37034_resumo.md -> 37034_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37043_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37043_resumo.md -> 37043_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37063_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37063_resumo.md -> 37063_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37078_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37078_resumo.md -> 37078_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37094_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37094_resumo.md -> 37094_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37099_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37099_resumo.md -> 37099_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37158_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37158_resumo.md -> 37158_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37212_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37212_resumo.md -> 37212_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37224_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37224_resumo.md -> 37224_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37260_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37260_resumo.md -> 37260_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37345_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37345_resumo.md -> 37345_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37377_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37377_resumo.md -> 37377_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37442_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37442_resumo.md -> 37442_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37489_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37489_resumo.md -> 37489_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37602_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37602_resumo.md -> 37602_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37664_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37664_resumo.md -> 37664_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37677_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37677_resumo.md -> 37677_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37694_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37694_resumo.md -> 37694_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37734_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37734_resumo.md -> 37734_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37858_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37858_resumo.md -> 37858_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37949_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37949_resumo.md -> 37949_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37994_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37994_resumo.md -> 37994_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 37999_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 37999_resumo.md -> 37999_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38002_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38002_resumo.md -> 38002_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38036_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38036_resumo.md -> 38036_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38158_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38158_resumo.md -> 38158_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38172_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38172_resumo.md -> 38172_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38193_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38193_resumo.md -> 38193_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38196_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38196_resumo.md -> 38196_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38204_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38204_resumo.md -> 38204_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38226_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38226_resumo.md -> 38226_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38284_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38284_resumo.md -> 38284_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38310_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38310_resumo.md -> 38310_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38340_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38340_resumo.md -> 38340_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38395_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38395_resumo.md -> 38395_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38439_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38439_resumo.md -> 38439_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38445_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38445_resumo.md -> 38445_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38451_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38451_resumo.md -> 38451_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38469_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38469_resumo.md -> 38469_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38495_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38495_resumo.md -> 38495_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38499_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38499_resumo.md -> 38499_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38506_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38506_resumo.md -> 38506_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38536_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38536_resumo.md -> 38536_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38555_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38555_resumo.md -> 38555_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38632_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38632_resumo.md -> 38632_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38637_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38637_resumo.md -> 38637_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38670_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38670_resumo.md -> 38670_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38674_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38674_resumo.md -> 38674_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38677_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38677_resumo.md -> 38677_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38764_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38764_resumo.md -> 38764_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38786_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38786_resumo.md -> 38786_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38794_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38794_resumo.md -> 38794_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38891_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38891_resumo.md -> 38891_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38917_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38917_resumo.md -> 38917_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38928_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38928_resumo.md -> 38928_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38957_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38957_resumo.md -> 38957_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 38970_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 38970_resumo.md -> 38970_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39063_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39063_resumo.md -> 39063_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39065_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39065_resumo.md -> 39065_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39124_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39124_resumo.md -> 39124_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39164_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39164_resumo.md -> 39164_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39302_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39302_resumo.md -> 39302_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39349_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39349_resumo.md -> 39349_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39379_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39379_resumo.md -> 39379_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39436_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39436_resumo.md -> 39436_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39446_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39446_resumo.md -> 39446_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39493_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39493_resumo.md -> 39493_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39502_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39502_resumo.md -> 39502_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39516_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39516_resumo.md -> 39516_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39615_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39615_resumo.md -> 39615_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39648_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39648_resumo.md -> 39648_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39695_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39695_resumo.md -> 39695_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39701_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39701_resumo.md -> 39701_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39722_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39722_resumo.md -> 39722_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39727_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39727_resumo.md -> 39727_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39786_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39786_resumo.md -> 39786_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39833_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39833_resumo.md -> 39833_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39912_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39912_resumo.md -> 39912_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39914_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39914_resumo.md -> 39914_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39956_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39956_resumo.md -> 39956_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 39985_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 39985_resumo.md -> 39985_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40126_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40126_resumo.md -> 40126_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40256_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40256_resumo.md -> 40256_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40270_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40270_resumo.md -> 40270_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40362_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40362_resumo.md -> 40362_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40368_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40368_resumo.md -> 40368_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40426_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40426_resumo.md -> 40426_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40461_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40461_resumo.md -> 40461_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40496_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40496_resumo.md -> 40496_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40523_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40523_resumo.md -> 40523_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40617_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40617_resumo.md -> 40617_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40688_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40688_resumo.md -> 40688_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40690_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40690_resumo.md -> 40690_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40765_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40765_resumo.md -> 40765_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40803_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40803_resumo.md -> 40803_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40865_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40865_resumo.md -> 40865_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40869_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40869_resumo.md -> 40869_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40887_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40887_resumo.md -> 40887_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40898_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40898_resumo.md -> 40898_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40906_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40906_resumo.md -> 40906_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40926_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40926_resumo.md -> 40926_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40929_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40929_resumo.md -> 40929_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 40978_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 40978_resumo.md -> 40978_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 41011_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 41011_resumo.md -> 41011_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 41093_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 41093_resumo.md -> 41093_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 41096_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 41096_resumo.md -> 41096_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45044_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45044_resumo.md -> 45044_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45075_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45075_resumo.md -> 45075_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45078_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45078_resumo.md -> 45078_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45124_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45124_resumo.md -> 45124_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45241_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45241_resumo.md -> 45241_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45268_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45268_resumo.md -> 45268_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45357_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45357_resumo.md -> 45357_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45389_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45389_resumo.md -> 45389_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45519_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45519_resumo.md -> 45519_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45531_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45531_resumo.md -> 45531_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45638_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45638_resumo.md -> 45638_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45667_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45667_resumo.md -> 45667_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45746_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45746_resumo.md -> 45746_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 45996_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 45996_resumo.md -> 45996_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46034_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46034_resumo.md -> 46034_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46108_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46108_resumo.md -> 46108_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46249_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46249_resumo.md -> 46249_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46255_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46255_resumo.md -> 46255_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46273_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46273_resumo.md -> 46273_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46276_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46276_resumo.md -> 46276_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46288_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46288_resumo.md -> 46288_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46290_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46290_resumo.md -> 46290_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46626_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46626_resumo.md -> 46626_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46687_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46687_resumo.md -> 46687_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46699_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46699_resumo.md -> 46699_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46705_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46705_resumo.md -> 46705_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46724_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46724_resumo.md -> 46724_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46743_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46743_resumo.md -> 46743_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 46946_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 46946_resumo.md -> 46946_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 47010_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 47010_resumo.md -> 47010_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 47046_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 47046_resumo.md -> 47046_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 47068_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 47068_resumo.md -> 47068_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Processing file: 47123_resumo.md
+[2026-09-08 21:16:36] INFO  SKIPPED_EXISTING 47123_resumo.md -> 47123_composicao_gemini-3.6-flash.md
+[2026-09-08 21:16:36] INFO  Finished run_id=20260909T001635Z_53d28b30 succeeded=0 failed=0 skipped_existing=250

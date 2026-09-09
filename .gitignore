@@ -209,3 +209,5 @@ __marimo__/
 # cl_st1_ednalvo
 !cl_st1_ph1_ednalvo/env
 !cl_st1_ph1_ednalvo/**/*.log
+!cl_st1_ph3_ednalvo/env
+!cl_st1_ph3_ednalvo/**/*.log
