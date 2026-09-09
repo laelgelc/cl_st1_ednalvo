@@ -128,13 +128,9 @@ DATA base_corpus;
     ;
 RUN;
 
-/* Exclude 1988 Dimensions from the base factoring */
-DATA &project (drop= dim1-dim5 pub_vb prv_vb);
+/* Setting up the base corpus for analysis */
+DATA &project;
   SET base_corpus;
-RUN;
-
-DATA &project._add_corpus (drop= dim1-dim5 pub_vb prv_vb);
-  SET add_corpus;
 RUN;
 
 ODS EXCLUDE NONE;
@@ -149,21 +145,11 @@ PROC EXPORT
   REPLACE;
 RUN;
 
-ODS EXCLUDE NONE;
-    proc print data = &project._add_corpus (FIRSTOBS=200 OBS=500);
-    var filename;
-run;
-
-PROC EXPORT
-  DATA= WORK.&project._add_corpus
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._add_corpus.csv"
-  REPLACE;
-RUN;
-
-/* Drop summary variables  */
-DATA &project._no_sum_v (DROP = all_advl all_jth all_jto all_nth all_th all_to all_vth all_vto alladj allconj allmodal allpasv allpro allverb allwh allwhrel n );
-  SET &project ;
+/* Drop summary variables */
+DATA &project._no_sum_v (
+    DROP = v900-v919
+);
+    SET &project;
 RUN;
 
 
