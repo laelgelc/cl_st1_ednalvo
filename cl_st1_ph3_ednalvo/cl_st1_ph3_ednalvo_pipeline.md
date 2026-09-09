@@ -132,3 +132,33 @@ bash run_python_ec2.sh \
   --tagset gelc_llm_taggers/tagset_ptbr.md \
   --workers 10
 ```
+
+## 5. Compute the Normed Document Feature Matrix
+
+```shell script
+python compute_dfm_normalizado.py \
+  --input-dir corpus/03_composicoes_anotadas/maiores_notas \
+  --output-dir sas/maiores_notas_counts.tsv \
+  --tagset gelc_llm_taggers/tagset_ptbr.md
+```
+
+```shell script
+python compute_dfm_normalizado.py \
+  --input-dir corpus/03_composicoes_anotadas/menores_notas \
+  --output-dir sas/menores_notas_counts.tsv \
+  --tagset gelc_llm_taggers/tagset_ptbr.md
+```
+
+```shell script
+python compute_dfm_normalizado.py \
+  --input-dir corpus/03_composicoes_anotadas/menores_notas_gemini \
+  --output-dir sas/menores_notas_gemini_counts.tsv \
+  --tagset gelc_llm_taggers/tagset_ptbr.md
+```
+
+```shell script
+python compute_dfm_normalizado.py \
+  --input-dir corpus/03_composicoes_anotadas/menores_notas_gpt \
+  --output-dir sas/menores_notas_gpt_counts.tsv \
+  --tagset gelc_llm_taggers/tagset_ptbr.md
+```
