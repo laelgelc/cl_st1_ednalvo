@@ -98,10 +98,33 @@ python anote_composicoes.py \
   --test-mode
 ```
 
+```shell script
+python anote_composicoes.py \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/03_composicoes_anotadas \
+  --model gemini-3.6-flash \
+  --prompt gelc_llm_taggers/llm_tagging_prompt.md \
+  --tagset gelc_llm_taggers/tagset_ptbr.md \
+  --test-mode \
+  --test-limit 10
+```
+
 ### Full run
 
 ```shell script
 python anote_composicoes.py \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/03_composicoes_anotadas \
+  --model gpt-5.6-sol \
+  --prompt gelc_llm_taggers/llm_tagging_prompt.md \
+  --tagset gelc_llm_taggers/tagset_ptbr.md
+```
+
+### Production mode on an EC2 instance
+
+```shell script
+bash run_python_ec2.sh \
+    anote_composicoes.py \
   --input-dir corpus/01_composicoes \
   --output-dir corpus/03_composicoes_anotadas \
   --model gpt-5.6-sol \

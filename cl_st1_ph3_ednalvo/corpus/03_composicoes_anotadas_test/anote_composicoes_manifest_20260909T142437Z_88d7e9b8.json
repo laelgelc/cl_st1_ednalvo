@@ -1,0 +1,518 @@
+{
+  "run_id": "20260909T142437Z_88d7e9b8",
+  "programme": "anote_composicoes.py",
+  "programme_version": "v1",
+  "start_time": "2026-09-09T14:24:37Z",
+  "end_time": "2026-09-09T14:29:18Z",
+  "paths": {
+    "input_dir": "corpus/01_composicoes",
+    "output_dir": "corpus/03_composicoes_anotadas",
+    "prompt": "gelc_llm_taggers/llm_tagging_prompt.md",
+    "tagset": "gelc_llm_taggers/tagset_ptbr.md",
+    "env_file": "env/.env",
+    "log_file": "corpus/03_composicoes_anotadas/anote_composicoes.log",
+    "manifest_file": "corpus/03_composicoes_anotadas/anote_composicoes_manifest.json",
+    "timestamped_manifest_file": "corpus/03_composicoes_anotadas/anote_composicoes_manifest_20260909T142437Z_88d7e9b8.json"
+  },
+  "environment": {
+    "env_file": "env/.env",
+    "env_file_found": true,
+    "model_family": "gemini",
+    "openai_api_key_available": true,
+    "gemini_api_key_available": true,
+    "api_keys_logged": false
+  },
+  "model_configuration": {
+    "model": "gemini-3.6-flash",
+    "model_family": "gemini",
+    "temperature": 0.0,
+    "temperature_unsupported_models_known_this_run": [
+      "gpt-5.6-sol"
+    ]
+  },
+  "prompt": {
+    "file": "gelc_llm_taggers/llm_tagging_prompt.md",
+    "sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+    "characters": 301
+  },
+  "tagset": {
+    "file": "gelc_llm_taggers/tagset_ptbr.md",
+    "sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+    "characters": 31193
+  },
+  "processing": {
+    "test_mode": true,
+    "test_limit": 10,
+    "start_filename": null,
+    "reprocess": false,
+    "workers": 1,
+    "max_retries": 2,
+    "retry_backoff_seconds": 5.0,
+    "request_delay_seconds": 0.0,
+    "order": "recursive_natural_relative_path_order",
+    "supported_input_suffixes": [
+      ".markdown",
+      ".md",
+      ".txt"
+    ],
+    "markdown_input_policy": "extract_contents_under_level_2_heading_Redacao",
+    "text_input_policy": "use_entire_file",
+    "output_layout": "mirrors_input_directory_structure",
+    "output_filename_policy": "same_input_stem_with_txt_suffix"
+  },
+  "counts": {
+    "files_discovered": 1000,
+    "files_planned": 10,
+    "submitted_to_llm": 5,
+    "succeeded": 5,
+    "failed": 0,
+    "skipped_existing": 5
+  },
+  "items": [
+    {
+      "input_filename": "32757.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/32757.txt",
+      "relative_input_file": "maiores_notas/32757.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/32757.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "skipped_existing",
+      "submitted_to_llm": false,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": null,
+      "output_sha256": "6c402b1635c2885cde8a86ef17ccec41d21647965dcce69efd1565f65d7ab33d",
+      "request_sha256": null,
+      "api_metadata": {},
+      "started_at": "2026-09-09T14:24:38Z",
+      "ended_at": "2026-09-09T14:24:38Z",
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "input_filename": "32875.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/32875.txt",
+      "relative_input_file": "maiores_notas/32875.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/32875.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "skipped_existing",
+      "submitted_to_llm": false,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": null,
+      "output_sha256": "f406498331e8341d2bb43258c8a0b6afdecb5d1e7dfd23c7c40f16bb014cf392",
+      "request_sha256": null,
+      "api_metadata": {},
+      "started_at": "2026-09-09T14:24:38Z",
+      "ended_at": "2026-09-09T14:24:38Z",
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "input_filename": "33083.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33083.txt",
+      "relative_input_file": "maiores_notas/33083.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33083.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "skipped_existing",
+      "submitted_to_llm": false,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": null,
+      "output_sha256": "1e2bdf9c2bc31a3db0e69a4c7553fe3aa6505376c11a145e2012b61113918f73",
+      "request_sha256": null,
+      "api_metadata": {},
+      "started_at": "2026-09-09T14:24:38Z",
+      "ended_at": "2026-09-09T14:24:38Z",
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "input_filename": "33228.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33228.txt",
+      "relative_input_file": "maiores_notas/33228.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33228.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "skipped_existing",
+      "submitted_to_llm": false,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": null,
+      "output_sha256": "3d6ef309801eef4d10e373ec901d8ed70e04b2a94578b8f599f0dce39e86f5be",
+      "request_sha256": null,
+      "api_metadata": {},
+      "started_at": "2026-09-09T14:24:38Z",
+      "ended_at": "2026-09-09T14:24:38Z",
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "input_filename": "33383.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33383.txt",
+      "relative_input_file": "maiores_notas/33383.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33383.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "skipped_existing",
+      "submitted_to_llm": false,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": null,
+      "output_sha256": "708a99c580a7030f6da1457cf82737062b019fa4de71f3b84980404f1abe13e8",
+      "request_sha256": null,
+      "api_metadata": {},
+      "started_at": "2026-09-09T14:24:38Z",
+      "ended_at": "2026-09-09T14:24:38Z",
+      "duration_seconds": 0.0,
+      "error": null
+    },
+    {
+      "input_filename": "33669.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33669.txt",
+      "relative_input_file": "maiores_notas/33669.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33669.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": "d8b3450729b2316af599fcade15e1f9f25925db79c28870f4c953b63f00255dc",
+      "output_sha256": "b6fb9a45ee9a27a912990f0b70f24663340d4421eafd7e4fd80abd8cfb97524d",
+      "request_sha256": "01a47aedad5a2d890d0b994c4afe03ba5f0aed5c633aca9de3d0b5d3c5573829",
+      "api_metadata": {
+        "usage_metadata": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 3068,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 9522,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 9522
+            }
+          ],
+          "thoughts_token_count": 9278,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 21868,
+          "traffic_type": null
+        },
+        "candidate_count": 1
+      },
+      "started_at": "2026-09-09T14:24:38Z",
+      "ended_at": "2026-09-09T14:25:27Z",
+      "duration_seconds": 49.463,
+      "error": null,
+      "submitted_text_characters": 1171,
+      "input_extraction_policy": "full_text_file",
+      "response_characters": 4165
+    },
+    {
+      "input_filename": "33849.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33849.txt",
+      "relative_input_file": "maiores_notas/33849.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33849.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": "279c7124eec9e11a717ce442b495e0d566c4cccbdb5c6c3e29050e473462dd38",
+      "output_sha256": "1c9393713da26a2774001767dc78b9be4c1970686a28079f5a5a0b6fb1430276",
+      "request_sha256": "6856e5defdfb654966e37c368cee64f9c9876bb81c54ba8a554232ac64943ddb",
+      "api_metadata": {
+        "usage_metadata": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 4379,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 9635,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 9635
+            }
+          ],
+          "thoughts_token_count": 7701,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 21715,
+          "traffic_type": null
+        },
+        "candidate_count": 1
+      },
+      "started_at": "2026-09-09T14:25:27Z",
+      "ended_at": "2026-09-09T14:26:15Z",
+      "duration_seconds": 47.782,
+      "error": null,
+      "submitted_text_characters": 1654,
+      "input_extraction_policy": "full_text_file",
+      "response_characters": 5928
+    },
+    {
+      "input_filename": "33879.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33879.txt",
+      "relative_input_file": "maiores_notas/33879.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33879.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": "aad2b9ba0ba06e039256a669c84782f46bc9a2691cc8f87a6415d1b9d49751b6",
+      "output_sha256": "e0153c7a3580516de7aaf9c1e1e6fcccce15578b8abf4077d984279774c3ec20",
+      "request_sha256": "1c0f880dd788b9d586dbacdbd315cbc6f06dc1e67a3ef650f0c124d423a33b0d",
+      "api_metadata": {
+        "usage_metadata": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 6231,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 9828,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 9828
+            }
+          ],
+          "thoughts_token_count": 2479,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 18538,
+          "traffic_type": null
+        },
+        "candidate_count": 1
+      },
+      "started_at": "2026-09-09T14:26:15Z",
+      "ended_at": "2026-09-09T14:26:51Z",
+      "duration_seconds": 35.652,
+      "error": null,
+      "submitted_text_characters": 2297,
+      "input_extraction_policy": "full_text_file",
+      "response_characters": 8436
+    },
+    {
+      "input_filename": "33890.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33890.txt",
+      "relative_input_file": "maiores_notas/33890.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33890.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": "77bbbd02c1a665e790292d3804384334eef21513fad34a1a9cc91825cf76cf16",
+      "output_sha256": "f015e31c3011ccdddce97164e52f9307ae36eab0d9157d49a58c77adfea0e930",
+      "request_sha256": "42b0fa6bdad5967aaeeb0161b9af050cd8d1a063cc7097ab4181d62b2bb2ba0b",
+      "api_metadata": {
+        "usage_metadata": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 3461,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 9537,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 9537
+            }
+          ],
+          "thoughts_token_count": 11950,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 24948,
+          "traffic_type": null
+        },
+        "candidate_count": 1
+      },
+      "started_at": "2026-09-09T14:26:51Z",
+      "ended_at": "2026-09-09T14:28:09Z",
+      "duration_seconds": 77.588,
+      "error": null,
+      "submitted_text_characters": 1280,
+      "input_extraction_policy": "full_text_file",
+      "response_characters": 4659
+    },
+    {
+      "input_filename": "33895.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33895.txt",
+      "relative_input_file": "maiores_notas/33895.txt",
+      "input_suffix": ".txt",
+      "output_file": "corpus/03_composicoes_anotadas/maiores_notas/33895.txt",
+      "model": "gemini-3.6-flash",
+      "model_family": "gemini",
+      "prompt_file": "gelc_llm_taggers/llm_tagging_prompt.md",
+      "prompt_sha256": "31e5adf6fbc298e4e3e8c7c5572c4ec9584f8bf2720787c05c3cb6a1606f6b0e",
+      "tagset_file": "gelc_llm_taggers/tagset_ptbr.md",
+      "tagset_sha256": "a18544ec52581d3e5c55bf287a51fca1c60a646562afe635d4fbcfb406cdaca4",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "gemini",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "input_sha256": "006f8df93c20b216a66efef25e931355bd4634730b2344d34f975bfeb640ded4",
+      "output_sha256": "562cbc734f997ce0a6a5844f0248fe5f30ec1e15646448725dd905243c339a0b",
+      "request_sha256": "de6e1dc8b68a708792a6897a16e605ef43681c82fa3e55ca2ea812d58c7063ec",
+      "api_metadata": {
+        "usage_metadata": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 7486,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 9837,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 9837
+            }
+          ],
+          "thoughts_token_count": 10902,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 28225,
+          "traffic_type": null
+        },
+        "candidate_count": 1
+      },
+      "started_at": "2026-09-09T14:28:09Z",
+      "ended_at": "2026-09-09T14:29:18Z",
+      "duration_seconds": 69.583,
+      "error": null,
+      "submitted_text_characters": 2468,
+      "input_extraction_policy": "full_text_file",
+      "response_characters": 9793
+    }
+  ]
+}
