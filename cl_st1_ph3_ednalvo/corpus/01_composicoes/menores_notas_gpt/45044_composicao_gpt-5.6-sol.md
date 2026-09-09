@@ -1,0 +1,23 @@
+# Redação Gerada 45044
+
+## Resumo Usado
+
+Terra, fogo, ar e água são apresentados como os quatro principais recursos da sociedade e essenciais à sobrevivência, sendo a água e o ar os mais poluídos e contaminados. A natureza é devastada em busca de poder aquisitivo e, em resposta, causa desastres e catástrofes. Para o ser humano, devastar matas para produzir alimentos ou materiais é progresso, enquanto mortes, deslizamentos e terremotos provocados pela natureza são chamados de catástrofes. Embora a água seja o principal meio de sobrevivência e apenas 3% dela seja potável, há desperdício causado pela percepção de que ainda existe muita água. Para preservar os quatro recursos, governos e mídias devem investir em campanhas de conscientização e manter leis mais severas contra aqueles que exploram os recursos naturais para fins financeiros.
+
+## Proposta Escolhida
+
+PROPOSTA 1
+
+## Redação
+
+### O preço do falso progresso
+
+Terra, fogo, ar e água são elementos indispensáveis à existência humana e ao equilíbrio dos ecossistemas. Entretanto, em vez de reconhecer sua dependência em relação à natureza, a sociedade frequentemente trata esses recursos como mercadorias inesgotáveis. Acidentes como o rompimento de barragens de rejeitos e o vazamento de óleo em ambientes aquáticos revelam que a busca pelo lucro, quando não é acompanhada de responsabilidade, ameaça tanto o meio ambiente quanto a própria sobrevivência humana.
+
+A terra, fonte de alimentos e matérias-primas, é devastada para atender a interesses econômicos. Florestas são derrubadas para ampliar áreas de cultivo, criação de animais e extração mineral. Tais práticas costumam ser apresentadas como sinais de progresso, embora provoquem erosões, deslizamentos, perda da biodiversidade e empobrecimento do solo. Quando esses efeitos atingem a população, são chamados de catástrofes naturais, apesar de muitas vezes terem sido agravados pela ocupação irregular e pela exploração irresponsável do ambiente.
+
+O fogo e o ar também sofrem as consequências desse modelo de desenvolvimento. Utilizado de maneira criminosa em queimadas, o fogo destrói a vegetação, mata animais e compromete a fertilidade da terra. A fumaça resultante desses incêndios, somada aos gases emitidos por indústrias e veículos, polui o ar e favorece o surgimento de doenças respiratórias. Além disso, a emissão excessiva de gases de efeito estufa intensifica as mudanças climáticas, aumentando a ocorrência de secas, tempestades e outros eventos extremos.
+
+A água, principal meio de sobrevivência, é igualmente atingida pelo desperdício e pela contaminação. Embora cubra grande parte do planeta, apenas uma pequena parcela é doce e própria para consumo. Mesmo assim, rios e mares recebem esgoto, óleo, plástico e rejeitos industriais. A falsa percepção de abundância leva muitas pessoas a desperdiçarem água em atividades cotidianas, enquanto milhões ainda não têm acesso regular a esse recurso. Assim, aquilo que deveria sustentar a vida torna-se veículo de doenças e símbolo da desigualdade.
+
+Portanto, é necessário abandonar a ideia de que destruir a natureza significa progredir. Os governos devem fiscalizar rigorosamente as atividades econômicas, aplicar leis mais severas aos responsáveis por crimes ambientais e exigir a reparação dos danos causados. Paralelamente, escolas e meios de comunicação devem promover campanhas permanentes de conscientização sobre consumo responsável, reciclagem e preservação. Somente por meio da ação conjunta entre Estado, empresas e população será possível proteger a terra, controlar o fogo, purificar o ar e conservar a água para as próximas gerações.

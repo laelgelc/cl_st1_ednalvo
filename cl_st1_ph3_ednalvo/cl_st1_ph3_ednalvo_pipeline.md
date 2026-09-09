@@ -18,8 +18,6 @@ python gere_llm_resumo_ou_composicao.py resuma \
 
 ## 2. Generate compositions GPT
 
-### Test mode
-
 ```shell script
 python gere_llm_resumo_ou_composicao.py componha \
   --input-dir corpus/02_resumos \
@@ -28,10 +26,11 @@ python gere_llm_resumo_ou_composicao.py componha \
   --prompt prompts_de_geracao_de_composicoes/geracao_de_composicao_v1.md
 ```
 
-### Full run mode
+### Production mode on an EC2 instance
 
 ```shell script
-python gere_llm_resumo_ou_composicao.py componha \
+bash run_python_ec2.sh \
+    gere_llm_resumo_ou_composicao.py componha \
   --input-dir corpus/02_resumos \
   --output-dir corpus/01_composicoes/menores_notas_gpt \
   --model gpt-5.6-sol \
@@ -42,6 +41,17 @@ python gere_llm_resumo_ou_composicao.py componha \
 
 ```shell script
 python gere_llm_resumo_ou_composicao.py componha \
+  --input-dir corpus/02_resumos \
+  --output-dir corpus/01_composicoes/menores_notas_gemini \
+  --model gemini-3.6-flash \
+  --prompt prompts_de_geracao_de_composicoes/geracao_de_composicao_v1.md
+```
+
+### Production mode on an EC2 instance
+
+```shell script
+bash run_python_ec2.sh \
+    gere_llm_resumo_ou_composicao.py componha \
   --input-dir corpus/02_resumos \
   --output-dir corpus/01_composicoes/menores_notas_gemini \
   --model gemini-3.6-flash \

@@ -1,0 +1,18 @@
+# Redação Gerada 36590
+
+## Resumo Usado
+Ao longo da história, o homem superou adversidades naturais por meio de avanços tecnológicos e passou a defender a transformação da natureza para melhor administrá-la. Contudo, as tecnologias modernas estão a serviço do grande capital, que destrói a natureza, compromete recursos naturais e ameaça a vida dos povos em busca de maiores lucros. O Brasil, dependente do capital externo e das grandes empresas, mantém-se ao lado desses interesses, como mostram as concessões do Estado a multinacionais na Amazônia Legal, que provocam impactos ambientais e sociais. Essas ações não seriam irresponsáveis, mas negligentes, pois são planejadas e executadas com o consentimento estatal para maximizar a produção, e não para promover o desenvolvimento sustentável, como exemplifica a atuação da Vale na extração mineral no Pará. Por isso, é necessário refletir sobre essas contradições, pois o grande capital poderá passar por cima das pessoas e do meio ambiente para alcançar seus objetivos.
+
+## Proposta Escolhida
+PROPOSTA 1
+
+## Redação
+**O Lucro Acima da Vida: A Negligência Capitalista sobre os Elementos Naturais**
+
+Ao longo da trajetória humana, o desenvolvimento científico e tecnológico permitiu a superação de severas adversidades impostas pela natureza. A capacidade de modificar o meio ambiente foi defendida, por muito tempo, como o caminho racional para melhor administrá-lo e garantir a sobrevivência e o bem-estar da sociedade. Todavia, na contemporaneidade, a tecnologia deixou de priorizar a harmonia socioambiental e passou a atuar como instrumento a serviço do grande capital, convertendo os quatro elementos vitais — Terra, Água, Ar e Fogo — em meras mercadorias exploráveis em nome do lucro ilimitado.
+
+Nesse cenário, a degradação da Terra e da Água revela com clareza o impacto destrutivo dessa lógica econômica. No Brasil, país marcado pela dependência do capital financeiro externo e das grandes corporações, o Estado atua frequentemente alinhado a interesses privados, concedendo licenças e territórios na Amazônia Legal e em outras regiões ricas em recursos naturais. Desastres como o vazamento de combustível na costa paraense e o rompimento de barragens de rejeitos de mineração, a exemplo dos episódios envolvendo a Vale no Pará e em Minas Gerais, envenenam rios, contaminam o solo e destroem comunidades inteiras. A água que sustenta a vida converte-se em lama tóxica, enquanto a terra fértil é soterrada e esterilizada.
+
+Somado a isso, o Ar e o Fogo sofrem abusos análogos sob a mesma dinâmica de superexploração. As queimadas florestais impulsionadas pelo avanço da fronteira agrícola e pela grilagem de terras alteram a qualidade do ar que a população respira e aceleram as mudanças climáticas globais. É imperativo destacar que tais eventos não devem ser encarados como simples fatalidades ou irresponsabilidades ingênuas. Trata-se, em verdade, de uma negligência calculada e planejada, executada sob a conivência e a permissividade estatal com o objetivo explícito de maximizar a produção e reduzir custos operacionais, em detrimento do desenvolvimento sustentável.
+
+Conclui-se, portanto, que a crise ambiental sofrida pelos elementos fundamentais da vida reflete as profundas contradições do modelo econômico vigente. Enquanto o lucro do grande capital for colocado acima do valor da existência humana e da preservação ecológica, o meio ambiente e as populações vulneráveis continuarão a ser sacrificados. Faz-se urgente repensar essa estrutura, sob o risco de assistirmos à destruição irreversível das bases que sustentam o próprio planeta.
