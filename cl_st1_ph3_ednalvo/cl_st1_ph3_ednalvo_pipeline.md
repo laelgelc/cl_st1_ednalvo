@@ -83,3 +83,28 @@ bash run_python_ec2.sh \
   --model gemini-3.6-flash \
   --prompt prompts_de_geracao_de_composicoes/geracao_de_composicao_v1.md
 ```
+
+## 4. Tag compositions with the GELC LLM Tagger
+
+### Test run
+
+```shell script
+python anote_composicoes.py \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/03_composicoes_anotadas \
+  --model gpt-5.6-sol \
+  --prompt gelc_llm_taggers/llm_tagging_prompt.md \
+  --tagset gelc_llm_taggers/tagset_ptbr.md \
+  --test-mode
+```
+
+### Full run
+
+```shell script
+python anote_composicoes.py \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/03_composicoes_anotadas \
+  --model gpt-5.6-sol \
+  --prompt gelc_llm_taggers/llm_tagging_prompt.md \
+  --tagset gelc_llm_taggers/tagset_ptbr.md
+```
