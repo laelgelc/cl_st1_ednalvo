@@ -1256,11 +1256,17 @@ ODS EXCLUDE ALL;
 
 /* Automatic scoring */
 
-/* Standardize the corpus using its own means and standard deviations.
+/* Standardize the same feature set used in the final factor model.
 
-   Although wcount is standardized here, it is not used in scoring because
-   the score matrix is created only from variables retained in rotated4. */
-PROC STDIZE DATA=&project._meta METHOD=STD OUT=mdz OUTSTAT=meta_stats;
+   The dataset &project._sum_check excludes:
+   - wcount;
+   - summary variables v900-v919;
+   - zero-variance variables;
+   - low-communality variables.
+
+   Character metadata variables such as filename and subcorpus are retained
+   automatically and are not standardized. */
+PROC STDIZE DATA=&project._sum_check METHOD=STD OUT=mdz OUTSTAT=meta_stats;
     var _NUMERIC_ ;
 RUN;
 

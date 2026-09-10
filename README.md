@@ -128,9 +128,9 @@ The phase includes:
 - source and generated composition files under `corpus/`;
 - prompt files for summarisation, generation, and linguistic tagging;
 - the Portuguese linguistic tagset used by the GELC LLM tagger;
-- normalized document-feature matrices exported as TSV files for SAS;
+- normalised document-feature matrices exported as TSV files for SAS;
 - a SAS script for factor extraction, factor scoring, outlier diagnostics, ANOVAs, boxplots, and output packaging;
-- methodological notes in `docs/`, including discussion of summary-variable overlap and the SAS script revision.
+- methodological notes in `docs/`, including discussion of summary-variable overlap, promax-rotated factor analysis, and the SAS script revision.
 
 ### Corpus structure
 
@@ -144,12 +144,12 @@ corpus/03_composicoes_anotadas_test
 ```
 The analysis compares four subcorpora:
 
-| Subcorpus              | Description                                                                   |
-|------------------------|-------------------------------------------------------------------------------|
-| `maiores_notas`        | Higher-scoring human-written compositions                                     |
-| `menores_notas`        | Lower-scoring human-written compositions                                      |
-| `menores_notas_gpt`    | GPT-generated compositions based on summaries of lower-scoring human texts    |
-| `menores_notas_gemini` | Gemini-generated compositions based on summaries of lower-scoring human texts |
+| Subcorpus              | Description                                                                |
+|------------------------|----------------------------------------------------------------------------|
+| `maiores_notas`        | Higher-scoring human-written compositions                                  |
+| `menores_notas`        | Lower-scoring human-written compositions                                   |
+| `menores_notas_gpt`    | GPT-generated compositions based on summaries of lower-scoring human texts |
+| `menores_notas_gemini` | Gemini-generated compositions based on summaries of lower-scoring texts    |
 
 The `subcorpus` variable is used throughout the SAS analysis as the main grouping variable for comparisons.
 
@@ -211,12 +211,12 @@ After annotation, normalised document-feature matrices are computed with:
 ```text
 compute_dfm_normalizado.py
 ```
-The resulting TSV files are stored in the `sas/` directory and are used as input to the SAS TMDA script:
+The resulting TSV files are used as input to the SAS TMDA script:
 ```text
-sas/maiores_notas_counts.tsv
-sas/menores_notas_counts.tsv
-sas/menores_notas_gemini_counts.tsv
-sas/menores_notas_gpt_counts.tsv
+maiores_notas_counts.tsv
+menores_notas_counts.tsv
+menores_notas_gemini_counts.tsv
+menores_notas_gpt_counts.tsv
 ```
 Each matrix includes metadata columns such as:
 ```text
@@ -232,21 +232,23 @@ The SAS script for Phase 3 is:
 ```text
 sas/cl_st1_ph3_ednalvo.sas
 ```
-The script implements the following workflow:
+The final SAS script implements the following workflow:
 
-1. imports the normalized TSV matrices;
+1. imports the normalised TSV matrices;
 2. combines the four subcorpora into a single analysis dataset;
 3. excludes metadata and aggregate variables from factor extraction;
-4. runs an unrotated factor analysis;
-5. removes variables below the communality cutoff;
-6. runs the final rotated factor analysis;
-7. creates loading tables and interpretation tables;
-8. computes factor scores for all compositions;
-9. identifies factor-score outliers for diagnostic inspection;
-10. keeps outliers in the main score files and statistical analyses;
-11. runs ANOVAs comparing factor scores across subcorpora;
-12. generates boxplots by subcorpus;
-13. packages output files into a zip archive.
+4. detects and removes zero-variance variables before factor analysis;
+5. runs an unrotated factor analysis;
+6. removes variables below the communality cutoff;
+7. runs the final promax-rotated factor analysis;
+8. extracts the rotated factor pattern using `_TYPE_="PATTERN"`;
+9. creates loading tables and interpretation tables;
+10. computes factor scores using the same feature set retained in the final factor model;
+11. identifies factor-score outliers for diagnostic inspection;
+12. keeps outliers in the main score files and statistical analyses;
+13. runs ANOVAs comparing factor scores across subcorpora;
+14. generates boxplots by subcorpus;
+15. packages output files into a zip archive.
 
 The current factor model extracts nine factors and uses promax rotation. The loading-selection logic in the SAS script is currently written for exactly nine factors.
 
@@ -265,6 +267,47 @@ cl_st1_ph3_ednalvo/docs/summary_variables_overlap_discussion.md
 ### Treatment of `wcount`
 
 The `wcount` variable is imported and retained for corpus-size reporting, but it is excluded from factor extraction. It is treated as document metadata rather than as a factor-loading linguistic feature.
+
+### Treatment of zero-variance variables
+
+Zero-variance variables are detected and removed before factor analysis. This prevents singularity in the correlation matrix and avoids attempting to factor variables that cannot be meaningfully correlated.
+
+The list of zero-variance variables removed before factor analysis is exported as:
+```text
+zero_variance_dropped.csv
+```
+### Promax rotation and factor pattern
+
+The final factor analysis uses promax rotation. Because promax is an oblique rotation, factor interpretation and scoring are based on the rotated factor pattern:
+```text
+_TYPE_="PATTERN"
+```
+This replaced the older inherited use of `PREROTAT`, which refers to the pre-rotation solution and is not appropriate for interpreting the final promax-rotated factor structure.
+
+A fuller discussion is available in:
+```text
+cl_st1_ph3_ednalvo/docs/promax_rotated_factor_analysis_discussion.md
+```
+### Factor scoring
+
+Factor scores are computed from the same feature set used in the final factor model. This means that the scoring input excludes:
+
+- `wcount`;
+- summary variables `v900`–`v919`;
+- zero-variance variables;
+- low-communality variables.
+
+The main ranking file is:
+```text
+cl_st1_ph3_ednalvo_scores_only.csv
+```
+It contains:
+```text
+filename
+subcorpus
+f1-f9
+```
+and is used to rank compositions by factor pole.
 
 ### Outlier policy
 
@@ -295,18 +338,20 @@ outliers_all.csv
 
 The most important SAS outputs include:
 
-| Output                                            | Purpose                                             |
-|---------------------------------------------------|-----------------------------------------------------|
-| `rotated.csv`                                     | Rotated factor-pattern information                  |
-| `loadtable_for_interpretation.csv`                | Loadings table used for factor interpretation       |
-| `cl_st1_ph3_ednalvo_scores.csv`                   | Full scored dataset                                 |
-| `cl_st1_ph3_ednalvo_scores_only.csv`              | Main file for ranking compositions by factor scores |
-| `outliers_f1.csv`–`outliers_f9.csv`               | Factor-specific outlier diagnostics                 |
-| `outliers_all.csv`                                | Combined outlier list                               |
-| `anova_subcorpus_f1.csv`–`anova_subcorpus_f9.csv` | ANOVA outputs by factor                             |
-| `means_subcorpus_f1.csv`–`means_subcorpus_f9.csv` | Subcorpus means by factor                           |
-| `r2_subcorpus_f1.csv`–`r2_subcorpus_f9.csv`       | Fit statistics by factor                            |
-| `boxplot_f1.png`–`boxplot_f9.png`                 | Boxplots of factor scores by subcorpus              |
+| Output                                            | Purpose                                                |
+|---------------------------------------------------|--------------------------------------------------------|
+| `zero_variance_dropped.csv`                       | Variables removed before factor analysis due to zero variance |
+| `communalities_dropped.csv`                       | Variables removed after the communality cutoff         |
+| `rotated.csv`                                     | Rotated factor-pattern information                     |
+| `loadtable_for_interpretation.csv`                | Loadings table used for factor interpretation          |
+| `cl_st1_ph3_ednalvo_scores.csv`                   | Full scored dataset                                    |
+| `cl_st1_ph3_ednalvo_scores_only.csv`              | Main file for ranking compositions by factor scores    |
+| `outliers_f1.csv`–`outliers_f9.csv`               | Factor-specific outlier diagnostics                    |
+| `outliers_all.csv`                                | Combined outlier list                                  |
+| `anova_subcorpus_f1.csv`–`anova_subcorpus_f9.csv` | ANOVA outputs by factor                                |
+| `means_subcorpus_f1.csv`–`means_subcorpus_f9.csv` | Subcorpus means by factor                              |
+| `r2_subcorpus_f1.csv`–`r2_subcorpus_f9.csv`       | Fit statistics by factor                               |
+| `boxplot_f1.png`–`boxplot_f9.png`                 | Boxplots of factor scores by subcorpus                 |
 
 A detailed report on the SAS revision is available in:
 ```text
@@ -337,4 +382,4 @@ In short, Phase 3 treats outliers as interpretive evidence to be inspected, not 
 
 The current methodological position can be summarised as follows:
 
-> The analysis used normalised document-feature matrices for four subcorpora. Aggregate summary variables were excluded from factor extraction to avoid redundancy with their component variables and to reduce artificial covariance caused by overlapping summary categories. The word-count variable was retained for descriptive corpus-size reporting but excluded from factor analysis. After an initial unrotated factor analysis, variables below the communality cutoff were removed. A final principal factor analysis with promax rotation was then performed, and factor scores were computed for all texts. Factor-score outliers were identified using an IQR rule and exported for diagnostic qualitative inspection, but were retained in the main score files, statistical comparisons, and selection of representative texts. Representative compositions for each factor pole were selected by ranking the full factor-score file and cross-checking top-ranked texts against the factor-specific outlier lists.
+> The analysis used normalised document-feature matrices for four subcorpora. Aggregate summary variables were excluded from factor extraction to avoid redundancy with their component variables and to reduce artificial covariance caused by overlapping summary categories. The word-count variable was retained for descriptive corpus-size reporting but excluded from factor analysis. Zero-variance variables were identified and removed before factor extraction to avoid singularity in the correlation matrix. After an initial unrotated factor analysis, variables below the communality cutoff were removed. A final principal factor analysis with promax rotation was then performed, and the rotated factor pattern was extracted using `_TYPE_="PATTERN"`. Factor scores were computed using the same feature set retained in the final factor model. Factor-score outliers were identified using an IQR rule and exported for diagnostic qualitative inspection, but were retained in the main score files, statistical comparisons, and selection of representative texts. Representative compositions for each factor pole were selected by ranking the full factor-score file and cross-checking top-ranked texts against the factor-specific outlier lists.
