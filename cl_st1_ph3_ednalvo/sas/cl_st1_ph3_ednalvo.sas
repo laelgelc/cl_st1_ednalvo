@@ -23,7 +23,7 @@ options validvarname=any;
 /* Extraction & cutoff parameters */
 /* NOTE: Section 6 currently contains loading-selection logic hard-coded
    for exactly 9 factors. If &extractfactors changes, revise Section 6. */
-%let extractfactors = 9 ;
+%let extractfactors = 4 ;
 %let factorvars = f1-f&extractfactors ;
 %let minloading = .3 ;
 %let communalcutoff = .15 ;
