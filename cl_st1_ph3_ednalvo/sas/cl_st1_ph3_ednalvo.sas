@@ -36,11 +36,12 @@ options validvarname=any;
    Macro to ingest one DFM TSV file.
 
    Expected TSV structure:
-   filename    subcorpus    v001 ... v006    v007_1-v007_4    v008-v230    v900-v919
+   filename    subcorpus    wcount    v001 ... v006    v007_1-v007_4
+   v008-v230    v900-v919
 
    Notes:
    - filename and subcorpus are character variables.
-   - all v* variables are numeric.
+   - wcount and all v* variables are numeric.
    - DLM='09'x specifies tab-delimited input.
    - FIRSTOBS=2 skips the header row.
    -------------------------------------------------------------------------- */
@@ -138,7 +139,7 @@ RUN;
 
 
 /* --------------------------------------------------------------------------
-   Summary-variable handling
+   Summary-variable and metadata-variable handling
 
    The 9xx variables are aggregate/summary variables derived from specific
    variables in the tagset. In traditional MDA/factor analysis, allowing a
@@ -146,18 +147,17 @@ RUN;
    computed can introduce artificial covariance, overweight a linguistic domain,
    and complicate interpretation.
 
-   In the present Portuguese tagset, some summary variables also overlap with
-   one another, because the linguistic taxonomy is cross-classified. For example,
-   a specific feature may belong both to a part-of-speech summary and to a
-   stance, modality, clause-type, or PB-variation summary.
+   The variable wcount is retained in the full project dataset for descriptive
+   corpus-size reporting, but it is excluded from factor extraction because it is
+   document metadata rather than a linguistic feature count to be interpreted as
+   a factor-loading variable.
 
-   Therefore, for the primary TMDA model, all summary variables v900-v919 are
-   excluded from factor extraction. They may later be used descriptively or in a
-   separate sensitivity analysis, but not in the main factor model.
+   Therefore, for the primary TMDA model, wcount and all summary variables
+   v900-v919 are excluded from factor extraction.
    -------------------------------------------------------------------------- */
 
 DATA &project._no_sum_v (
-    DROP = v900-v919
+    DROP = wcount v900-v919
 );
     SET &project;
 RUN;
@@ -167,10 +167,10 @@ RUN;
    SECTION 4: UNROTATED FACTOR ANALYSIS & COMMUNALITY CUTOFF
    ========================================================================== */
 
-/* Unrotated Factor Analysis without summary variables, before dropping
-   low-communality variables.
+/* Unrotated Factor Analysis without metadata or summary variables, before
+   dropping low-communality variables.
 
-   The input dataset &project._no_sum_v already excludes all 9xx summary
+   The input dataset &project._no_sum_v excludes wcount and all 9xx summary
    variables (v900-v919), so this step is based only on specific linguistic
    variables. */
 OPTIONS VALIDVARNAME=ANY;
@@ -353,11 +353,11 @@ ods html close;
    variable-selection logic. */
 OPTIONS VALIDVARNAME=ANY;
 
-data prerotat;
-  set rotated (where=(_TYPE_="PREROTAT"));
+data rotated1;
+  set rotated (where=(_TYPE_="PATTERN"));
 run;
 
-proc transpose data=prerotat out=rotated2 ;
+proc transpose data=rotated1 out=rotated2 ;
 id _NAME_ ;
 run;
 
@@ -410,7 +410,7 @@ ODS EXCLUDE ALL;
 /* Reformat outstat to obtain rotated factor pattern */
 OPTIONS VALIDVARNAME=ANY;
 data rotated2;
-  set rotatedfinal (where=(_TYPE_="PREROTAT"));
+  set rotatedfinal (where=(_TYPE_="PATTERN"));
 run;
 
 proc transpose data=rotated2 out= rotated2 ;
@@ -429,7 +429,7 @@ data rotated3;
            AND abs(factor1) > abs(factor7)
            AND abs(factor1) > abs(factor8)
            AND abs(factor1) > abs(factor9)
-           AND factor1 > 0 AND abs(factor1) >= "&minloading" then do; factor = 'f1'; pole = 1;  loaded = 1; end ;
+           AND factor1 > 0 AND abs(factor1) >= &minloading then do; factor = 'f1'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor2) > abs(factor1)
            AND abs(factor2) > abs(factor3)
@@ -439,7 +439,7 @@ data rotated3;
            AND abs(factor2) > abs(factor7)
            AND abs(factor2) > abs(factor8)
            AND abs(factor2) > abs(factor9)
-           AND factor2 > 0 AND abs(factor2) >= "&minloading" then do; factor = 'f2'; pole = 1;  loaded = 1; end ;
+           AND factor2 > 0 AND abs(factor2) >= &minloading then do; factor = 'f2'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor3) > abs(factor1)
            AND abs(factor3) > abs(factor2)
@@ -449,7 +449,7 @@ data rotated3;
            AND abs(factor3) > abs(factor7)
            AND abs(factor3) > abs(factor8)
            AND abs(factor3) > abs(factor9)
-           AND factor3 > 0 AND abs(factor3) >= "&minloading" then do; factor = 'f3'; pole = 1;  loaded = 1; end ;
+           AND factor3 > 0 AND abs(factor3) >= &minloading then do; factor = 'f3'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor4) > abs(factor1)
            AND abs(factor4) > abs(factor2)
@@ -459,7 +459,7 @@ data rotated3;
            AND abs(factor4) > abs(factor7)
            AND abs(factor4) > abs(factor8)
            AND abs(factor4) > abs(factor9)
-           AND factor4 > 0 AND abs(factor4) >= "&minloading" then do; factor = 'f4'; pole = 1;  loaded = 1; end ;
+           AND factor4 > 0 AND abs(factor4) >= &minloading then do; factor = 'f4'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor5) > abs(factor1)
            AND abs(factor5) > abs(factor2)
@@ -469,7 +469,7 @@ data rotated3;
            AND abs(factor5) > abs(factor7)
            AND abs(factor5) > abs(factor8)
            AND abs(factor5) > abs(factor9)
-           AND factor5 > 0 AND abs(factor5) >= "&minloading" then do; factor = 'f5'; pole = 1;  loaded = 1; end ;
+           AND factor5 > 0 AND abs(factor5) >= &minloading then do; factor = 'f5'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor6) > abs(factor1)
            AND abs(factor6) > abs(factor2)
@@ -479,7 +479,7 @@ data rotated3;
            AND abs(factor6) > abs(factor7)
            AND abs(factor6) > abs(factor8)
            AND abs(factor6) > abs(factor9)
-           AND factor6 > 0 AND abs(factor6) >= "&minloading" then do; factor = 'f6'; pole = 1;  loaded = 1; end ;
+           AND factor6 > 0 AND abs(factor6) >= &minloading then do; factor = 'f6'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor7) > abs(factor1)
            AND abs(factor7) > abs(factor2)
@@ -489,7 +489,7 @@ data rotated3;
            AND abs(factor7) > abs(factor6)
            AND abs(factor7) > abs(factor8)
            AND abs(factor7) > abs(factor9)
-           AND factor7 > 0 AND abs(factor7) >= "&minloading" then do; factor = 'f7'; pole = 1;  loaded = 1; end ;
+           AND factor7 > 0 AND abs(factor7) >= &minloading then do; factor = 'f7'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor8) > abs(factor1)
            AND abs(factor8) > abs(factor2)
@@ -499,7 +499,7 @@ data rotated3;
            AND abs(factor8) > abs(factor6)
            AND abs(factor8) > abs(factor7)
            AND abs(factor8) > abs(factor9)
-           AND factor8 > 0 AND abs(factor8) >= "&minloading" then do; factor = 'f8'; pole = 1;  loaded = 1; end ;
+           AND factor8 > 0 AND abs(factor8) >= &minloading then do; factor = 'f8'; pole = 1;  loaded = 1; end ;
 
    else if     abs(factor9) > abs(factor1)
            AND abs(factor9) > abs(factor2)
@@ -509,7 +509,7 @@ data rotated3;
            AND abs(factor9) > abs(factor6)
            AND abs(factor9) > abs(factor7)
            AND abs(factor9) > abs(factor8)
-           AND factor9 > 0 AND abs(factor9) >= "&minloading" then do; factor = 'f9'; pole = 1;  loaded = 1; end ;
+           AND factor9 > 0 AND abs(factor9) >= &minloading then do; factor = 'f9'; pole = 1;  loaded = 1; end ;
 
 /* Negative values */
 
@@ -521,7 +521,7 @@ data rotated3;
            AND abs(factor1) > abs(factor7)
            AND abs(factor1) > abs(factor8)
            AND abs(factor1) > abs(factor9)
-           AND factor1 < 0 AND abs(factor1) >= "&minloading" then do; factor = 'f1'; pole = -1;  loaded = 1; end ;
+           AND factor1 < 0 AND abs(factor1) >= &minloading then do; factor = 'f1'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor2) > abs(factor1)
            AND abs(factor2) > abs(factor3)
@@ -531,7 +531,7 @@ data rotated3;
            AND abs(factor2) > abs(factor7)
            AND abs(factor2) > abs(factor8)
            AND abs(factor2) > abs(factor9)
-           AND factor2 < 0 AND abs(factor2) >= "&minloading" then do; factor = 'f2'; pole = -1;  loaded = 1; end ;
+           AND factor2 < 0 AND abs(factor2) >= &minloading then do; factor = 'f2'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor3) > abs(factor1)
            AND abs(factor3) > abs(factor2)
@@ -541,7 +541,7 @@ data rotated3;
            AND abs(factor3) > abs(factor7)
            AND abs(factor3) > abs(factor8)
            AND abs(factor3) > abs(factor9)
-           AND factor3 < 0 AND abs(factor3) >= "&minloading" then do; factor = 'f3'; pole = -1;  loaded = 1; end ;
+           AND factor3 < 0 AND abs(factor3) >= &minloading then do; factor = 'f3'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor4) > abs(factor1)
            AND abs(factor4) > abs(factor2)
@@ -551,7 +551,7 @@ data rotated3;
            AND abs(factor4) > abs(factor7)
            AND abs(factor4) > abs(factor8)
            AND abs(factor4) > abs(factor9)
-           AND factor4 < 0 AND abs(factor4) >= "&minloading" then do; factor = 'f4'; pole = -1;  loaded = 1; end ;
+           AND factor4 < 0 AND abs(factor4) >= &minloading then do; factor = 'f4'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor5) > abs(factor1)
            AND abs(factor5) > abs(factor2)
@@ -561,7 +561,7 @@ data rotated3;
            AND abs(factor5) > abs(factor7)
            AND abs(factor5) > abs(factor8)
            AND abs(factor5) > abs(factor9)
-           AND factor5 < 0 AND abs(factor5) >= "&minloading" then do; factor = 'f5'; pole = -1;  loaded = 1; end ;
+           AND factor5 < 0 AND abs(factor5) >= &minloading then do; factor = 'f5'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor6) > abs(factor1)
            AND abs(factor6) > abs(factor2)
@@ -571,7 +571,7 @@ data rotated3;
            AND abs(factor6) > abs(factor7)
            AND abs(factor6) > abs(factor8)
            AND abs(factor6) > abs(factor9)
-           AND factor6 < 0 AND abs(factor6) >= "&minloading" then do; factor = 'f6'; pole = -1;  loaded = 1; end ;
+           AND factor6 < 0 AND abs(factor6) >= &minloading then do; factor = 'f6'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor7) > abs(factor1)
            AND abs(factor7) > abs(factor2)
@@ -581,7 +581,7 @@ data rotated3;
            AND abs(factor7) > abs(factor6)
            AND abs(factor7) > abs(factor8)
            AND abs(factor7) > abs(factor9)
-           AND factor7 < 0 AND abs(factor7) >= "&minloading" then do; factor = 'f7'; pole = -1;  loaded = 1; end ;
+           AND factor7 < 0 AND abs(factor7) >= &minloading then do; factor = 'f7'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor8) > abs(factor1)
            AND abs(factor8) > abs(factor2)
@@ -591,7 +591,7 @@ data rotated3;
            AND abs(factor8) > abs(factor6)
            AND abs(factor8) > abs(factor7)
            AND abs(factor8) > abs(factor9)
-           AND factor8 < 0 AND abs(factor8) >= "&minloading" then do; factor = 'f8'; pole = -1;  loaded = 1; end ;
+           AND factor8 < 0 AND abs(factor8) >= &minloading then do; factor = 'f8'; pole = -1;  loaded = 1; end ;
 
    else if     abs(factor9) > abs(factor1)
            AND abs(factor9) > abs(factor2)
@@ -601,7 +601,7 @@ data rotated3;
            AND abs(factor9) > abs(factor6)
            AND abs(factor9) > abs(factor7)
            AND abs(factor9) > abs(factor8)
-           AND factor9 < 0 AND abs(factor9) >= "&minloading" then do; factor = 'f9'; pole = -1;  loaded = 1; end ;
+           AND factor9 < 0 AND abs(factor9) >= &minloading then do; factor = 'f9'; pole = -1;  loaded = 1; end ;
 run;
 
 data rotated4 ; set rotated3 ; if loaded = 1; run; quit;
@@ -900,7 +900,7 @@ QUIT;
 
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/loadtable.html";
-%macro create(howmany);
+%macro create_load_tables(howmany);
 %do i=1 %to &howmany;
 
 title "LOADINGS TABLE";
@@ -923,8 +923,8 @@ proc print ; FORMAT _NAME_ $featurelabels.; var _NAME_ Factor&i ;
 run;
 
 %end;
-%mend create;
-%create(&extractfactors)
+%mend create_load_tables;
+%create_load_tables(&extractfactors)
 ods html close;
 quit;
 
@@ -939,27 +939,27 @@ RUN;
 OPTIONS VALIDVARNAME=ANY;
 data rotatedinterpr (drop = factor pole) ;
    set rotated3;
-    if factor1 > 0 AND abs(factor1) >= "&minloading" then do; secfactor1 = 'f1'; secpolef1 = 1;  end ;
-    if factor2 > 0 AND abs(factor2) >= "&minloading" then do; secfactor2 = 'f2'; secpolef2 = 1;  end ;
-    if factor3 > 0 AND abs(factor3) >= "&minloading" then do; secfactor3 = 'f3'; secpolef3 = 1;  end ;
-    if factor4 > 0 AND abs(factor4) >= "&minloading" then do; secfactor4 = 'f4'; secpolef4 = 1;  end ;
-    if factor5 > 0 AND abs(factor5) >= "&minloading" then do; secfactor5 = 'f5'; secpolef5 = 1;  end ;
-    if factor6 > 0 AND abs(factor6) >= "&minloading" then do; secfactor6 = 'f6'; secpolef6 = 1;  end ;
-    if factor7 > 0 AND abs(factor7) >= "&minloading" then do; secfactor7 = 'f7'; secpolef7 = 1;  end ;
-    if factor8 > 0 AND abs(factor8) >= "&minloading" then do; secfactor8 = 'f8'; secpolef8 = 1;  end ;
-    if factor9 > 0 AND abs(factor9) >= "&minloading" then do; secfactor9 = 'f9'; secpolef9 = 1;  end ;
+    if factor1 > 0 AND abs(factor1) >= &minloading then do; secfactor1 = 'f1'; secpolef1 = 1;  end ;
+    if factor2 > 0 AND abs(factor2) >= &minloading then do; secfactor2 = 'f2'; secpolef2 = 1;  end ;
+    if factor3 > 0 AND abs(factor3) >= &minloading then do; secfactor3 = 'f3'; secpolef3 = 1;  end ;
+    if factor4 > 0 AND abs(factor4) >= &minloading then do; secfactor4 = 'f4'; secpolef4 = 1;  end ;
+    if factor5 > 0 AND abs(factor5) >= &minloading then do; secfactor5 = 'f5'; secpolef5 = 1;  end ;
+    if factor6 > 0 AND abs(factor6) >= &minloading then do; secfactor6 = 'f6'; secpolef6 = 1;  end ;
+    if factor7 > 0 AND abs(factor7) >= &minloading then do; secfactor7 = 'f7'; secpolef7 = 1;  end ;
+    if factor8 > 0 AND abs(factor8) >= &minloading then do; secfactor8 = 'f8'; secpolef8 = 1;  end ;
+    if factor9 > 0 AND abs(factor9) >= &minloading then do; secfactor9 = 'f9'; secpolef9 = 1;  end ;
 
   /* Negative values */
 
-    if factor1 < 0 AND abs(factor1) >= "&minloading" then do; secfactor1 = 'f1'; secpolef1 = -1;  end ;
-    if factor2 < 0 AND abs(factor2) >= "&minloading" then do; secfactor2 = 'f2'; secpolef2 = -1;  end ;
-    if factor3 < 0 AND abs(factor3) >= "&minloading" then do; secfactor3 = 'f3'; secpolef3 = -1;  end ;
-    if factor4 < 0 AND abs(factor4) >= "&minloading" then do; secfactor4 = 'f4'; secpolef4 = -1;  end ;
-    if factor5 < 0 AND abs(factor5) >= "&minloading" then do; secfactor5 = 'f5'; secpolef5 = -1;  end ;
-    if factor6 < 0 AND abs(factor6) >= "&minloading" then do; secfactor6 = 'f6'; secpolef6 = -1;  end ;
-    if factor7 < 0 AND abs(factor7) >= "&minloading" then do; secfactor7 = 'f7'; secpolef7 = -1;  end ;
-    if factor8 < 0 AND abs(factor8) >= "&minloading" then do; secfactor8 = 'f8'; secpolef8 = -1;  end ;
-    if factor9 < 0 AND abs(factor9) >= "&minloading" then do; secfactor9 = 'f9'; secpolef9 = -1;  end ;
+    if factor1 < 0 AND abs(factor1) >= &minloading then do; secfactor1 = 'f1'; secpolef1 = -1;  end ;
+    if factor2 < 0 AND abs(factor2) >= &minloading then do; secfactor2 = 'f2'; secpolef2 = -1;  end ;
+    if factor3 < 0 AND abs(factor3) >= &minloading then do; secfactor3 = 'f3'; secpolef3 = -1;  end ;
+    if factor4 < 0 AND abs(factor4) >= &minloading then do; secfactor4 = 'f4'; secpolef4 = -1;  end ;
+    if factor5 < 0 AND abs(factor5) >= &minloading then do; secfactor5 = 'f5'; secpolef5 = -1;  end ;
+    if factor6 < 0 AND abs(factor6) >= &minloading then do; secfactor6 = 'f6'; secpolef6 = -1;  end ;
+    if factor7 < 0 AND abs(factor7) >= &minloading then do; secfactor7 = 'f7'; secpolef7 = -1;  end ;
+    if factor8 < 0 AND abs(factor8) >= &minloading then do; secfactor8 = 'f8'; secpolef8 = -1;  end ;
+    if factor9 < 0 AND abs(factor9) >= &minloading then do; secfactor9 = 'f9'; secpolef9 = -1;  end ;
 
  /* Cleanup */
 
@@ -974,17 +974,30 @@ data rotatedinterpr (drop = factor pole) ;
     if factor = secfactor9 then do; secfactor9 = ' ' ; end;
 run;
 
-proc sql;
-    select memname into :names separated by ' ' from dictionary.tables
-    where libname = 'WORK' AND  substr (memname,1,5) = 'TEMP_' ;
+/* Delete temporary TEMP_ tables only if any exist */
+%let names=;
+
+proc sql noprint;
+    select memname into :names separated by ' '
+    from dictionary.tables
+    where libname = 'WORK'
+      and substr(memname, 1, 5) = 'TEMP_';
 quit;
 
-proc datasets library=work;
-delete
-&names;
-run;
+%macro delete_temp_tables_after_rotatedinterpr;
+    %if %superq(names) ne %then %do;
+        proc datasets library=work nolist;
+            delete &names;
+        quit;
+    %end;
+    %else %do;
+        %put NOTE: No TEMP_ tables found for deletion after rotatedinterpr.;
+    %end;
+%mend delete_temp_tables_after_rotatedinterpr;
 
-%macro create(howmany);
+%delete_temp_tables_after_rotatedinterpr;
+
+%macro create_interpretation_tables(howmany);
 %do i=1 %to &howmany;
 data temp_f&i._prim_pos (keep = Factor&i factor pole type table _NAME_  RENAME = ( Factor&i=loading ) );
  set rotated4 (where=( factor = "f&i" AND pole = 1 ));
@@ -1011,8 +1024,8 @@ data temp_f&i._sec_neg (keep = Factor&i secfactor&i secpolef&i type table _NAME_
    proc sort ; by loading;
 run;
 %end;
-%mend create;
-%create( &extractfactors )  /* Number of factors extracted */
+%mend create_interpretation_tables;
+%create_interpretation_tables( &extractfactors )  /* Number of factors extracted */
 quit;
 
 proc sql ;
@@ -1044,15 +1057,28 @@ PROC EXPORT
   REPLACE;
 RUN;
 
-proc sql;
-    select memname into :names separated by ' ' from dictionary.tables
-    where libname = 'WORK' AND  substr (memname,1,5) = 'TEMP_' ;
+/* Delete temporary TEMP_ tables only if any exist */
+%let names=;
+
+proc sql noprint;
+    select memname into :names separated by ' '
+    from dictionary.tables
+    where libname = 'WORK'
+      and substr(memname, 1, 5) = 'TEMP_';
 quit;
 
-proc datasets library=work;
-delete
-&names;
-run;
+%macro delete_temp_tables_after_loadtableinterpr;
+    %if %superq(names) ne %then %do;
+        proc datasets library=work nolist;
+            delete &names;
+        quit;
+    %end;
+    %else %do;
+        %put NOTE: No TEMP_ tables found for deletion after loadtableinterpr export.;
+    %end;
+%mend delete_temp_tables_after_loadtableinterpr;
+
+%delete_temp_tables_after_loadtableinterpr;
 
 /* Adding metadata */
 DATA &project._meta;
@@ -1126,9 +1152,16 @@ RUN;
 /* Overview of corpus */
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/corpus_size.html";
+
+proc freq data=&project;
+    tables subcorpus / nocum;
+run;
+
 proc means data=&project sum mean min max stddev;
+    class subcorpus;
     var wcount;
 run;
+
 ods html close;
 ODS EXCLUDE ALL;
 
@@ -1149,22 +1182,21 @@ RUN;
 
 
 /* ==========================================================================
-   SECTION 8: OUTLIER IDENTIFICATION AND REMOVAL
+   SECTION 8: OUTLIER IDENTIFICATION FOR DIAGNOSTIC INSPECTION
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    Outlier handling
 
-   This section now uses the single scored corpus produced in Section 7.
-   The dataset name scores_combined is still accepted because Section 7
-   preserves it as an alias of scores for downstream compatibility.
+   Outliers are identified separately for each factor score using the IQR rule.
+   The outlier lists are exported for qualitative inspection.
 
-   Outliers are identified separately for each factor score using the IQR rule:
-       lower fence = Q1 - (&multipl * IQR)
-       upper fence = Q3 + (&multipl * IQR)
+   IMPORTANT:
+   In this version of the script, the outlier-removal bypass is intentionally
+   active. Therefore, outliers are NOT removed from the final statistical
+   analyses or from the scores used for ranking compositions.
 
-   Set &multipl below to control how strict the outlier definition is.
-   Smaller values remove more observations; larger values remove fewer.
+   The exported outlier files should be interpreted as diagnostic files.
    -------------------------------------------------------------------------- */
 
 %let multipl=1;
@@ -1222,7 +1254,7 @@ data outliers_to_del
 run;
 
 proc sort data=outliers_to_del nodupkey;
-    by filename;
+    by filename subcorpus;
 run;
 
 
@@ -1232,10 +1264,12 @@ data &project._no_outliers;
 run;
 
 proc sql;
-    delete from &project._no_outliers
-    where filename in (
-        select filename
-        from outliers_to_del
+    delete from &project._no_outliers as a
+    where exists (
+        select 1
+        from outliers_to_del as b
+        where a.filename = b.filename
+          and a.subcorpus = b.subcorpus
     );
 quit;
 
@@ -1257,7 +1291,7 @@ quit;
     PROC EXPORT
         DATA=WORK.outliers_f&i
         DBMS=CSV
-        OUTFILE="&whereisit/&myfolder/outliers_deleted_f&i..csv"
+        OUTFILE="&whereisit/&myfolder/outliers_f&i..csv"
         REPLACE;
     RUN;
 
@@ -1296,6 +1330,9 @@ run;
 /* ==========================================================================
    SECTION 9: STATISTICAL ANALYSIS (ANOVAs & BOXPLOTS)
    ========================================================================== */
+
+/* Because the outlier bypass is active, &project._no_outliers currently
+   contains the full scored corpus, including outliers. */
 
 /* --------------------------------------------------------------------------
    Statistical analysis
