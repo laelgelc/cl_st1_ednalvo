@@ -21,7 +21,9 @@ options fmtsearch=(work library);
 options validvarname=any;
 
 /* Extraction & cutoff parameters */
-%let extractfactors = 9 ;
+/* NOTE: Section 6 currently contains loading-selection logic hard-coded
+   for exactly 9 factors. If &extractfactors changes, revise Section 6. */
+%let extractfactors = 4 ;
 %let factorvars = f1-f&extractfactors ;
 %let minloading = .3 ;
 %let communalcutoff = .15 ;
@@ -163,16 +165,89 @@ DATA &project._no_sum_v (
 RUN;
 
 
+/* --------------------------------------------------------------------------
+   Remove zero-variance variables before factor analysis.
+
+   PROC FACTOR requires a usable, non-singular correlation matrix. Variables with
+   zero variance cannot be correlated meaningfully and may cause PROC FACTOR to
+   stop with a singular-correlation-matrix error.
+
+   These variables are removed before the unrotated analysis and before the
+   communality cutoff is applied.
+   -------------------------------------------------------------------------- */
+
+ODS EXCLUDE ALL;
+
+PROC MEANS DATA=&project._no_sum_v NOPRINT;
+    VAR _NUMERIC_;
+    OUTPUT OUT=variance_check(DROP=_TYPE_ _FREQ_) STD=;
+RUN;
+
+ODS EXCLUDE NONE;
+
+PROC TRANSPOSE DATA=variance_check OUT=variance_check_t;
+RUN;
+
+%let zerovar=;
+
+PROC SQL NOPRINT;
+    SELECT _NAME_ INTO :zerovar SEPARATED BY ' '
+    FROM variance_check_t
+    WHERE COL1 = 0 OR MISSING(COL1);
+QUIT;
+
+%put NOTE: Zero-variance variables to be dropped before factor analysis: &zerovar.;
+
+%macro drop_zero_variance_vars;
+
+    %if %superq(zerovar) ne %then %do;
+
+        DATA &project._factor_input;
+            SET &project._no_sum_v;
+            DROP &zerovar;
+        RUN;
+
+    %end;
+    %else %do;
+
+        DATA &project._factor_input;
+            SET &project._no_sum_v;
+        RUN;
+
+        %put NOTE: No zero-variance variables found.;
+
+    %end;
+
+%mend drop_zero_variance_vars;
+
+%drop_zero_variance_vars;
+
+
+/* Save zero-variance variables dropped before factor analysis */
+DATA zero_variance_dropped;
+    SET variance_check_t;
+    IF COL1 = 0 OR MISSING(COL1);
+RUN;
+
+ODS EXCLUDE NONE;
+PROC EXPORT
+    DATA=WORK.zero_variance_dropped
+    DBMS=CSV
+    OUTFILE="&whereisit/&myfolder/zero_variance_dropped.csv"
+    REPLACE;
+RUN;
+ODS EXCLUDE ALL;
+
+
 /* ==========================================================================
    SECTION 4: UNROTATED FACTOR ANALYSIS & COMMUNALITY CUTOFF
    ========================================================================== */
 
-/* Unrotated Factor Analysis without metadata or summary variables, before
-   dropping low-communality variables.
+/* Unrotated Factor Analysis without metadata, summary, or zero-variance
+   variables, before dropping low-communality variables.
 
-   The input dataset &project._no_sum_v excludes wcount and all 9xx summary
-   variables (v900-v919), so this step is based only on specific linguistic
-   variables. */
+   The input dataset &project._factor_input excludes wcount, all 9xx summary
+   variables (v900-v919), and any zero-variance variables detected above. */
 OPTIONS VALIDVARNAME=ANY;
 
 ODS EXCLUDE NONE;
@@ -181,7 +256,7 @@ ods trace on;
 
 proc factor
 OUTSTAT=fout
-data=&project._no_sum_v  /* Specific variables only: v900-v919 already dropped */
+data=&project._factor_input
 method=principal scree
 mineigen=0
 nfactors=100
@@ -198,7 +273,6 @@ ODS EXCLUDE ALL;
 
 
 /*** Find low communalities ***/
-/* https://communities.sas.com/t5/SAS-Programming/How-do-I-delete-variables-based-on-their-values-in-an-outstat/m-p/675576#M203571 */
 
 data fout2;
     set fout (where=(_TYPE_="COMMUNAL"));
@@ -229,7 +303,7 @@ quit;
     %if %superq(names) ne %then %do;
 
         data &project._no_low_c ;
-            set &project._no_sum_v ;
+            set &project._factor_input ;
             drop &names;
         run;
 
@@ -237,7 +311,7 @@ quit;
     %else %do;
 
         data &project._no_low_c ;
-            set &project._no_sum_v ;
+            set &project._factor_input ;
         run;
 
         %put NOTE: No variables had communalities below &communalcutoff..;
@@ -305,27 +379,11 @@ ODS EXCLUDE ALL;
 /* --------------------------------------------------------------------------
    Preliminary rotated factor analysis.
 
-   This step is kept from the original TMDA implementation as a diagnostic and
-   as a convenient point for possible future variable-selection intervention.
+   This diagnostic rotated analysis uses the low-communality-filtered,
+   summary-free, zero-variance-filtered dataset: &project._no_low_c.
 
-   In the original TMDA + Additive MDA script, this section was followed by a
-   Biber-style summary-variable check. That check evaluated whether broad
-   summary variables should replace or coexist with their specific component
-   variables.
-
-   In the present analysis, however, the 9xx summary variables v900-v919 have
-   already been excluded from factor extraction. Because these summary variables
-   are derived aggregates and some of them overlap across linguistic domains,
-   they are not reintroduced in the primary TMDA model.
-
-   Therefore, no additional variable selection is performed here for now.
-   The final rotated factor analysis will use the low-communality-filtered,
-   summary-free dataset: &project._no_low_c.
-
-   Future intervention point:
-   If, after consultation, a principled variable-selection rule is adopted, it
-   can be inserted after the preliminary rotated solution below and before the
-   creation of &project._sum_check.
+   Because rotate=promax requests an oblique rotation, the rotated factor
+   pattern is read from _TYPE_="PATTERN".
    -------------------------------------------------------------------------- */
 
 ODS EXCLUDE ALL;
@@ -367,8 +425,10 @@ run;
 
    For the current primary TMDA model, this step intentionally performs no
    additional selection beyond:
-   1. removing summary variables v900-v919; and
-   2. removing variables below the communality cutoff.
+   1. removing metadata variable wcount;
+   2. removing summary variables v900-v919;
+   3. removing zero-variance variables; and
+   4. removing variables below the communality cutoff.
 
    The dataset name &project._sum_check is retained because later sections of
    the original TMDA pipeline refer to it.
@@ -407,20 +467,31 @@ ods trace off;
 ods html close;
 ODS EXCLUDE ALL;
 
-/* Reformat outstat to obtain rotated factor pattern */
+
+/* Reformat OUTSTAT to obtain the promax-rotated factor pattern.
+
+   Because rotate=promax is oblique, interpretation and scoring are based on
+   _TYPE_="PATTERN", not _TYPE_="PREROTAT". */
 OPTIONS VALIDVARNAME=ANY;
+
 data rotated2;
   set rotatedfinal (where=(_TYPE_="PATTERN"));
 run;
 
-proc transpose data=rotated2 out= rotated2 ;
+proc transpose data=rotated2 out=rotated2 ;
 id _NAME_ ;
 run;
 
+
+/* Identify the primary loading for each variable.
+
+   NOTE: This block is intentionally hard-coded for nine factors. */
 OPTIONS VALIDVARNAME=ANY;
+
 data rotated3;
    set rotated2;
       loaded = 0 ;
+
         if     abs(factor1) > abs(factor2)
            AND abs(factor1) > abs(factor3)
            AND abs(factor1) > abs(factor4)
@@ -510,8 +581,6 @@ data rotated3;
            AND abs(factor9) > abs(factor7)
            AND abs(factor9) > abs(factor8)
            AND factor9 > 0 AND abs(factor9) >= &minloading then do; factor = 'f9'; pole = 1;  loaded = 1; end ;
-
-/* Negative values */
 
   else  if     abs(factor1) > abs(factor2)
            AND abs(factor1) > abs(factor3)
@@ -604,9 +673,17 @@ data rotated3;
            AND factor9 < 0 AND abs(factor9) >= &minloading then do; factor = 'f9'; pole = -1;  loaded = 1; end ;
 run;
 
-data rotated4 ; set rotated3 ; if loaded = 1; run; quit;
+data rotated4 ;
+    set rotated3 ;
+    if loaded = 1;
+run;
+quit;
 
-/* Labelling */
+
+/* ==========================================================================
+   SECTION 6A: FEATURE LABELS
+   ========================================================================== */
+
 PROC FORMAT library=work ;
   VALUE $featurelabels
 
@@ -898,33 +975,55 @@ PROC FORMAT library=work ;
 RUN;
 QUIT;
 
+
+/* ==========================================================================
+   SECTION 6B: LOADINGS TABLES
+   ========================================================================== */
+
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/loadtable.html";
+
 %macro create_load_tables(howmany);
 %do i=1 %to &howmany;
 
 title "LOADINGS TABLE";
 title2 "Factor &i pos" ;
+
 data temp;
   set rotated4 ;
   where factor="f&i" and pole=1 ;
-proc sort;
+run;
+
+proc sort data=temp;
   by descending Factor&i ;
-proc print ; FORMAT _NAME_ $featurelabels.; var _NAME_  Factor&i ;
+run;
+
+proc print data=temp ;
+  FORMAT _NAME_ $featurelabels.;
+  var _NAME_ Factor&i ;
 run;
 
 title "Factor &i neg" ;
+
 data temp;
   set rotated4 ;
   where factor="f&i" and pole=-1 ;
-proc sort;
-  by  Factor&i ;
-proc print ; FORMAT _NAME_ $featurelabels.; var _NAME_ Factor&i ;
+run;
+
+proc sort data=temp;
+  by Factor&i ;
+run;
+
+proc print data=temp ;
+  FORMAT _NAME_ $featurelabels.;
+  var _NAME_ Factor&i ;
 run;
 
 %end;
 %mend create_load_tables;
+
 %create_load_tables(&extractfactors)
+
 ods html close;
 quit;
 
@@ -935,10 +1034,13 @@ PROC EXPORT
   REPLACE;
 RUN;
 
-/* All vars that loaded, for interpretation */
+
+/* All variables that loaded, for interpretation */
 OPTIONS VALIDVARNAME=ANY;
+
 data rotatedinterpr (drop = factor pole) ;
    set rotated3;
+
     if factor1 > 0 AND abs(factor1) >= &minloading then do; secfactor1 = 'f1'; secpolef1 = 1;  end ;
     if factor2 > 0 AND abs(factor2) >= &minloading then do; secfactor2 = 'f2'; secpolef2 = 1;  end ;
     if factor3 > 0 AND abs(factor3) >= &minloading then do; secfactor3 = 'f3'; secpolef3 = 1;  end ;
@@ -949,8 +1051,6 @@ data rotatedinterpr (drop = factor pole) ;
     if factor8 > 0 AND abs(factor8) >= &minloading then do; secfactor8 = 'f8'; secpolef8 = 1;  end ;
     if factor9 > 0 AND abs(factor9) >= &minloading then do; secfactor9 = 'f9'; secpolef9 = 1;  end ;
 
-  /* Negative values */
-
     if factor1 < 0 AND abs(factor1) >= &minloading then do; secfactor1 = 'f1'; secpolef1 = -1;  end ;
     if factor2 < 0 AND abs(factor2) >= &minloading then do; secfactor2 = 'f2'; secpolef2 = -1;  end ;
     if factor3 < 0 AND abs(factor3) >= &minloading then do; secfactor3 = 'f3'; secpolef3 = -1;  end ;
@@ -960,8 +1060,6 @@ data rotatedinterpr (drop = factor pole) ;
     if factor7 < 0 AND abs(factor7) >= &minloading then do; secfactor7 = 'f7'; secpolef7 = -1;  end ;
     if factor8 < 0 AND abs(factor8) >= &minloading then do; secfactor8 = 'f8'; secpolef8 = -1;  end ;
     if factor9 < 0 AND abs(factor9) >= &minloading then do; secfactor9 = 'f9'; secpolef9 = -1;  end ;
-
- /* Cleanup */
 
     if factor = secfactor1 then do; secfactor1 = ' ' ; end;
     if factor = secfactor2 then do; secfactor2 = ' ' ; end;
@@ -974,6 +1072,7 @@ data rotatedinterpr (drop = factor pole) ;
     if factor = secfactor9 then do; secfactor9 = ' ' ; end;
 run;
 
+
 /* Delete temporary TEMP_ tables only if any exist */
 %let names=;
 
@@ -984,7 +1083,7 @@ proc sql noprint;
       and substr(memname, 1, 5) = 'TEMP_';
 quit;
 
-%macro delete_temp_tables_after_rotatedinterpr;
+%macro deltemp_rotint;
     %if %superq(names) ne %then %do;
         proc datasets library=work nolist;
             delete &names;
@@ -993,61 +1092,117 @@ quit;
     %else %do;
         %put NOTE: No TEMP_ tables found for deletion after rotatedinterpr.;
     %end;
-%mend delete_temp_tables_after_rotatedinterpr;
+%mend deltemp_rotint;
 
-%delete_temp_tables_after_rotatedinterpr;
+%deltemp_rotint;
 
+
+/* Create interpretation tables */
 %macro create_interpretation_tables(howmany);
 %do i=1 %to &howmany;
-data temp_f&i._prim_pos (keep = Factor&i factor pole type table _NAME_  RENAME = ( Factor&i=loading ) );
- set rotated4 (where=( factor = "f&i" AND pole = 1 ));
- type = 'primary';
- table = "f&i.pos" ;
- proc sort ; by descending loading;
+
+data temp_f&i._prim_pos
+    (keep = Factor&i factor pole type table _NAME_
+     rename = (Factor&i=loading));
+    set rotated4 (where=(factor = "f&i" AND pole = 1));
+    type = 'primary';
+    table = "f&i.pos" ;
 run;
-data temp_f&i._sec_pos (keep = Factor&i secfactor&i secpolef&i type table _NAME_  RENAME = ( Factor&i=loading secfactor&i =factor secpolef&i = pole) ) ;
- set rotatedinterpr (where=( secfactor&i = "f&i" AND secpolef&i = 1  ));
- type = 'secondary';
- table = "f&i.pos" ;
-  proc sort ; by descending loading;
+
+proc sort data=temp_f&i._prim_pos;
+    by descending loading;
 run;
-data temp_f&i._prim_neg (keep = Factor&i factor pole type table _NAME_  RENAME = ( Factor&i=loading ) );
- set rotated4 (where=( factor = "f&i" AND pole = -1 ));
- type = 'primary';
- table = "f&i.neg" ;
-  proc sort ; by loading;
+
+data temp_f&i._sec_pos
+    (keep = Factor&i secfactor&i secpolef&i type table _NAME_
+     rename = (Factor&i=loading secfactor&i=factor secpolef&i=pole));
+    set rotatedinterpr (where=(secfactor&i = "f&i" AND secpolef&i = 1));
+    type = 'secondary';
+    table = "f&i.pos" ;
 run;
-data temp_f&i._sec_neg (keep = Factor&i secfactor&i secpolef&i type table _NAME_  RENAME = ( Factor&i=loading secfactor&i =factor secpolef&i = pole) ) ;
- set rotatedinterpr (where=( secfactor&i = "f&i" AND secpolef&i = -1  ));
- type = 'secondary';
- table = "f&i.neg" ;
-   proc sort ; by loading;
+
+proc sort data=temp_f&i._sec_pos;
+    by descending loading;
 run;
+
+data temp_f&i._prim_neg
+    (keep = Factor&i factor pole type table _NAME_
+     rename = (Factor&i=loading));
+    set rotated4 (where=(factor = "f&i" AND pole = -1));
+    type = 'primary';
+    table = "f&i.neg" ;
+run;
+
+proc sort data=temp_f&i._prim_neg;
+    by loading;
+run;
+
+data temp_f&i._sec_neg
+    (keep = Factor&i secfactor&i secpolef&i type table _NAME_
+     rename = (Factor&i=loading secfactor&i=factor secpolef&i=pole));
+    set rotatedinterpr (where=(secfactor&i = "f&i" AND secpolef&i = -1));
+    type = 'secondary';
+    table = "f&i.neg" ;
+run;
+
+proc sort data=temp_f&i._sec_neg;
+    by loading;
+run;
+
 %end;
 %mend create_interpretation_tables;
-%create_interpretation_tables( &extractfactors )  /* Number of factors extracted */
+
+%create_interpretation_tables(&extractfactors)
 quit;
 
-proc sql ;
+
+/* Combine interpretation tables */
+proc sql;
   create table mytables as
   select *
   from dictionary.tables
-  where ( libname = "WORK" and substr (memname,1,6) = 'TEMP_F')
+  where libname = "WORK"
+    and substr(memname, 1, 6) = 'TEMP_F'
   order by memname ;
-quit ;
-
-proc sql;
-    select memname into :names separated by ' ' from mytables;
 quit;
 
-data loadtableinterpr (drop = factor pole);
- length type $15;
- set &names ;
-run;
+%let names=;
+
+proc sql noprint;
+    select memname into :names separated by ' '
+    from mytables;
+quit;
+
+%macro create_loadtableinterpr;
+
+    %if %superq(names) ne %then %do;
+
+        data loadtableinterpr (drop = factor pole);
+            length type $15;
+            set &names ;
+        run;
+
+    %end;
+    %else %do;
+
+        data loadtableinterpr;
+            length _NAME_ $32 type $15 table $15 loading 8;
+            stop;
+        run;
+
+        %put NOTE: No TEMP_F interpretation tables found. Empty loadtableinterpr created.;
+
+    %end;
+
+%mend create_loadtableinterpr;
+
+%create_loadtableinterpr;
 
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/loadtable_for_interpretation.html";
-PROC PRINT data=loadtableinterpr ; FORMAT _NAME_ $featurelabels. loading 9.2 ; run;
+PROC PRINT data=loadtableinterpr ;
+    FORMAT _NAME_ $featurelabels. loading 9.2 ;
+run;
 ods html close;
 
 PROC EXPORT
@@ -1057,6 +1212,7 @@ PROC EXPORT
   REPLACE;
 RUN;
 
+
 /* Delete temporary TEMP_ tables only if any exist */
 %let names=;
 
@@ -1067,7 +1223,7 @@ proc sql noprint;
       and substr(memname, 1, 5) = 'TEMP_';
 quit;
 
-%macro delete_temp_tables_after_loadtableinterpr;
+%macro deltemp_loadint;
     %if %superq(names) ne %then %do;
         proc datasets library=work nolist;
             delete &names;
@@ -1076,13 +1232,14 @@ quit;
     %else %do;
         %put NOTE: No TEMP_ tables found for deletion after loadtableinterpr export.;
     %end;
-%mend delete_temp_tables_after_loadtableinterpr;
+%mend deltemp_loadint;
 
-%delete_temp_tables_after_loadtableinterpr;
+%deltemp_loadint;
+
 
 /* Adding metadata */
 DATA &project._meta;
-SET &project ;
+    SET &project ;
 RUN;
 
 
@@ -1096,12 +1253,23 @@ proc print data=rotated3 ; run;
 ods html close;
 ODS EXCLUDE ALL;
 
+
 /* Automatic scoring */
 
-/* Standardize the corpus using its own means and standard deviations */
-PROC STDIZE DATA=&project._meta METHOD=STD OUT=mdz OUTSTAT=meta_stats;
+/* Standardize the same feature set used in the final factor model.
+
+   The dataset &project._sum_check excludes:
+   - wcount;
+   - summary variables v900-v919;
+   - zero-variance variables;
+   - low-communality variables.
+
+   Character metadata variables such as filename and subcorpus are retained
+   automatically and are not standardized. */
+PROC STDIZE DATA=&project._sum_check METHOD=STD OUT=mdz OUTSTAT=meta_stats;
     var _NUMERIC_ ;
 RUN;
+
 
 /* Factor scores */
 data rotated4;
@@ -1126,6 +1294,7 @@ data score;
     rename factor=_name_;
 run;
 
+
 /* Score the corpus */
 proc score data=mdz score=score out=scores;
 run;
@@ -1134,11 +1303,13 @@ proc sort data=scores;
     by filename;
 run;
 
+
 /* Keep only the columns needed for interpretation/statistical testing */
 DATA scores_only
     (KEEP = filename subcorpus &factorvars);
     SET scores;
 RUN;
+
 
 /* Preserve downstream dataset names used by Section 8 */
 DATA scores_combined;
@@ -1148,6 +1319,7 @@ RUN;
 DATA scores_only_combined;
     SET scores_only;
 RUN;
+
 
 /* Overview of corpus */
 ODS EXCLUDE NONE;
@@ -1164,6 +1336,7 @@ run;
 
 ods html close;
 ODS EXCLUDE ALL;
+
 
 /* TMDA exports */
 PROC EXPORT
@@ -1200,6 +1373,7 @@ RUN;
    -------------------------------------------------------------------------- */
 
 %let multipl=1;
+
 
 /* Identify outlier texts for each factor */
 %macro identify_outliers(howmany);
@@ -1315,11 +1489,11 @@ RUN;
 /* ========================================================================= */
 /* ⚠️ OPTIONAL BYPASS: OUTLIER REMOVAL                                       */
 /* ------------------------------------------------------------------------- */
-/* If you wish to KEEP the outliers in your final analysis, leave the        */
-/* following DATA step active. It overwrites the outlier-trimmed dataset     */
-/* with the full, original scored dataset.                                   */
+/* The bypass is intentionally active in this analysis.                       */
 /*                                                                           */
-/* If you wish to REMOVE outliers, COMMENT OUT or DELETE the DATA step below.*/
+/* Therefore, &project._no_outliers is overwritten with the full scored       */
+/* corpus, and outliers are retained in the final ANOVAs, boxplots, and      */
+/* ranking workflow.                                                         */
 /* ========================================================================= */
 
 data &project._no_outliers;
@@ -1344,11 +1518,6 @@ run;
 
    Expected dependent variables:
    - f1-f&extractfactors
-
-   The input dataset is &project._no_outliers, created in Section 8.
-   If the optional outlier-removal bypass is active in Section 8, this dataset
-   contains all scored texts. If the bypass is disabled, it contains the
-   outlier-trimmed corpus.
    -------------------------------------------------------------------------- */
 
 
@@ -1544,7 +1713,11 @@ data _null_;
 run;
 
 
-/* Delete all png, html, tsv, and csv files after zipping */
+/* Delete top-level png, html, tsv, and csv files after zipping.
+
+   Note:
+   This cleanup scans only &whereisit/&myfolder, not subdirectories.
+   Input files stored in subdirectories are not deleted by this step. */
 
 %let path=&whereisit/&myfolder;
 
@@ -1579,5 +1752,6 @@ rc = filename(fname, quote(cats("&path",'/',memname)));
 rc = fdelete(fname);
 rc = filename(fname);
 run;
+
 
 /* END OF PROGRAM */

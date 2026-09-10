@@ -1,0 +1,5282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+</head>
+<body class="body">
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.ROTATED3">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor1</th>
+<th class="r header" scope="col">Factor2</th>
+<th class="r header" scope="col">Factor3</th>
+<th class="r header" scope="col">Factor4</th>
+<th class="r header" scope="col">loaded</th>
+<th class="r header" scope="col">factor5</th>
+<th class="r header" scope="col">factor6</th>
+<th class="r header" scope="col">factor7</th>
+<th class="r header" scope="col">factor8</th>
+<th class="r header" scope="col">factor9</th>
+<th class="l header" scope="col">factor</th>
+<th class="r header" scope="col">pole</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">v001</td>
+<td class="r data" nowrap>-0.18206</td>
+<td class="r data" nowrap>-0.42037</td>
+<td class="r data" nowrap>-0.00406</td>
+<td class="r data" nowrap>-0.03012</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">v002</td>
+<td class="r data">0.26297</td>
+<td class="r data">0.06165</td>
+<td class="r data" nowrap>-0.26110</td>
+<td class="r data">0.05552</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">v003</td>
+<td class="r data" nowrap>-0.44863</td>
+<td class="r data">0.08435</td>
+<td class="r data" nowrap>-0.46435</td>
+<td class="r data">0.02001</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">v004</td>
+<td class="r data" nowrap>-0.28688</td>
+<td class="r data">0.18185</td>
+<td class="r data" nowrap>-0.08721</td>
+<td class="r data">0.07098</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">v005</td>
+<td class="r data">0.55063</td>
+<td class="r data">0.00571</td>
+<td class="r data" nowrap>-0.00997</td>
+<td class="r data">0.02428</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">v006</td>
+<td class="r data">0.17954</td>
+<td class="r data">0.37625</td>
+<td class="r data">0.17034</td>
+<td class="r data" nowrap>-0.00460</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">v007_1</td>
+<td class="r data">0.08199</td>
+<td class="r data">0.18126</td>
+<td class="r data" nowrap>-0.06279</td>
+<td class="r data" nowrap>-0.00175</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">v007_2</td>
+<td class="r data">0.01763</td>
+<td class="r data">0.07421</td>
+<td class="r data" nowrap>-0.13646</td>
+<td class="r data">0.13002</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">v007_3</td>
+<td class="r data">0.12976</td>
+<td class="r data">0.01283</td>
+<td class="r data" nowrap>-0.00212</td>
+<td class="r data" nowrap>-0.08738</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">v007_4</td>
+<td class="r data">0.04792</td>
+<td class="r data">0.02374</td>
+<td class="r data">0.00065</td>
+<td class="r data">0.02364</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">v008</td>
+<td class="r data">0.18650</td>
+<td class="r data">0.10666</td>
+<td class="r data">0.02803</td>
+<td class="r data">0.02061</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">v009</td>
+<td class="r data">0.82404</td>
+<td class="r data" nowrap>-0.02736</td>
+<td class="r data" nowrap>-0.03667</td>
+<td class="r data" nowrap>-0.10715</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">v010</td>
+<td class="r data">0.50353</td>
+<td class="r data">0.23256</td>
+<td class="r data" nowrap>-0.19881</td>
+<td class="r data">0.18778</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">v011</td>
+<td class="r data">0.62010</td>
+<td class="r data">0.12860</td>
+<td class="r data">0.01626</td>
+<td class="r data" nowrap>-0.11567</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">v012</td>
+<td class="r data">0.60506</td>
+<td class="r data" nowrap>-0.00097</td>
+<td class="r data" nowrap>-0.02233</td>
+<td class="r data" nowrap>-0.06153</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">v013</td>
+<td class="r data">0.59191</td>
+<td class="r data">0.11901</td>
+<td class="r data" nowrap>-0.01737</td>
+<td class="r data" nowrap>-0.07086</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">v014</td>
+<td class="r data">0.36280</td>
+<td class="r data">0.17424</td>
+<td class="r data" nowrap>-0.24058</td>
+<td class="r data">0.10922</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">v015</td>
+<td class="r data">0.16752</td>
+<td class="r data">0.06667</td>
+<td class="r data">0.01926</td>
+<td class="r data">0.02396</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">v016</td>
+<td class="r data" nowrap>-0.01419</td>
+<td class="r data">0.41994</td>
+<td class="r data">0.21190</td>
+<td class="r data">0.08973</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">v017</td>
+<td class="r data">0.48687</td>
+<td class="r data">0.28655</td>
+<td class="r data">0.06188</td>
+<td class="r data">0.01343</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">v018</td>
+<td class="r data">0.09839</td>
+<td class="r data">0.71962</td>
+<td class="r data">0.04367</td>
+<td class="r data" nowrap>-0.06992</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">v019</td>
+<td class="r data">0.56981</td>
+<td class="r data">0.08614</td>
+<td class="r data" nowrap>-0.11207</td>
+<td class="r data" nowrap>-0.16626</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">v020</td>
+<td class="r data">0.29591</td>
+<td class="r data">0.44463</td>
+<td class="r data">0.12627</td>
+<td class="r data">0.03919</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">v021</td>
+<td class="r data">0.00290</td>
+<td class="r data">0.33254</td>
+<td class="r data" nowrap>-0.00853</td>
+<td class="r data">0.06302</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">v022</td>
+<td class="r data">0.33630</td>
+<td class="r data">0.42402</td>
+<td class="r data">0.17403</td>
+<td class="r data" nowrap>-0.03354</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">v023</td>
+<td class="r data">0.77997</td>
+<td class="r data">0.06475</td>
+<td class="r data" nowrap>-0.02165</td>
+<td class="r data" nowrap>-0.05568</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">v024</td>
+<td class="r data">0.66084</td>
+<td class="r data" nowrap>-0.02536</td>
+<td class="r data" nowrap>-0.07503</td>
+<td class="r data" nowrap>-0.05981</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">v025</td>
+<td class="r data">0.50900</td>
+<td class="r data" nowrap>-0.02085</td>
+<td class="r data" nowrap>-0.05489</td>
+<td class="r data" nowrap>-0.24140</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">v026</td>
+<td class="r data">0.57105</td>
+<td class="r data">0.08747</td>
+<td class="r data">0.03444</td>
+<td class="r data">0.02356</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">v027</td>
+<td class="r data">0.41267</td>
+<td class="r data" nowrap>-0.17553</td>
+<td class="r data" nowrap>-0.36886</td>
+<td class="r data">0.08714</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">v028</td>
+<td class="r data" nowrap>-0.68386</td>
+<td class="r data" nowrap>-0.18942</td>
+<td class="r data">0.18392</td>
+<td class="r data" nowrap>-0.08967</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">v029</td>
+<td class="r data" nowrap>-0.63547</td>
+<td class="r data" nowrap>-0.12003</td>
+<td class="r data" nowrap>-0.08842</td>
+<td class="r data" nowrap>-0.01804</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">v030</td>
+<td class="r data">0.09690</td>
+<td class="r data" nowrap>-0.43678</td>
+<td class="r data">0.17405</td>
+<td class="r data" nowrap>-0.16023</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">v031</td>
+<td class="r data">0.27632</td>
+<td class="r data">0.04962</td>
+<td class="r data">0.15439</td>
+<td class="r data">0.11877</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">v032</td>
+<td class="r data" nowrap>-0.41773</td>
+<td class="r data" nowrap>-0.15048</td>
+<td class="r data">0.09600</td>
+<td class="r data" nowrap>-0.05269</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">v033</td>
+<td class="r data" nowrap>-0.07974</td>
+<td class="r data">0.31677</td>
+<td class="r data" nowrap>-0.11741</td>
+<td class="r data">0.00651</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">v034</td>
+<td class="r data" nowrap>-0.09064</td>
+<td class="r data">0.18896</td>
+<td class="r data" nowrap>-0.20213</td>
+<td class="r data">0.23681</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">v035</td>
+<td class="r data" nowrap>-0.69497</td>
+<td class="r data" nowrap>-0.24321</td>
+<td class="r data">0.04984</td>
+<td class="r data" nowrap>-0.10523</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">v036</td>
+<td class="r data" nowrap>-0.18146</td>
+<td class="r data">0.01625</td>
+<td class="r data" nowrap>-0.07740</td>
+<td class="r data" nowrap>-0.11375</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">v037</td>
+<td class="r data" nowrap>-0.68338</td>
+<td class="r data" nowrap>-0.23507</td>
+<td class="r data">0.03340</td>
+<td class="r data" nowrap>-0.07728</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">v038</td>
+<td class="r data" nowrap>-0.03368</td>
+<td class="r data">0.25226</td>
+<td class="r data" nowrap>-0.08631</td>
+<td class="r data" nowrap>-0.03037</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">v039</td>
+<td class="r data" nowrap>-0.37913</td>
+<td class="r data" nowrap>-0.03647</td>
+<td class="r data">0.18643</td>
+<td class="r data" nowrap>-0.00141</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">v040</td>
+<td class="r data" nowrap>-0.00528</td>
+<td class="r data" nowrap>-0.37852</td>
+<td class="r data">0.37278</td>
+<td class="r data">0.24370</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">v041</td>
+<td class="r data" nowrap>-0.29683</td>
+<td class="r data" nowrap>-0.13075</td>
+<td class="r data" nowrap>-0.04024</td>
+<td class="r data" nowrap>-0.04224</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">v042</td>
+<td class="r data" nowrap>-0.30588</td>
+<td class="r data" nowrap>-0.24873</td>
+<td class="r data" nowrap>-0.38551</td>
+<td class="r data" nowrap>-0.10311</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">v043</td>
+<td class="r data">0.28760</td>
+<td class="r data">0.08850</td>
+<td class="r data" nowrap>-0.02816</td>
+<td class="r data">0.22905</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">v044</td>
+<td class="r data" nowrap>-0.60642</td>
+<td class="r data" nowrap>-0.16728</td>
+<td class="r data" nowrap>-0.21764</td>
+<td class="r data" nowrap>-0.09204</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">v045</td>
+<td class="r data" nowrap>-0.29160</td>
+<td class="r data" nowrap>-0.13154</td>
+<td class="r data" nowrap>-0.27806</td>
+<td class="r data" nowrap>-0.02252</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">v046</td>
+<td class="r data" nowrap>-0.05393</td>
+<td class="r data">0.29593</td>
+<td class="r data" nowrap>-0.18140</td>
+<td class="r data">0.00991</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">v047</td>
+<td class="r data" nowrap>-0.17964</td>
+<td class="r data" nowrap>-0.07083</td>
+<td class="r data" nowrap>-0.36331</td>
+<td class="r data" nowrap>-0.00533</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">v048</td>
+<td class="r data">0.29955</td>
+<td class="r data" nowrap>-0.08673</td>
+<td class="r data" nowrap>-0.13052</td>
+<td class="r data">0.09700</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">v049</td>
+<td class="r data" nowrap>-0.16148</td>
+<td class="r data">0.01728</td>
+<td class="r data" nowrap>-0.16099</td>
+<td class="r data">0.02554</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">v050</td>
+<td class="r data" nowrap>-0.12210</td>
+<td class="r data">0.26213</td>
+<td class="r data" nowrap>-0.30005</td>
+<td class="r data">0.07877</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">v051</td>
+<td class="r data" nowrap>-0.52357</td>
+<td class="r data" nowrap>-0.31839</td>
+<td class="r data" nowrap>-0.32387</td>
+<td class="r data" nowrap>-0.11399</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">v052</td>
+<td class="r data">0.10355</td>
+<td class="r data">0.21628</td>
+<td class="r data" nowrap>-0.12259</td>
+<td class="r data">0.04280</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">v053</td>
+<td class="r data" nowrap>-0.55695</td>
+<td class="r data" nowrap>-0.20228</td>
+<td class="r data" nowrap>-0.15061</td>
+<td class="r data" nowrap>-0.07791</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">v054</td>
+<td class="r data" nowrap>-0.52834</td>
+<td class="r data" nowrap>-0.11381</td>
+<td class="r data" nowrap>-0.31211</td>
+<td class="r data" nowrap>-0.03591</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">v055</td>
+<td class="r data">0.71288</td>
+<td class="r data" nowrap>-0.32858</td>
+<td class="r data">0.32331</td>
+<td class="r data" nowrap>-0.08424</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">v056</td>
+<td class="r data">0.12260</td>
+<td class="r data">0.54246</td>
+<td class="r data">0.32277</td>
+<td class="r data">0.17253</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">v057</td>
+<td class="r data">0.21834</td>
+<td class="r data">0.42963</td>
+<td class="r data">0.11069</td>
+<td class="r data">0.24585</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">v058</td>
+<td class="r data">0.59868</td>
+<td class="r data" nowrap>-0.25724</td>
+<td class="r data" nowrap>-0.09947</td>
+<td class="r data">0.20006</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">v059</td>
+<td class="r data">0.58236</td>
+<td class="r data" nowrap>-0.02201</td>
+<td class="r data" nowrap>-0.05537</td>
+<td class="r data">0.11391</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">v060</td>
+<td class="r data">0.48388</td>
+<td class="r data" nowrap>-0.04288</td>
+<td class="r data" nowrap>-0.18380</td>
+<td class="r data">0.21652</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">v061</td>
+<td class="r data">0.69940</td>
+<td class="r data" nowrap>-0.05450</td>
+<td class="r data" nowrap>-0.10027</td>
+<td class="r data" nowrap>-0.03381</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">v062</td>
+<td class="r data" nowrap>-0.19620</td>
+<td class="r data" nowrap>-0.19484</td>
+<td class="r data">0.18530</td>
+<td class="r data" nowrap>-0.08942</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">v063</td>
+<td class="r data">0.22002</td>
+<td class="r data">0.28292</td>
+<td class="r data">0.04739</td>
+<td class="r data">0.15427</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">v064</td>
+<td class="r data">0.37567</td>
+<td class="r data">0.14766</td>
+<td class="r data">0.02975</td>
+<td class="r data" nowrap>-0.15022</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">v065</td>
+<td class="r data" nowrap>-0.04739</td>
+<td class="r data" nowrap>-0.00892</td>
+<td class="r data">0.76363</td>
+<td class="r data" nowrap>-0.02720</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">v066</td>
+<td class="r data">0.16704</td>
+<td class="r data" nowrap>-0.37912</td>
+<td class="r data">0.46564</td>
+<td class="r data" nowrap>-0.21128</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">v067</td>
+<td class="r data">0.25178</td>
+<td class="r data">0.15653</td>
+<td class="r data" nowrap>-0.14846</td>
+<td class="r data" nowrap>-0.04221</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">v068</td>
+<td class="r data" nowrap>-0.12662</td>
+<td class="r data" nowrap>-0.17826</td>
+<td class="r data">0.30935</td>
+<td class="r data" nowrap>-0.02373</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">v069</td>
+<td class="r data">0.72892</td>
+<td class="r data">0.06574</td>
+<td class="r data" nowrap>-0.10261</td>
+<td class="r data">0.01705</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">v070</td>
+<td class="r data">0.24308</td>
+<td class="r data" nowrap>-0.30754</td>
+<td class="r data">0.00874</td>
+<td class="r data">0.18983</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">v071</td>
+<td class="r data">0.46543</td>
+<td class="r data" nowrap>-0.31915</td>
+<td class="r data" nowrap>-0.03195</td>
+<td class="r data">0.04585</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">v072</td>
+<td class="r data">0.49699</td>
+<td class="r data" nowrap>-0.05737</td>
+<td class="r data" nowrap>-0.13035</td>
+<td class="r data">0.13145</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">v073</td>
+<td class="r data" nowrap>-0.08609</td>
+<td class="r data" nowrap>-0.19549</td>
+<td class="r data">0.08229</td>
+<td class="r data">0.12654</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">v074</td>
+<td class="r data" nowrap>-0.11526</td>
+<td class="r data" nowrap>-0.05161</td>
+<td class="r data">0.56353</td>
+<td class="r data">0.06907</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">v075</td>
+<td class="r data" nowrap>-0.13761</td>
+<td class="r data" nowrap>-0.04478</td>
+<td class="r data">0.52755</td>
+<td class="r data" nowrap>-0.14413</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">v076</td>
+<td class="r data" nowrap>-0.02945</td>
+<td class="r data">0.01014</td>
+<td class="r data">0.26238</td>
+<td class="r data">0.01572</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">v077</td>
+<td class="r data">0.16356</td>
+<td class="r data">0.02378</td>
+<td class="r data">0.38908</td>
+<td class="r data">0.05654</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">v078</td>
+<td class="r data">0.10138</td>
+<td class="r data" nowrap>-0.08441</td>
+<td class="r data" nowrap>-0.00584</td>
+<td class="r data">0.10761</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">v079</td>
+<td class="r data" nowrap>-0.20287</td>
+<td class="r data">0.28475</td>
+<td class="r data">0.58524</td>
+<td class="r data" nowrap>-0.06560</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">v080</td>
+<td class="r data">0.77511</td>
+<td class="r data" nowrap>-0.23594</td>
+<td class="r data" nowrap>-0.26869</td>
+<td class="r data">0.12878</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">v081</td>
+<td class="r data">0.75809</td>
+<td class="r data" nowrap>-0.26056</td>
+<td class="r data" nowrap>-0.22148</td>
+<td class="r data">0.17306</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">v082</td>
+<td class="r data">0.41504</td>
+<td class="r data" nowrap>-0.19243</td>
+<td class="r data" nowrap>-0.14011</td>
+<td class="r data">0.18118</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">v083</td>
+<td class="r data">0.09510</td>
+<td class="r data">0.05167</td>
+<td class="r data">0.12254</td>
+<td class="r data" nowrap>-0.05722</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">v084</td>
+<td class="r data">0.35057</td>
+<td class="r data">0.21249</td>
+<td class="r data">0.03593</td>
+<td class="r data" nowrap>-0.16463</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">v085</td>
+<td class="r data">0.22304</td>
+<td class="r data">0.00106</td>
+<td class="r data">0.12562</td>
+<td class="r data">0.14539</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">v086</td>
+<td class="r data">0.44184</td>
+<td class="r data" nowrap>-0.03619</td>
+<td class="r data" nowrap>-0.04424</td>
+<td class="r data" nowrap>-0.17233</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">v087</td>
+<td class="r data">0.25652</td>
+<td class="r data">0.02400</td>
+<td class="r data" nowrap>-0.03840</td>
+<td class="r data" nowrap>-0.13486</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">v088</td>
+<td class="r data" nowrap>-0.21441</td>
+<td class="r data">0.21038</td>
+<td class="r data">0.14810</td>
+<td class="r data">0.26738</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">v089</td>
+<td class="r data">0.32767</td>
+<td class="r data" nowrap>-0.21937</td>
+<td class="r data">0.03122</td>
+<td class="r data">0.18679</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">v090</td>
+<td class="r data">0.19762</td>
+<td class="r data">0.08612</td>
+<td class="r data">0.08942</td>
+<td class="r data">0.00879</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">v091</td>
+<td class="r data" nowrap>-0.09149</td>
+<td class="r data">0.07865</td>
+<td class="r data" nowrap>-0.06897</td>
+<td class="r data">0.12846</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">v092</td>
+<td class="r data">0.19016</td>
+<td class="r data">0.41607</td>
+<td class="r data">0.07780</td>
+<td class="r data" nowrap>-0.09717</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">v093</td>
+<td class="r data">0.26734</td>
+<td class="r data" nowrap>-0.09089</td>
+<td class="r data" nowrap>-0.11341</td>
+<td class="r data">0.02606</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">v094</td>
+<td class="r data" nowrap>-0.04173</td>
+<td class="r data" nowrap>-0.11432</td>
+<td class="r data">0.11100</td>
+<td class="r data" nowrap>-0.01448</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">v095</td>
+<td class="r data" nowrap>-0.35301</td>
+<td class="r data">0.18628</td>
+<td class="r data">0.45712</td>
+<td class="r data">0.10856</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">v096</td>
+<td class="r data" nowrap>-0.22369</td>
+<td class="r data">0.32593</td>
+<td class="r data" nowrap>-0.07206</td>
+<td class="r data">0.36981</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">v097</td>
+<td class="r data" nowrap>-0.03403</td>
+<td class="r data">0.32749</td>
+<td class="r data">0.07147</td>
+<td class="r data">0.31796</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">v098</td>
+<td class="r data">0.23696</td>
+<td class="r data" nowrap>-0.25569</td>
+<td class="r data">0.65907</td>
+<td class="r data" nowrap>-0.07305</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">v099</td>
+<td class="r data">0.23017</td>
+<td class="r data">0.17351</td>
+<td class="r data">0.06180</td>
+<td class="r data" nowrap>-0.04599</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="l data">v100</td>
+<td class="r data">0.21967</td>
+<td class="r data">0.39400</td>
+<td class="r data" nowrap>-0.12220</td>
+<td class="r data" nowrap>-0.31122</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="l data">v101</td>
+<td class="r data" nowrap>-0.27545</td>
+<td class="r data" nowrap>-0.03287</td>
+<td class="r data">0.31467</td>
+<td class="r data">0.18839</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="l data">v102</td>
+<td class="r data">0.75861</td>
+<td class="r data" nowrap>-0.04231</td>
+<td class="r data">0.23376</td>
+<td class="r data">0.12173</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="l data">v103</td>
+<td class="r data" nowrap>-0.17995</td>
+<td class="r data">0.06927</td>
+<td class="r data">0.15986</td>
+<td class="r data">0.07498</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="l data">v104</td>
+<td class="r data" nowrap>-0.31434</td>
+<td class="r data">0.15481</td>
+<td class="r data">0.45281</td>
+<td class="r data">0.07804</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="l data">v105</td>
+<td class="r data" nowrap>-0.02790</td>
+<td class="r data">0.04383</td>
+<td class="r data" nowrap>-0.01492</td>
+<td class="r data" nowrap>-0.01695</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="l data">v106</td>
+<td class="r data">0.44220</td>
+<td class="r data">0.10941</td>
+<td class="r data" nowrap>-0.00821</td>
+<td class="r data">0.08972</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="l data">v107</td>
+<td class="r data">0.46711</td>
+<td class="r data">0.01911</td>
+<td class="r data" nowrap>-0.07163</td>
+<td class="r data" nowrap>-0.01468</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="l data">v108</td>
+<td class="r data" nowrap>-0.12762</td>
+<td class="r data">0.08237</td>
+<td class="r data" nowrap>-0.06788</td>
+<td class="r data">0.01129</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="l data">v109</td>
+<td class="r data">0.36544</td>
+<td class="r data">0.38331</td>
+<td class="r data" nowrap>-0.00325</td>
+<td class="r data" nowrap>-0.07584</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="l data">v110</td>
+<td class="r data" nowrap>-0.17006</td>
+<td class="r data" nowrap>-0.00424</td>
+<td class="r data">0.39697</td>
+<td class="r data">0.00786</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="l data">v111</td>
+<td class="r data">0.56856</td>
+<td class="r data">0.12886</td>
+<td class="r data">0.18523</td>
+<td class="r data" nowrap>-0.05039</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="l data">v112</td>
+<td class="r data">0.05899</td>
+<td class="r data">0.05282</td>
+<td class="r data">0.02838</td>
+<td class="r data">0.18801</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="l data">v113</td>
+<td class="r data">0.03267</td>
+<td class="r data">0.12352</td>
+<td class="r data">0.21462</td>
+<td class="r data" nowrap>-0.04496</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="l data">v114</td>
+<td class="r data">0.28237</td>
+<td class="r data">0.25551</td>
+<td class="r data" nowrap>-0.12050</td>
+<td class="r data" nowrap>-0.02434</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="l data">v115</td>
+<td class="r data" nowrap>-0.01524</td>
+<td class="r data">0.11291</td>
+<td class="r data" nowrap>-0.04811</td>
+<td class="r data">0.05861</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="l data">v116</td>
+<td class="r data">0.02005</td>
+<td class="r data">0.16583</td>
+<td class="r data" nowrap>-0.06470</td>
+<td class="r data">0.08797</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="l data">v117</td>
+<td class="r data">0.20376</td>
+<td class="r data">0.02237</td>
+<td class="r data" nowrap>-0.05219</td>
+<td class="r data">0.06727</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="l data">v118</td>
+<td class="r data">0.53278</td>
+<td class="r data">0.12647</td>
+<td class="r data">0.20394</td>
+<td class="r data" nowrap>-0.05710</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="l data">v119</td>
+<td class="r data">0.31697</td>
+<td class="r data">0.04611</td>
+<td class="r data" nowrap>-0.00397</td>
+<td class="r data">0.03127</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="l data">v120</td>
+<td class="r data">0.06628</td>
+<td class="r data">0.03761</td>
+<td class="r data">0.02427</td>
+<td class="r data">0.17175</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="l data">v121</td>
+<td class="r data">0.02667</td>
+<td class="r data">0.17057</td>
+<td class="r data" nowrap>-0.06066</td>
+<td class="r data">0.09075</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="l data">v122</td>
+<td class="r data" nowrap>-0.02057</td>
+<td class="r data">0.02745</td>
+<td class="r data">0.01126</td>
+<td class="r data">0.08086</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="l data">v123</td>
+<td class="r data">0.17781</td>
+<td class="r data">0.08651</td>
+<td class="r data">0.09143</td>
+<td class="r data">0.05520</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="l data">v124</td>
+<td class="r data">0.09278</td>
+<td class="r data">0.16828</td>
+<td class="r data">0.05161</td>
+<td class="r data">0.03620</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<td class="l data">v125</td>
+<td class="r data">0.29193</td>
+<td class="r data">0.36455</td>
+<td class="r data">0.05952</td>
+<td class="r data" nowrap>-0.08290</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<td class="l data">v126</td>
+<td class="r data" nowrap>-0.14721</td>
+<td class="r data">0.11921</td>
+<td class="r data">0.14951</td>
+<td class="r data">0.07064</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<td class="l data">v127</td>
+<td class="r data" nowrap>-0.16100</td>
+<td class="r data">0.29561</td>
+<td class="r data" nowrap>-0.01638</td>
+<td class="r data" nowrap>-0.11293</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<td class="l data">v128</td>
+<td class="r data" nowrap>-0.23162</td>
+<td class="r data">0.24575</td>
+<td class="r data" nowrap>-0.17684</td>
+<td class="r data">0.13778</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<td class="l data">v129</td>
+<td class="r data" nowrap>-0.47034</td>
+<td class="r data">0.11746</td>
+<td class="r data" nowrap>-0.45392</td>
+<td class="r data">0.04207</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<td class="l data">v130</td>
+<td class="r data">0.06181</td>
+<td class="r data">0.35926</td>
+<td class="r data" nowrap>-0.03007</td>
+<td class="r data">0.02371</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">134</th>
+<td class="l data">v131</td>
+<td class="r data" nowrap>-0.18795</td>
+<td class="r data" nowrap>-0.60546</td>
+<td class="r data">0.10605</td>
+<td class="r data" nowrap>-0.18524</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">135</th>
+<td class="l data">v132</td>
+<td class="r data" nowrap>-0.02973</td>
+<td class="r data">0.23443</td>
+<td class="r data">0.08355</td>
+<td class="r data" nowrap>-0.01665</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">136</th>
+<td class="l data">v133</td>
+<td class="r data">0.30201</td>
+<td class="r data">0.10583</td>
+<td class="r data" nowrap>-0.00733</td>
+<td class="r data">0.05897</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">137</th>
+<td class="l data">v134</td>
+<td class="r data">0.05962</td>
+<td class="r data">0.36926</td>
+<td class="r data">0.12227</td>
+<td class="r data">0.12263</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">138</th>
+<td class="l data">v135</td>
+<td class="r data">0.21208</td>
+<td class="r data">0.05924</td>
+<td class="r data">0.13082</td>
+<td class="r data">0.02498</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">139</th>
+<td class="l data">v136</td>
+<td class="r data" nowrap>-0.10439</td>
+<td class="r data" nowrap>-0.16959</td>
+<td class="r data">0.22538</td>
+<td class="r data">0.06525</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">140</th>
+<td class="l data">v137</td>
+<td class="r data">0.27576</td>
+<td class="r data" nowrap>-0.34242</td>
+<td class="r data">0.27125</td>
+<td class="r data">0.00172</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">141</th>
+<td class="l data">v138</td>
+<td class="r data">0.00313</td>
+<td class="r data">0.09826</td>
+<td class="r data">0.01089</td>
+<td class="r data">0.01153</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">142</th>
+<td class="l data">v139</td>
+<td class="r data" nowrap>-0.08541</td>
+<td class="r data">0.32427</td>
+<td class="r data">0.05228</td>
+<td class="r data">0.10488</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">143</th>
+<td class="l data">v140</td>
+<td class="r data" nowrap>-0.17338</td>
+<td class="r data">0.01511</td>
+<td class="r data">0.11640</td>
+<td class="r data">0.00144</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">144</th>
+<td class="l data">v141</td>
+<td class="r data">0.14017</td>
+<td class="r data" nowrap>-0.02309</td>
+<td class="r data">0.08779</td>
+<td class="r data">0.76004</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">145</th>
+<td class="l data">v142</td>
+<td class="r data" nowrap>-0.19942</td>
+<td class="r data">0.06701</td>
+<td class="r data">0.35032</td>
+<td class="r data">0.16226</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">146</th>
+<td class="l data">v143</td>
+<td class="r data" nowrap>-0.39646</td>
+<td class="r data" nowrap>-0.47539</td>
+<td class="r data" nowrap>-0.03430</td>
+<td class="r data" nowrap>-0.14762</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">147</th>
+<td class="l data">v144</td>
+<td class="r data">0.55050</td>
+<td class="r data" nowrap>-0.23359</td>
+<td class="r data">0.27097</td>
+<td class="r data" nowrap>-0.10631</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">148</th>
+<td class="l data">v145</td>
+<td class="r data" nowrap>-0.09015</td>
+<td class="r data">0.20078</td>
+<td class="r data">0.01963</td>
+<td class="r data">0.10693</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">149</th>
+<td class="l data">v146</td>
+<td class="r data" nowrap>-0.02132</td>
+<td class="r data">0.06703</td>
+<td class="r data" nowrap>-0.01487</td>
+<td class="r data">0.06222</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">150</th>
+<td class="l data">v147</td>
+<td class="r data">0.09649</td>
+<td class="r data">0.72368</td>
+<td class="r data">0.04537</td>
+<td class="r data" nowrap>-0.07429</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">151</th>
+<td class="l data">v148</td>
+<td class="r data">0.12720</td>
+<td class="r data" nowrap>-0.04970</td>
+<td class="r data">0.08704</td>
+<td class="r data">0.76781</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">152</th>
+<td class="l data">v149</td>
+<td class="r data">0.38053</td>
+<td class="r data">0.06088</td>
+<td class="r data" nowrap>-0.08249</td>
+<td class="r data" nowrap>-0.10055</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">153</th>
+<td class="l data">v150</td>
+<td class="r data">0.24064</td>
+<td class="r data" nowrap>-0.25859</td>
+<td class="r data">0.63184</td>
+<td class="r data" nowrap>-0.06735</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">154</th>
+<td class="l data">v151</td>
+<td class="r data">0.26143</td>
+<td class="r data">0.33098</td>
+<td class="r data" nowrap>-0.17095</td>
+<td class="r data" nowrap>-0.32678</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">155</th>
+<td class="l data">v152</td>
+<td class="r data" nowrap>-0.04734</td>
+<td class="r data" nowrap>-0.07962</td>
+<td class="r data" nowrap>-0.04420</td>
+<td class="r data" nowrap>-0.00520</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">156</th>
+<td class="l data">v153</td>
+<td class="r data">0.24374</td>
+<td class="r data">0.15499</td>
+<td class="r data" nowrap>-0.07803</td>
+<td class="r data" nowrap>-0.10446</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">157</th>
+<td class="l data">v154</td>
+<td class="r data">0.75768</td>
+<td class="r data" nowrap>-0.00145</td>
+<td class="r data" nowrap>-0.02067</td>
+<td class="r data" nowrap>-0.07806</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">158</th>
+<td class="l data">v155</td>
+<td class="r data">0.15638</td>
+<td class="r data">0.10589</td>
+<td class="r data">0.00795</td>
+<td class="r data" nowrap>-0.04814</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">159</th>
+<td class="l data">v156</td>
+<td class="r data" nowrap>-0.12789</td>
+<td class="r data">0.24274</td>
+<td class="r data" nowrap>-0.23007</td>
+<td class="r data">0.41058</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">160</th>
+<td class="l data">v157</td>
+<td class="r data">0.07949</td>
+<td class="r data">0.17244</td>
+<td class="r data">0.07874</td>
+<td class="r data" nowrap>-0.05553</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">161</th>
+<td class="l data">v158</td>
+<td class="r data">0.09331</td>
+<td class="r data">0.09130</td>
+<td class="r data">0.03309</td>
+<td class="r data" nowrap>-0.08815</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">162</th>
+<td class="l data">v159</td>
+<td class="r data">0.27831</td>
+<td class="r data">0.08937</td>
+<td class="r data">0.02906</td>
+<td class="r data" nowrap>-0.12759</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">163</th>
+<td class="l data">v160</td>
+<td class="r data">0.43898</td>
+<td class="r data">0.07029</td>
+<td class="r data" nowrap>-0.04510</td>
+<td class="r data" nowrap>-0.14581</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">164</th>
+<td class="l data">v161</td>
+<td class="r data">0.24537</td>
+<td class="r data">0.02343</td>
+<td class="r data" nowrap>-0.08039</td>
+<td class="r data" nowrap>-0.02901</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">165</th>
+<td class="l data">v162</td>
+<td class="r data" nowrap>-0.03932</td>
+<td class="r data">0.63951</td>
+<td class="r data">0.08082</td>
+<td class="r data" nowrap>-0.09035</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">166</th>
+<td class="l data">v163</td>
+<td class="r data">0.35317</td>
+<td class="r data">0.27755</td>
+<td class="r data" nowrap>-0.02772</td>
+<td class="r data" nowrap>-0.03765</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">167</th>
+<td class="l data">v164</td>
+<td class="r data">0.02438</td>
+<td class="r data">0.36351</td>
+<td class="r data">0.04784</td>
+<td class="r data">0.01673</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">168</th>
+<td class="l data">v165</td>
+<td class="r data" nowrap>-0.26044</td>
+<td class="r data" nowrap>-0.10881</td>
+<td class="r data">0.04043</td>
+<td class="r data">0.08834</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">169</th>
+<td class="l data">v166</td>
+<td class="r data">0.14498</td>
+<td class="r data">0.00082</td>
+<td class="r data" nowrap>-0.06170</td>
+<td class="r data">0.01687</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">170</th>
+<td class="l data">v167</td>
+<td class="r data">0.01664</td>
+<td class="r data" nowrap>-0.23752</td>
+<td class="r data">0.24265</td>
+<td class="r data">0.35069</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">171</th>
+<td class="l data">v168</td>
+<td class="r data">0.35901</td>
+<td class="r data" nowrap>-0.02788</td>
+<td class="r data" nowrap>-0.01175</td>
+<td class="r data">0.38467</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">172</th>
+<td class="l data">v169</td>
+<td class="r data">0.10786</td>
+<td class="r data" nowrap>-0.03217</td>
+<td class="r data" nowrap>-0.03094</td>
+<td class="r data">0.14783</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">173</th>
+<td class="l data">v170</td>
+<td class="r data">0.02389</td>
+<td class="r data" nowrap>-0.06186</td>
+<td class="r data">0.03825</td>
+<td class="r data">0.07404</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">174</th>
+<td class="l data">v171</td>
+<td class="r data" nowrap>-0.25414</td>
+<td class="r data">0.14459</td>
+<td class="r data" nowrap>-0.08555</td>
+<td class="r data">0.35274</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">175</th>
+<td class="l data">v172</td>
+<td class="r data" nowrap>-0.12705</td>
+<td class="r data">0.06132</td>
+<td class="r data" nowrap>-0.08252</td>
+<td class="r data">0.22338</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">176</th>
+<td class="l data">v173</td>
+<td class="r data">0.00342</td>
+<td class="r data" nowrap>-0.02020</td>
+<td class="r data">0.05467</td>
+<td class="r data">0.05354</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">177</th>
+<td class="l data">v174</td>
+<td class="r data" nowrap>-0.02509</td>
+<td class="r data">0.07138</td>
+<td class="r data" nowrap>-0.06193</td>
+<td class="r data">0.18619</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">178</th>
+<td class="l data">v175</td>
+<td class="r data" nowrap>-0.06966</td>
+<td class="r data" nowrap>-0.00844</td>
+<td class="r data">0.02872</td>
+<td class="r data">0.13363</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">179</th>
+<td class="l data">v176</td>
+<td class="r data">0.26272</td>
+<td class="r data" nowrap>-0.04434</td>
+<td class="r data" nowrap>-0.17602</td>
+<td class="r data">0.02006</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">180</th>
+<td class="l data">v177</td>
+<td class="r data">0.03745</td>
+<td class="r data" nowrap>-0.00181</td>
+<td class="r data" nowrap>-0.09365</td>
+<td class="r data">0.02022</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">181</th>
+<td class="l data">v178</td>
+<td class="r data">0.19492</td>
+<td class="r data" nowrap>-0.06867</td>
+<td class="r data">0.08882</td>
+<td class="r data">0.65675</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">182</th>
+<td class="l data">v179</td>
+<td class="r data" nowrap>-0.08528</td>
+<td class="r data" nowrap>-0.00012</td>
+<td class="r data">0.00787</td>
+<td class="r data">0.40675</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">183</th>
+<td class="l data">v180</td>
+<td class="r data">0.05263</td>
+<td class="r data" nowrap>-0.03673</td>
+<td class="r data" nowrap>-0.00854</td>
+<td class="r data">0.05084</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">184</th>
+<td class="l data">v181</td>
+<td class="r data" nowrap>-0.06046</td>
+<td class="r data">0.04393</td>
+<td class="r data">0.03972</td>
+<td class="r data">0.07444</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">185</th>
+<td class="l data">v182</td>
+<td class="r data">0.45081</td>
+<td class="r data" nowrap>-0.09655</td>
+<td class="r data" nowrap>-0.08405</td>
+<td class="r data">0.09586</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">186</th>
+<td class="l data">v183</td>
+<td class="r data">0.40829</td>
+<td class="r data" nowrap>-0.11885</td>
+<td class="r data" nowrap>-0.07144</td>
+<td class="r data">0.02031</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">187</th>
+<td class="l data">v184</td>
+<td class="r data">0.28120</td>
+<td class="r data" nowrap>-0.01397</td>
+<td class="r data">0.01341</td>
+<td class="r data" nowrap>-0.06285</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">188</th>
+<td class="l data">v185</td>
+<td class="r data" nowrap>-0.15889</td>
+<td class="r data" nowrap>-0.17127</td>
+<td class="r data">0.78945</td>
+<td class="r data" nowrap>-0.04084</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">189</th>
+<td class="l data">v186</td>
+<td class="r data">0.03629</td>
+<td class="r data">0.02650</td>
+<td class="r data">0.03120</td>
+<td class="r data">0.10924</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">190</th>
+<td class="l data">v187</td>
+<td class="r data" nowrap>-0.25147</td>
+<td class="r data" nowrap>-0.15771</td>
+<td class="r data">0.08243</td>
+<td class="r data">0.08348</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">191</th>
+<td class="l data">v188</td>
+<td class="r data" nowrap>-0.01709</td>
+<td class="r data">0.05470</td>
+<td class="r data">0.03073</td>
+<td class="r data">0.00541</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">192</th>
+<td class="l data">v189</td>
+<td class="r data" nowrap>-0.22470</td>
+<td class="r data" nowrap>-0.33038</td>
+<td class="r data">0.07883</td>
+<td class="r data" nowrap>-0.09575</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data" nowrap>-1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">193</th>
+<td class="l data">v190</td>
+<td class="r data">0.11713</td>
+<td class="r data" nowrap>-0.03364</td>
+<td class="r data" nowrap>-0.00466</td>
+<td class="r data">0.07057</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">194</th>
+<td class="l data">v191</td>
+<td class="r data">0.02694</td>
+<td class="r data">0.14707</td>
+<td class="r data" nowrap>-0.10244</td>
+<td class="r data">0.04480</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">195</th>
+<td class="l data">v192</td>
+<td class="r data">0.27979</td>
+<td class="r data">0.09086</td>
+<td class="r data">0.06875</td>
+<td class="r data" nowrap>-0.08703</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">196</th>
+<td class="l data">v193</td>
+<td class="r data">0.07633</td>
+<td class="r data">0.04453</td>
+<td class="r data" nowrap>-0.03341</td>
+<td class="r data" nowrap>-0.04788</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">197</th>
+<td class="l data">v194</td>
+<td class="r data">0.02393</td>
+<td class="r data">0.08871</td>
+<td class="r data" nowrap>-0.05865</td>
+<td class="r data">0.03432</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">198</th>
+<td class="l data">v195</td>
+<td class="r data">0.55484</td>
+<td class="r data">0.28741</td>
+<td class="r data" nowrap>-0.09679</td>
+<td class="r data">0.04874</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">199</th>
+<td class="l data">v196</td>
+<td class="r data">0.02487</td>
+<td class="r data" nowrap>-0.01087</td>
+<td class="r data" nowrap>-0.25885</td>
+<td class="r data">0.35876</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f4</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">200</th>
+<td class="l data">v197</td>
+<td class="r data" nowrap>-0.06533</td>
+<td class="r data">0.04792</td>
+<td class="r data" nowrap>-0.03283</td>
+<td class="r data">0.06645</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">201</th>
+<td class="l data">v198</td>
+<td class="r data">0.28855</td>
+<td class="r data" nowrap>-0.00910</td>
+<td class="r data" nowrap>-0.01248</td>
+<td class="r data" nowrap>-0.08335</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">202</th>
+<td class="l data">v199</td>
+<td class="r data">0.23417</td>
+<td class="r data">0.10644</td>
+<td class="r data">0.03979</td>
+<td class="r data" nowrap>-0.19534</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">203</th>
+<td class="l data">v201</td>
+<td class="r data">0.13650</td>
+<td class="r data">0.08601</td>
+<td class="r data" nowrap>-0.04463</td>
+<td class="r data" nowrap>-0.00491</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">204</th>
+<td class="l data">v202</td>
+<td class="r data" nowrap>-0.07837</td>
+<td class="r data">0.25003</td>
+<td class="r data" nowrap>-0.01904</td>
+<td class="r data">0.11865</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">205</th>
+<td class="l data">v203</td>
+<td class="r data" nowrap>-0.23635</td>
+<td class="r data">0.21836</td>
+<td class="r data">0.33237</td>
+<td class="r data">0.18110</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f3</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">206</th>
+<td class="l data">v204</td>
+<td class="r data">0.23431</td>
+<td class="r data">0.05757</td>
+<td class="r data" nowrap>-0.03809</td>
+<td class="r data" nowrap>-0.02515</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">207</th>
+<td class="l data">v206</td>
+<td class="r data" nowrap>-0.00706</td>
+<td class="r data" nowrap>-0.04802</td>
+<td class="r data" nowrap>-0.08822</td>
+<td class="r data" nowrap>-0.01338</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">208</th>
+<td class="l data">v207</td>
+<td class="r data">0.25631</td>
+<td class="r data" nowrap>-0.00481</td>
+<td class="r data" nowrap>-0.06721</td>
+<td class="r data" nowrap>-0.04911</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">209</th>
+<td class="l data">v208</td>
+<td class="r data">0.37726</td>
+<td class="r data" nowrap>-0.03022</td>
+<td class="r data" nowrap>-0.04584</td>
+<td class="r data" nowrap>-0.08606</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">210</th>
+<td class="l data">v209</td>
+<td class="r data">0.58220</td>
+<td class="r data" nowrap>-0.06997</td>
+<td class="r data" nowrap>-0.13264</td>
+<td class="r data" nowrap>-0.17991</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f1</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">211</th>
+<td class="l data">v210</td>
+<td class="r data">0.13640</td>
+<td class="r data">0.02260</td>
+<td class="r data" nowrap>-0.07825</td>
+<td class="r data">0.06373</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">212</th>
+<td class="l data">v211</td>
+<td class="r data">0.13701</td>
+<td class="r data" nowrap>-0.04735</td>
+<td class="r data" nowrap>-0.00888</td>
+<td class="r data" nowrap>-0.05154</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">213</th>
+<td class="l data">v212</td>
+<td class="r data">0.13234</td>
+<td class="r data">0.01103</td>
+<td class="r data" nowrap>-0.01865</td>
+<td class="r data">0.04203</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">214</th>
+<td class="l data">v213</td>
+<td class="r data" nowrap>-0.06222</td>
+<td class="r data">0.21259</td>
+<td class="r data" nowrap>-0.00517</td>
+<td class="r data">0.10893</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">215</th>
+<td class="l data">v215</td>
+<td class="r data">0.11757</td>
+<td class="r data" nowrap>-0.04127</td>
+<td class="r data" nowrap>-0.01779</td>
+<td class="r data">0.04143</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">216</th>
+<td class="l data">v216</td>
+<td class="r data">0.24378</td>
+<td class="r data" nowrap>-0.01088</td>
+<td class="r data" nowrap>-0.07796</td>
+<td class="r data" nowrap>-0.13900</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">217</th>
+<td class="l data">v217</td>
+<td class="r data">0.23797</td>
+<td class="r data">0.04442</td>
+<td class="r data" nowrap>-0.03463</td>
+<td class="r data" nowrap>-0.11470</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">218</th>
+<td class="l data">v218</td>
+<td class="r data">0.10150</td>
+<td class="r data">0.00207</td>
+<td class="r data" nowrap>-0.01056</td>
+<td class="r data" nowrap>-0.04364</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">219</th>
+<td class="l data">v220</td>
+<td class="r data" nowrap>-0.01301</td>
+<td class="r data">0.01272</td>
+<td class="r data" nowrap>-0.00114</td>
+<td class="r data">0.05170</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">220</th>
+<td class="l data">v224</td>
+<td class="r data">0.28434</td>
+<td class="r data" nowrap>-0.04189</td>
+<td class="r data" nowrap>-0.00085</td>
+<td class="r data" nowrap>-0.07077</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">221</th>
+<td class="l data">v225</td>
+<td class="r data" nowrap>-0.00090</td>
+<td class="r data">0.03454</td>
+<td class="r data">0.00311</td>
+<td class="r data" nowrap>-0.00669</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">222</th>
+<td class="l data">v226</td>
+<td class="r data">0.01125</td>
+<td class="r data">0.04182</td>
+<td class="r data" nowrap>-0.00790</td>
+<td class="r data">0.07948</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">223</th>
+<td class="l data">v227</td>
+<td class="r data" nowrap>-0.00815</td>
+<td class="r data">0.47413</td>
+<td class="r data">0.07665</td>
+<td class="r data" nowrap>-0.06965</td>
+<td class="r data">1</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">f2</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">224</th>
+<td class="l data">v228</td>
+<td class="r data">0.10835</td>
+<td class="r data">0.22978</td>
+<td class="r data" nowrap>-0.05600</td>
+<td class="r data" nowrap>-0.02413</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">225</th>
+<td class="l data">v229</td>
+<td class="r data">0.26890</td>
+<td class="r data">0.00614</td>
+<td class="r data" nowrap>-0.05774</td>
+<td class="r data" nowrap>-0.14014</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="l data">&nbsp;</td>
+<td class="r data">.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

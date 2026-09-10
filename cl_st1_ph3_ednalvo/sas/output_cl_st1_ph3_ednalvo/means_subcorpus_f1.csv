@@ -1,0 +1,5 @@
+Effect,subcorpus,N,Mean f1,SD f1
+subcorpus,maiores_notas,250,8.2397295,35.1289261
+subcorpus,menores_notas,250,16.4458498,32.5812507
+subcorpus,menores_notas_gemini,250,-17.9969261,18.3261483
+subcorpus,menores_notas_gpt,250,-6.6886532,24.5237022

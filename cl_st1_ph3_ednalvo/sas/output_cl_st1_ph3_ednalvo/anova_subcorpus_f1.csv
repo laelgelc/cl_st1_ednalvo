@@ -1,0 +1,4 @@
+Dependent,Source,DF,SS,MS,FValue,ProbF
+f1,Model,3,176746.6368,58915.5456,72.90,<.0001
+f1,Error,996,804976.9188,808.2098,_,_
+f1,Corrected Total,999,981723.5555,_,_,_
