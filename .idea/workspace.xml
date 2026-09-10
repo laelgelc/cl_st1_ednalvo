@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c77f5fa0-7ae3-4c81-8402-39c9ac1a70c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/gelc_llm_taggers/tagset_ptbr_summary_variables.md" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/gelc_llm_taggers/tagset_ptbr_summary_variables.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/sas/cl_st1_ph3_ednalvo.sas" beforeDir="false" afterPath="$PROJECT_DIR$/cl_st1_ph3_ednalvo/sas/cl_st1_ph3_ednalvo.sas" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,23 +45,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3477893188788115" />
-      <entry key="MS500" value="2.9209827391839687" />
-      <entry key="S2" value="4.280247365691133" />
-      <entry key="S5" value="4.691316592069319" />
-      <entry key="S10" value="5.040145055373055" />
-      <entry key="S30" value="14.181602098108435" />
-      <entry key="S60" value="30.930179438945167" />
-      <entry key="M2" value="55.48917194215996" />
-      <entry key="M5" value="108.21622598638939" />
-      <entry key="M10" value="209.9318603004074" />
-      <entry key="M15" value="320.8837165391565" />
-      <entry key="M30" value="622.5101236705386" />
-      <entry key="H1" value="1117.2151879062956" />
-      <entry key="H2" value="1994.700867625243" />
-      <entry key="H4" value="3368.1616477889347" />
-      <entry key="D1" value="9346.712313178483" />
-      <entry key="W1" value="13746.93600280456" />
+      <entry key="MS100" value="1.6560802800727634" />
+      <entry key="MS500" value="4.868897452189827" />
+      <entry key="S2" value="7.5643621479216145" />
+      <entry key="S5" value="9.062594601791158" />
+      <entry key="S10" value="11.168121291007306" />
+      <entry key="S30" value="14.756229748839187" />
+      <entry key="S60" value="16.525071932745384" />
+      <entry key="M2" value="22.660869830763545" />
+      <entry key="M5" value="60.859090299936334" />
+      <entry key="M10" value="150.51657316570817" />
+      <entry key="M15" value="254.22692867490846" />
+      <entry key="M30" value="552.2006134604519" />
+      <entry key="H1" value="1052.9723402393843" />
+      <entry key="H2" value="1937.892535432884" />
+      <entry key="H4" value="3322.405071974127" />
+      <entry key="D1" value="9334.991899325536" />
+      <entry key="W1" value="13758.68298070128" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -70,36 +70,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="1.0366808327E-314" />
-      <entry key="M2" value="1.018175519768394E-157" />
-      <entry key="M5" value="1.600106800880606E-63" />
-      <entry key="M10" value="4.189178612737522E-32" />
-      <entry key="M15" value="1.324127819187311E-21" />
-      <entry key="M30" value="4.6652869517603406E-11" />
-      <entry key="H1" value="9.377819706009216E-6" />
-      <entry key="H2" value="0.004308655632520971" />
-      <entry key="H4" value="0.09653923021110927" />
-      <entry key="D1" value="1.8813341946810198" />
-      <entry key="W1" value="3.5725200304524365" />
+      <entry key="S60" value="1.05679426E-316" />
+      <entry key="M2" value="1.0280053069593822E-158" />
+      <entry key="M5" value="6.394668762222668E-64" />
+      <entry key="M10" value="2.6482770611620704E-32" />
+      <entry key="M15" value="9.753330420498149E-22" />
+      <entry key="M30" value="4.0039613364107937E-11" />
+      <entry key="H1" value="8.687756414894032E-6" />
+      <entry key="H2" value="0.00414710148358933" />
+      <entry key="H4" value="0.09471205739077859" />
+      <entry key="D1" value="1.8753522581086446" />
+      <entry key="W1" value="3.570895061522033" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3195549886825741" />
-      <entry key="MS500" value="2.9066002890840132" />
-      <entry key="S2" value="4.274698205740752" />
-      <entry key="S5" value="4.688860354239239" />
-      <entry key="S10" value="5.038818885722157" />
-      <entry key="S30" value="14.180279309681428" />
-      <entry key="S60" value="30.928700283891715" />
-      <entry key="M2" value="55.487841300945234" />
-      <entry key="M5" value="108.21520346155923" />
-      <entry key="M10" value="209.93087610568816" />
-      <entry key="M15" value="320.88267514869676" />
-      <entry key="M30" value="622.5089014204801" />
-      <entry key="H1" value="1117.2138043604173" />
-      <entry key="H2" value="1994.703671601954" />
-      <entry key="H4" value="3368.25673465444" />
-      <entry key="D1" value="9348.59284598537" />
-      <entry key="W1" value="13750.508347126599" />
+      <entry key="MS100" value="1.5868635698867921" />
+      <entry key="MS500" value="4.825154534624628" />
+      <entry key="S2" value="7.547798990363611" />
+      <entry key="S5" value="9.054729472192149" />
+      <entry key="S10" value="11.16329150671266" />
+      <entry key="S30" value="14.754106810720364" />
+      <entry key="S60" value="16.52389125107456" />
+      <entry key="M2" value="22.660122281940094" />
+      <entry key="M5" value="60.858428450566805" />
+      <entry key="M10" value="150.51582300533207" />
+      <entry key="M15" value="254.22607597097192" />
+      <entry key="M30" value="552.1995214980913" />
+      <entry key="H1" value="1052.9710369760323" />
+      <entry key="H2" value="1937.8952235013398" />
+      <entry key="H4" value="3322.498353766661" />
+      <entry key="D1" value="9336.866451845497" />
+      <entry key="W1" value="13762.253700005947" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -138,6 +138,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cl_st1_ph3_ednalvo/sas" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <steps>
@@ -189,7 +194,7 @@
       <workItem from="1788882670506" duration="25319000" />
       <workItem from="1788916885105" duration="14000" />
       <workItem from="1788946899775" duration="31216000" />
-      <workItem from="1789041914753" duration="9007000" />
+      <workItem from="1789041914753" duration="10557000" />
     </task>
     <servers />
   </component>

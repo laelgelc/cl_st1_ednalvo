@@ -18,8 +18,9 @@ libname gelc "&whereisit/&myfolder";
 /* This is needed to enable SGPLOT. Otherwise, SAS will throw up an error message */
 
 options fmtsearch=(work library);
+options validvarname=any;
 
-/* Extraction & Cutoff Parameters */
+/* Extraction & cutoff parameters */
 %let extractfactors = 5 ;
 %let factorvars = f1-f&extractfactors ;
 %let minloading = .3 ;
@@ -27,15 +28,29 @@ options fmtsearch=(work library);
 
 
 /* ==========================================================================
-   SECTION 2: DATA INGESTION (MAIORES_NOTAS, MENORES_NOTAS,
-   MENORES_NOTAS_GEMINI, AND MENORES_NOTAS_GPT)
+   SECTION 2: DATA INGESTION
+   MAIORES_NOTAS, MENORES_NOTAS, MENORES_NOTAS_GEMINI, MENORES_NOTAS_GPT
    ========================================================================== */
 
-/* 1A: Ingest maiores_notas Subcorpus */
-DATA corp_maiores_notas ;
+/* --------------------------------------------------------------------------
+   Macro to ingest one DFM TSV file.
+
+   Expected TSV structure:
+   filename    subcorpus    v001 ... v006    v007_1-v007_4    v008-v230    v900-v919
+
+   Notes:
+   - filename and subcorpus are character variables.
+   - all v* variables are numeric.
+   - DLM='09'x specifies tab-delimited input.
+   - FIRSTOBS=2 skips the header row.
+   -------------------------------------------------------------------------- */
+
+%macro import_dfm(dataset=, infile=);
+
+DATA &dataset ;
     LENGTH filename $150 subcorpus $50;
 
-    INFILE "&whereisit/&myfolder/sas/maiores_notas_counts.tsv"
+    INFILE "&whereisit/&myfolder/sas/&infile"
         DLM='09'x
         DSD
         FIRSTOBS=2
@@ -51,72 +66,42 @@ DATA corp_maiores_notas ;
     ;
 RUN;
 
-/* 1B: Ingest menores_notas Subcorpus */
-DATA corp_menores_notas ;
-    LENGTH filename $150 subcorpus $50;
+%mend import_dfm;
 
-    INFILE "&whereisit/&myfolder/sas/menores_notas_counts.tsv"
-        DLM='09'x
-        DSD
-        FIRSTOBS=2
-        TRUNCOVER;
 
-    INPUT
-        filename :$150.
-        subcorpus :$50.
-        v001-v006
-        v007_1-v007_4
-        v008-v230
-        v900-v919
-    ;
-RUN;
+/* 1A: Ingest maiores_notas subcorpus */
+%import_dfm(
+    dataset=corp_maiores_notas,
+    infile=maiores_notas_counts.tsv
+);
 
-/* 1C: Ingest menores_notas_gemini Subcorpus */
-DATA corp_menores_notas_gemini ;
-    LENGTH filename $150 subcorpus $50;
 
-    INFILE "&whereisit/&myfolder/sas/menores_notas_gemini_counts.tsv"
-        DLM='09'x
-        DSD
-        FIRSTOBS=2
-        TRUNCOVER;
+/* 1B: Ingest menores_notas subcorpus */
+%import_dfm(
+    dataset=corp_menores_notas,
+    infile=menores_notas_counts.tsv
+);
 
-    INPUT
-        filename :$150.
-        subcorpus :$50.
-        v001-v006
-        v007_1-v007_4
-        v008-v230
-        v900-v919
-    ;
-RUN;
 
-/* 1D: Ingest menores_notas_gpt Subcorpus */
-DATA corp_menores_notas_gpt ;
-    LENGTH filename $150 subcorpus $50;
+/* 1C: Ingest menores_notas_gemini subcorpus */
+%import_dfm(
+    dataset=corp_menores_notas_gemini,
+    infile=menores_notas_gemini_counts.tsv
+);
 
-    INFILE "&whereisit/&myfolder/sas/menores_notas_gpt_counts.tsv"
-        DLM='09'x
-        DSD
-        FIRSTOBS=2
-        TRUNCOVER;
 
-    INPUT
-        filename :$150.
-        subcorpus :$50.
-        v001-v006
-        v007_1-v007_4
-        v008-v230
-        v900-v919
-    ;
-RUN;
+/* 1D: Ingest menores_notas_gpt subcorpus */
+%import_dfm(
+    dataset=corp_menores_notas_gpt,
+    infile=menores_notas_gpt_counts.tsv
+);
 
 
 /* ==========================================================================
    SECTION 3: BASE CORPUS PREPARATION & INITIAL EXPORTS
    ========================================================================== */
 
-/* Combine Base Corpora for Factor Extraction */
+/* Combine all four subcorpora for Traditional MDA */
 DATA base_corpus;
     LENGTH filename $150 subcorpus $50;
 
@@ -128,24 +113,48 @@ DATA base_corpus;
     ;
 RUN;
 
-/* Setting up the base corpus for analysis */
+
+/* Set up the project dataset used throughout the TMDA pipeline */
 DATA &project;
-  SET base_corpus;
+    SET base_corpus;
 RUN;
 
+
+/* Quick visual check of filenames */
 ODS EXCLUDE NONE;
-    proc print data = &project (FIRSTOBS=200 OBS=500);
-    var filename;
-run;
-
-PROC EXPORT
-  DATA= WORK.&project
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project..csv"
-  REPLACE;
+PROC PRINT DATA=&project (FIRSTOBS=1 OBS=20);
+    VAR filename subcorpus;
 RUN;
 
-/* Drop summary variables */
+
+/* Export initial combined dataset */
+PROC EXPORT
+    DATA=WORK.&project
+    DBMS=CSV
+    OUTFILE="&whereisit/&myfolder/&project..csv"
+    REPLACE;
+RUN;
+
+
+/* --------------------------------------------------------------------------
+   Summary-variable handling
+
+   The 9xx variables are aggregate/summary variables derived from specific
+   variables in the tagset. In traditional MDA/factor analysis, allowing a
+   summary variable to coexist with the specific variables from which it is
+   computed can introduce artificial covariance, overweight a linguistic domain,
+   and complicate interpretation.
+
+   In the present Portuguese tagset, some summary variables also overlap with
+   one another, because the linguistic taxonomy is cross-classified. For example,
+   a specific feature may belong both to a part-of-speech summary and to a
+   stance, modality, clause-type, or PB-variation summary.
+
+   Therefore, for the primary TMDA model, all summary variables v900-v919 are
+   excluded from factor extraction. They may later be used descriptively or in a
+   separate sensitivity analysis, but not in the main factor model.
+   -------------------------------------------------------------------------- */
+
 DATA &project._no_sum_v (
     DROP = v900-v919
 );
