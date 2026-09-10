@@ -15,7 +15,11 @@ The programme reads:
 
 It writes a TSV matrix with:
 
-    filename    subcorpus    v001    v002    v007_1    ...    v919
+    filename    subcorpus    wcount    v001    v002    v007_1    ...    v919
+
+The wcount column contains the number of valid numerical annotation groups in
+each document. This corresponds to the number of annotated tokens/words used as
+the denominator for normalised frequencies.
 
 By default, counts are normalised per 1,000 annotated tokens. Use --raw-count
 to output raw counts.
@@ -200,7 +204,10 @@ def parse_numeric_tag_group(group_text: str) -> list[str] | None:
     return [part.strip() for part in group_text.split(",")]
 
 
-def count_tags_in_text(text: str, allowed_tags: set[str]) -> tuple[Counter[str], int, Counter[str]]:
+def count_tags_in_text(
+    text: str,
+    allowed_tags: set[str],
+) -> tuple[Counter[str], int, Counter[str]]:
     """
     Count tag occurrences in a tagged document.
 
@@ -272,6 +279,7 @@ def build_row(
     row: dict[str, str] = {
         "filename": file_path.name,
         "subcorpus": subcorpus,
+        "wcount": str(annotated_token_count),
     }
 
     for tag in tags:
@@ -290,7 +298,11 @@ def build_row(
     return row
 
 
-def write_tsv(output_path: Path, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
+def write_tsv(
+    output_path: Path,
+    fieldnames: list[str],
+    rows: list[dict[str, str]],
+) -> None:
     """Write rows to a UTF-8 TSV file."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -328,7 +340,7 @@ def main() -> int:
             )
 
         variable_names = [tag_to_variable(tag) for tag in tags]
-        fieldnames = ["filename", "subcorpus", *variable_names]
+        fieldnames = ["filename", "subcorpus", "wcount", *variable_names]
 
         rows: list[dict[str, str]] = []
         all_unknown_counts: Counter[str] = Counter()
@@ -384,7 +396,10 @@ def main() -> int:
                 "Warning: numerical tags found in input files but absent from tagset:",
                 file=sys.stderr,
             )
-            for tag, count in sorted(all_unknown_counts.items(), key=lambda item: tag_sort_key(item[0])):
+            for tag, count in sorted(
+                all_unknown_counts.items(),
+                key=lambda item: tag_sort_key(item[0]),
+            ):
                 print(f"  - {tag}: {count}", file=sys.stderr)
 
         return 0

@@ -21,7 +21,7 @@ options fmtsearch=(work library);
 options validvarname=any;
 
 /* Extraction & cutoff parameters */
-%let extractfactors = 5 ;
+%let extractfactors = 9 ;
 %let factorvars = f1-f&extractfactors ;
 %let minloading = .3 ;
 %let communalcutoff = .15 ;
@@ -59,6 +59,7 @@ DATA &dataset ;
     INPUT
         filename :$150.
         subcorpus :$50.
+        wcount
         v001-v006
         v007_1-v007_4
         v008-v230
@@ -298,10 +299,34 @@ ODS EXCLUDE ALL;
 
 
 /* ==========================================================================
-   SECTION 5: INITIAL ROTATED FACTOR ANALYSIS & VAR SELECTION
+   SECTION 5: INITIAL ROTATED FACTOR ANALYSIS & VAR SELECTION PLACEHOLDER
    ========================================================================== */
 
-/* Rotated Factor Analysis without summary variables prior to summary variables check */
+/* --------------------------------------------------------------------------
+   Preliminary rotated factor analysis.
+
+   This step is kept from the original TMDA implementation as a diagnostic and
+   as a convenient point for possible future variable-selection intervention.
+
+   In the original TMDA + Additive MDA script, this section was followed by a
+   Biber-style summary-variable check. That check evaluated whether broad
+   summary variables should replace or coexist with their specific component
+   variables.
+
+   In the present analysis, however, the 9xx summary variables v900-v919 have
+   already been excluded from factor extraction. Because these summary variables
+   are derived aggregates and some of them overlap across linguistic domains,
+   they are not reintroduced in the primary TMDA model.
+
+   Therefore, no additional variable selection is performed here for now.
+   The final rotated factor analysis will use the low-communality-filtered,
+   summary-free dataset: &project._no_low_c.
+
+   Future intervention point:
+   If, after consultation, a principled variable-selection rule is adopted, it
+   can be inserted after the preliminary rotated solution below and before the
+   creation of &project._sum_check.
+   -------------------------------------------------------------------------- */
 
 ODS EXCLUDE ALL;
 OPTIONS VALIDVARNAME=ANY;
@@ -323,309 +348,34 @@ run;
 quit;
 ods html close;
 
-/* Checking summary variables */
+
+/* Preserve the preliminary rotated pattern for possible inspection or future
+   variable-selection logic. */
 OPTIONS VALIDVARNAME=ANY;
+
 data prerotat;
   set rotated (where=(_TYPE_="PREROTAT"));
 run;
 
-proc transpose data=prerotat out= rotated2 ;
+proc transpose data=prerotat out=rotated2 ;
 id _NAME_ ;
 run;
 
-OPTIONS VALIDVARNAME=ANY;
-data rotated3;
-   set rotated2;
-      loaded = 0 ;
-        if     abs(factor1) > abs(factor2)
-           AND abs(factor1) > abs(factor3)
-           AND abs(factor1) > abs(factor4)
-           AND abs(factor1) > abs(factor5)
-           AND abs(factor1) > abs(factor6)
-           AND abs(factor1) > abs(factor7)
-           AND abs(factor1) > abs(factor8)
-           AND abs(factor1) > abs(factor9)
-           AND factor1 > 0 AND abs(factor1) >= "&minloading" then do; factor = 'f1'; pole = 1;  loaded = 1; end ;
 
-   else if     abs(factor2) > abs(factor1)
-           AND abs(factor2) > abs(factor3)
-           AND abs(factor2) > abs(factor4)
-           AND abs(factor2) > abs(factor5)
-           AND abs(factor2) > abs(factor6)
-           AND abs(factor2) > abs(factor7)
-           AND abs(factor2) > abs(factor8)
-           AND abs(factor2) > abs(factor9)
-           AND factor2 > 0 AND abs(factor2) >= "&minloading" then do; factor = 'f2'; pole = 1;  loaded = 1; end ;
+/* --------------------------------------------------------------------------
+   Variable-selection placeholder.
 
-   else if     abs(factor3) > abs(factor1)
-           AND abs(factor3) > abs(factor2)
-           AND abs(factor3) > abs(factor4)
-           AND abs(factor3) > abs(factor5)
-           AND abs(factor3) > abs(factor6)
-           AND abs(factor3) > abs(factor7)
-           AND abs(factor3) > abs(factor8)
-           AND abs(factor3) > abs(factor9)
-           AND factor3 > 0 AND abs(factor3) >= "&minloading" then do; factor = 'f3'; pole = 1;  loaded = 1; end ;
+   For the current primary TMDA model, this step intentionally performs no
+   additional selection beyond:
+   1. removing summary variables v900-v919; and
+   2. removing variables below the communality cutoff.
 
-   else if     abs(factor4) > abs(factor1)
-           AND abs(factor4) > abs(factor2)
-           AND abs(factor4) > abs(factor3)
-           AND abs(factor4) > abs(factor5)
-           AND abs(factor4) > abs(factor6)
-           AND abs(factor4) > abs(factor7)
-           AND abs(factor4) > abs(factor8)
-           AND abs(factor4) > abs(factor9)
-           AND factor4 > 0 AND abs(factor4) >= "&minloading" then do; factor = 'f4'; pole = 1;  loaded = 1; end ;
-
-   else if     abs(factor5) > abs(factor1)
-           AND abs(factor5) > abs(factor2)
-           AND abs(factor5) > abs(factor3)
-           AND abs(factor5) > abs(factor4)
-           AND abs(factor5) > abs(factor6)
-           AND abs(factor5) > abs(factor7)
-           AND abs(factor5) > abs(factor8)
-           AND abs(factor5) > abs(factor9)
-           AND factor5 > 0 AND abs(factor5) >= "&minloading" then do; factor = 'f5'; pole = 1;  loaded = 1; end ;
-
-   else if     abs(factor6) > abs(factor1)
-           AND abs(factor6) > abs(factor2)
-           AND abs(factor6) > abs(factor3)
-           AND abs(factor6) > abs(factor4)
-           AND abs(factor6) > abs(factor5)
-           AND abs(factor6) > abs(factor7)
-           AND abs(factor6) > abs(factor8)
-           AND abs(factor6) > abs(factor9)
-           AND factor6 > 0 AND abs(factor6) >= "&minloading" then do; factor = 'f6'; pole = 1;  loaded = 1; end ;
-
-   else if     abs(factor7) > abs(factor1)
-           AND abs(factor7) > abs(factor2)
-           AND abs(factor7) > abs(factor3)
-           AND abs(factor7) > abs(factor4)
-           AND abs(factor7) > abs(factor5)
-           AND abs(factor7) > abs(factor6)
-           AND abs(factor7) > abs(factor8)
-           AND abs(factor7) > abs(factor9)
-           AND factor7 > 0 AND abs(factor7) >= "&minloading" then do; factor = 'f7'; pole = 1;  loaded = 1; end ;
-
-   else if     abs(factor8) > abs(factor1)
-           AND abs(factor8) > abs(factor2)
-           AND abs(factor8) > abs(factor3)
-           AND abs(factor8) > abs(factor4)
-           AND abs(factor8) > abs(factor5)
-           AND abs(factor8) > abs(factor6)
-           AND abs(factor8) > abs(factor7)
-           AND abs(factor8) > abs(factor9)
-           AND factor8 > 0 AND abs(factor8) >= "&minloading" then do; factor = 'f8'; pole = 1;  loaded = 1; end ;
-
-   else if     abs(factor9) > abs(factor1)
-           AND abs(factor9) > abs(factor2)
-           AND abs(factor9) > abs(factor3)
-           AND abs(factor9) > abs(factor4)
-           AND abs(factor9) > abs(factor5)
-           AND abs(factor9) > abs(factor6)
-           AND abs(factor9) > abs(factor7)
-               AND abs(factor9) > abs(factor8)
-           AND factor9 > 0 AND abs(factor9) >= "&minloading" then do; factor = 'f9'; pole = 1;  loaded = 1; end ;
-
-/* Negative values */
-
-  else  if     abs(factor1) > abs(factor2)
-           AND abs(factor1) > abs(factor3)
-           AND abs(factor1) > abs(factor4)
-           AND abs(factor1) > abs(factor5)
-           AND abs(factor1) > abs(factor6)
-           AND abs(factor1) > abs(factor7)
-           AND abs(factor1) > abs(factor8)
-           AND abs(factor1) > abs(factor9)
-           AND factor1 < 0 AND abs(factor1) >= "&minloading" then do; factor = 'f1'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor2) > abs(factor1)
-           AND abs(factor2) > abs(factor3)
-           AND abs(factor2) > abs(factor4)
-           AND abs(factor2) > abs(factor5)
-           AND abs(factor2) > abs(factor6)
-           AND abs(factor2) > abs(factor7)
-           AND abs(factor2) > abs(factor8)
-           AND abs(factor2) > abs(factor9)
-           AND factor2 < 0 AND abs(factor2) >= "&minloading" then do; factor = 'f2'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor3) > abs(factor1)
-           AND abs(factor3) > abs(factor2)
-           AND abs(factor3) > abs(factor4)
-           AND abs(factor3) > abs(factor5)
-           AND abs(factor3) > abs(factor6)
-           AND abs(factor3) > abs(factor7)
-           AND abs(factor3) > abs(factor8)
-           AND abs(factor3) > abs(factor9)
-           AND factor3 < 0 AND abs(factor3) >= "&minloading" then do; factor = 'f3'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor4) > abs(factor1)
-           AND abs(factor4) > abs(factor2)
-           AND abs(factor4) > abs(factor3)
-           AND abs(factor4) > abs(factor5)
-           AND abs(factor4) > abs(factor6)
-           AND abs(factor4) > abs(factor7)
-           AND abs(factor4) > abs(factor8)
-           AND abs(factor4) > abs(factor9)
-           AND factor4 < 0 AND abs(factor4) >= "&minloading" then do; factor = 'f4'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor5) > abs(factor1)
-           AND abs(factor5) > abs(factor2)
-           AND abs(factor5) > abs(factor3)
-           AND abs(factor5) > abs(factor4)
-           AND abs(factor5) > abs(factor6)
-           AND abs(factor5) > abs(factor7)
-           AND abs(factor5) > abs(factor8)
-           AND abs(factor5) > abs(factor9)
-           AND factor5 < 0 AND abs(factor5) >= "&minloading" then do; factor = 'f5'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor6) > abs(factor1)
-           AND abs(factor6) > abs(factor2)
-           AND abs(factor6) > abs(factor3)
-           AND abs(factor6) > abs(factor4)
-           AND abs(factor6) > abs(factor5)
-           AND abs(factor6) > abs(factor7)
-           AND abs(factor6) > abs(factor8)
-           AND abs(factor6) > abs(factor9)
-           AND factor6 < 0 AND abs(factor6) >= "&minloading" then do; factor = 'f6'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor7) > abs(factor1)
-           AND abs(factor7) > abs(factor2)
-           AND abs(factor7) > abs(factor3)
-           AND abs(factor7) > abs(factor4)
-           AND abs(factor7) > abs(factor5)
-           AND abs(factor7) > abs(factor6)
-           AND abs(factor7) > abs(factor8)
-           AND abs(factor7) > abs(factor9)
-           AND factor7 < 0 AND abs(factor7) >= "&minloading" then do; factor = 'f7'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor8) > abs(factor1)
-           AND abs(factor8) > abs(factor2)
-           AND abs(factor8) > abs(factor3)
-           AND abs(factor8) > abs(factor4)
-           AND abs(factor8) > abs(factor5)
-           AND abs(factor8) > abs(factor6)
-           AND abs(factor8) > abs(factor7)
-           AND abs(factor8) > abs(factor9)
-           AND factor8 < 0 AND abs(factor8) >= "&minloading" then do; factor = 'f8'; pole = -1;  loaded = 1; end ;
-
-   else if     abs(factor9) > abs(factor1)
-           AND abs(factor9) > abs(factor2)
-           AND abs(factor9) > abs(factor3)
-           AND abs(factor9) > abs(factor4)
-           AND abs(factor9) > abs(factor5)
-           AND abs(factor9) > abs(factor6)
-           AND abs(factor9) > abs(factor7)
-           AND abs(factor9) > abs(factor8)
-           AND factor9 < 0 AND abs(factor9) >= "&minloading" then do; factor = 'f9'; pole = -1;  loaded = 1; end ;
-run;
-
-data rotated4 ; set rotated3 (KEEP = _NAME_ loaded ); run;
-proc transpose data=rotated4 out= rotated5 ; id _NAME_ ; run;
-
-/* Set a value = 0 to low comm vars dropped before to ensure sums are computed */
-proc sql;
-    select _name_ into :lowcomm separated by ' ' from communal
-        where communal < &communalcutoff ;
-quit;
-
-data sumdrop;
-   set rotated5;
-    array v &lowcomm ;
-    do over v ;
-      v = 0;
-    end ;
-
-    array w allmodal allconj allpasv allwh allwhrel allpro all_vth all_jth all_nth all_vto all_jto all_advl alladj allverb n all_th all_to  ;
-    do over w ;
-      w = 0;
-    end ;
-
-   allmodal = pos_mod + prd_mod + nec_mod ;
-   allconj = o_and + p_and + sub_cnd + sub_cos  ;
-   allpasv = agls_psv + by_pasv + whiz_vbn  ;
-   allwh = wh_ques + wh_cl ;
-   allwhrel = rel_obj + rel_subj + rel_pipe  ;
-   allpro = pro1 + pro2 + pro3;
-   all_vth = nonf_vth + att_vth + fact_vth + lkly_vth ;
-   all_jth = att_jth + fact_jth + lkly_jth ;
-   all_nth = att_nth + fct_nth + lkly_nth + nfct_nth ;
-   all_th = all_vth + all_nth + all_jth ;
-   all_vto = dsre_vto + efrt_vto + mntl_vto + prob_vto + spch_vto  ;
-   all_jto = x1_jto + x2_jto + x3_jto + x4_jto + x5_jto ;
-   all_to = all_vto + all_jto + all_nto ;
-   all_advl = nonfadvl + atadvl + fctadvl + lklydvl ;
-   alladj =  colorj + evalj + relatnj + sizej + timej + topicj  ;
-   allverb = act_ipv + act_tpv + actv + aspectv + be_state + causev + commpv + commv + copulapv + existv + have + inf + mentalpv + mentalv + occurpv + occurv + pasttnse + perfects + pres + pro_do + prv_vb + pub_vb + sua_vb + vprogrsv  ;
-   n = humann + cognitn + concrtn + groupn + abstrcn + placen + prcessn + quann + tccncrt  ;
-run;
-
-data sumdrop2;
-   set sumdrop;
-        if allmodal <  2 then do;  pos_mod = 0 ;  prd_mod = 0 ;  nec_mod = 0 ;  allmodal = 1; end;
-   else if allmodal >= 2 then do; allmodal = 0 ; end;
-
-        if allconj <  2 then do;  o_and = 0 ;  p_and = 0 ;  sub_cnd = 0 ;  sub_cos = 0 ;  sub_othr = 0 ;  allconj = 1; end;
-   else if allconj >= 2 then do; allconj = 0 ; end;
-
-        if allpasv <  2 then do;  agls_psv = 0 ;  by_pasv = 0 ;  whiz_vbn = 0 ;  allpasv = 1; end;
-   else if allpasv >= 2 then do; allpasv = 0 ; end;
-
-        if allwh <  1 then do;  wh_ques = 0 ;  wh_cl = 0 ;  allwh = 1; end;
-   else if allwh >= 1 then do; allwh = 0 ; end;
-
-        if allwhrel <  2 then do;  rel_obj = 0 ;  rel_subj = 0 ;  rel_pipe = 0 ;  allwhrel = 1; end;
-   else if allwhrel >= 2 then do; allwhrel = 0 ; end;
-
-        if allpro <  2 then do;  pro1 = 0 ;  pro2 = 0 ;  pro3 = 0 ;  allpro = 1; end;
-   else if allpro >= 2 then do; allpro = 0 ; end;
-
-        if all_vth <  2 then do;  nonf_vth = 0 ;  att_vth = 0 ;  fact_vth = 0 ;  lkly_vth = 0 ;  all_vth = 1; end;
-   else if all_vth >= 2 then do; all_vth = 0 ; end;
-
-        if all_jth <  2 then do;  att_jth = 0 ;  fact_jth = 0 ;  lkly_jth = 0 ;  all_jth = 1; end;
-   else if all_jth >= 2 then do; all_jth = 0 ; end;
-
-        if all_nth <  2 then do;  att_nth = 0 ;  fct_nth = 0 ;  lkly_nth = 0 ;  nfct_nth = 0 ;  all_nth = 1; end;
-   else if all_nth >= 2 then do; all_nth = 0 ; end;
-
-        if all_vto <  2 then do;  dsre_vto = 0 ;  efrt_vto = 0 ;  mntl_vto = 0 ;  prob_vto = 0 ;  spch_vto = 0 ;  all_vto = 1; end;
-   else if all_vto >= 2 then do; all_vto = 0 ; end;
-
-        if all_jto <  2 then do;  x1_jto = 0 ;  x2_jto = 0 ;  x3_jto = 0 ;  x4_jto = 0 ;  x5_jto = 0 ;  all_jto = 1; end;
-   else if all_jto >= 2 then do; all_jto = 0 ; end;
-
-        if all_advl <  2 then do;  nonfadvl = 0 ;  atadvl = 0 ;  fctadvl = 0 ;  lklydvl = 0 ;  all_advl = 1; end;
-   else if all_advl >= 2 then do; all_advl = 0 ; end;
-
-        if alladj <  2 then do;  colorj = 0 ;  evalj = 0 ;  relatnj = 0 ;  sizej = 0 ;  timej = 0 ;  topicj = 0 ;  alladj = 1; end;
-   else if alladj >= 2 then do; alladj = 0 ; end;
-
-        if allverb <  4 then do;  act_ipv = 0 ;  act_tpv = 0 ;  actv = 0 ;  aspectv = 0 ;  be_state = 0 ;  causev = 0 ;  commpv = 0 ;  commv = 0 ;  copulapv = 0 ;  existv = 0 ;  have = 0 ;  inf = 0 ;  mentalpv = 0 ;  mentalv = 0 ;  occurpv = 0 ;  occurv = 0 ;  pasttnse = 0 ;  perfects = 0 ;  pres = 0 ;  pro_do = 0 ; sua_vb = 0 ;  vprogrsv = 0 ;  allverb = 1; end;
-   else if allverb >= 4 then do; allverb = 0 ; end;
-
-        if n <  2 then do;  humann = 0 ;  cognitn = 0 ;  concrtn = 0 ;  groupn = 0 ;  abstrcn = 0 ;  placen = 0 ;  prcessn = 0 ;  quann = 0 ;  tccncrt = 0 ;  n = 1; end;
-   else if n >= 2 then do; n = 0 ; end;
-
-        if all_th <  2 then do;  all_vth = 0 ;  all_nth = 0 ;  all_jth = 0 ;  all_th = 1; end;
-   else if all_th >= 2 then do; all_th = 0 ; end;
-
-        if all_to <  2 then do;  all_vto = 0 ;  all_jto = 0 ;  all_nto = 0 ;  all_to = 1; end;
-   else if all_to >= 2 then do; all_to = 0 ; end;
-
-run;
-
-proc transpose data=sumdrop2 out= varsdel ; id _NAME_ ; run;
-
-/* Drop variables based on summary variables check */
-proc sql;
-    select _name_ into :sumcheck separated by ' ' from varsdel
-        where loaded = 0;
-quit;
+   The dataset name &project._sum_check is retained because later sections of
+   the original TMDA pipeline refer to it.
+   -------------------------------------------------------------------------- */
 
 data &project._sum_check ;
-    set &project ;  /* The initial dataset with the summary variables counts */
-     drop &sumcheck ;
+    set &project._no_low_c ;
 run;
 
 
@@ -856,141 +606,297 @@ run;
 
 data rotated4 ; set rotated3 ; if loaded = 1; run; quit;
 
-/* Labeling */
+/* Labelling */
 PROC FORMAT library=work ;
-  VALUE  $featurelabels
-"abstrcn" = "Abstract nouns"
-"act_ipv" = "Intransitive phrasal activity verbs"
-"act_tpv" = "Transitive phrasal activity verbs"
-"actv" = "Activity verbs"
-"adj_attr" = "Adjectives in attributive position"
-"advs" = "Adverb (excluding other types)"
-"agls_psv" = "Agentless passive verb"
-"all_advl" = "Sum stance adverbs"
-"all_jth" = "Sum stance that complement clauses controlled by adjectives"
-"all_jto" = "Sum stance to complement clauses controlled by adjectives"
-"all_nth" = "Sum stance that complement clauses controlled by nouns"
-"all_nto" = "to complement clause controlled by stance nouns"
-"all_th" = "Sum stance that complement clauses"
-"all_to" = "Sum stance to complement clauses"
-"all_vth" = "Sum stance that complement clauses controlled by verbs"
-"all_vto" = "Sum stance to complement clauses controlled by verbs"
-"alladj" = "All adjectives"
-"allconj" = "All conjunctions"
-"allmodal" = "All modals"
-"allpasv" = "All passives"
-"allpro" = "All personal pronouns"
-"allverb" = "Verb (not including auxiliary verbs)"
-"allwh" = "All wh-words"
-"allwhrel" = "All wh-relative clauses"
-"amplifr" = "Amplifiers"
-"aspectpv" = "Aspectual phrasal verbs"
-"aspectv" = "Aspectual verb"
-"atadvl" = "Attitudinal adverbs"
-"att_jth" = "that complement clause controlled by attitudinal or emotion adjective"
-"att_nth" = "that complement clause controlled by attitude or perspective noun"
-"att_vth" = "that complement clause controlled by attitudinal verb"
-"be_state" = "Verb be"
-"by_pasv" = "Passive verb + by"
-"causev" = "Causative verbs"
-"cognitn" = "Cognition nouns"
-"colorj" = "Color adjectives"
-"commpv" = "Transitive phrasal communication verbs"
-"commv" = "Communication verbs"
-"concrtn" = "Concrete nouns"
-"conjncts" = "Linking adverbials"
-"contrac" = "Contraction"
-"copulapv" = "Copular phrasal verbs"
-"downtone" = "Downtoner"
-"dsre_vto" = "to complement clauses controlled by verbs of desire, intention, and decision"
-"efrt_vto" = "to complement clauses controlled by verbs of modality, causation, and effort"
-"evalj" = "Evaluative adjectives"
-"existv" = "Existence verbs"
-"fact_jth" = "that complement clause controlled by factive or certainty adjective"
-"fact_vth" = "that complement clause controlled by factive verb"
-"fct_nth" = "that complement clause controlled by factive or certainty noun"
-"fctadvl" = "Certainty adverbials"
-"finlprep" = "Stranded prepositions"
-"gen_emph" = "Emphatics"
-"gen_hdg" = "Hedges"
-"groupn" = "Group/institution nouns"
-"have" = "Verb have"
-"humann" = "Animate nouns"
-"inf" = "Infinitives"
-"it" = "Pronoun it"
-"jcmp" = "that complement clause controlled by adjective"
-"lkly_jth" = "that complement clause controlled by adjective of likelihood"
-"lkly_nth" = "that complement clause controlled by noun of likelihood"
-"lkly_vth" = "that complement clause controlled by verb of likelihood"
-"lklydvl" = "Likelihood adverbs"
-"mentalpv" = "Transitive phrasal mental verbs"
-"mentalv" = "Mental verbs"
-"mntl_vto" = "to complement clauses controlled by verbs of cognition"
-"n" = "Noun"
-"n_nom" = "Nominalization"
-"nec_mod" = "Modals of necessity or obligation"
-"nfct_nth" = "that complement clause controlled by communication (non-factual) noun"
-"nonf_vth" = "that complement clause controlled by non-factive verb"
-"nonfadvl" = "Style adverbs"
-"o_and" = "Coordinating conjunction as clausal connector"
-"occurpv" = "Occurrence -- Intransitive phrasal verbs"
-"occurv" = "Occurrence verbs"
-"p_and" = "Coordinating conjunction -- phrasal connector"
-"pany" = "Nominal / indefinite pronoun"
-"pasttnse" = "Past tense verb"
-"pdem" = "Demonstrative pronouns"
-"perfects" = "Perfect aspect verb forms"
-"pl_adv" = "Place adverbials"
-"placen" = "Place nouns"
-"pos_mod" = "Modals of possibility, permission, and ability"
-"prcessn" = "Abstract/process nouns"
-"prd_mod" = "Modals of prediction or volition"
-"pred_adj" = "Adjectives in predicative position"
-"prep" = "Preposition"
-"pres" = "Present tense verbs"
-"pro1" = "First person pronoun / possessive"
-"pro2" = "Second person pronoun / possessive"
-"pro3" = "Third person pronoun (except it)"
-"pro_do" = "Verb do"
-"prob_vto" = "to complement clauses controlled by verbs of probability and simple fact"
-"prtcle" = "Discourse particles"
-"prv_vb" = "Private verbs"
-"pub_vb" = "Public verbs"
-"quann" = "Quantity nouns"
-"rel_obj" = "wh pronoun relative clause in object position"
-"rel_pipe" = "wh-pronoun relative clause in object position with prepositional fronting (pied piping)"
-"rel_subj" = "wh pronoun relative clause in subject position"
-"relatnj" = "Relational adjectives"
-"sizej" = "Size adjectives"
-"spch_vto" = "to complement clauses controlled by speech act verbs"
-"spl_aux" = "Adverb within auxiliary (splitting aux-verb)"
-"sua_vb" = "Suasive verbs"
-"sub_cnd" = "Conditional subordinating conjunction"
-"sub_cos" = "Causative subordinating conjunction"
-"sub_othr" = "Other subordinating conjunction"
-"tccncrt" = "Technical / Concrete nouns"
-"that_del" = "that deletion"
-"that_rel" = "that relative clauses"
-"timej" = "Time adjectives"
-"tm_adv" = "Time adverbials"
-"topicj" = "Topical adjectives"
-"ttr" = "Type-token ratio"
-"vcmp" = "that complement clause controlled by verb"
-"vprogrsv" = "Present progressive verb forms"
-"wcount" = "Word count"
-"wh_cl" = "wh-clauses"
-"wh_ques" = "wh-question"
-"whiz_vbg" = "Present participial whiz deletion"
-"whiz_vbn" = "Passive postnominal modifier"
-"wrlengh" = "Word length"
-"x1_jto" = "to complement clause controlled by epistemic adjectives (certainty or likelihood)"
-"x2_jto" = "to complement clause controlled by adjective of ability / willingness"
-"x3_jto" = "to complement clause controlled by adjective of personal affect or emotion"
-"x4_jto" = "to complement clause controlled by adjective of ease/difficulty"
-"x5_jto" = "to complement clause controlled by evaluative adjectives"
-;
-run;
-quit;
+  VALUE $featurelabels
+
+  /* A. Artigos e determinantes */
+  "v001" = "Artigos definidos"
+  "v002" = "Artigos indefinidos"
+  "v003" = "Contrações de preposição + artigo"
+  "v004" = "Determinantes demonstrativos"
+  "v005" = "Determinantes possessivos"
+  "v006" = "Determinantes indefinidos"
+  "v007_1" = "Determinantes numerais cardinais"
+  "v007_2" = "Determinantes numerais ordinais"
+  "v007_3" = "Determinantes numerais multiplicativos"
+  "v007_4" = "Determinantes numerais partitivos ou fracionários"
+  "v008" = "Determinantes interrogativos e exclamativos"
+
+  /* B. Pronomes */
+  "v009" = "Pronomes pessoais retos"
+  "v010" = "Pronomes pessoais oblíquos átonos"
+  "v011" = "Pronomes pessoais oblíquos tônicos"
+  "v012" = "Pronomes de objeto direto"
+  "v013" = "Pronomes de objeto indireto"
+  "v014" = "Pronomes reflexivos"
+  "v015" = "Pronomes possessivos"
+  "v016" = "Pronomes demonstrativos"
+  "v017" = "Pronomes indefinidos"
+  "v018" = "Pronomes relativos"
+  "v019" = "Pronomes interrogativos e exclamativos"
+  "v020" = "Formas pronominais neutras"
+  "v021" = "Pronomes relativos precedidos de preposição"
+  "v022" = "Quantificadores pronominais ou determinativos"
+  "v023" = "Pronomes pessoais em posição de sujeito"
+  "v024" = "Pronomes de primeira pessoa em posição de sujeito"
+  "v025" = "Pronomes de segunda pessoa em posição de sujeito"
+  "v026" = "Pronomes de terceira pessoa em posição de sujeito"
+
+  /* C. Substantivos */
+  "v027" = "Substantivos próprios"
+  "v028" = "Substantivos comuns"
+  "v029" = "Substantivos abstratos"
+  "v030" = "Substantivos concretos"
+  "v031" = "Substantivos animados"
+  "v032" = "Substantivos coletivos"
+  "v033" = "Substantivos de quantidade"
+  "v034" = "Substantivos cognitivos"
+  "v035" = "Substantivos de processo"
+  "v036" = "Substantivos técnicos"
+  "v037" = "Nominalizações"
+  "v038" = "Substantivos de lugar"
+  "v039" = "Substantivos institucionais"
+  "v040" = "Substantivos em posição de sujeito"
+  "v041" = "Nominalizações em posição de sujeito"
+
+  /* D. Adjetivos */
+  "v042" = "Adjetivos qualificativos atributivos"
+  "v043" = "Adjetivos qualificativos predicativos"
+  "v044" = "Adjetivos relacionais"
+  "v045" = "Adjetivos avaliativos"
+  "v046" = "Adjetivos de tamanho"
+  "v047" = "Adjetivos de idade e tempo"
+  "v048" = "Adjetivos de cor"
+  "v049" = "Adjetivos de nacionalidade e origem"
+  "v050" = "Adjetivos atributivos pré-nominais"
+  "v051" = "Adjetivos atributivos pós-nominais"
+  "v052" = "Adjetivos superlativos"
+  "v053" = "Adjetivos tópicos ou temáticos"
+  "v054" = "Adjetivos exceto avaliativos"
+
+  /* E. Verbos */
+  "v055" = "Verbos lexicais"
+  "v056" = "Verbos auxiliares"
+  "v057" = "Verbos copulativos"
+  "v058" = "Verbos de comunicação"
+  "v059" = "Verbos cognitivos/mentais"
+  "v060" = "Verbos de percepção"
+  "v061" = "Verbos de movimento"
+  "v062" = "Verbos causativos"
+  "v063" = "Verbos existenciais"
+  "v064" = "Verbos aspectuais"
+  "v065" = "Verbos modais e semimodais"
+  "v066" = "Verbos de ação/atividade"
+  "v067" = "Verbos de ocorrência"
+  "v068" = "Verbos de facilitação"
+  "v069" = "Verbos privados"
+  "v070" = "Verbos públicos"
+  "v071" = "Verbos persuasivos/suasivos"
+  "v072" = "Verbos de desejo/volição"
+  "v073" = "Verbos de probabilidade/aparência"
+  "v074" = "Modais de possibilidade"
+  "v075" = "Modais de obrigação"
+  "v076" = "Modais de necessidade"
+  "v077" = "Modais de capacidade"
+  "v078" = "Modais de evidencialidade/aparência"
+
+  /* F. Tempos, aspectos, modos e voz verbal */
+  "v079" = "Presente do indicativo"
+  "v080" = "Pretérito perfeito simples"
+  "v081" = "Pretérito imperfeito"
+  "v082" = "Pretérito mais-que-perfeito simples e composto"
+  "v083" = "Futuro do presente"
+  "v084" = "Futuro perifrástico"
+  "v085" = "Futuro do pretérito/condicional"
+  "v086" = "Imperativo afirmativo"
+  "v087" = "Imperativo negativo"
+  "v088" = "Presente do subjuntivo"
+  "v089" = "Pretérito imperfeito do subjuntivo"
+  "v090" = "Futuro do subjuntivo"
+  "v091" = "Aspecto perfeito composto"
+  "v092" = "Perífrases progressivas"
+  "v093" = "Perífrases incoativas"
+  "v094" = "Perífrases terminativas"
+  "v095" = "Voz passiva analítica"
+  "v096" = "Voz passiva sintética/pronominal"
+  "v097" = "Construções impessoais"
+  "v098" = "Verbo no infinitivo"
+  "v099" = "Infinitivo pessoal"
+  "v100" = "Verbo no gerúndio"
+  "v101" = "Particípio passado"
+  "v102" = "Modo indicativo"
+  "v103" = "Passiva analítica com agente"
+  "v104" = "Passiva analítica sem agente"
+  "v105" = "Auxiliares com clivagem por advérbio"
+
+  /* G. Advérbios */
+  "v106" = "Advérbios de tempo"
+  "v107" = "Advérbios de lugar"
+  "v108" = "Advérbios de modo"
+  "v109" = "Advérbios de quantidade/intensidade"
+  "v110" = "Advérbios de afirmação"
+  "v111" = "Advérbios de negação"
+  "v112" = "Advérbios de dúvida/probabilidade"
+  "v113" = "Advérbios focalizadores"
+  "v114" = "Advérbios intensificadores/amplificadores"
+  "v115" = "Advérbios atitudinais"
+  "v116" = "Advérbios epistêmicos/factivos"
+  "v117" = "Advérbios de mitigação/hedges"
+  "v118" = "Advérbio de negação não"
+  "v119" = "Advérbios negativos exceto não"
+  "v120" = "Advérbios de probabilidade"
+  "v121" = "Advérbios factivos/de certeza"
+  "v122" = "Advérbios não factuais/evidenciais"
+  "v123" = "Advérbios suavizadores/downtoners"
+  "v124" = "Advérbios enfatizadores"
+  "v125" = "Advérbios comparativos"
+  "v126" = "Advérbios compostos ou locuções adverbiais"
+
+  /* H. Preposições */
+  "v127" = "Todas as preposições simples"
+  "v128" = "Locuções prepositivas"
+  "v129" = "Contrações preposicionais"
+  "v130" = "Regência/preposição não padrão ou variável"
+
+  /* I. Conjunções e subordinação */
+  "v131" = "Conjunções coordenativas aditivas"
+  "v132" = "Conjunções coordenativas alternativas"
+  "v133" = "Conjunções coordenativas adversativas"
+  "v134" = "Conjunções subordinativas causais"
+  "v135" = "Conjunções subordinativas condicionais"
+  "v136" = "Conjunções subordinativas concessivas"
+  "v137" = "Conjunções subordinativas temporais"
+  "v138" = "Conjunções subordinativas consecutivas"
+  "v139" = "Conjunções subordinativas finais"
+  "v140" = "Conjunções subordinativas comparativas"
+  "v141" = "Conjunções subordinativas integrantes"
+  "v142" = "Conjunções coordenativas conclusivas"
+  "v143" = "Coordenação frasal"
+  "v144" = "Coordenação oracional"
+  "v145" = "Conjunções subordinativas conformativas"
+  "v146" = "Conjunções subordinativas proporcionais"
+
+  /* J. Orações e estruturas sintáticas */
+  "v147" = "Orações relativas"
+  "v148" = "Orações completivas com que"
+  "v149" = "Orações interrogativas indiretas"
+  "v150" = "Orações de infinitivo"
+  "v151" = "Orações de gerúndio"
+  "v152" = "Orações de particípio"
+  "v153" = "Orações sem verbo/elípticas"
+  "v154" = "Elipse de sujeito/pro-drop"
+  "v155" = "Elipse de outros constituintes"
+  "v156" = "Construções com se"
+  "v157" = "Construções de tópico-comentário/deslocamento à esquerda"
+  "v158" = "Construções relativas resumptivas"
+  "v159" = "Ordem não canônica de constituintes"
+  "v160" = "Interrogativas diretas com elemento interrogativo"
+  "v161" = "Interrogativas diretas sem elemento interrogativo/polares"
+  "v162" = "Orações relativas com lacuna de sujeito"
+  "v163" = "Orações relativas com lacuna de objeto"
+  "v164" = "Orações relativas com preposição deslocada ou omitida"
+  "v165" = "Orações reduzidas de particípio pós-nominais"
+  "v166" = "Apagamento de que em completivas"
+
+  /* K. Orações de posicionamento, complementação e controle oracional */
+  "v167" = "Completivas com que controladas por verbo dicendi/comunicação"
+  "v168" = "Completivas com que controladas por verbo cognitivo/mental"
+  "v169" = "Completivas com que controladas por verbo de desejo/volição"
+  "v170" = "Completivas com que controladas por verbo de probabilidade/aparência"
+  "v171" = "Completivas com que controladas por adjetivo avaliativo"
+  "v172" = "Completivas com que controladas por adjetivo de certeza"
+  "v173" = "Completivas com que controladas por adjetivo de probabilidade"
+  "v174" = "Completivas com que controladas por substantivo factual"
+  "v175" = "Completivas com que controladas por substantivo não factual"
+  "v176" = "Completivas com que controladas por substantivo de atitude"
+  "v177" = "Completivas com que controladas por substantivo de probabilidade"
+  "v178" = "Completivas com que no indicativo"
+  "v179" = "Completivas com que no subjuntivo"
+  "v180" = "Completivas com que controladas por advérbio ou expressão adverbial"
+  "v181" = "Completivas com que controladas por preposição ou locução prepositiva"
+  "v182" = "Infinitivo controlado por verbo de desejo/volição"
+  "v183" = "Infinitivo controlado por verbo cognitivo/mental"
+  "v184" = "Infinitivo controlado por verbo causativo"
+  "v185" = "Infinitivo controlado por verbo modal ou semimodal"
+  "v186" = "Infinitivo controlado por verbo de probabilidade/aparência"
+  "v187" = "Infinitivo controlado por adjetivo avaliativo"
+  "v188" = "Infinitivo controlado por adjetivo de facilidade/dificuldade"
+  "v189" = "Infinitivo controlado por adjetivo de certeza/probabilidade"
+  "v190" = "Infinitivo controlado por adjetivo atitudinal ou afetivo"
+  "v191" = "Infinitivo controlado por substantivo"
+  "v192" = "Infinitivo introduzido por preposição"
+  "v193" = "Infinitivo controlado por substantivo factual ou não factual"
+  "v194" = "Infinitivo controlado por substantivo de atitude"
+
+  /* L. Colocação pronominal e clíticos */
+  "v195" = "Próclise"
+  "v196" = "Ênclise"
+  "v197" = "Mesóclise"
+  "v198" = "Próclise em início de frase"
+  "v199" = "Alternância entre clítico e pronome pleno"
+  "v200" = "Contrações com pronomes clíticos"
+
+  /* M. Marcadores discursivos */
+  "v201" = "Marcadores de abertura"
+  "v202" = "Marcadores de reformulação"
+  "v203" = "Marcadores de consequência"
+  "v204" = "Marcadores de acordo/confirmação"
+  "v205" = "Marcadores apelativos"
+  "v206" = "Marcadores de fechamento"
+  "v207" = "Partículas discursivas/conversacionais"
+
+  /* N. Traços conversacionais */
+  "v208" = "Interjeições"
+  "v209" = "Vocativos"
+  "v210" = "Muletilhas"
+  "v211" = "Hesitações"
+  "v212" = "Repetições"
+  "v213" = "Reformulações"
+  "v214" = "Risos"
+  "v215" = "Sobreposições/interrupções"
+  "v216" = "Perguntas de confirmação"
+
+  /* O. Variação, informalidade e português brasileiro digital */
+  "v217" = "Formas reduzidas e abreviações comuns"
+  "v218" = "Grafias expressivas ou alongadas"
+  "v219" = "Gírias e expressões avaliativas"
+  "v220" = "Empréstimos e termos de redes sociais"
+  "v221" = "Expressões avaliativas recentes"
+  "v222" = "Hashtags e marcadores de tópico digital"
+  "v223" = "Emojis e emoticons com função discursiva ou avaliativa"
+  "v224" = "Sufixos e formações produtivas digitais"
+  "v225" = "Alternância de código"
+  "v226" = "Marcadores de oralidade em escrita digital"
+  "v227" = "Formas não padrão de concordância relevantes para PB"
+  "v228" = "Formas não padrão de regência ou complemento verbal"
+  "v229" = "Construções de oralidade informal"
+  "v230" = "Expressões digitais multimodais ou performativas"
+
+  /* P. Traços derivados/agregados */
+  "v900" = "Todos os artigos"
+  "v901" = "Todos os pronomes"
+  "v902" = "Todos os substantivos"
+  "v903" = "Todos os adjetivos"
+  "v904" = "Todos os verbos"
+  "v905" = "Todos os advérbios"
+  "v906" = "Todas as preposições"
+  "v907" = "Todas as conjunções"
+  "v908" = "Todas as passivas"
+  "v909" = "Todas as relativas"
+  "v910" = "Todos os marcadores discursivos"
+  "v911" = "Todos os traços conversacionais"
+  "v912" = "Todos os traços digitais"
+  "v913" = "Todas as orações com que"
+  "v914" = "Todas as orações de infinitivo"
+  "v915" = "Todas as orações de posicionamento"
+  "v916" = "Todos os modais"
+  "v917" = "Todos os advérbios de posicionamento e grau"
+  "v918" = "Todas as formas verbais não finitas"
+  "v919" = "Todos os fenômenos variáveis do PB"
+  ;
+RUN;
+QUIT;
 
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/loadtable.html";
@@ -1155,7 +1061,7 @@ RUN;
 
 
 /* ==========================================================================
-   SECTION 7: SCORING (BASE & ADDITIVE CORPORA)
+   SECTION 7: SCORING
    ========================================================================== */
 
 ODS EXCLUDE NONE;
@@ -1166,108 +1072,79 @@ ODS EXCLUDE ALL;
 
 /* Automatic scoring */
 
-/* Standardize data using base corpus means and std devs */
+/* Standardize the corpus using its own means and standard deviations */
 PROC STDIZE DATA=&project._meta METHOD=STD OUT=mdz OUTSTAT=meta_stats;
     var _NUMERIC_ ;
 RUN;
 
-/* Apply the exact same standardization to the additive corpus */
-PROC STDIZE DATA=&project._add_corpus METHOD=IN(meta_stats) OUT=mdz_add;
-    var _NUMERIC_ ;
-RUN;
-
 /* Factor scores */
-data rotated4; set rotated3; if loaded = 1; run;
+data rotated4;
+    set rotated3;
+    if loaded = 1;
+run;
 
 proc sort data=rotated4;
-  by factor ;
+    by factor ;
 run;
+
 proc transpose data=rotated4 out=score;
-  by factor ;
-  id _NAME_ ;
-  var pole;
+    by factor ;
+    id _NAME_ ;
+    var pole;
 run;
+
 data score;
-  _type_='SCORE';
-  set score;
-  drop _name_;
-  rename factor=_name_;
+    _type_='SCORE';
+    set score;
+    drop _name_;
+    rename factor=_name_;
 run;
 
-/* Score the base corpus */
-proc score data=mdz score=score out=scores; run;
-proc sort data = scores ; by filename; run;
-data scores_only (keep = filename prompt source &factorvars) ; set scores ; run;  /* Keep only the columns we want */
+/* Score the corpus */
+proc score data=mdz score=score out=scores;
+run;
 
-/* Score the additive corpus */
-proc score data=mdz_add score=score out=scores_add; run;
-proc sort data = scores_add ; by filename; run;
-data scores_only_add (keep = filename prompt source &factorvars) ; set scores_add ; run;
+proc sort data=scores;
+    by filename;
+run;
+
+/* Keep only the columns needed for interpretation/statistical testing */
+DATA scores_only
+    (KEEP = filename subcorpus &factorvars);
+    SET scores;
+RUN;
+
+/* Preserve downstream dataset names used by Section 8 */
+DATA scores_combined;
+    SET scores;
+RUN;
+
+DATA scores_only_combined;
+    SET scores_only;
+RUN;
 
 /* Overview of corpus */
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/corpus_size.html";
-proc means data=&project sum mean min max stddev; var wcount  ; run;
-RUN;
-
-/* Scores only (Base) */
-DATA scores_only
- (KEEP = filename prompt source &factorvars );
-set scores;
+proc means data=&project sum mean min max stddev;
+    var wcount;
 run;
+ods html close;
+ODS EXCLUDE ALL;
 
-/* Combine base scores and additive scores for statistical testing */
-DATA scores_combined;
-  SET scores scores_add;
-RUN;
-
-DATA scores_only_combined;
-  SET scores_only scores_only_add;
-RUN;
-
-/* Base TMDA Exports */
+/* TMDA exports */
 PROC EXPORT
-  DATA= WORK.scores
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._scores_base.csv"
-  REPLACE;
+    DATA=WORK.scores
+    DBMS=CSV
+    OUTFILE="&whereisit/&myfolder/&project._scores.csv"
+    REPLACE;
 RUN;
 
 PROC EXPORT
-  DATA= WORK.scores_only
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._scores_only_base.csv"
-  REPLACE;
-RUN;
-
-/* Additive TMDA Exports */
-PROC EXPORT
-  DATA= WORK.scores_add
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._scores_add.csv"
-  REPLACE;
-RUN;
-
-PROC EXPORT
-  DATA= WORK.scores_only_add
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._scores_only_add.csv"
-  REPLACE;
-RUN;
-
-/* Combined TMDA Exports */
-PROC EXPORT
-  DATA= WORK.scores_combined
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._scores.csv"
-  REPLACE;
-RUN;
-
-PROC EXPORT
-  DATA= WORK.scores_only_combined
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/&project._scores_only.csv"
-  REPLACE;
+    DATA=WORK.scores_only
+    DBMS=CSV
+    OUTFILE="&whereisit/&myfolder/&project._scores_only.csv"
+    REPLACE;
 RUN;
 
 
@@ -1275,72 +1152,129 @@ RUN;
    SECTION 8: OUTLIER IDENTIFICATION AND REMOVAL
    ========================================================================== */
 
-/* Outlier texts, identify */
-%macro create(howmany);
+/* --------------------------------------------------------------------------
+   Outlier handling
+
+   This section now uses the single scored corpus produced in Section 7.
+   The dataset name scores_combined is still accepted because Section 7
+   preserves it as an alias of scores for downstream compatibility.
+
+   Outliers are identified separately for each factor score using the IQR rule:
+       lower fence = Q1 - (&multipl * IQR)
+       upper fence = Q3 + (&multipl * IQR)
+
+   Set &multipl below to control how strict the outlier definition is.
+   Smaller values remove more observations; larger values remove fewer.
+   -------------------------------------------------------------------------- */
+
+%let multipl=1;
+
+/* Identify outlier texts for each factor */
+%macro identify_outliers(howmany);
+
 %do i=1 %to &howmany;
 
-%let VariableOfInterest= f&i ;  /* Enter variable here */
-%let dsn=scores_combined;  /* Use the combined dataset */
+    %let VariableOfInterest=f&i;
+    %let dsn=scores_combined;
 
-data temp; set &dsn; run;
+    data temp;
+        set &dsn;
+    run;
 
-proc univariate data=temp noprint;
-var &VariableOfInterest;
-output out=IQRData Q1=Q1 Q3=Q3 QRANGE=IQR;
-run;
+    proc univariate data=temp noprint;
+        var &VariableOfInterest;
+        output out=IQRData
+            Q1=Q1
+            Q3=Q3
+            QRANGE=IQR;
+    run;
 
-/* The lower the number multiplied by IQR, the more texts will be outliers */
-/* The default number is 1.5 */
-%let multipl=1;
-proc sql ;
-select Q1-&multipl*IQR, Q3+&multipl*IQR into :lowerfence, :upperfence from IQRData;
-quit;
+    proc sql noprint;
+        select
+            Q1 - &multipl * IQR,
+            Q3 + &multipl * IQR
+        into
+            :lowerfence trimmed,
+            :upperfence trimmed
+        from IQRData;
+    quit;
 
-%put Outliers are those observations less than &lowerfence and greater than &upperfence;
+    %put NOTE: For &VariableOfInterest, outliers are observations below &lowerfence or above &upperfence.;
 
-data outliers_f&i;
-set temp;
-if &VariableOfInterest gt &upperfence or &VariableOfInterest lt &lowerfence then output;
-run;
+    data outliers_f&i;
+        set temp;
+        if &VariableOfInterest gt &upperfence
+            or &VariableOfInterest lt &lowerfence;
+    run;
 
 %end;
-%mend create;
-%create( &extractfactors )  /* Number of factors extracted */
+
+%mend identify_outliers;
+
+%identify_outliers(&extractfactors);
 quit;
 
-/* Outlier texts, isolate for removal */
-data outliers_to_del (keep= filename prompt source &factorvars) ; set outliers_f1 - outliers_f&extractfactors ; proc sort noduprecs; by filename; run; quit;  /* Keep only the columns we want */
 
-data &project._no_outliers; set scores_combined; run;
+/* Isolate all outlier texts for possible removal */
+data outliers_to_del
+    (keep=filename subcorpus &factorvars);
+    set outliers_f1 - outliers_f&extractfactors;
+run;
+
+proc sort data=outliers_to_del nodupkey;
+    by filename;
+run;
+
+
+/* Create outlier-trimmed dataset */
+data &project._no_outliers;
+    set scores_combined;
+run;
 
 proc sql;
-delete from &project._no_outliers
-  where filename in (select filename from outliers_to_del);
+    delete from &project._no_outliers
+    where filename in (
+        select filename
+        from outliers_to_del
+    );
 quit;
 
-/* Save outliers list to Excel */
-%macro create(howmany);
+
+/* Save outlier lists by factor */
+%macro export_outliers(howmany);
+
 %do i=1 %to &howmany;
 
-data outliers_f&i (keep= filename prompt source f&i) ; set outliers_f&i ; proc sort ; by f&i; run; quit;  /* Keep only the columns we want */
+    data outliers_f&i
+        (keep=filename subcorpus f&i);
+        set outliers_f&i;
+    run;
 
-PROC EXPORT
-  DATA= WORK.outliers_f&i
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/outliers_deleted_f&i..csv"
-  REPLACE;
-RUN;
+    proc sort data=outliers_f&i;
+        by f&i;
+    run;
+
+    PROC EXPORT
+        DATA=WORK.outliers_f&i
+        DBMS=CSV
+        OUTFILE="&whereisit/&myfolder/outliers_deleted_f&i..csv"
+        REPLACE;
+    RUN;
 
 %end;
-%mend create;
-%create( &extractfactors )  /* Number of factors extracted */
+
+%mend export_outliers;
+
+%export_outliers(&extractfactors);
 quit;
 
+
+/* Save combined outlier list */
 PROC EXPORT
-  DATA= WORK.outliers_to_del
-  DBMS=CSV
-  OUTFILE="&whereisit/&myfolder/outliers_all.csv"
-  REPLACE;
+    DATA=WORK.outliers_to_del
+    DBMS=CSV
+    OUTFILE="&whereisit/&myfolder/outliers_all.csv"
+    REPLACE;
 RUN;
 
 
@@ -1349,73 +1283,139 @@ RUN;
 /* ------------------------------------------------------------------------- */
 /* If you wish to KEEP the outliers in your final analysis, leave the        */
 /* following DATA step active. It overwrites the outlier-trimmed dataset     */
-/* with the full, original dataset.                                          */
+/* with the full, original scored dataset.                                   */
 /*                                                                           */
 /* If you wish to REMOVE outliers, COMMENT OUT or DELETE the DATA step below.*/
 /* ========================================================================= */
 
-data &project._no_outliers; set scores_combined; run;
-
+data &project._no_outliers;
+    set scores_combined;
+run;
 
 
 /* ==========================================================================
    SECTION 9: STATISTICAL ANALYSIS (ANOVAs & BOXPLOTS)
    ========================================================================== */
 
-/* ANOVAs */
-/* ODS table names for GLM: */
-/*https://support.sas.com/documentation/cdl/en/statug/68162/HTML/default/viewer.htm#statug_glm_details70.htm*/
+/* --------------------------------------------------------------------------
+   Statistical analysis
+
+   This section compares factor scores across subcorpora.
+
+   Expected grouping variable:
+   - subcorpus
+
+   Expected dependent variables:
+   - f1-f&extractfactors
+
+   The input dataset is &project._no_outliers, created in Section 8.
+   If the optional outlier-removal bypass is active in Section 8, this dataset
+   contains all scored texts. If the bypass is disabled, it contains the
+   outlier-trimmed corpus.
+   -------------------------------------------------------------------------- */
+
+
+/* ANOVAs by subcorpus */
 
 ODS EXCLUDE NONE;
 ods html file="&whereisit/&myfolder/glm_meta.html";
-%macro create(howmany);
+
+%macro run_anovas(howmany);
+
 %do i=1 %to &howmany;
-OPTIONS VALIDVARNAME=ANY;
-ods graphics off;
 
-proc GLM data=&project._no_outliers;
-ods output FitStatistics=r2_prompt_f&i;
-ods output OverallANOVA=anova_prompt_f&i;
-ods output Means=means_prompt_f&i;
-	title GLM for dataset = &project._no_outliers f&i;
-	class prompt;
-	model f&i = prompt;
-	means prompt;
-	run;
+    OPTIONS VALIDVARNAME=ANY;
+    ods graphics off;
 
-ods graphics on;
+    title "GLM for dataset = &project._no_outliers: f&i by subcorpus";
+
+    proc GLM data=&project._no_outliers;
+        class subcorpus;
+        model f&i = subcorpus;
+        means subcorpus;
+        ods output
+            FitStatistics = r2_subcorpus_f&i
+            OverallANOVA  = anova_subcorpus_f&i
+            Means         = means_subcorpus_f&i;
+    run;
+    quit;
+
+    title;
+
+    ods graphics on;
+
 %end;
-%mend create;
-%create( &extractfactors )  /* Number of factors extracted */
+
+%mend run_anovas;
+
+%run_anovas(&extractfactors);
+
 ods html close;
-quit;
+ODS EXCLUDE ALL;
 
-/*
-https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_glm_sect005.htm
 
-If the interaction between A*B is not significant, this indicates that the effect of A does not depend on the level of B and vice versa.
+/* Export ANOVA tables */
 
-discussion:
-https://www.researchgate.net/post/Difference_between_Type_I_and_Type_III_SS_decision_tables_in_statistical_analyses
-*/
+%macro export_anovas(howmany);
 
-/* Boxplots */
-%macro create(howmany);
 %do i=1 %to &howmany;
-ods listing gpath="&whereisit/&myfolder/";
-ods graphics / imagename="boxplot_f&i" imagefmt=png;
-title "Box plots";
-proc GLM data=&project._no_outliers;
-	title GLM for dataset = &project._no_outliers f&i;
-	class prompt;
-	model f&i = prompt;
-	means prompt;
-	run;
-title;
+
+    PROC EXPORT
+        DATA=WORK.r2_subcorpus_f&i
+        DBMS=CSV
+        OUTFILE="&whereisit/&myfolder/r2_subcorpus_f&i..csv"
+        REPLACE;
+    RUN;
+
+    PROC EXPORT
+        DATA=WORK.anova_subcorpus_f&i
+        DBMS=CSV
+        OUTFILE="&whereisit/&myfolder/anova_subcorpus_f&i..csv"
+        REPLACE;
+    RUN;
+
+    PROC EXPORT
+        DATA=WORK.means_subcorpus_f&i
+        DBMS=CSV
+        OUTFILE="&whereisit/&myfolder/means_subcorpus_f&i..csv"
+        REPLACE;
+    RUN;
+
 %end;
-%mend create;
-%create( &extractfactors )  /* Number of factors extracted */
-quit;
+
+%mend export_anovas;
+
+%export_anovas(&extractfactors);
+
+
+/* Boxplots by subcorpus */
+
+ODS EXCLUDE NONE;
+
+%macro create_boxplots(howmany);
+
+%do i=1 %to &howmany;
+
+    ods listing gpath="&whereisit/&myfolder/";
+    ods graphics / imagename="boxplot_f&i" imagefmt=png reset=index;
+
+    title "Boxplot of f&i by subcorpus";
+
+    proc sgplot data=&project._no_outliers;
+        vbox f&i / category=subcorpus;
+        xaxis label="Subcorpus";
+        yaxis label="Factor &i score";
+    run;
+
+    title;
+
+%end;
+
+%mend create_boxplots;
+
+%create_boxplots(&extractfactors);
+
+ODS EXCLUDE ALL;
 
 
 /* ==========================================================================
