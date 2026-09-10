@@ -107,3 +107,234 @@ The assessment prompt instructs the evaluator to identify the chosen writing pro
 The summarisation and generation prompts extend the phase beyond assessment by supporting controlled experiments with essay representation and synthetic essay production. The summarisation workflow captures the structure, content, and relevant writing features of selected essays, while the generation workflow uses those summaries or prompt specifications to produce new candidate texts for comparison and further analysis.
 
 Phase 2 therefore establishes the first controlled benchmark for comparing human-assigned essay scores with AI-generated assessments, while also introducing prompt-based workflows for essay summarisation and generation. Later phases can build on this material to run larger-scale evaluation experiments, compare model outputs, analyze scoring consistency, test synthetic essay generation, and refine the assessment workflow.
+
+## Phase 3: Corpus Compilation and Traditional Multi-Dimensional Analysis
+
+Phase 3 extends the study from small-scale prompt design and assessment experiments to a larger corpus-linguistic workflow for comparing human-written and LLM-generated Brazilian Portuguese entrance-exam essays.
+
+The phase is organised around four main goals:
+
+1. summarising lower-scoring human compositions;
+2. generating new compositions from those summaries with different LLMs;
+3. annotating human and generated compositions with a Portuguese linguistic tagset;
+4. performing a Traditional Multi-Dimensional Analysis (TMDA) in SAS.
+
+The main working directory for this phase is:
+```text
+cl_st1_ph3_ednalvo/
+```
+The phase includes:
+
+- source and generated composition files under `corpus/`;
+- prompt files for summarisation, generation, and linguistic tagging;
+- the Portuguese linguistic tagset used by the GELC LLM tagger;
+- normalized document-feature matrices exported as TSV files for SAS;
+- a SAS script for factor extraction, factor scoring, outlier diagnostics, ANOVAs, boxplots, and output packaging;
+- methodological notes in `docs/`, including discussion of summary-variable overlap and the SAS script revision.
+
+### Corpus structure
+
+The main corpus folders are:
+```text
+corpus/00_fontes
+corpus/01_composicoes
+corpus/02_resumos
+corpus/03_composicoes_anotadas
+corpus/03_composicoes_anotadas_test
+```
+The analysis compares four subcorpora:
+
+| Subcorpus              | Description                                                                   |
+|------------------------|-------------------------------------------------------------------------------|
+| `maiores_notas`        | Higher-scoring human-written compositions                                     |
+| `menores_notas`        | Lower-scoring human-written compositions                                      |
+| `menores_notas_gpt`    | GPT-generated compositions based on summaries of lower-scoring human texts    |
+| `menores_notas_gemini` | Gemini-generated compositions based on summaries of lower-scoring human texts |
+
+The `subcorpus` variable is used throughout the SAS analysis as the main grouping variable for comparisons.
+
+### Composition summarisation and generation
+
+Lower-scoring human compositions are summarised with `gere_llm_resumo_ou_composicao.py` using the `resuma` command. The resulting summaries are then used as input for composition generation with the `componha` command.
+
+The generated compositions are stored in separate subcorpora according to the model used, for example:
+```text
+corpus/01_composicoes/menores_notas_gpt
+corpus/01_composicoes/menores_notas_gemini
+```
+The detailed command-line workflow is documented in:
+```text
+cl_st1_ph3_ednalvo/cl_st1_ph3_ednalvo_pipeline.md
+```
+### Linguistic annotation
+
+Compositions are annotated with the GELC LLM tagger using:
+```text
+anote_composicoes.py
+```
+The annotation script processes both plain-text and Markdown composition files. For Markdown files, only the contents under the `## Redação` heading are submitted for annotation. The output structure mirrors the input structure, and annotated files are written as `.txt` files.
+
+The main annotation outputs are stored under:
+```text
+corpus/03_composicoes_anotadas
+```
+A separate test-output folder is also available:
+```text
+corpus/03_composicoes_anotadas_test
+```
+### Portuguese linguistic tagset
+
+Phase 3 uses a Portuguese tagset covering a wide range of linguistic features, including:
+
+- articles and determiners;
+- pronouns;
+- nouns;
+- adjectives;
+- verbs;
+- tense, aspect, mood, and voice;
+- adverbs;
+- prepositions;
+- conjunctions and subordination;
+- clause types and syntactic structures;
+- stance, complement, and control constructions;
+- clitic placement;
+- discourse markers;
+- conversational features;
+- Brazilian Portuguese digital and informal-variation features;
+- derived aggregate variables.
+
+The tagset includes specific variables such as `v001`–`v230`, as well as aggregate summary variables `v900`–`v919`.
+
+### Normalised document-feature matrices
+
+After annotation, normalised document-feature matrices are computed with:
+```text
+compute_dfm_normalizado.py
+```
+The resulting TSV files are stored in the `sas/` directory and are used as input to the SAS TMDA script:
+```text
+sas/maiores_notas_counts.tsv
+sas/menores_notas_counts.tsv
+sas/menores_notas_gemini_counts.tsv
+sas/menores_notas_gpt_counts.tsv
+```
+Each matrix includes metadata columns such as:
+```text
+filename
+subcorpus
+wcount
+```
+followed by linguistic feature variables.
+
+### SAS Traditional Multi-Dimensional Analysis
+
+The SAS script for Phase 3 is:
+```text
+sas/cl_st1_ph3_ednalvo.sas
+```
+The script implements the following workflow:
+
+1. imports the normalized TSV matrices;
+2. combines the four subcorpora into a single analysis dataset;
+3. excludes metadata and aggregate variables from factor extraction;
+4. runs an unrotated factor analysis;
+5. removes variables below the communality cutoff;
+6. runs the final rotated factor analysis;
+7. creates loading tables and interpretation tables;
+8. computes factor scores for all compositions;
+9. identifies factor-score outliers for diagnostic inspection;
+10. keeps outliers in the main score files and statistical analyses;
+11. runs ANOVAs comparing factor scores across subcorpora;
+12. generates boxplots by subcorpus;
+13. packages output files into a zip archive.
+
+The current factor model extracts nine factors and uses promax rotation. The loading-selection logic in the SAS script is currently written for exactly nine factors.
+
+### Treatment of summary variables
+
+A key methodological decision in Phase 3 is that the aggregate summary variables `v900`–`v919` are **not included in the primary factor extraction**.
+
+This decision was made because the summary variables are derived from specific linguistic variables and, in several cases, overlap with one another. Including both a summary variable and its component variables in the same factor analysis could introduce artificial covariance, overweight particular linguistic domains, and complicate interpretation.
+
+Therefore, the main TMDA model uses specific variables only. Summary variables may still be useful for descriptive follow-up or later sensitivity analyses, but they are excluded from the primary factor model.
+
+A fuller discussion is available in:
+```text
+cl_st1_ph3_ednalvo/docs/summary_variables_overlap_discussion.md
+```
+### Treatment of `wcount`
+
+The `wcount` variable is imported and retained for corpus-size reporting, but it is excluded from factor extraction. It is treated as document metadata rather than as a factor-loading linguistic feature.
+
+### Outlier policy
+
+Factor-score outliers are identified in the SAS script using an IQR-based rule and exported for qualitative inspection. However, the outlier-removal bypass is intentionally active in the current workflow.
+
+This means that outliers are:
+
+- identified;
+- exported to diagnostic CSV files;
+- retained in the main score files;
+- retained in the final ANOVAs and boxplots;
+- retained when selecting representative compositions for factor-pole interpretation.
+
+This is intentional because the strongest positive and negative examples of a factor may also be statistical outliers. Rather than removing them automatically, they are inspected manually.
+
+The factor-specific outlier files are exported as:
+```text
+outliers_f1.csv
+outliers_f2.csv
+...
+outliers_f9.csv
+```
+The combined outlier list is exported as:
+```text
+outliers_all.csv
+```
+### Main SAS outputs
+
+The most important SAS outputs include:
+
+| Output                                            | Purpose                                             |
+|---------------------------------------------------|-----------------------------------------------------|
+| `rotated.csv`                                     | Rotated factor-pattern information                  |
+| `loadtable_for_interpretation.csv`                | Loadings table used for factor interpretation       |
+| `cl_st1_ph3_ednalvo_scores.csv`                   | Full scored dataset                                 |
+| `cl_st1_ph3_ednalvo_scores_only.csv`              | Main file for ranking compositions by factor scores |
+| `outliers_f1.csv`–`outliers_f9.csv`               | Factor-specific outlier diagnostics                 |
+| `outliers_all.csv`                                | Combined outlier list                               |
+| `anova_subcorpus_f1.csv`–`anova_subcorpus_f9.csv` | ANOVA outputs by factor                             |
+| `means_subcorpus_f1.csv`–`means_subcorpus_f9.csv` | Subcorpus means by factor                           |
+| `r2_subcorpus_f1.csv`–`r2_subcorpus_f9.csv`       | Fit statistics by factor                            |
+| `boxplot_f1.png`–`boxplot_f9.png`                 | Boxplots of factor scores by subcorpus              |
+
+A detailed report on the SAS revision is available in:
+```text
+cl_st1_ph3_ednalvo/docs/sas_script_revision_report.md
+```
+### Recommended interpretation workflow
+
+The recommended interpretation workflow is:
+
+1. Open `loadtable_for_interpretation.csv`.
+2. For each factor, inspect the primary positive and negative loadings.
+3. Use `cl_st1_ph3_ednalvo_scores_only.csv` to rank compositions by factor score.
+4. For each factor:
+   - sort descending to find the strongest positive-pole compositions;
+   - sort ascending to find the strongest negative-pole compositions.
+5. Check the corresponding `outliers_f&i.csv` file to see whether the strongest examples are also statistical outliers.
+6. Inspect the actual compositions using `filename` and `subcorpus`.
+7. Compare the texts with the linguistic features that define the relevant factor pole.
+8. Treat outliers diagnostically rather than mechanically:
+   - if an outlier is linguistically coherent, it may be a useful extreme exemplar;
+   - if an outlier appears to result from an annotation/counting artifact, it should be treated cautiously.
+9. Use ANOVA tables, subcorpus means, and boxplots to interpret broader differences among subcorpora.
+10. Avoid basing a factor interpretation on a single extreme text; inspect multiple examples per pole.
+
+In short, Phase 3 treats outliers as interpretive evidence to be inspected, not as observations to be automatically discarded.
+
+### Reporting language
+
+The current methodological position can be summarised as follows:
+
+> The analysis used normalised document-feature matrices for four subcorpora. Aggregate summary variables were excluded from factor extraction to avoid redundancy with their component variables and to reduce artificial covariance caused by overlapping summary categories. The word-count variable was retained for descriptive corpus-size reporting but excluded from factor analysis. After an initial unrotated factor analysis, variables below the communality cutoff were removed. A final principal factor analysis with promax rotation was then performed, and factor scores were computed for all texts. Factor-score outliers were identified using an IQR rule and exported for diagnostic qualitative inspection, but were retained in the main score files, statistical comparisons, and selection of representative texts. Representative compositions for each factor pole were selected by ranking the full factor-score file and cross-checking top-ranked texts against the factor-specific outlier lists.
