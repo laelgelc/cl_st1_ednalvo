@@ -51,7 +51,7 @@ options validvarname=any;
 DATA &dataset ;
     LENGTH filename $150 subcorpus $50;
 
-    INFILE "&whereisit/&myfolder/sas/&infile"
+    INFILE "&whereisit/&myfolder/&infile"
         DLM='09'x
         DSD
         FIRSTOBS=2
