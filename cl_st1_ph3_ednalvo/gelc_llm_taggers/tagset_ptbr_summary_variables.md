@@ -253,3 +253,73 @@
 | v917                  | v112, v114-v117, v120-v124                             |
 | v918                  | v098-v101, v150-v152, v165                             |
 | v919                  | v012-v013, v130, v154, v157-v159, v198-v199, v227-v228 |
+
+## Overlapping summary variables
+
+There are several overlaps among the `v900`–`v919` summary variables. Most summaries are independent, but some specific variables are included in **more than one summary variable**.
+
+Here are all overlap cases.
+
+| specific variable | included in summary variables |
+|-------------------|-------------------------------|
+| `v012`            | `v901`, `v919`                |
+| `v013`            | `v901`, `v919`                |
+| `v065`            | `v904`, `v916`                |
+| `v112`            | `v905`, `v917`                |
+| `v114`            | `v905`, `v917`                |
+| `v115`            | `v905`, `v917`                |
+| `v116`            | `v905`, `v917`                |
+| `v117`            | `v905`, `v917`                |
+| `v120`            | `v905`, `v917`                |
+| `v121`            | `v905`, `v917`                |
+| `v122`            | `v905`, `v917`                |
+| `v123`            | `v905`, `v917`                |
+| `v124`            | `v905`, `v917`                |
+| `v130`            | `v906`, `v919`                |
+| `v150`            | `v914`, `v918`                |
+| `v158`            | `v909`, `v919`                |
+| `v167`            | `v913`, `v915`                |
+| `v168`            | `v913`, `v915`                |
+| `v169`            | `v913`, `v915`                |
+| `v170`            | `v913`, `v915`                |
+| `v171`            | `v913`, `v915`                |
+| `v172`            | `v913`, `v915`                |
+| `v173`            | `v913`, `v915`                |
+| `v174`            | `v913`, `v915`                |
+| `v175`            | `v913`, `v915`                |
+| `v176`            | `v913`, `v915`                |
+| `v177`            | `v913`, `v915`                |
+| `v178`            | `v913`, `v915`                |
+| `v179`            | `v913`, `v915`                |
+| `v180`            | `v913`, `v915`                |
+| `v181`            | `v913`, `v915`                |
+
+### By summary-variable pair
+
+Another way to see it:
+
+| summary pair    | overlapping variables            |
+|-----------------|----------------------------------|
+| `v901` / `v919` | `v012`, `v013`                   |
+| `v904` / `v916` | `v065`                           |
+| `v905` / `v917` | `v112`, `v114-v117`, `v120-v124` |
+| `v906` / `v919` | `v130`                           |
+| `v909` / `v919` | `v158`                           |
+| `v913` / `v915` | `v167-v181`                      |
+| `v914` / `v918` | `v150`                           |
+
+### Interpretation
+
+These overlaps are not necessarily mistakes. They reflect different levels of aggregation.
+
+For example:
+
+- `v901` = all pronouns;
+- `v919` = variable/nonstandard PB phenomena;
+- `v012` and `v013` can belong to both, because they are pronoun-related and also relevant to variation.
+
+Similarly:
+
+- `v913` = all `que` complement clauses;
+- `v915` = all positioning/stance/complementation clauses;
+- `v167-v181` are exactly the `que` complement subtypes that also function as stance/complementation features.
