@@ -166,7 +166,12 @@ RUN;
    SECTION 4: UNROTATED FACTOR ANALYSIS & COMMUNALITY CUTOFF
    ========================================================================== */
 
-/* Unrotated Factor Analysis without summary vars, before dropping low communalities */
+/* Unrotated Factor Analysis without summary variables, before dropping
+   low-communality variables.
+
+   The input dataset &project._no_sum_v already excludes all 9xx summary
+   variables (v900-v919), so this step is based only on specific linguistic
+   variables. */
 OPTIONS VALIDVARNAME=ANY;
 
 ODS EXCLUDE NONE;
@@ -175,7 +180,7 @@ ods trace on;
 
 proc factor
 OUTSTAT=fout
-data=&project._no_sum_v  /* Summary variables dropped */
+data=&project._no_sum_v  /* Specific variables only: v900-v919 already dropped */
 method=principal scree
 mineigen=0
 nfactors=100
@@ -190,6 +195,7 @@ ods trace off;
 ods html close;
 ODS EXCLUDE ALL;
 
+
 /*** Find low communalities ***/
 /* https://communities.sas.com/t5/SAS-Programming/How-do-I-delete-variables-based-on-their-values-in-an-outstat/m-p/675576#M203571 */
 
@@ -197,58 +203,97 @@ data fout2;
     set fout (where=(_TYPE_="COMMUNAL"));
 run;
 
-proc transpose data=fout2 out=communal; id _TYPE_; run;
-
-proc sql;
-    select _name_ into :names separated by ' ' from communal
-        where communal < &communalcutoff ;
-quit;
-
-data &project._no_low_c ;
-    set &project._no_sum_v ;
-    drop &names;
+proc transpose data=fout2 out=communal;
+    id _TYPE_;
 run;
 
-/* Save dropped variables to excel */
-PROC SORT Data=communal;   BY _NAME_; RUN;
+/* Identify variables with communality below the cutoff.
+
+   Robustness note:
+   &names is explicitly initialized before PROC SQL. If no variables fall below
+   the cutoff, &names remains empty. The macro below then creates
+   &project._no_low_c without issuing an empty DROP statement. */
+%let names=;
+
+proc sql noprint;
+    select _name_ into :names separated by ' '
+    from communal
+    where communal < &communalcutoff ;
+quit;
+
+
+/* Drop low-communality variables only when such variables exist. */
+%macro drop_low_communality_vars;
+
+    %if %superq(names) ne %then %do;
+
+        data &project._no_low_c ;
+            set &project._no_sum_v ;
+            drop &names;
+        run;
+
+    %end;
+    %else %do;
+
+        data &project._no_low_c ;
+            set &project._no_sum_v ;
+        run;
+
+        %put NOTE: No variables had communalities below &communalcutoff..;
+        %put NOTE: Dataset &project._no_low_c created without dropping variables.;
+
+    %end;
+
+%mend drop_low_communality_vars;
+
+%drop_low_communality_vars;
+
+
+/* Save variables dropped because of low communality */
+PROC SORT DATA=communal;
+    BY _NAME_;
+RUN;
 
 data communal_dropped ;
-set communal ;
-if COMMUNAL < &communalcutoff ;
+    set communal ;
+    if COMMUNAL < &communalcutoff ;
 RUN;
 
 ODS EXCLUDE NONE;
 PROC EXPORT
-  DATA= WORK.communal_dropped
+  DATA=WORK.communal_dropped
   DBMS=CSV
   OUTFILE="&whereisit/&myfolder/communalities_dropped.csv"
   REPLACE;
 RUN;
 ODS EXCLUDE ALL;
 
+
 /* Scree plot */
 data fout2;
   set fout (where=(_TYPE_="EIGENVAL"));
 run;
 
-proc transpose data=fout2 out= fout3 (drop = _NAME_);
-id _TYPE_;
+proc transpose data=fout2 out=fout3 (drop=_NAME_);
+    id _TYPE_;
 run;
 
 data fout4 ;
-set fout3 ;
-factor = _n_;
-if factor <= 20 ;
+    set fout3 ;
+    factor = _n_;
+    if factor <= 20 ;
 run;
 
 ODS EXCLUDE NONE;
 ods listing gpath="&whereisit/&myfolder/";
 ods graphics / imagename="scree" imagefmt=png;
+
 title "Scree plot";
-proc sgplot data= fout4 ;
-  series x=factor y=EIGENVAL /  datalabel=factor;
+proc sgplot data=fout4 ;
+    series x=factor y=EIGENVAL / datalabel=factor;
 run;
 title;
+
 ODS EXCLUDE ALL;
 
 
