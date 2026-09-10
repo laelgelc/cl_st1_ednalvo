@@ -21,7 +21,7 @@ options fmtsearch=(work library);
 options validvarname=any;
 
 /* Extraction & cutoff parameters */
-%let extractfactors = 9 ;
+%let extractfactors = 5 ;
 %let factorvars = f1-f&extractfactors ;
 %let minloading = .3 ;
 %let communalcutoff = .15 ;
