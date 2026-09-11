@@ -172,6 +172,41 @@ python examples_md.py
 
 Output: `examples_md/`
 
+```shell script
+(my_env) eyamrog@eyamrog-Vivobook-16:~/PycharmProjects/cl_st1_ednalvo/cl_st1_ph3_ednalvo$ python examples_md.py
+Project: cl_st1_ph3_ednalvo
+Scores file: sas/output_cl_st1_ph3_ednalvo/cl_st1_ph3_ednalvo_scores_only.csv
+Corpus dir: corpus/01_composicoes
+Loadtable: sas/output_cl_st1_ph3_ednalvo/loadtable_for_interpretation.csv
+Detected 4 factors: f1, f2, f3, f4.
+
+→ f1_pos: selecting by subcorpus means (ranked: menores_notas, maiores_notas, menores_notas_gpt, menores_notas_gemini)
+  ✓ Wrote 50 examples for f1_pos
+
+→ f1_neg: selecting by subcorpus means (ranked: menores_notas_gemini, menores_notas_gpt, maiores_notas, menores_notas)
+  ✓ Wrote 50 examples for f1_neg
+
+→ f2_pos: selecting by subcorpus means (ranked: menores_notas, maiores_notas, menores_notas_gemini, menores_notas_gpt)
+  ✓ Wrote 50 examples for f2_pos
+
+→ f2_neg: selecting by subcorpus means (ranked: menores_notas_gpt, menores_notas_gemini, maiores_notas, menores_notas)
+  ✓ Wrote 50 examples for f2_neg
+
+→ f3_pos: selecting by subcorpus means (ranked: menores_notas_gpt, menores_notas, maiores_notas, menores_notas_gemini)
+  ✓ Wrote 50 examples for f3_pos
+
+→ f3_neg: selecting by subcorpus means (ranked: menores_notas_gemini, maiores_notas, menores_notas, menores_notas_gpt)
+  ✓ Wrote 50 examples for f3_neg
+
+→ f4_pos: selecting by subcorpus means (ranked: maiores_notas, menores_notas, menores_notas_gpt, menores_notas_gemini)
+  ✓ Wrote 50 examples for f4_pos
+
+→ f4_neg: selecting by subcorpus means (ranked: menores_notas_gemini, menores_notas_gpt, menores_notas, maiores_notas)
+  ✓ Wrote 50 examples for f4_neg
+
+(my_env) eyamrog@eyamrog-Vivobook-16:~/PycharmProjects/cl_st1_ednalvo/cl_st1_ph3_ednalvo$ 
+```
+
 ## 8. Generate Markdown ANOVA table
 
 ```shell script

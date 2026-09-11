@@ -271,8 +271,10 @@ def source_path_candidates(subcorpus: str, filename: str, corpus_dir: Path) -> l
     candidates = [base_path]
 
     if base_path.suffix.lower() == ".txt":
-        stem_path = base_path.with_suffix("")
-        candidates.extend(stem_path.with_suffix(suffix) for suffix in (".md", ".markdown"))
+        candidates.extend(
+            base_path.with_name(base_path.stem + suffix)
+            for suffix in (".md", ".markdown")
+        )
 
     return candidates
 

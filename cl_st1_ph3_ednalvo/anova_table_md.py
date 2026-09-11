@@ -1,105 +1,189 @@
 #!/usr/bin/env python3
 """
-Reads the SAS GLM HTML output and generates a Markdown ANOVA table.
-Extracts Dimension, F, p, and R^2 % using the Type I SS tables.
+Generate a Markdown ANOVA summary table from Phase 3 SAS CSV outputs.
+
+The programme reads per-factor ANOVA and R² CSV files from:
+
+    sas/output_<project>/
+
+Expected files include:
+
+    anova_subcorpus_f1.csv
+    r2_subcorpus_f1.csv
+    anova_subcorpus_f2.csv
+    r2_subcorpus_f2.csv
+    ...
+
+It writes:
+
+    anova_table_md/anova_by_subcorpus.md
 """
+
+from __future__ import annotations
 
 import argparse
 import re
 from pathlib import Path
+from typing import Any
+
+import pandas as pd
+
+
+DEFAULT_PROJECT = Path.cwd().name
+DEFAULT_OUTPUT_DIR = Path("anova_table_md")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate ANOVA Markdown table from SAS GLM HTML output.")
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Generate ANOVA Markdown table from Phase 3 SAS CSV outputs."
+    )
+
     parser.add_argument(
-        "--input-file",
-        default="sas/output_cl_st1_ph2_sara/glm_meta.html",
-        help="Path to the SAS HTML output file."
+        "--project",
+        default=DEFAULT_PROJECT,
+        help="Project name. Default: current directory name.",
+    )
+    parser.add_argument(
+        "--sas-output-dir",
+        default=None,
+        help="Directory containing SAS outputs. Default: sas/output_<project>.",
     )
     parser.add_argument(
         "--output-dir",
-        default="anova_table_md",
-        help="Directory to save the Markdown table."
+        default=str(DEFAULT_OUTPUT_DIR),
+        help="Directory to save the Markdown table. Default: anova_table_md.",
     )
+
     return parser.parse_args()
 
 
-def extract_stats(html_content: str) -> list[dict[str, str]]:
-    """Extract ANOVA statistics for each dependent variable."""
-    # Split the document into sections by dependent variable
-    sections = re.split(r'<div class="c proctitle">Dependent Variable:\s*(f\d+)', html_content)
+def natural_sort_key(value: str) -> list[Any]:
+    """Return a natural-sort key that treats digit runs as integers."""
+    return [
+        int(part) if part.isdigit() else part.lower()
+        for part in re.split(r"(\d+)", value)
+    ]
 
-    results = []
 
-    # sections[0] is everything before the first Dependent Variable, skip it.
-    # sections[1] is the first var name (e.g., 'f1'), sections[2] is its content, etc.
-    for i in range(1, len(sections), 2):
-        dim_name = sections[i].strip()
-        dim_num = dim_name.replace('f', '')
-        content = sections[i + 1]
+def resolve_sas_output_dir(project: str, sas_output_dir_arg: str | None) -> Path:
+    """Resolve the SAS output directory."""
+    if sas_output_dir_arg is None:
+        return Path("sas") / f"output_{project}"
+    return Path(sas_output_dir_arg)
 
-        # Extract R-Square
-        r_square_match = re.search(
-            r'summary="Procedure GLM: Fit Statistics".*?<tbody>\s*<tr>\s*<td[^>]*>([\d.-]+)</td>',
-            content,
-            re.DOTALL | re.IGNORECASE
-        )
-        r_square = float(r_square_match.group(1)) if r_square_match else 0.0
-        r_square_pct = f"{r_square * 100:.2f}"
 
-        # Extract Type I ANOVA F and p for 'prompt'
-        # The row structure: <th scope="row">prompt</th> <td>DF</td> <td>Type I SS</td> <td>Mean Square</td> <td>F Value</td> <td>Pr > F</td>
-        type_i_match = re.search(
-            r'summary="Procedure GLM: Type I Model ANOVA".*?<th[^>]*>prompt</th>\s*<td[^>]*>.*?</td>\s*<td[^>]*>.*?</td>\s*<td[^>]*>.*?</td>\s*<td[^>]*>([\d.-]+)</td>\s*<td[^>]*>([^<]+)</td>',
-            content,
-            re.DOTALL | re.IGNORECASE
-        )
+def factor_from_filename(path: Path) -> str:
+    """Extract factor label from a filename such as anova_subcorpus_f1.csv."""
+    match = re.search(r"(f\d+)", path.stem)
+    if not match:
+        raise ValueError(f"Could not extract factor from filename: {path}")
+    return match.group(1)
 
-        if type_i_match:
-            f_value = type_i_match.group(1).strip()
-            p_value = type_i_match.group(2).strip().replace('&lt;', '<')
+
+def find_column(df: pd.DataFrame, candidates: list[str]) -> str | None:
+    """Find a dataframe column by case-insensitive candidate names."""
+    normalised = {str(column).strip().lower(): str(column) for column in df.columns}
+
+    for candidate in candidates:
+        key = candidate.strip().lower()
+        if key in normalised:
+            return normalised[key]
+
+    return None
+
+
+def extract_anova_stats(anova_file: Path) -> tuple[str, str]:
+    """Extract F and p values from one SAS ANOVA CSV file."""
+    df = pd.read_csv(anova_file)
+
+    source_col = find_column(df, ["Source", "source"])
+    f_col = find_column(df, ["F Value", "FValue", "F"])
+    p_col = find_column(df, ["Pr > F", "ProbF", "p"])
+
+    if source_col is not None:
+        source_rows = df[df[source_col].astype(str).str.strip().str.lower() == "subcorpus"]
+        if not source_rows.empty:
+            row = source_rows.iloc[0]
         else:
-            f_value = "N/A"
-            p_value = "N/A"
+            row = df.iloc[0]
+    else:
+        row = df.iloc[0]
 
-        results.append({
-            "Dimension": dim_num,
-            "F": f_value,
-            "p": p_value,
-            "R2": r_square_pct
-        })
+    f_value = "N/A" if f_col is None else str(row[f_col]).strip()
+    p_value = "N/A" if p_col is None else str(row[p_col]).strip().replace("&lt;", "<")
 
-    return results
+    return f_value, p_value
+
+
+def extract_r2(r2_file: Path) -> str:
+    """Extract R² percentage from one SAS fit-statistics CSV file."""
+    if not r2_file.exists():
+        return "N/A"
+
+    df = pd.read_csv(r2_file)
+
+    r2_col = find_column(df, ["R-Square", "RSquare", "R2", "R²"])
+    if r2_col is None:
+        return "N/A"
+
+    r2 = float(df.iloc[0][r2_col])
+    return f"{r2 * 100:.2f}"
 
 
 def main() -> None:
+    """Build the ANOVA-by-subcorpus Markdown table."""
     args = parse_args()
-    input_path = Path(args.input_file)
+
+    sas_output_dir = resolve_sas_output_dir(args.project, args.sas_output_dir)
     output_dir = Path(args.output_dir)
 
-    if not input_path.exists():
-        raise FileNotFoundError(f"Input file not found: {input_path}")
+    if not sas_output_dir.exists():
+        raise FileNotFoundError(f"SAS output directory not found: {sas_output_dir}")
 
-    html_content = input_path.read_text(encoding="utf-8")
-    stats = extract_stats(html_content)
+    anova_files = sorted(
+        sas_output_dir.glob("anova_subcorpus_f*.csv"),
+        key=lambda path: natural_sort_key(path.name),
+    )
 
-    if not stats:
-        print("No ANOVA statistics found in the HTML file.")
-        return
+    if not anova_files:
+        raise FileNotFoundError(
+            f"No ANOVA CSV files found in {sas_output_dir} matching anova_subcorpus_f*.csv"
+        )
+
+    rows: list[dict[str, str]] = []
+
+    for anova_file in anova_files:
+        factor = factor_from_filename(anova_file)
+        dim_num = factor.replace("f", "")
+        r2_file = sas_output_dir / f"r2_subcorpus_{factor}.csv"
+
+        f_value, p_value = extract_anova_stats(anova_file)
+        r2_pct = extract_r2(r2_file)
+
+        rows.append(
+            {
+                "Dimension": dim_num,
+                "F": f_value,
+                "p": p_value,
+                "R2": r2_pct,
+            }
+        )
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    out_file = output_dir / "anova_by_prompt.md"
+    out_file = output_dir / "anova_by_subcorpus.md"
 
-    # Build the Markdown table
     md_lines = [
-        "Table: ANOVA by Prompt",
+        "Table: ANOVA by Subcorpus",
         "",
         "| Dimension | F | p | R² % |",
-        "|---|---|---|---|"
+        "|---|---:|---:|---:|",
     ]
 
-    for stat in stats:
-        md_lines.append(f"| {stat['Dimension']} | {stat['F']} | {stat['p']} | {stat['R2']} |")
+    for row in rows:
+        md_lines.append(
+            f"| {row['Dimension']} | {row['F']} | {row['p']} | {row['R2']} |"
+        )
 
     out_file.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
     print(f"✓ Created {out_file}")
