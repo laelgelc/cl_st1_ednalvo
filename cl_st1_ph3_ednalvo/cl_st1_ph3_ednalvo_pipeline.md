@@ -162,3 +162,20 @@ python compute_dfm_normalizado.py \
   --output-dir sas/menores_notas_gpt_counts.tsv \
   --tagset gelc_llm_taggers/tagset_ptbr.md
 ```
+## 6. Run SAS
+
+## 7. Generate Markdown example extracts
+
+```shell script
+python examples_md.py
+```
+
+Output: `examples_md/`
+
+## 8. Generate Markdown ANOVA table
+
+```shell script
+python anova_table_md.py
+```
+
+Output: `anova_table_md/`
