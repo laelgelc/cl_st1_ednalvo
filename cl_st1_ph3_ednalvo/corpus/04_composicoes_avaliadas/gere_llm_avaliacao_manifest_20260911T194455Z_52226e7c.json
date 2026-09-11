@@ -1,0 +1,316 @@
+{
+  "run_id": "20260911T194455Z_52226e7c",
+  "programme": "gere_llm_avaliacao.py",
+  "programme_version": "v1",
+  "command": "avalie",
+  "start_time": "2026-09-11T19:44:55Z",
+  "end_time": "2026-09-11T19:48:07Z",
+  "paths": {
+    "input_dir": "corpus/01_composicoes",
+    "output_dir": "corpus/04_composicoes_avaliadas",
+    "prompt": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+    "env_file": "env/.env",
+    "log_file": "corpus/04_composicoes_avaliadas/gere_llm_avaliacao.log",
+    "manifest_file": "corpus/04_composicoes_avaliadas/gere_llm_avaliacao_manifest.json",
+    "timestamped_manifest_file": "corpus/04_composicoes_avaliadas/gere_llm_avaliacao_manifest_20260911T194455Z_52226e7c.json"
+  },
+  "environment": {
+    "env_file": "env/.env",
+    "env_file_found": true,
+    "model_family": "openai",
+    "openai_api_key_available": true,
+    "gemini_api_key_available": true,
+    "api_keys_logged": false
+  },
+  "model_configuration": {
+    "model": "gpt-5.6-sol",
+    "model_family": "openai",
+    "temperature": 0.0,
+    "temperature_unsupported_models_known_this_run": [
+      "gpt-5.6-sol"
+    ]
+  },
+  "prompt": {
+    "file": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+    "sha256": "4a5071bc951ae21ef53c331b85d20cc426f514092b489e62a97663b49f915a90",
+    "characters": 51858
+  },
+  "processing": {
+    "test_mode": true,
+    "test_limit": 5,
+    "start_filename": null,
+    "reprocess": false,
+    "workers": 1,
+    "max_retries": 2,
+    "retry_backoff_seconds": 5.0,
+    "request_delay_seconds": 0.0,
+    "order": "natural_relative_path_order",
+    "recursive": true,
+    "mirrors_input_subdirectories": true,
+    "supported_input_suffixes": [
+      ".markdown",
+      ".md",
+      ".txt"
+    ]
+  },
+  "counts": {
+    "files_discovered": 1000,
+    "files_planned": 5,
+    "submitted_to_llm": 5,
+    "succeeded": 5,
+    "failed": 0,
+    "skipped_existing": 0
+  },
+  "items": [
+    {
+      "input_filename": "32757.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/32757.txt",
+      "input_relative_file": "maiores_notas/32757.txt",
+      "output_file": "corpus/04_composicoes_avaliadas/maiores_notas/32757_avaliacao_gpt-5.6-sol.md",
+      "command": "avalie",
+      "model": "gpt-5.6-sol",
+      "model_family": "openai",
+      "prompt_file": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+      "prompt_sha256": "4a5071bc951ae21ef53c331b85d20cc426f514092b489e62a97663b49f915a90",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "openai",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "composition_id": "32757",
+      "input_sha256": "25dec05bdd6f599b601e2d8ed9d10b9141739ab8326b6d05285b2f0e04eeda7d",
+      "output_sha256": "9473a32be805aa2f568f2ffedb9ae8d0bec692cfd6ad155779a217cfd4657849",
+      "api_metadata": {
+        "id": "resp_0b8731a3babd0c66006aa45a3bcd9487d29aa24817dd7ac9af",
+        "model": "gpt-5.6-sol",
+        "created_at": 1789155899.0,
+        "status": "completed",
+        "usage": {
+          "input_tokens": 12036,
+          "input_tokens_details": {
+            "cache_write_tokens": 12033,
+            "cached_tokens": 0
+          },
+          "output_tokens": 1431,
+          "output_tokens_details": {
+            "reasoning_tokens": 432
+          },
+          "total_tokens": 13467
+        }
+      },
+      "started_at": "2026-09-11T19:44:56Z",
+      "ended_at": "2026-09-11T19:45:22Z",
+      "duration_seconds": 26.172,
+      "error": null,
+      "request_sha256": "0e9e49f1d08afafbf60121fdf9357eb3ab381e2c76572800d91ebbdae644533e",
+      "response_characters": 4445
+    },
+    {
+      "input_filename": "32875.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/32875.txt",
+      "input_relative_file": "maiores_notas/32875.txt",
+      "output_file": "corpus/04_composicoes_avaliadas/maiores_notas/32875_avaliacao_gpt-5.6-sol.md",
+      "command": "avalie",
+      "model": "gpt-5.6-sol",
+      "model_family": "openai",
+      "prompt_file": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+      "prompt_sha256": "4a5071bc951ae21ef53c331b85d20cc426f514092b489e62a97663b49f915a90",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "openai",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "composition_id": "32875",
+      "input_sha256": "600b6ec2a5641305f063d0e74ac0e49868e91d9c87295cb33db9144db93a4994",
+      "output_sha256": "3c776a56422e577288e401cab388de2b987036dd3be53482019414aa5eb07326",
+      "api_metadata": {
+        "id": "resp_03ea79004e3ed5e6006aa45a52de0c87d2ba5e92eb5122ae6f",
+        "model": "gpt-5.6-sol",
+        "created_at": 1789155922.0,
+        "status": "completed",
+        "usage": {
+          "input_tokens": 12277,
+          "input_tokens_details": {
+            "cache_write_tokens": 12274,
+            "cached_tokens": 0
+          },
+          "output_tokens": 2753,
+          "output_tokens_details": {
+            "reasoning_tokens": 1485
+          },
+          "total_tokens": 15030
+        }
+      },
+      "started_at": "2026-09-11T19:45:22Z",
+      "ended_at": "2026-09-11T19:45:58Z",
+      "duration_seconds": 35.482,
+      "error": null,
+      "request_sha256": "831843f53b334e479da2143ec4cb55c9d4504cefafeb058b483f53d7bc21eb99",
+      "response_characters": 5853
+    },
+    {
+      "input_filename": "33083.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33083.txt",
+      "input_relative_file": "maiores_notas/33083.txt",
+      "output_file": "corpus/04_composicoes_avaliadas/maiores_notas/33083_avaliacao_gpt-5.6-sol.md",
+      "command": "avalie",
+      "model": "gpt-5.6-sol",
+      "model_family": "openai",
+      "prompt_file": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+      "prompt_sha256": "4a5071bc951ae21ef53c331b85d20cc426f514092b489e62a97663b49f915a90",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "openai",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "composition_id": "33083",
+      "input_sha256": "567b79b5b908ad915bfa23fd21bbe400123349a0a22a48f5f9177c08869f9e00",
+      "output_sha256": "5294a8b2a48dc3daaff295405d7e7e474f6e351111835930709cf2398ed18db5",
+      "api_metadata": {
+        "id": "resp_0016ba2319d5eb85006aa45a76826c87d2badb2ec0a02b9f42",
+        "model": "gpt-5.6-sol",
+        "created_at": 1789155958.0,
+        "status": "completed",
+        "usage": {
+          "input_tokens": 12137,
+          "input_tokens_details": {
+            "cache_write_tokens": 12134,
+            "cached_tokens": 0
+          },
+          "output_tokens": 1324,
+          "output_tokens_details": {
+            "reasoning_tokens": 171
+          },
+          "total_tokens": 13461
+        }
+      },
+      "started_at": "2026-09-11T19:45:58Z",
+      "ended_at": "2026-09-11T19:46:16Z",
+      "duration_seconds": 18.414,
+      "error": null,
+      "request_sha256": "a84d486f8594cf0ce6168c803d60eb8559409100045c17a56ea1ec8782d61fa7",
+      "response_characters": 5150
+    },
+    {
+      "input_filename": "33228.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33228.txt",
+      "input_relative_file": "maiores_notas/33228.txt",
+      "output_file": "corpus/04_composicoes_avaliadas/maiores_notas/33228_avaliacao_gpt-5.6-sol.md",
+      "command": "avalie",
+      "model": "gpt-5.6-sol",
+      "model_family": "openai",
+      "prompt_file": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+      "prompt_sha256": "4a5071bc951ae21ef53c331b85d20cc426f514092b489e62a97663b49f915a90",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "openai",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "composition_id": "33228",
+      "input_sha256": "ebfacae86a06aeac7ef78e60e35bda595f4c7514452e89f39988d3cfd30f6967",
+      "output_sha256": "919e324a80865b8eb8570d49416a9ae6bc690e70be202670f23d451c654ec38d",
+      "api_metadata": {
+        "id": "resp_0711c76a1977bfb2006aa45a88ed5887d285502450288a4c05",
+        "model": "gpt-5.6-sol",
+        "created_at": 1789155976.0,
+        "status": "completed",
+        "usage": {
+          "input_tokens": 12214,
+          "input_tokens_details": {
+            "cache_write_tokens": 12211,
+            "cached_tokens": 0
+          },
+          "output_tokens": 3419,
+          "output_tokens_details": {
+            "reasoning_tokens": 2173
+          },
+          "total_tokens": 15633
+        }
+      },
+      "started_at": "2026-09-11T19:46:16Z",
+      "ended_at": "2026-09-11T19:47:20Z",
+      "duration_seconds": 63.915,
+      "error": null,
+      "request_sha256": "abc057c3d02f40a32bf55b804c046a72671802a414fdd02c764b1ab093d591e5",
+      "response_characters": 5507
+    },
+    {
+      "input_filename": "33383.txt",
+      "input_file": "corpus/01_composicoes/maiores_notas/33383.txt",
+      "input_relative_file": "maiores_notas/33383.txt",
+      "output_file": "corpus/04_composicoes_avaliadas/maiores_notas/33383_avaliacao_gpt-5.6-sol.md",
+      "command": "avalie",
+      "model": "gpt-5.6-sol",
+      "model_family": "openai",
+      "prompt_file": "prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md",
+      "prompt_sha256": "4a5071bc951ae21ef53c331b85d20cc426f514092b489e62a97663b49f915a90",
+      "environment": {
+        "env_file": "env/.env",
+        "env_file_found": true,
+        "model_family": "openai",
+        "openai_api_key_available": true,
+        "gemini_api_key_available": true,
+        "api_keys_logged": false
+      },
+      "status": "success",
+      "submitted_to_llm": true,
+      "temperature": 0.0,
+      "temperature_sent_to_api": false,
+      "composition_id": "33383",
+      "input_sha256": "b96c1783ecdcc3fa026a580bd054ded080241795dd4a6e38056d7ade33bea68f",
+      "output_sha256": "28a9ed0a442677a283ab3dee5c18b0e34a5f87e34a50ea8e0b4a8877226f8b53",
+      "api_metadata": {
+        "id": "resp_065268575382807b006aa45ac9048887d291749f2e022c618c",
+        "model": "gpt-5.6-sol",
+        "created_at": 1789156041.0,
+        "status": "completed",
+        "usage": {
+          "input_tokens": 12126,
+          "input_tokens_details": {
+            "cache_write_tokens": 12123,
+            "cached_tokens": 0
+          },
+          "output_tokens": 2476,
+          "output_tokens_details": {
+            "reasoning_tokens": 1254
+          },
+          "total_tokens": 14602
+        }
+      },
+      "started_at": "2026-09-11T19:47:20Z",
+      "ended_at": "2026-09-11T19:48:07Z",
+      "duration_seconds": 46.796,
+      "error": null,
+      "request_sha256": "cf091a7b7d48c06282cf950c37ec44b8ea2d59725089a280aa687e07f35000d5",
+      "response_characters": 5453
+    }
+  ]
+}

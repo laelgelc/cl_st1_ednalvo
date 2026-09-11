@@ -1,0 +1,22 @@
+[2026-09-11 16:44:55] INFO  Starting gere_llm_avaliacao.py run_id=20260911T194455Z_52226e7c
+[2026-09-11 16:44:55] INFO  Command: avalie
+[2026-09-11 16:44:55] INFO  Input dir: corpus/01_composicoes
+[2026-09-11 16:44:55] INFO  Output dir: corpus/04_composicoes_avaliadas
+[2026-09-11 16:44:55] INFO  Model: gpt-5.6-sol
+[2026-09-11 16:44:55] INFO  Discovered 1000 supported input files recursively; planned 5.
+[2026-09-11 16:44:56] INFO  Processing file: maiores_notas/32757.txt
+[2026-09-11 16:45:22] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-11 16:45:22] INFO  SUCCESS maiores_notas/32757.txt -> maiores_notas/32757_avaliacao_gpt-5.6-sol.md
+[2026-09-11 16:45:22] INFO  Processing file: maiores_notas/32875.txt
+[2026-09-11 16:45:58] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-11 16:45:58] INFO  SUCCESS maiores_notas/32875.txt -> maiores_notas/32875_avaliacao_gpt-5.6-sol.md
+[2026-09-11 16:45:58] INFO  Processing file: maiores_notas/33083.txt
+[2026-09-11 16:46:16] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-11 16:46:16] INFO  SUCCESS maiores_notas/33083.txt -> maiores_notas/33083_avaliacao_gpt-5.6-sol.md
+[2026-09-11 16:46:16] INFO  Processing file: maiores_notas/33228.txt
+[2026-09-11 16:47:20] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-11 16:47:20] INFO  SUCCESS maiores_notas/33228.txt -> maiores_notas/33228_avaliacao_gpt-5.6-sol.md
+[2026-09-11 16:47:20] INFO  Processing file: maiores_notas/33383.txt
+[2026-09-11 16:48:07] INFO  HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-09-11 16:48:07] INFO  SUCCESS maiores_notas/33383.txt -> maiores_notas/33383_avaliacao_gpt-5.6-sol.md
+[2026-09-11 16:48:07] INFO  Finished run_id=20260911T194455Z_52226e7c succeeded=5 failed=0 skipped_existing=0
