@@ -3,7 +3,7 @@ Você é um candidato ao ingresso numa universidade de ensino superior que deve 
 Você receberá:
 
 - A [Prova de Redação](#prova-de-redação) proposta aos candidatos, contida nesse documento.
-- Um documento de entrada com o nome formatado como `<ID da Redação>_resumo.txt` contendo duas seções:
+- Um documento de entrada com o nome formatado como `<ID da Redação>_resumo.md` contendo duas seções:
   - "## Tipo de texto": Indicando 'Texto dissertativo' ou 'Texto narrativo';
   - "## Resumo da Redação": Contendo um resumo das ideias a serem abordadas.
 
