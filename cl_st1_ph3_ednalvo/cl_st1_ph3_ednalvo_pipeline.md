@@ -214,3 +214,38 @@ python anova_table_md.py
 ```
 
 Output: `anova_table_md/`
+
+## 9. Generate assessments GPT
+
+### Test mode
+
+```shell script
+python gere_llm_avaliacao.py avalie \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/04_composicoes_avaliadas \
+  --model gpt-5.6-sol \
+  --prompt prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md \
+  --test-mode
+```
+
+### Full run
+
+```shell script
+python gere_llm_avaliacao.py avalie \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/04_composicoes_avaliadas \
+  --model gpt-5.6-sol \
+  --prompt prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md
+```
+
+### Production mode on an EC2 instance
+
+```shell script
+bash run_python_ec2.sh \
+    gere_llm_avaliacao.py avalie \
+  --input-dir corpus/01_composicoes \
+  --output-dir corpus/04_composicoes_avaliadas \
+  --model gpt-5.6-sol \
+  --prompt prompts_de_avaliacao_de_composicoes/avaliacao_de_composicao_v1.md \
+  --workers 10
+```
