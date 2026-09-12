@@ -391,3 +391,62 @@ To support the qualitative interpretation of the extracted factor dimensions, th
 ### ANOVA Table Generation
 
 The `anova_table_md.py` script automatically parses the CSV outputs from SAS (`sas/output_cl_st1_ph3_ednalvo/*_subcorpus_f*.csv`) and constructs a clean Markdown summary table of the ANOVA results for all dimensions, capturing the F-value, p-value, and R-Square percentage. The generated table is stored in the `anova_table_md/` directory.
+
+Add this section near the end of the **Phase 3** documentation, after **ANOVA Table Generation**:
+
+### Composition Assessment Dataset
+
+The notebook `cl_st1_ph3_ednalvo_avaliacao_composicoes.ipynb` builds a consolidated assessment dataset for Phase 3 by combining the original human-assigned scores with AI-generated assessments of both human and LLM-generated compositions.
+
+The assessment workflow uses:
+
+- the original human score table:
+  ```text
+  corpus/00_fontes/composicoes_de_admissao_universitaria.tsv
+  ```
+- AI assessment Markdown files under:
+  ```text
+  corpus/04_composicoes_avaliadas
+  ```
+
+The notebook parses criterion-level and total scores from the AI assessment files, standardises the metadata, aligns human and AI scoring rows, and exports comparison-ready datasets.
+
+The assessment data cover four candidate groups:
+
+| Candidate group                | Description                                                             |
+|--------------------------------|-------------------------------------------------------------------------|
+| `humano_maiores_notas`         | Higher-scoring original human compositions                              |
+| `humano_menores_notas`         | Lower-scoring original human compositions                               |
+| `gemini_menores_notas_espelho` | Gemini-generated mirror compositions based on lower-scoring human texts |
+| `gpt_menores_notas_espelho`    | GPT-generated mirror compositions based on lower-scoring human texts    |
+
+Each assessed composition is scored according to the six rubric criteria:
+
+1. adequacy to the theme;
+2. adequacy to the source collection;
+3. adequacy to the requested text type;
+4. adequacy to standard written Portuguese;
+5. cohesion;
+6. coherence.
+
+The notebook also checks the internal consistency of each score row by recalculating the criterion sum and comparing it with the reported total score.
+
+The exported assessment tables are stored in:
+```text
+cl_st1_ph3_ednalvo/avaliacao_composicoes/
+```
+The main outputs are:
+
+| Output                      | Formats                    | Purpose                                                                                   |
+|-----------------------------|----------------------------|-------------------------------------------------------------------------------------------|
+| `scores_long_dataset`       | `.ndjson`, `.tsv`, `.xlsx` | Canonical long-format table with one row per composition × assessor                       |
+| `comparacao_de_avaliadores` | `.ndjson`, `.tsv`, `.xlsx` | Human-vs-AI score comparison for original human compositions                              |
+| `comparacao_de_candidatos`  | `.ndjson`, `.tsv`, `.xlsx` | Comparison of lower-scoring human originals with their Gemini and GPT mirror compositions |
+
+The long-format dataset includes metadata identifying the composition, candidate source, candidate group, score band, whether the text is a mirror/generated composition, the assessor source, the assessor model, source file paths, criterion-level scores, total score, recalculated score sum, and score residual.
+
+The assessor-comparison table focuses on original human compositions and computes the difference between GPT-based assessment and the original human score. This supports analysis of how closely the automated evaluator reproduces or diverges from the human-assigned scores.
+
+The candidate-comparison table focuses on lower-scoring source compositions and compares the AI-assessed scores of the original human text with the corresponding Gemini- and GPT-generated mirror texts. It includes derived gain variables for the generated compositions relative to the lower-scoring human originals, as well as the difference between GPT- and Gemini-generated candidates.
+
+Together, these files provide an additional evaluation layer for Phase 3, complementing the TMDA workflow by allowing score-based comparison among human originals, AI assessments, and LLM-generated mirror compositions.
