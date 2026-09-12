@@ -378,8 +378,16 @@ The recommended interpretation workflow is:
 
 In short, Phase 3 treats outliers as interpretive evidence to be inspected, not as observations to be automatically discarded.
 
-### Reporting language
+#### Reporting language
 
 The current methodological position can be summarised as follows:
 
 > The analysis used normalised document-feature matrices for four subcorpora. Aggregate summary variables were excluded from factor extraction to avoid redundancy with their component variables and to reduce artificial covariance caused by overlapping summary categories. The word-count variable was retained for descriptive corpus-size reporting but excluded from factor analysis. Zero-variance variables were identified and removed before factor extraction to avoid singularity in the correlation matrix. After an initial unrotated factor analysis, variables below the communality cutoff were removed. A final principal factor analysis with promax rotation was then performed, and the rotated factor pattern was extracted using `_TYPE_="PATTERN"`. Factor scores were computed using the same feature set retained in the final factor model. Factor-score outliers were identified using an IQR rule and exported for diagnostic qualitative inspection, but were retained in the main score files, statistical comparisons, and selection of representative texts. Representative compositions for each factor pole were selected by ranking the full factor-score file and cross-checking top-ranked texts against the factor-specific outlier lists.
+
+### Examples Generation
+
+To support the qualitative interpretation of the extracted factor dimensions, the `examples_md.py` script generates readable Markdown examples for each factor pole. It calculates the mean factor scores for each prompt condition and selects the texts with the most extreme scores. These are compiled into the `examples_md/` directory, providing original text extracts annotated with their respective prompt, file path, scores, and loading linguistic features.
+
+### ANOVA Table Generation
+
+The `anova_table_md.py` script automatically parses the CSV outputs from SAS (`sas/output_cl_st1_ph3_ednalvo/*_subcorpus_f*.csv`) and constructs a clean Markdown summary table of the ANOVA results for all dimensions, capturing the F-value, p-value, and R-Square percentage. The generated table is stored in the `anova_table_md/` directory.
